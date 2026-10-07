@@ -1,5 +1,7 @@
 import React from 'react';
 import { StreamAlert } from './useAlertQueue';
+import avatarLogoImg from '@/assets/images/logo-streamer-vulgomaniaco-avatar.png';
+import chibiMascotImg from '@/assets/images/corvo-streamer-chibi.png';
 
 export interface AlertCardProps {
   alert: StreamAlert;
@@ -57,12 +59,12 @@ export const AlertCard: React.FC<AlertCardProps> = ({ alert }) => {
       {/* Avatar do Mascote Chibi com Boné IVEXI */}
       <div className="relative w-20 h-20 clip-tactical-sm bg-ivexi-surface border-2 border-ivexi-purple flex items-center justify-center p-1.5 shadow-card-glow flex-shrink-0">
         <img
-          src="/src/assets/images/logo-streamer-vulgomaniaco-avatar.png"
+          src={avatarLogoImg}
           alt="Corvo Streamer"
           className="w-full h-full object-contain filter drop-shadow-neon-yellow"
           onError={(e) => {
             // Fallback para imagem base do chibi se necessário
-            e.currentTarget.src = '/src/assets/images/corvo-streamer-chibi.png';
+            e.currentTarget.src = chibiMascotImg;
           }}
         />
       </div>

@@ -1,4 +1,5 @@
 import React from 'react';
+import logoHorizontalImg from '@/assets/images/logo-streamer-vulgomaniaco-horizontal.png';
 
 export const ChattingScene: React.FC = () => {
   return (
@@ -14,7 +15,7 @@ export const ChattingScene: React.FC = () => {
       <header className="z-10 flex items-center justify-between border-b border-ivexi-purple/50 pb-4">
         <div className="flex items-center gap-4">
           <img
-            src="/src/assets/images/logo-streamer-vulgomaniaco-horizontal.png"
+            src={logoHorizontalImg}
             alt="VulgoManiaco Logo Horizontal"
             className="h-16 object-contain filter drop-shadow-neon-yellow"
           />

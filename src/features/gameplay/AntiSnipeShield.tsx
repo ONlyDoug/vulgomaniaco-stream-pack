@@ -1,5 +1,6 @@
 import React from 'react';
 import { MascotBadge } from './MascotBadge';
+import discordQrImg from '@/assets/images/discord-qr.png';
 
 export interface AntiSnipeShieldProps {
   active?: boolean;
@@ -34,7 +35,7 @@ export const AntiSnipeShield: React.FC<AntiSnipeShieldProps> = ({ active = false
         {/* QR Code com borda e alto contraste para leitura via smartphone */}
         <div className="relative w-12 h-12 p-1 bg-white rounded-lg flex-shrink-0 flex items-center justify-center shadow">
           <img
-            src="/src/assets/images/discord-qr.png"
+            src={discordQrImg}
             alt="QR Code Discord"
             className="w-full h-full object-contain"
           />

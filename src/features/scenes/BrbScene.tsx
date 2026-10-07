@@ -1,4 +1,5 @@
 import React from 'react';
+import logoBadgeImg from '@/assets/images/logo-streamer-vulgomaniaco-badge.png';
 
 export const BrbScene: React.FC = () => {
   return (
@@ -20,7 +21,7 @@ export const BrbScene: React.FC = () => {
 
         {/* Master Badge Oficial (Mascote + Pedestal VulgoManiaco + Fita IVEXI) */}
         <img
-          src="/src/assets/images/logo-streamer-vulgomaniaco-badge.png"
+          src={logoBadgeImg}
           alt="Logotipo Oficial VulgoManiaco"
           className="w-80 h-80 object-contain relative z-10 filter drop-shadow-[0_8px_24px_rgba(115,46,184,0.9)]"
         />

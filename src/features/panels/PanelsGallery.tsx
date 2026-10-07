@@ -1,6 +1,10 @@
 import React, { useState } from 'react';
 import { PanelCard } from './PanelCard';
 import { CHANNEL_PANELS_DATA, exportPanels } from './exportPanels';
+import logoBadgeImg from '@/assets/images/logo-streamer-vulgomaniaco-badge.png';
+import logoHorizontalImg from '@/assets/images/logo-streamer-vulgomaniaco-horizontal.png';
+import logoAvatarImg from '@/assets/images/logo-streamer-vulgomaniaco-avatar.png';
+import logoCompactImg from '@/assets/images/streamer-vulgomaniaco-compact-512w.png';
 
 export const PanelsGallery: React.FC = () => {
   const [isExporting, setIsExporting] = useState<boolean>(false);
@@ -76,13 +80,13 @@ export const PanelsGallery: React.FC = () => {
               <span className="font-rajdhani text-sm font-bold text-ivexi-light uppercase">Escudo Tático (Badge Principal)</span>
               <div className="w-full h-56 flex items-center justify-center p-2 rounded-lg bg-[#0e0716] border border-ivexi-purple/30">
                 <img
-                  src="/src/assets/images/logo-streamer-vulgomaniaco-badge.png"
+                  src={logoBadgeImg}
                   alt="Logotipo Badge VulgoManiaco"
                   className="max-h-full max-w-full object-contain"
                 />
               </div>
               <a
-                href="/src/assets/images/logo-streamer-vulgomaniaco-badge.png"
+                href="/assets/images/logo-streamer-vulgomaniaco-badge.png"
                 download="logo-streamer-vulgomaniaco-badge.png"
                 className="w-full py-2 px-3 rounded-lg bg-ivexi-purple hover:bg-ivexi-purple/80 text-white font-rajdhani text-xs font-bold uppercase transition"
               >
@@ -95,13 +99,13 @@ export const PanelsGallery: React.FC = () => {
               <span className="font-rajdhani text-sm font-bold text-ivexi-light uppercase">Logotipo Horizontal (Headers)</span>
               <div className="w-full h-56 flex items-center justify-center p-2 rounded-lg bg-[#0e0716] border border-ivexi-purple/30">
                 <img
-                  src="/src/assets/images/logo-streamer-vulgomaniaco-horizontal.png"
+                  src={logoHorizontalImg}
                   alt="Logotipo Horizontal VulgoManiaco"
                   className="max-h-full max-w-full object-contain"
                 />
               </div>
               <a
-                href="/src/assets/images/logo-streamer-vulgomaniaco-horizontal.png"
+                href="/assets/images/logo-streamer-vulgomaniaco-horizontal.png"
                 download="logo-streamer-vulgomaniaco-horizontal.png"
                 className="w-full py-2 px-3 rounded-lg bg-ivexi-purple hover:bg-ivexi-purple/80 text-white font-rajdhani text-xs font-bold uppercase transition"
               >
@@ -114,13 +118,13 @@ export const PanelsGallery: React.FC = () => {
               <span className="font-rajdhani text-sm font-bold text-ivexi-light uppercase">Avatar Circular (Discord & Perfis)</span>
               <div className="w-full h-56 flex items-center justify-center p-2 rounded-lg bg-[#0e0716] border border-ivexi-purple/30">
                 <img
-                  src="/src/assets/images/logo-streamer-vulgomaniaco-avatar.png"
+                  src={logoAvatarImg}
                   alt="Avatar Circular VulgoManiaco"
                   className="w-40 h-40 object-contain"
                 />
               </div>
               <a
-                href="/src/assets/images/logo-streamer-vulgomaniaco-avatar.png"
+                href="/assets/images/logo-streamer-vulgomaniaco-avatar.png"
                 download="logo-streamer-vulgomaniaco-avatar.png"
                 className="w-full py-2 px-3 rounded-lg bg-ivexi-purple hover:bg-ivexi-purple/80 text-white font-rajdhani text-xs font-bold uppercase transition"
               >
@@ -133,14 +137,14 @@ export const PanelsGallery: React.FC = () => {
               <span className="font-rajdhani text-sm font-bold text-ivexi-neon uppercase">Ícone Compacto (Perfil & Painéis)</span>
               <div className="w-full h-56 flex items-center justify-center p-2 rounded-lg bg-[#0e0716] border border-ivexi-purple/30">
                 <img
-                  src="/src/assets/images/streamer-vulgomaniaco-compact-512w.png"
+                  src={logoCompactImg}
                   alt="Ícone Compacto VulgoManiaco"
                   className="w-40 h-40 object-contain"
                   data-testid="compact-logo-showcase"
                 />
               </div>
               <a
-                href="/src/assets/images/streamer-vulgomaniaco-compact-512w.png"
+                href="/assets/images/streamer-vulgomaniaco-compact-512w.png"
                 download="streamer-vulgomaniaco-compact-512w.png"
                 className="w-full py-2 px-3 rounded-lg bg-ivexi-neon hover:bg-yellow-400 text-ivexi-dark font-rajdhani text-xs font-bold uppercase shadow-neon-border transition"
               >

@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import logoBadgeImg from '@/assets/images/logo-streamer-vulgomaniaco-badge.png';
 
 const SOCIAL_LINKS = [
   { platform: 'Twitch', handle: 'twitch.tv/VulgoManiaco', color: '#9146FF', icon: '🟣' },
@@ -62,7 +63,7 @@ export const StartingScene: React.FC = () => {
         <div className="relative w-80 h-96 flex items-center justify-center filter drop-shadow-[0_10px_30px_rgba(115,46,184,0.7)]">
           <div className="absolute inset-4 rounded-full bg-ivexi-purple/30 blur-2xl pointer-events-none animate-pulse" />
           <img
-            src="/src/assets/images/logo-streamer-vulgomaniaco-badge.png"
+            src={logoBadgeImg}
             alt="Logotipo Oficial VulgoManiaco"
             className="w-full h-full object-contain relative z-10 drop-shadow-[0_4px_16px_rgba(214,214,92,0.5)]"
           />

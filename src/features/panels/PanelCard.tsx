@@ -1,4 +1,5 @@
 import React from 'react';
+import compactLogoImg from '@/assets/images/streamer-vulgomaniaco-compact-512w.png';
 
 export interface PanelCardProps {
   id: string;
@@ -26,7 +27,7 @@ export const PanelCard: React.FC<PanelCardProps> = ({ id, title, description }) 
       {/* Banner Gráfico Real 320x120 gerado no padrão Twitch/Kick com o ícone compacto oficial */}
       <div className="relative w-[320px] h-[120px] bg-[#140A1F] border-b border-ivexi-purple/50 overflow-hidden">
         <img
-          src={`/src/assets/panels/painel-${id}.png`}
+          src={`/assets/panels/painel-${id}.png`}
           alt={`Banner ${title}`}
           className="w-full h-full object-cover"
           onError={(e) => {
@@ -42,7 +43,7 @@ export const PanelCard: React.FC<PanelCardProps> = ({ id, title, description }) 
           <div className="flex items-center justify-between mb-2">
             <span className="font-rajdhani text-lg font-bold uppercase text-ivexi-neon flex items-center gap-2">
               <img
-                src="/src/assets/images/streamer-vulgomaniaco-compact-512w.png"
+                src={compactLogoImg}
                 alt="VulgoManiaco Ícone"
                 className="w-5 h-5 object-contain"
                 data-testid="panel-compact-logo"
@@ -62,14 +63,14 @@ export const PanelCard: React.FC<PanelCardProps> = ({ id, title, description }) 
         <div className="space-y-2 pt-2 border-t border-ivexi-purple/30">
           <div className="flex items-center gap-2">
             <a
-              href={`/src/assets/panels/painel-${id}.png`}
+              href={`/assets/panels/painel-${id}.png`}
               download={`painel-${id}.png`}
               className="flex-1 py-1.5 px-2 rounded-lg bg-ivexi-dark hover:bg-ivexi-purple/60 border border-ivexi-purple/60 text-center font-rajdhani text-xs font-bold uppercase text-white transition"
             >
               Baixar PNG
             </a>
             <a
-              href={`/src/assets/panels/painel-${id}.svg`}
+              href={`/assets/panels/painel-${id}.svg`}
               download={`painel-${id}.svg`}
               className="py-1.5 px-3 rounded-lg bg-ivexi-dark hover:bg-ivexi-purple/60 border border-ivexi-purple/60 text-center font-rajdhani text-xs font-bold uppercase text-ivexi-neon transition"
             >

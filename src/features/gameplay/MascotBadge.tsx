@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import defaultBadgeImg from '@/assets/images/logo-streamer-vulgomaniaco-badge.png';
 
 export interface MascotBadgeProps {
   imageSrc?: string;
@@ -6,7 +7,7 @@ export interface MascotBadgeProps {
 }
 
 export const MascotBadge: React.FC<MascotBadgeProps> = ({
-  imageSrc = '/src/assets/images/logo-streamer-vulgomaniaco-badge.png',
+  imageSrc = defaultBadgeImg,
   className = 'relative w-44 h-52 flex items-center justify-center filter drop-shadow-[0_4px_16px_rgba(214,214,92,0.6)]',
 }) => {
   const [hasError, setHasError] = useState(false);

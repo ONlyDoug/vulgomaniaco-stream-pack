@@ -1,4 +1,5 @@
 import React from 'react';
+import logoBadgeImg from '@/assets/images/logo-streamer-vulgomaniaco-badge.png';
 
 export const EndingScene: React.FC = () => {
   return (
@@ -22,7 +23,7 @@ export const EndingScene: React.FC = () => {
         <div className="w-72 h-84 flex items-center justify-center filter drop-shadow-[0_10px_25px_rgba(115,46,184,0.7)]">
           <div className="absolute inset-4 rounded-full bg-ivexi-purple/30 blur-2xl pointer-events-none" />
           <img
-            src="/src/assets/images/logo-streamer-vulgomaniaco-badge.png"
+            src={logoBadgeImg}
             alt="Corvo Streamer Agradecendo"
             className="w-full h-full object-contain relative z-10 drop-shadow-[0_4px_16px_rgba(214,214,92,0.4)]"
           />
