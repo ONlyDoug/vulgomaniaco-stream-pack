@@ -200,13 +200,13 @@ export function generateObsSceneCollection(options: ObsSceneCollectionOptions = 
               pos: { x: 0.0, y: 0.0 },
               scale: { x: 1.0, y: 1.0 },
             },
-            // Camada 2: Webcam (posicionada em x=32, y=824, largura 384, altura 216 - pixel-perfect dentro da moldura)
+            // Camada 2: Webcam (posicionada em x=28, y=706, largura 388, altura 244 - pixel-perfect dentro da moldura)
             {
               name: '📷 Webcam do Streamer (Facecam Gameplay)',
               visible: true,
               locked: false,
-              pos: { x: 32.0, y: 824.0 },
-              bounds: { x: 384.0, y: 216.0 },
+              pos: { x: 28.0, y: 706.0 },
+              bounds: { x: 388.0, y: 244.0 },
               bounds_type: 2, // OBS_BOUNDS_SCALE_INNER
               scale: { x: 1.0, y: 1.0 },
             },

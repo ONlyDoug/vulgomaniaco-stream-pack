@@ -41,7 +41,7 @@ export const GameplayOverlay: React.FC<GameplayOverlayProps> = ({
       <AntiSnipeShield active={isAntiSnipeActive} />
 
       {/* Conjunto Facecam + Identificação do Canal (Canto Inferior Esquerdo) */}
-      <div className="absolute bottom-8 left-8 flex flex-col items-start w-[384px] filter drop-shadow-[0_10px_25px_rgba(20,10,31,0.9)]">
+      <div className="absolute bottom-[88px] left-[28px] flex flex-col items-start w-[388px] filter drop-shadow-[0_10px_25px_rgba(20,10,31,0.9)]">
         {/* Moldura de Webcam 16:9 Limpa e Perfeitamente Simétrica */}
         <FacecamFrame />
 

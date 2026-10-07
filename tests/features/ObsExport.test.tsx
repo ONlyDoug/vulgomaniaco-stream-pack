@@ -37,7 +37,7 @@ describe('Exportador de Coleção de Cenas do OBS Studio', () => {
     }
   });
 
-  it('deve calibrar a webcam de gameplay pixel-perfect para a moldura 16:9 (384x216 na posição x:32, y:824)', () => {
+  it('deve calibrar a webcam de gameplay pixel-perfect para a moldura (388x244 na posição x:28, y:706)', () => {
     const collection = generateObsSceneCollection();
 
     const gameplayScene = collection.sources.find(
@@ -50,8 +50,8 @@ describe('Exportador de Coleção de Cenas do OBS Studio', () => {
       (item: any) => item.name === '📷 Webcam do Streamer (Facecam Gameplay)'
     );
     expect(webcamItem).toBeDefined();
-    expect(webcamItem?.pos).toEqual({ x: 32.0, y: 824.0 });
-    expect(webcamItem?.bounds).toEqual({ x: 384.0, y: 216.0 });
+    expect(webcamItem?.pos).toEqual({ x: 28.0, y: 706.0 });
+    expect(webcamItem?.bounds).toEqual({ x: 388.0, y: 244.0 });
     expect(webcamItem?.bounds_type).toBe(2); // OBS_BOUNDS_SCALE_INNER
   });
 

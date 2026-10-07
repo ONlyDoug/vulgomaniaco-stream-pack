@@ -8,7 +8,7 @@ export const FacecamFrame: React.FC<FacecamFrameProps> = ({ children }) => {
   return (
     <div
       data-testid="facecam-frame"
-      className="relative w-[384px] h-[216px] bg-[#140A1F]/30 backdrop-blur-[2px] rounded-t-sm shadow-card-glow overflow-visible border-2 border-ivexi-purple/80"
+      className="relative w-[388px] h-[244px] bg-[#140A1F]/30 backdrop-blur-[2px] rounded-t-sm shadow-card-glow overflow-visible border-2 border-ivexi-purple/80"
     >
       {/* Cantoneiras e-sports 100% simétricas nos 4 cantos */}
       <div className="absolute -top-[3px] -left-[3px] w-4 h-4 border-t-2 border-l-2 border-ivexi-neon pointer-events-none" />

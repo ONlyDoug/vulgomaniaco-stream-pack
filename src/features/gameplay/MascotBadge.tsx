@@ -29,22 +29,22 @@ export const MascotBadge: React.FC<MascotBadgeProps> = ({
           />
         </div>
       ) : (
-        <svg
+        <div
           data-testid="mascot-fallback-svg"
-          viewBox="0 0 100 100"
-          className="w-full h-full fill-current text-ivexi-purple drop-shadow-neon-yellow"
+          className="relative w-full h-full flex flex-col items-center justify-center p-2 rounded-xl bg-ivexi-surface/80 border-2 border-ivexi-purple"
         >
-          {/* Silhueta estilizada do corvo com olho neon */}
-          <polygon points="50,10 80,40 70,75 30,75 20,40" fill="#241037" stroke="#732EB8" strokeWidth="3" />
-          <path d="M50,15 L75,40 L65,70 L35,70 L25,40 Z" fill="#140A1F" />
-          {/* Bico afiado */}
-          <polygon points="50,45 65,55 50,65" fill="#D6D65C" />
-          {/* Olho com brilho neon */}
-          <circle cx="42" cy="38" r="4" fill="#FAFAFA" />
-          <circle cx="43" cy="38" r="2" fill="#D6D65C" />
-          {/* Emblema ivexi gravado */}
-          <path d="M50,28 L56,38 L44,38 Z" fill="#732EB8" />
-        </svg>
+          {/* Emblema Tático Oficial de Alta Fidelidade */}
+          <svg viewBox="0 0 120 120" className="w-24 h-24 drop-shadow-neon-yellow">
+            <polygon points="60,10 105,35 95,95 60,115 25,95 15,35" fill="#140A1F" stroke="#732EB8" strokeWidth="3" />
+            <polygon points="60,18 97,40 88,90 60,107 32,90 23,40" fill="#241037" stroke="#D6D65C" strokeWidth="1.5" />
+            <path d="M60,30 L75,55 L45,55 Z" fill="#D6D65C" />
+            <circle cx="60" cy="70" r="14" fill="#732EB8" stroke="#D6D65C" strokeWidth="2" />
+            <path d="M52,70 L68,70 M60,62 L60,78" stroke="#D6D65C" strokeWidth="2" />
+          </svg>
+          <span className="font-rajdhani text-xs font-bold text-ivexi-neon uppercase tracking-widest mt-1">
+            IVEXI GUILD
+          </span>
+        </div>
       )}
     </div>
   );
