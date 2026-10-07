@@ -32,6 +32,17 @@ describe('US-004: Painéis de Perfil e Identidade do Canal', () => {
     expect(compactShowcase).toHaveAttribute('src', expect.stringContaining('streamer-vulgomaniaco-compact-512w.png'));
   });
 
+  it('deve disponibilizar o mascote transparente puro e o logotipo horizontal integrado para download', () => {
+    render(<PanelsGallery />);
+
+    expect(screen.getByText(/Mascote Puro \(100% Transparente\)/i)).toBeInTheDocument();
+    expect(screen.getByText(/Logotipo Horizontal \(Design Integrado\)/i)).toBeInTheDocument();
+    expect(screen.getByRole('link', { name: /Baixar PNG Transparente/i })).toHaveAttribute(
+      'href',
+      '/assets/images/corvo-streamer-chibi-transparente.png'
+    );
+  });
+
   // SPECSFY: US-004 FR-007 FR-008 NFR-002 AC-011
   it('AC-011: deve exportar os 6 painéis individuais nos formatos PNG e SVG', async () => {
     const result = await exportPanels();

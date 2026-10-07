@@ -11,7 +11,7 @@ e linguagem humana, acolhedora e conectada com a comunidade.
 """
 
 import os
-from PIL import Image, ImageDraw, ImageFont
+from PIL import Image, ImageDraw, ImageFont, ImageFilter
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 TWITCH_DIR = os.path.join(BASE_DIR, 'brand', 'social', 'twitch')
@@ -81,11 +81,12 @@ def generate_offline_banner():
         badge_resized = badge.resize((target_bw, target_bh), Image.Resampling.LANCZOS)
         bx = (w - target_bw) // 2
         by = (h - target_bh) // 2 - 90
-        # Sombra suave sob o badge
-        shadow_box = Image.new('RGBA', (target_bw + 40, target_bh + 40), (0, 0, 0, 0))
+        # Sombra suave e difusa sob o badge (glow místico sem 'bola preta')
+        shadow_box = Image.new('RGBA', (target_bw + 80, target_bh + 80), (0, 0, 0, 0))
         s_draw = ImageDraw.Draw(shadow_box)
-        s_draw.ellipse([20, 20, target_bw + 20, target_bh + 20], fill=(0, 0, 0, 160))
-        img.paste(shadow_box, (bx - 20, by - 10), shadow_box)
+        s_draw.ellipse([40, 40, target_bw + 40, target_bh + 40], fill=(75, 30, 120, 80))
+        shadow_box = shadow_box.filter(ImageFilter.GaussianBlur(25))
+        img.paste(shadow_box, (bx - 40, by - 30), shadow_box)
         img.paste(badge_resized, (bx, by), badge_resized)
 
     # 4. Tipografia Profissional e Acolhedora
@@ -102,20 +103,20 @@ def generate_offline_banner():
     status_text = "CANAL OFFLINE • VOLTAMOS EM BREVE!"
     draw.text((w // 2 - 370, h - 260), status_text, font=font_status, fill=(214, 214, 92, 255))
 
-    # Copy humana
-    body1 = "A stream tá off por enquanto, mas a resenha continua firme no Discord!"
-    draw.text((w // 2 - 360, h - 195), body1, font=font_body1, fill=(250, 250, 250, 240))
+    # Copy humana e focada na comunidade oficial
+    body1 = "A stream tá off por enquanto, mas a resenha continua firme no Discord da Guilda IVEXI!"
+    draw.text((w // 2 - 430, h - 195), body1, font=font_body1, fill=(250, 250, 250, 240))
 
-    body2 = "Cole com a gente pra bater papo, ver clipes e não perder o aviso da próxima live."
-    draw.text((w // 2 - 390, h - 160), body2, font=font_body2, fill=(196, 184, 214, 255))
+    body2 = "Cole com a gente pra bater papo, tirar dúvidas de builds e não perder os avisos das lives."
+    draw.text((w // 2 - 440, h - 160), body2, font=font_body2, fill=(196, 184, 214, 255))
 
-    # Tarja tática inferior com programação e redes
+    # Tarja tática inferior com programação e redes oficiais
     bar_y = h - 105
     bar_pts = [(w // 2 - 460, bar_y), (w // 2 + 460, bar_y), (w // 2 + 450, bar_y + 40), (w // 2 - 450, bar_y + 40)]
     draw.polygon(bar_pts, fill=(36, 16, 55, 230), outline=(115, 46, 184, 255), width=2)
 
-    sched_text = "LIVES DE SEGUNDA A SEXTA ÀS 19H  •  DISCORD.GG/IVEXI  •  TWITCH.TV/VULGOMANIACO"
-    draw.text((w // 2 - 390, bar_y + 10), sched_text, font=font_sched, fill=(214, 214, 92, 255))
+    sched_text = "LIVES DE SEGUNDA A SEXTA ÀS 19H  •  DISCORD.GG/S246XDGP7Q  •  TWITCH.TV/VULGOMANIACO"
+    draw.text((w // 2 - 440, bar_y + 8), sched_text, font=font_sched, fill=(214, 214, 92, 255))
 
     out_file = os.path.join(TWITCH_DIR, 'twitch-offline-banner-1080p.png')
     img.save(out_file, 'PNG', optimize=True)
@@ -158,10 +159,10 @@ def generate_twitch_header():
     except:
         font_tag = font_links = ImageFont.load_default()
 
-    tag_text = "ALBION ONLINE MMORPG • COMBATE PvP NA BLACK ZONE & RESENHA COM O CLÃ"
+    tag_text = "ALBION ONLINE MMORPG • COMBATE PvP NA BLACK ZONE & GUILDA IVEXI"
     draw.text((w // 2 - 360, h - 110), tag_text, font=font_tag, fill=(214, 214, 92, 255))
 
-    links_text = "DISCORD DO CLÃ: DISCORD.GG/IVEXI   |   SEG A SEX 19H   |   YOUTUBE & KICK @VULGOMANIACO"
+    links_text = "DISCORD DA GUILDA: DISCORD.GG/S246XDGP7Q   |   SEG A SEX 19H   |   TWITCH.TV/VULGOMANIACO"
     draw.text((w // 2 - 340, h - 70), links_text, font=font_links, fill=(235, 225, 245, 255))
 
     out_file = os.path.join(TWITCH_DIR, 'twitch-header-banner-1200x480.png')
@@ -203,11 +204,11 @@ def generate_youtube_header():
     except:
         font_sz = font_sub = ImageFont.load_default()
 
-    footer_text = "ALBION ONLINE • GAMEPLAY, BUILDS & RESENHA COM A COMUNIDADE"
-    draw.text((sz_x + sz_w // 2 - 320, sz_y + sz_h - 85), footer_text, font=font_sz, fill=(214, 214, 92, 255))
+    footer_text = "ALBION ONLINE • GAMEPLAY, BUILDS & GUILDA IVEXI"
+    draw.text((sz_x + sz_w // 2 - 270, sz_y + sz_h - 85), footer_text, font=font_sz, fill=(214, 214, 92, 255))
 
-    social_text = "INSCREVA-SE NO CANAL  |  DISCORD DA COMUNIDADE: DISCORD.GG/IVEXI"
-    draw.text((sz_x + sz_w // 2 - 280, sz_y + sz_h - 45), social_text, font=font_sub, fill=(250, 250, 250, 230))
+    social_text = "INSCREVA-SE NO CANAL  |  DISCORD DA GUILDA: DISCORD.GG/S246XDGP7Q  |  TWITCH.TV/VULGOMANIACO"
+    draw.text((sz_x + sz_w // 2 - 350, sz_y + sz_h - 45), social_text, font=font_sub, fill=(250, 250, 250, 230))
 
     out_file = os.path.join(YOUTUBE_DIR, 'youtube-header-banner-2560x1440.png')
     img.save(out_file, 'PNG', optimize=True)

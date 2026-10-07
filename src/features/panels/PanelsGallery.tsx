@@ -3,8 +3,8 @@ import { PanelCard } from './PanelCard';
 import { CHANNEL_PANELS_DATA, exportPanels } from './exportPanels';
 import logoBadgeImg from '@/assets/images/logo-streamer-vulgomaniaco-badge.png';
 import logoHorizontalImg from '@/assets/images/logo-streamer-vulgomaniaco-horizontal.png';
-import logoAvatarImg from '@/assets/images/logo-streamer-vulgomaniaco-avatar.png';
 import logoCompactImg from '@/assets/images/streamer-vulgomaniaco-compact-512w.png';
+import corvoTransparentImg from '@/assets/images/corvo-streamer-chibi-transparente.png';
 
 export const PanelsGallery: React.FC = () => {
   const [isExporting, setIsExporting] = useState<boolean>(false);
@@ -94,9 +94,9 @@ export const PanelsGallery: React.FC = () => {
               </a>
             </div>
 
-            {/* Card Horizontal */}
+            {/* Card Horizontal Integrado */}
             <div className="flex flex-col items-center p-4 rounded-xl bg-ivexi-dark/80 border border-ivexi-purple/50 text-center space-y-3">
-              <span className="font-rajdhani text-sm font-bold text-ivexi-light uppercase">Logotipo Horizontal (Headers)</span>
+              <span className="font-rajdhani text-sm font-bold text-ivexi-light uppercase">Logotipo Horizontal (Design Integrado)</span>
               <div className="w-full h-56 flex items-center justify-center p-2 rounded-lg bg-[#0e0716] border border-ivexi-purple/30">
                 <img
                   src={logoHorizontalImg}
@@ -113,28 +113,30 @@ export const PanelsGallery: React.FC = () => {
               </a>
             </div>
 
-            {/* Card Avatar / Ícone Circular */}
-            <div className="flex flex-col items-center p-4 rounded-xl bg-ivexi-dark/80 border border-ivexi-purple/50 text-center space-y-3">
-              <span className="font-rajdhani text-sm font-bold text-ivexi-light uppercase">Avatar Circular (Discord & Perfis)</span>
-              <div className="w-full h-56 flex items-center justify-center p-2 rounded-lg bg-[#0e0716] border border-ivexi-purple/30">
+            {/* Card Mascote Chibi Isolado Transparente (Zero Bola Preta) */}
+            <div className="flex flex-col items-center p-4 rounded-xl bg-ivexi-dark/80 border border-ivexi-neon/60 text-center space-y-3 shadow-card-glow">
+              <div className="flex items-center gap-1.5">
+                <span className="font-rajdhani text-sm font-bold text-ivexi-neon uppercase">Mascote Puro (100% Transparente)</span>
+              </div>
+              <div className="w-full h-56 flex items-center justify-center p-2 rounded-lg bg-[#0e0716] border border-ivexi-neon/40">
                 <img
-                  src={logoAvatarImg}
-                  alt="Avatar Circular VulgoManiaco"
-                  className="w-40 h-40 object-contain"
+                  src={corvoTransparentImg}
+                  alt="Mascote Corvo Chibi Transparente"
+                  className="w-44 h-44 object-contain filter drop-shadow-[0_0_12px_rgba(214,214,92,0.3)]"
                 />
               </div>
               <a
-                href="/assets/images/logo-streamer-vulgomaniaco-avatar.png"
-                download="logo-streamer-vulgomaniaco-avatar.png"
-                className="w-full py-2 px-3 rounded-lg bg-ivexi-purple hover:bg-ivexi-purple/80 text-white font-rajdhani text-xs font-bold uppercase transition"
+                href="/assets/images/corvo-streamer-chibi-transparente.png"
+                download="corvo-streamer-chibi-transparente.png"
+                className="w-full py-2 px-3 rounded-lg bg-ivexi-neon hover:bg-yellow-400 text-ivexi-dark font-rajdhani text-xs font-bold uppercase shadow-neon-border transition"
               >
-                Baixar PNG Avatar
+                Baixar PNG Transparente
               </a>
             </div>
 
             {/* Card Ícone Compacto Oficial */}
-            <div className="flex flex-col items-center p-4 rounded-xl bg-ivexi-dark/80 border border-ivexi-neon/50 text-center space-y-3">
-              <span className="font-rajdhani text-sm font-bold text-ivexi-neon uppercase">Ícone Compacto (Perfil & Painéis)</span>
+            <div className="flex flex-col items-center p-4 rounded-xl bg-ivexi-dark/80 border border-ivexi-purple/50 text-center space-y-3">
+              <span className="font-rajdhani text-sm font-bold text-ivexi-light uppercase">Ícone de Perfil (Moldura Circular)</span>
               <div className="w-full h-56 flex items-center justify-center p-2 rounded-lg bg-[#0e0716] border border-ivexi-purple/30">
                 <img
                   src={logoCompactImg}
@@ -146,9 +148,9 @@ export const PanelsGallery: React.FC = () => {
               <a
                 href="/assets/images/streamer-vulgomaniaco-compact-512w.png"
                 download="streamer-vulgomaniaco-compact-512w.png"
-                className="w-full py-2 px-3 rounded-lg bg-ivexi-neon hover:bg-yellow-400 text-ivexi-dark font-rajdhani text-xs font-bold uppercase shadow-neon-border transition"
+                className="w-full py-2 px-3 rounded-lg bg-ivexi-purple hover:bg-ivexi-purple/80 text-white font-rajdhani text-xs font-bold uppercase transition"
               >
-                Baixar PNG Compacto
+                Baixar Perfil 512px
               </a>
             </div>
           </div>
