@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>IVEXI - Banner Informativo YouTube</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Rajdhani:wght@600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #732EB8;
+      --primary-dark: #140A1F;
+      --accent: #D6D65C;
+      --accent-alt: #B8B82E;
+      --text: #FAFAFA;
+      --bg-dark: rgba(20, 10, 31, 0.40);
+    }
+    
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: #000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      font-family: 'Inter', sans-serif;
+      color: var(--text);
+    }
+
+    .banner {
+      width: 2560px;
+      height: 1440px;
+      background-image: url('assets/youtube-bg.png');
+      background-size: cover;
+      background-position: center;
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .safe-zone {
+      width: 1546px;
+      height: 423px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      gap: 40px;
+      z-index: 2;
+    }
+
+    .brand-zone {
+      width: 450px;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .logo-container {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    
+    .wordmark {
+      width: 400px;
+      height: 117px;
+      object-fit: contain;
+      filter: drop-shadow(0 0 20px rgba(115, 46, 184, 0.5));
+    }
+
+    .tagline-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .tagline {
+      font-family: 'Rajdhani', sans-serif;
+      font-size: 42px;
+      font-weight: 700;
+      text-transform: uppercase;
+      line-height: 1.1;
+      text-shadow: 0 4px 20px rgba(0,0,0,0.8);
+    }
+
+    .tagline .highlight {
+      color: var(--accent);
+      text-shadow: 0 0 15px rgba(214, 214, 92, 0.5);
+    }
+
+    .cta-container {
+      display: flex;
+      align-items: center;
+    }
+
+    .cta {
+      background-color: var(--accent);
+      color: #000;
+      padding: 10px 30px;
+      border-radius: 8px;
+      font-family: 'Rajdhani', sans-serif;
+      font-size: 32px;
+      font-weight: 700;
+      display: inline-block;
+      text-transform: uppercase;
+      box-shadow: 0 0 20px rgba(214, 214, 92, 0.4), inset 0 0 15px rgba(255,255,255,0.5);
+      border-left: 8px solid #FAFAFA;
+    }
+
+    .info-zone {
+      flex: 1;
+      display: flex;
+      flex-direction: row;
+      gap: 20px;
+      height: 100%;
+    }
+
+    .card {
+      flex: 1;
+      background: var(--bg-dark);
+      backdrop-filter: blur(12px);
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 10px 10px 30px rgba(0,0,0,0.5);
+      display: flex;
+      flex-direction: column;
+      border-top: 4px solid transparent;
+    }
+
+    .card-1 { border-top-color: var(--primary); }
+    .card-2 { border-top-color: var(--text); }
+    .card-3 { border-top-color: var(--accent); }
+
+    .card h3 {
+      font-family: 'Rajdhani', sans-serif;
+      font-size: 28px;
+      font-weight: 700;
+      color: var(--text);
+      text-transform: uppercase;
+      margin-bottom: 20px;
+      text-shadow: 0 2px 10px rgba(0,0,0,0.5);
+    }
+
+    .info-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .info-list li {
+      position: relative;
+      padding-left: 25px;
+      font-size: 15px;
+      line-height: 1.4;
+      color: #E0E0E0;
+    }
+
+    .info-list li::before {
+      position: absolute;
+      left: 0;
+      top: 0;
+      font-size: 16px;
+    }
+
+    .card-1 h3 { color: var(--primary); text-shadow: 0 0 10px rgba(115,46,184,0.5); }
+    .card-1 li::before { content: '⚔️'; filter: hue-rotate(270deg); }
+
+    .card-2 h3 { color: var(--text); text-shadow: 0 0 10px rgba(255,255,255,0.3); }
+    .card-2 li::before { content: '🔥'; }
+
+    .card-3 h3 { color: var(--accent); text-shadow: 0 0 10px rgba(214, 214, 92, 0.4); }
+    .card-3 li::before { content: '🎯'; }
+
+  </style>
+</head>
+<body>
+  <div class="banner">
+    <div class="safe-zone">
+    
+    <!-- Zona Esquerda (Marca) -->
+    <div class="brand-zone">
+      <div class="logo-container">
+        <img src="../logo/svg/IVEXI-WORDMARK.svg" alt="IVEXI Wordmark" class="wordmark">
+      </div>
+      
+      <div class="tagline-container">
+        <h2 class="tagline">Alegria, Caos e<br><span class="highlight">Evolução na Blackzone!</span></h2>
+      </div>
+      
+      <div class="cta-container">
+        <div class="cta">
+          DISCORD.GG/s246XdGp7q
+        </div>
+      </div>
+    </div>
+
+    <!-- Zona Direita (Cards HUD) -->
+    <div class="info-zone">
+      
+      <div class="card card-1">
+        <h3>O Que Oferecemos</h3>
+        <ul class="info-list">
+          <li>Taxa 0% (Economia forte para o jogador)</li>
+          <li>Recompensas exclusivas para quem apoia a guilda</li>
+          <li>Acesso ao HO Qualidade 5 (para membros engajados)</li>
+          <li>Comunidade focada em união e evolução mútua</li>
+        </ul>
+      </div>
+
+      <div class="card card-2">
+        <h3>Nossos Conteúdos</h3>
+        <ul class="info-list">
+          <li>Foco em PvP: Castelos, Disputa de Nodes e Ganks</li>
+          <li>Muito PvE para todos: Dg Ava e Dg de Grupo</li>
+          <li>Update Fogo de Dragão: Santuário e Terras Ancestrais</li>
+          <li>Mundo Aberto: Caçadas e Mobs de Cristal</li>
+        </ul>
+      </div>
+
+      <div class="card card-3">
+        <h3>O Que Buscamos</h3>
+        <ul class="info-list">
+          <li>Jogadores ativos e com vontade de evoluir</li>
+          <li>Presença no CTA (20h30) para destravar vantagens</li>
+          <li>Espírito de equipe e lealdade ao bando</li>
+          <li>Uso obrigatório do Discord (com microfone)</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</div>
+</body>
+</html>

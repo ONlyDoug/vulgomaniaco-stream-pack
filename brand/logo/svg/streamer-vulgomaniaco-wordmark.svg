@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 240" width="900" height="240">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@700&amp;display=swap');
+      .font-rajdhani { font-family: 'Rajdhani', sans-serif; font-weight: 700; text-transform: uppercase; }
+      .neon-glow { filter: drop-shadow(0 0 10px rgba(214, 214, 92, 0.7)); }
+    </style>
+  </defs>
+  <rect width="900" height="240" fill="none"/>
+  <text x="450" y="140" text-anchor="middle" class="font-rajdhani" font-size="110" letter-spacing="6">
+    <tspan fill="#FAFAFA">VULGO </tspan>
+    <tspan fill="#D6D65C" class="neon-glow">MANIACO</tspan>
+  </text>
+  <text x="450" y="195" text-anchor="middle" class="font-rajdhani" font-size="28" fill="#D6D65C" letter-spacing="5" opacity="0.9">
+    ALBION ONLINE  •  IVEXI GUILD
+  </text>
+</svg>

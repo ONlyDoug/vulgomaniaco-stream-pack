@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&amp;family=Rajdhani:wght@600;700&amp;display=swap');
+      
+      .font-title { font-family: 'Rajdhani', sans-serif; }
+      .font-body { font-family: 'Inter', sans-serif; font-weight: 500; }
+    </style>
+  
+    <!-- Background Image -->
+    <image id="bg-image" href="assets/youtube-bg.png" width="1920" height="1080" preserveAspectRatio="xMidYMid slice" />
+    
+    <!-- Vignette Asymmetrical -->
+    <linearGradient id="vignette" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#140A1F" stop-opacity="0.95" />
+      <stop offset="40%" stop-color="#140A1F" stop-opacity="0.6" />
+      <stop offset="100%" stop-color="#140A1F" stop-opacity="0" />
+    </linearGradient>
+    
+    <!-- Card Background Path (Curvas apenas na direita: 16px) -->
+    <path id="card-bg" d="M 0 0 L 884 0 A 16 16 0 0 1 900 16 L 900 244 A 16 16 0 0 1 884 260 L 0 260 Z" fill="#140A1F" fill-opacity="0.40" />
+    
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Background Layer -->
+  <use href="#bg-image" />
+  <rect width="1920" height="1080" fill="url(#vignette)" />
+
+  <!-- BRAND ZONE (Lado Esquerdo) - Alinhado no Grid 80px -->
+  <g transform="translate(80, 0)">
+    
+    <!-- Wordmark Alinhado ao topo -->
+    <image href="../logo/svg/IVEXI-WORDMARK.svg" x="0" y="40" width="500" height="147" preserveAspectRatio="xMinYMin meet" filter="url(#glow)" />
+    
+    <!-- Tagline (Centralizado) -->
+    <text x="0" y="485" class="font-title" font-size="56" font-weight="700" fill="#FAFAFA" text-transform="uppercase" text-shadow="0 4px 20px rgba(0,0,0,0.8)">ALEGRIA, CAOS E</text>
+    <text x="0" y="555" class="font-title" font-size="56" font-weight="700" fill="#D6D65C" text-transform="uppercase" filter="url(#glow)">EVOLUÇÃO NA BLACKZONE!</text>
+    
+    <!-- CTA Button (Fundo da tela) -->
+    <g transform="translate(0, 930)">
+      <rect x="0" y="0" width="480" height="70" rx="12" ry="12" fill="#D6D65C" />
+      <!-- Borda Branca Curvada à Esquerda -->
+      <path d="M 12,0 L 12,70 L 12,70 A 12,12 0 0,1 0,58 L 0,12 A 12,12 0 0,1 12,0 Z" fill="#FAFAFA" />
+      <text x="240" y="48" class="font-title" font-size="42" font-weight="700" fill="#000000" text-anchor="middle">DISCORD.GG/s246XdGp7q</text>
+    </g>
+    
+  </g>
+
+  <!-- INFO ZONE (Lado Direito) -->
+  
+  <!-- Card 1: O Que Oferecemos (ROXO) -->
+  <g transform="translate(850, 40)">
+    <use href="#card-bg" />
+    <rect x="0" y="0" width="12" height="260" fill="#732EB8" />
+    
+    <text x="40" y="60" class="font-title" font-size="38" font-weight="700" fill="#732EB8" letter-spacing="2">O QUE OFERECEMOS</text>
+    
+    <g class="font-body" font-size="22" fill="#FAFAFA" transform="translate(40, 110)">
+      <text y="0">⚔️ Taxa 0% (Economia forte para o jogador)</text>
+      <text y="40">⚔️ Recompensas exclusivas para quem apoia a guilda</text>
+      <text y="80">⚔️ Acesso ao HO Qualidade 5 (para membros engajados)</text>
+      <text y="120">⚔️ Comunidade focada em união e evolução mútua</text>
+    </g>
+  </g>
+
+  <!-- Card 2: Nossos Conteúdos (BRANCO/PRATA) -->
+  <g transform="translate(940, 410)">
+    <use href="#card-bg" />
+    <rect x="0" y="0" width="12" height="260" fill="#FAFAFA" />
+    
+    <text x="40" y="60" class="font-title" font-size="38" font-weight="700" fill="#FAFAFA" letter-spacing="2">NOSSOS CONTEÚDOS</text>
+    
+    <g class="font-body" font-size="22" fill="#FAFAFA" transform="translate(40, 110)">
+      <text y="0">🔥 Foco em PvP: Castelos, Disputa de Nodes e Ganks</text>
+      <text y="40">🔥 Muito PvE para todos: Dg Ava e Dg de Grupo</text>
+      <text y="80">🔥 Update Fogo de Dragão: Santuário e Terras Ancestrais</text>
+      <text y="120">🔥 Mundo Aberto: Caçadas e Mobs de Cristal</text>
+    </g>
+  </g>
+
+  <!-- Card 3: O Que Buscamos (NEON) -->
+  <g transform="translate(895, 740)">
+    <use href="#card-bg" />
+    <rect x="0" y="0" width="12" height="260" fill="#D6D65C" />
+    
+    <text x="40" y="60" class="font-title" font-size="38" font-weight="700" fill="#D6D65C" letter-spacing="2">O QUE BUSCAMOS</text>
+    
+    <g class="font-body" font-size="22" fill="#FAFAFA" transform="translate(40, 110)">
+      <text y="0">🎯 Jogadores ativos e com vontade de evoluir</text>
+      <text y="40">🎯 Presença no CTA (20h30) para destravar vantagens</text>
+      <text y="80">🎯 Espírito de equipe e lealdade ao bando</text>
+      <text y="120">🎯 Uso obrigatório do Discord (com microfone)</text>
+    </g>
+  </g>
+
+</svg>

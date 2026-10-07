@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Rajdhani:wght@500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-ivexi-purple: #732EB8;
+  --color-ivexi-dark: #140A1F;
+  --color-ivexi-surface: #241037;
+  --color-ivexi-neon: #D6D65C;
+  --color-ivexi-light: #FAFAFA;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+  color: var(--color-ivexi-light);
+  background-color: #140A1F;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Modo OBS transparente via classe html/body */
+html.obs-transparent,
+body.obs-transparent {
+  background-color: transparent !important;
+  background: transparent !important;
+  overflow: hidden !important;
+}
+
+/* Utilitários visuais para OBS e Streamer Pack */
+.obs-canvas-1080p {
+  width: 1920px;
+  height: 1080px;
+  position: relative;
+  overflow: hidden;
+  background-color: transparent;
+}
+
+.font-heading {
+  font-family: 'Rajdhani', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.neon-text-glow {
+  text-shadow: 0 0 10px rgba(214, 214, 92, 0.7);
+}
+
+.purple-glow-box {
+  box-shadow: 0 0 20px rgba(115, 46, 184, 0.5);
+}
+
+/* Chanfros táticos e silhuetas esports (45 graus) */
+.clip-tactical-sm {
+  clip-path: polygon(8px 0, 100% 0, 100% calc(100% - 8px), calc(100% - 8px) 100%, 0 100%, 0 8px);
+}
+
+.clip-tactical-md {
+  clip-path: polygon(14px 0, 100% 0, 100% calc(100% - 14px), calc(100% - 14px) 100%, 0 100%, 0 14px);
+}
+
+.clip-tactical-lg {
+  clip-path: polygon(24px 0, 100% 0, 100% calc(100% - 24px), calc(100% - 24px) 100%, 0 100%, 0 24px);
+}
+
+.clip-tactical-banner {
+  clip-path: polygon(0 0, calc(100% - 20px) 0, 100% 20px, 100% 100%, 20px 100%, 0 calc(100% - 20px));
+}
+
+.clip-tactical-pedestal {
+  clip-path: polygon(18px 0, calc(100% - 18px) 0, 100% 18px, 100% 100%, 0 100%, 0 18px);
+}
+
+/* Animação de varredura de radar (Escudo Anti-Snipe Albion) */
+@keyframes radar-sweep {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-radar-sweep {
+  animation: radar-sweep 4s linear infinite;
+}
+

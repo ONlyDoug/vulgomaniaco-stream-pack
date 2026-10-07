@@ -1,0 +1,25 @@
+# Dependências
+node_modules/
+
+# Builds e outputs
+dist/
+.vercel/
+tsconfig.tsbuildinfo
+
+# Sistema operacional e caches
+.DS_Store
+Thumbs.db
+*.log
+*.Zone.Identifier
+
+# Ambientes virtuais e ferramentas locais
+.venv/
+pandoc*
+*.tar.gz
+get-pip.py
+
+# Arquivos internos de agentes e frameworks
+.agents/
+.brandfy/
+.specsfy/
+.claude/

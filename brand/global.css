@@ -1,0 +1,77 @@
+/**
+ * Design tokens gerados pelo Brandfy.
+ *
+ * Edite .brandfy/palette.json e execute novamente o gerador. Alterações feitas somente
+ * neste arquivo serão substituídas na próxima compilação.
+ */
+
+@import "./fonts/fonts.css";
+
+:root {
+  --color-primary-50: #F2EDF8;
+  --color-primary-100: #E6D9F2;
+  --color-primary-200: #CCB0E8;
+  --color-primary-300: #B285E0;
+  --color-primary-400: #995CD6;
+  --color-primary-500: #732EB8;
+  --color-primary-600: #6624A8;
+  --color-primary-700: #4C1B7E;
+  --color-primary-800: #38165A;
+  --color-primary-900: #241037;
+  --color-primary-950: #140A1F;
+  --color-neutral-50: #FAFAFA;
+  --color-neutral-100: #F4F4F5;
+  --color-neutral-200: #E4E4E7;
+  --color-neutral-300: #D4D4D8;
+  --color-neutral-400: #A1A1AA;
+  --color-neutral-500: #71717A;
+  --color-neutral-600: #52525B;
+  --color-neutral-700: #3F3F46;
+  --color-neutral-800: #27272A;
+  --color-neutral-900: #18181B;
+  --color-neutral-950: #09090B;
+  --color-success-500: #15803D;
+  --color-warning-500: #A16207;
+  --color-danger-500: #B91C1C;
+  --color-accent-50: #F8F8ED;
+  --color-accent-100: #F2F2D9;
+  --color-accent-200: #E8E8B0;
+  --color-accent-300: #E0E085;
+  --color-accent-400: #D6D65C;
+  --color-accent-500: #B8B82E;
+  --color-accent-600: #A8A824;
+  --color-accent-700: #7E7E1B;
+  --color-accent-800: #5A5A16;
+  --color-accent-900: #373710;
+  --color-accent-950: #1F1F0A;
+  --color-background: #FAFAFA;
+  --color-surface: #FFFFFF;
+  --color-text: #09090B;
+  --color-text-muted: #3F3F46;
+  --color-border: #E4E4E7;
+  --color-accent: #5A5A16;
+  --color-focus: #732EB8;
+}
+
+.dark,
+:root[data-theme="dark"] {
+  --color-background: #140A1F;
+  --color-surface: #241037;
+  --color-text: #FAFAFA;
+  --color-text-muted: #CCB0E8;
+  --color-border: #38165A;
+  --color-accent: #D6D65C;
+  --color-focus: #B285E0;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --color-background: #140A1F;
+    --color-surface: #241037;
+    --color-text: #FAFAFA;
+    --color-text-muted: #CCB0E8;
+    --color-border: #38165A;
+    --color-accent: #D6D65C;
+    --color-focus: #B285E0;
+  }
+}

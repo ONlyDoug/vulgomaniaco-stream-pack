@@ -1,0 +1,285 @@
+{
+  "schemaVersion": 1,
+  "assets": [
+    {
+      "path": "logo/png/emblema-dark-master.png",
+      "format": "png",
+      "role": "emblema",
+      "width": 1152,
+      "height": 864,
+      "sha256": "5659921fa76dfdddf90a7f07bca628b677452a0bb068c37edc390d82cddd3b25"
+    },
+    {
+      "path": "logo/png/emblema-dark-512w.png",
+      "format": "png",
+      "role": "emblema",
+      "width": 512,
+      "height": 384,
+      "sha256": "68798a9fe8d373162ee7b7b1ce6c2fe3ca3fe1db4541ffdcf6e33cad148b3f86"
+    },
+    {
+      "path": "logo/png/emblema-dark-1024w.png",
+      "format": "png",
+      "role": "emblema",
+      "width": 1024,
+      "height": 768,
+      "sha256": "a05adbc683b26528daf08f9edf7e23c445951298b9b9c5216a02be822af67a17"
+    },
+    {
+      "path": "logo/png/wordmark-dark-master.png",
+      "format": "png",
+      "role": "wordmark",
+      "width": 610,
+      "height": 458,
+      "sha256": "28c3646acbe7556e629b4699b467b9b2958b6421699342ec77c0437bbd109946"
+    },
+    {
+      "path": "logo/png/wordmark-dark-512w.png",
+      "format": "png",
+      "role": "wordmark",
+      "width": 512,
+      "height": 384,
+      "sha256": "a5a5e3135643ce73929324280d72836e1eff3c8f8060aeb41aa4ba0130dcc775"
+    },
+    {
+      "path": "logo/png/icon-dark-master.png",
+      "format": "png",
+      "role": "icon",
+      "width": 1184,
+      "height": 864,
+      "sha256": "f01bdd13a8e7d4f7bb414f0e282a37ea1de3215ae47212e78d8acfeb0534fbd2"
+    },
+    {
+      "path": "logo/png/icon-dark-512w.png",
+      "format": "png",
+      "role": "icon",
+      "width": 512,
+      "height": 373,
+      "sha256": "08a6824d97fedd6e93e31c07c5c88e8bf3f92b6c0603e7401392081eaeb9f474"
+    },
+    {
+      "path": "logo/png/icon-dark-1024w.png",
+      "format": "png",
+      "role": "icon",
+      "width": 1024,
+      "height": 747,
+      "sha256": "b20d70a1f71653c5bf7d51ec254130b6279f22f445e1c0e2359e64126a8dcce0"
+    },
+    {
+      "path": "favicon/icon-16x16.png",
+      "format": "png",
+      "role": "favicon",
+      "width": 16,
+      "height": 16,
+      "sha256": "d7a310332bbe6ac17eb41122e1331fed902a32e546835dcdfe2ef1e9aebfe1a8"
+    },
+    {
+      "path": "favicon/icon-32x32.png",
+      "format": "png",
+      "role": "favicon",
+      "width": 32,
+      "height": 32,
+      "sha256": "26019a8c0b946e800c1ba6c9245c1ea83e8004a61d8e650f307383b3e3f334b1"
+    },
+    {
+      "path": "favicon/icon-48x48.png",
+      "format": "png",
+      "role": "favicon",
+      "width": 48,
+      "height": 48,
+      "sha256": "7b12e9bf601c3937b8226f535a81fdd1713cf3dd108802a6f7b804a9a2dcb083"
+    },
+    {
+      "path": "favicon/icon-180x180.png",
+      "format": "png",
+      "role": "favicon",
+      "width": 180,
+      "height": 180,
+      "sha256": "38145198bff8949d692ad324dba1e1a9aa1879dcad21ff310e2a180b8033c189"
+    },
+    {
+      "path": "favicon/icon-192x192.png",
+      "format": "png",
+      "role": "favicon",
+      "width": 192,
+      "height": 192,
+      "sha256": "45497616368732bafdfd22c51edcfaf9825593c92c8116b14980990052a99868"
+    },
+    {
+      "path": "favicon/icon-512x512.png",
+      "format": "png",
+      "role": "favicon",
+      "width": 512,
+      "height": 512,
+      "sha256": "79eacd3b7550dd6ad8c83d209ca920218f2dd47e6a6a52cd93c96e1dc7169b64"
+    },
+    {
+      "path": "mascote/mascote-corvo-puxando-overlay.png",
+      "format": "png",
+      "role": "mascote_alpha",
+      "width": 886,
+      "height": 869,
+      "sha256": "401a2405148f36806834aa7129c9b9bff276d2b8088127efb0b649a025c2081a"
+    },
+    {
+      "path": "mascote/mascote-corvo-chibi-sticker.jpg",
+      "format": "jpg",
+      "role": "mascote_master",
+      "width": 1024,
+      "height": 1024,
+      "sha256": "a0f9debd745e5f42e70053b7ba641fdec6de13607f19f22dd662cabe942e22e6"
+    },
+    {
+      "path": "templates/overlay-video-pvp-mascote-1080p.png",
+      "format": "png",
+      "role": "overlay_stream_1080p",
+      "width": 1920,
+      "height": 1080,
+      "sha256": "082abcb6b0722b0b87b07d83bbba99747746f90418ec5eb74df78f591e36318a"
+    },
+    {
+      "path": "templates/overlay-video-pvp-clean-1080p.png",
+      "format": "png",
+      "role": "overlay_stream_clean_1080p",
+      "width": 1920,
+      "height": 1080,
+      "sha256": "21886ce2d5d344f89b5db624222cac02e1206d98b60e7f32fd02ca3298ec4b4d"
+    },
+    {
+      "path": "templates/overlay-video-pvp-mascote-1440p.png",
+      "format": "png",
+      "role": "overlay_stream_1440p",
+      "width": 2560,
+      "height": 1440,
+      "sha256": "e15061a465251336472976be2c7790b7a2a9e774ca0dcddfa1810ee0e1aab975"
+    },
+    {
+      "path": "logo/png/streamer-vulgomaniaco-badge-dark-master.png",
+      "format": "png",
+      "role": "logo_streamer_badge_master",
+      "width": 1200,
+      "height": 1350,
+      "sha256": "a6d0f8dabe63b61addcf350b1a612f451eb838dc9ed67efaea7060e6eff5a8a1"
+    },
+    {
+      "path": "logo/png/streamer-vulgomaniaco-badge-dark-1024w.png",
+      "format": "png",
+      "role": "logo_streamer_badge_1024w",
+      "width": 1024,
+      "height": 1152,
+      "sha256": "0c1b436d961c6a25812d765cd20fb50562592eafb0729b7f2a0c2732207d99b6"
+    },
+    {
+      "path": "logo/png/streamer-vulgomaniaco-badge-dark-512w.png",
+      "format": "png",
+      "role": "logo_streamer_badge_512w",
+      "width": 512,
+      "height": 576,
+      "sha256": "38ebf2c2c6f303d07fe8834fa23e39f6e1b75c63d695d2a42d628cfc0aa6e55b"
+    },
+    {
+      "path": "logo/png/streamer-vulgomaniaco-horizontal-dark-master.png",
+      "format": "png",
+      "role": "logo_streamer_horizontal_master",
+      "width": 1600,
+      "height": 640,
+      "sha256": "a38f5aa8ea5ff6889c386c0d2749375b5d91fdcd7d81e3b56606f889c41e7902"
+    },
+    {
+      "path": "logo/png/streamer-vulgomaniaco-compact-512w.png",
+      "format": "png",
+      "role": "logo_streamer_avatar_512w",
+      "width": 512,
+      "height": 512,
+      "sha256": "2c01821ebd52144b8186f6c25e21c0da112706ec1552b53a6ebfca9de9eabb37"
+    },
+    {
+      "path": "logo/svg/streamer-vulgomaniaco-badge-dark.svg",
+      "format": "svg",
+      "role": "logo_streamer_badge_svg",
+      "width": 1200,
+      "height": 1350,
+      "sha256": "e47ec99c622462cc983bb29c9d211f7d408173b5b7290f7e76aa91a16e1d162d"
+    },
+    {
+      "path": "logo/svg/streamer-vulgomaniaco-horizontal-dark.svg",
+      "format": "svg",
+      "role": "logo_streamer_horizontal_svg",
+      "width": 1600,
+      "height": 640,
+      "sha256": "30a6f0bee4084467339b0d58138c1a8d92f354c6ea83af76702892f022827eae"
+    },
+    {
+      "path": "panels/png/painel-sobre.png",
+      "format": "png",
+      "role": "twitch_panel_sobre",
+      "width": 320,
+      "height": 120,
+      "sha256": "821fb8a99a214a17b2c1a516617757fc1986923e121a04f95cbc5279ca9f538d"
+    },
+    {
+      "path": "panels/png/painel-regras.png",
+      "format": "png",
+      "role": "twitch_panel_regras",
+      "width": 320,
+      "height": 120,
+      "sha256": "ec236e28f63d763d1575c90ba7ecd35f741765c8ec718c301b87e5a4e83dc7f8"
+    },
+    {
+      "path": "panels/png/painel-discord-guilda.png",
+      "format": "png",
+      "role": "twitch_panel_discord_guilda",
+      "width": 320,
+      "height": 120,
+      "sha256": "c186cdc184495314871aa3932aafb19b5eb26c9a439c26922f078900f4400e17"
+    },
+    {
+      "path": "panels/png/painel-setup.png",
+      "format": "png",
+      "role": "twitch_panel_setup",
+      "width": 320,
+      "height": 120,
+      "sha256": "3e5b43c65cccdf9af68f4661c5120b5232906023076fec1b69f581c8a7ba7c60"
+    },
+    {
+      "path": "panels/png/painel-pix-apoio.png",
+      "format": "png",
+      "role": "twitch_panel_pix_apoio",
+      "width": 320,
+      "height": 120,
+      "sha256": "b835f8675d5c7708e173107e4011371b898faf8d2bdb038230d533c49f93eae1"
+    },
+    {
+      "path": "panels/png/painel-horarios.png",
+      "format": "png",
+      "role": "twitch_panel_horarios",
+      "width": 320,
+      "height": 120,
+      "sha256": "163c3cfd046d3f66473b2045e8e7ed61b6eabed5b2930a848f21d543a4a527cc"
+    },
+    {
+      "path": "social/twitch/twitch-offline-banner-1080p.png",
+      "format": "png",
+      "role": "twitch_offline_banner",
+      "width": 1920,
+      "height": 1080,
+      "sha256": "4965e1c6a340eae841af1fffc0faee6f681e6ac1c320d5f466b7d8bf0ec0c943"
+    },
+    {
+      "path": "social/twitch/twitch-header-banner-1200x480.png",
+      "format": "png",
+      "role": "twitch_header_banner",
+      "width": 1200,
+      "height": 480,
+      "sha256": "8f6e4d7d3152e6934b4935d3ab1b48bc3fd16609403829f41aa84786cf876f87"
+    },
+    {
+      "path": "social/youtube/youtube-header-banner-2560x1440.png",
+      "format": "png",
+      "role": "youtube_header_banner",
+      "width": 2560,
+      "height": 1440,
+      "sha256": "b999a13976cac9e9ca7a9c344eacebd9a525d2604a5e2a9d6b86ae53e7a3d1a5"
+    }
+  ]
+}

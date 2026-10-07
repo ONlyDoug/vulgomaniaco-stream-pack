@@ -1,0 +1,359 @@
+{
+  "name": "VulgoManiaco - Albion Online Stream Pack",
+  "current_scene": "🎮 02 - GAMEPLAY (Albion Online)",
+  "current_program_scene": "🎮 02 - GAMEPLAY (Albion Online)",
+  "scene_order": [
+    {
+      "name": "⏳ 01 - ABERTURA (Starting Soon)"
+    },
+    {
+      "name": "🎮 02 - GAMEPLAY (Albion Online)"
+    },
+    {
+      "name": "☕ 03 - INTERVALO (Pausa / BRB)"
+    },
+    {
+      "name": "💬 04 - JUST CHATTING (Conversa & Reunião)"
+    },
+    {
+      "name": "🛑 05 - ENCERRAMENTO (Ending Stream)"
+    }
+  ],
+  "sources": [
+    {
+      "id": "browser_source",
+      "name": "🔔 Camada de Alertas OBS (Follow / Sub / Dono / Raid)",
+      "muted": false,
+      "volume": 1.0,
+      "settings": {
+        "url": "http://localhost:5173/alerts",
+        "width": 1920,
+        "height": 1080,
+        "fps": 60,
+        "css": "body { background-color: rgba(0, 0, 0, 0); margin: 0px auto; overflow: hidden; }",
+        "shutdown": false,
+        "restart_when_active": false
+      }
+    },
+    {
+      "id": "browser_source",
+      "name": "⏳ HUD Abertura (Starting Soon)",
+      "muted": false,
+      "volume": 1.0,
+      "settings": {
+        "url": "http://localhost:5173/scenes/starting",
+        "width": 1920,
+        "height": 1080,
+        "fps": 60,
+        "css": "body { background-color: rgba(0, 0, 0, 0); margin: 0px auto; overflow: hidden; }",
+        "shutdown": true,
+        "restart_when_active": true
+      }
+    },
+    {
+      "id": "browser_source",
+      "name": "🎮 Overlay de Gameplay (Facecam & Anti-Snipe)",
+      "muted": false,
+      "volume": 1.0,
+      "settings": {
+        "url": "http://localhost:5173/overlay/gameplay",
+        "width": 1920,
+        "height": 1080,
+        "fps": 60,
+        "css": "body { background-color: rgba(0, 0, 0, 0); margin: 0px auto; overflow: hidden; }",
+        "shutdown": false,
+        "restart_when_active": false
+      }
+    },
+    {
+      "id": "browser_source",
+      "name": "☕ HUD Intervalo (BRB)",
+      "muted": false,
+      "volume": 1.0,
+      "settings": {
+        "url": "http://localhost:5173/scenes/brb",
+        "width": 1920,
+        "height": 1080,
+        "fps": 60,
+        "css": "body { background-color: rgba(0, 0, 0, 0); margin: 0px auto; overflow: hidden; }",
+        "shutdown": true,
+        "restart_when_active": true
+      }
+    },
+    {
+      "id": "browser_source",
+      "name": "💬 HUD Just Chatting",
+      "muted": false,
+      "volume": 1.0,
+      "settings": {
+        "url": "http://localhost:5173/scenes/chatting",
+        "width": 1920,
+        "height": 1080,
+        "fps": 60,
+        "css": "body { background-color: rgba(0, 0, 0, 0); margin: 0px auto; overflow: hidden; }",
+        "shutdown": true,
+        "restart_when_active": true
+      }
+    },
+    {
+      "id": "browser_source",
+      "name": "🛑 HUD Encerramento (Ending)",
+      "muted": false,
+      "volume": 1.0,
+      "settings": {
+        "url": "http://localhost:5173/scenes/ending",
+        "width": 1920,
+        "height": 1080,
+        "fps": 60,
+        "css": "body { background-color: rgba(0, 0, 0, 0); margin: 0px auto; overflow: hidden; }",
+        "shutdown": true,
+        "restart_when_active": true
+      }
+    },
+    {
+      "id": "game_capture",
+      "name": "⚔️ Captura de Jogo (Albion Online)",
+      "muted": false,
+      "volume": 1.0,
+      "settings": {
+        "capture_mode": "window",
+        "window": "Albion-Online.exe:Albion-Online:Albion-Online",
+        "hook_rate": 1,
+        "cursor": true
+      }
+    },
+    {
+      "id": "dshow_input",
+      "name": "📷 Webcam do Streamer (Facecam Gameplay)",
+      "muted": false,
+      "volume": 1.0,
+      "settings": {}
+    },
+    {
+      "id": "dshow_input",
+      "name": "📷 Webcam do Streamer (Just Chatting Grande)",
+      "muted": false,
+      "volume": 1.0,
+      "settings": {}
+    },
+    {
+      "id": "scene",
+      "name": "⏳ 01 - ABERTURA (Starting Soon)",
+      "settings": {
+        "items": [
+          {
+            "name": "⏳ HUD Abertura (Starting Soon)",
+            "visible": true,
+            "locked": true,
+            "pos": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "scale": {
+              "x": 1.0,
+              "y": 1.0
+            }
+          },
+          {
+            "name": "🔔 Camada de Alertas OBS (Follow / Sub / Dono / Raid)",
+            "visible": true,
+            "locked": true,
+            "pos": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "scale": {
+              "x": 1.0,
+              "y": 1.0
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "scene",
+      "name": "🎮 02 - GAMEPLAY (Albion Online)",
+      "settings": {
+        "items": [
+          {
+            "name": "⚔️ Captura de Jogo (Albion Online)",
+            "visible": true,
+            "locked": false,
+            "pos": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "scale": {
+              "x": 1.0,
+              "y": 1.0
+            }
+          },
+          {
+            "name": "📷 Webcam do Streamer (Facecam Gameplay)",
+            "visible": true,
+            "locked": false,
+            "pos": {
+              "x": 32.0,
+              "y": 824.0
+            },
+            "bounds": {
+              "x": 384.0,
+              "y": 216.0
+            },
+            "bounds_type": 2,
+            "scale": {
+              "x": 1.0,
+              "y": 1.0
+            }
+          },
+          {
+            "name": "🎮 Overlay de Gameplay (Facecam & Anti-Snipe)",
+            "visible": true,
+            "locked": true,
+            "pos": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "scale": {
+              "x": 1.0,
+              "y": 1.0
+            }
+          },
+          {
+            "name": "🔔 Camada de Alertas OBS (Follow / Sub / Dono / Raid)",
+            "visible": true,
+            "locked": true,
+            "pos": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "scale": {
+              "x": 1.0,
+              "y": 1.0
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "scene",
+      "name": "☕ 03 - INTERVALO (Pausa / BRB)",
+      "settings": {
+        "items": [
+          {
+            "name": "☕ HUD Intervalo (BRB)",
+            "visible": true,
+            "locked": true,
+            "pos": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "scale": {
+              "x": 1.0,
+              "y": 1.0
+            }
+          },
+          {
+            "name": "🔔 Camada de Alertas OBS (Follow / Sub / Dono / Raid)",
+            "visible": true,
+            "locked": true,
+            "pos": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "scale": {
+              "x": 1.0,
+              "y": 1.0
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "scene",
+      "name": "💬 04 - JUST CHATTING (Conversa & Reunião)",
+      "settings": {
+        "items": [
+          {
+            "name": "📷 Webcam do Streamer (Just Chatting Grande)",
+            "visible": true,
+            "locked": false,
+            "pos": {
+              "x": 40.0,
+              "y": 106.0
+            },
+            "bounds": {
+              "x": 1224.0,
+              "y": 640.0
+            },
+            "bounds_type": 2,
+            "scale": {
+              "x": 1.0,
+              "y": 1.0
+            }
+          },
+          {
+            "name": "💬 HUD Just Chatting",
+            "visible": true,
+            "locked": true,
+            "pos": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "scale": {
+              "x": 1.0,
+              "y": 1.0
+            }
+          },
+          {
+            "name": "🔔 Camada de Alertas OBS (Follow / Sub / Dono / Raid)",
+            "visible": true,
+            "locked": true,
+            "pos": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "scale": {
+              "x": 1.0,
+              "y": 1.0
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "scene",
+      "name": "🛑 05 - ENCERRAMENTO (Ending Stream)",
+      "settings": {
+        "items": [
+          {
+            "name": "🛑 HUD Encerramento (Ending)",
+            "visible": true,
+            "locked": true,
+            "pos": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "scale": {
+              "x": 1.0,
+              "y": 1.0
+            }
+          },
+          {
+            "name": "🔔 Camada de Alertas OBS (Follow / Sub / Dono / Raid)",
+            "visible": true,
+            "locked": true,
+            "pos": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "scale": {
+              "x": 1.0,
+              "y": 1.0
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
