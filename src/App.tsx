@@ -185,6 +185,14 @@ export const App: React.FC = () => {
             >
               <span>🟣</span> twitch.tv/vulgoomaniaco ↗
             </a>
+            <a
+              href="https://discord.gg/s246XdGp7q"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full bg-[#5865F2]/25 border border-[#5865F2] text-xs font-rajdhani font-bold text-white hover:bg-[#5865F2]/40 transition shadow-[0_0_12px_rgba(88,101,242,0.4)]"
+            >
+              <span>💬</span> discord.gg/s246XdGp7q ↗
+            </a>
           </div>
           <h1 className="text-4xl sm:text-5xl font-rajdhani font-bold text-ivexi-neon tracking-wide uppercase drop-shadow-neon-yellow">
             Streamer Pack | VulgoManiaco

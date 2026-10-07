@@ -51,7 +51,7 @@ export const EndingScene: React.FC = () => {
 
           <div className="pt-3 text-xs text-ivexi-neon font-rajdhani font-bold tracking-wider uppercase border-t border-ivexi-purple/30 flex items-center justify-between">
             <span>⚔️ PRÓXIMA LIVE: AMANHÃ ÀS 19H</span>
-            <span className="text-white">DISCORD.GG/IVEXI</span>
+            <span className="text-white">DISCORD.GG/S246XDGP7Q</span>
           </div>
         </div>
       </main>
@@ -60,7 +60,7 @@ export const EndingScene: React.FC = () => {
       <footer className="z-10 flex items-center gap-6 text-sm font-inter text-ivexi-muted">
         <span className="text-ivexi-neon font-bold">twitch.tv/vulgoomaniaco</span>
         <span>•</span>
-        <span className="text-white font-bold">discord.gg/ivexi</span>
+        <span className="text-white font-bold">discord.gg/s246XdGp7q</span>
         <span>•</span>
         <span className="text-ivexi-light/80">GUILDA IVEXI • ALBION ONLINE</span>
       </footer>

@@ -47,7 +47,7 @@ export const BrbScene: React.FC = () => {
       <div className="mt-6 flex items-center gap-4 px-6 py-3 clip-tactical-pedestal bg-ivexi-surface/90 border border-ivexi-purple/80 shadow-card-glow text-sm backdrop-blur-md">
         <span className="text-xl">🦅</span>
         <span className="font-rajdhani font-bold text-white text-base">COMUNIDADE & DISCORD DA GUILDA:</span>
-        <span className="font-rajdhani font-bold text-ivexi-neon text-lg tracking-wider">DISCORD.GG/IVEXI</span>
+        <span className="font-rajdhani font-bold text-ivexi-neon text-lg tracking-wider">DISCORD.GG/S246XDGP7Q</span>
         <span className="text-xs text-ivexi-light/70">• Cole na call e jogue junto!</span>
       </div>
 

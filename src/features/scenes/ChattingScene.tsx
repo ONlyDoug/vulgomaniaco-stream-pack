@@ -31,7 +31,7 @@ export const ChattingScene: React.FC = () => {
           </div>
           <div className="flex items-center gap-2 px-3 py-1 clip-tactical-sm bg-ivexi-dark border border-ivexi-neon text-xs font-rajdhani font-bold text-ivexi-neon uppercase tracking-wider">
             <span className="w-2 h-2 rounded-full bg-ivexi-neon animate-pulse" />
-            DISCORD.GG/IVEXI
+            DISCORD.GG/S246XDGP7Q
           </div>
         </div>
       </header>
@@ -123,7 +123,7 @@ export const ChattingScene: React.FC = () => {
         <div className="flex items-center gap-6">
           <span className="text-ivexi-neon font-bold">twitch.tv/vulgoomaniaco</span>
           <span>•</span>
-          <span className="text-white font-bold">discord.gg/ivexi</span>
+          <span className="text-white font-bold">discord.gg/s246XdGp7q</span>
           <span>•</span>
           <span className="text-ivexi-light/80">GUILDA IVEXI</span>
         </div>

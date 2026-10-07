@@ -3,7 +3,7 @@ import logoBadgeImg from '@/assets/images/logo-streamer-vulgomaniaco-badge.png';
 
 const SOCIAL_LINKS = [
   { platform: 'Twitch Oficial', handle: 'twitch.tv/vulgoomaniaco', color: '#9146FF', icon: '🟣' },
-  { platform: 'Guilda IVEXI', handle: 'discord.gg/ivexi (Comunidade Oficial)', color: '#732EB8', icon: '🦅' },
+  { platform: 'Guilda IVEXI', handle: 'discord.gg/s246XdGp7q (Discord Oficial)', color: '#732EB8', icon: '🦅' },
   { platform: 'Transmissão Ao Vivo', handle: 'twitch.tv/vulgoomaniaco • Siga o canal!', color: '#9146FF', icon: '⚡' },
 ];
 

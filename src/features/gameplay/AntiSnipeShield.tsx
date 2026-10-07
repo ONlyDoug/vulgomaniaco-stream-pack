@@ -46,13 +46,13 @@ export const AntiSnipeShield: React.FC<AntiSnipeShieldProps> = ({ active = false
         {/* Informações diretas e link curto */}
         <div className="flex-1 text-left space-y-0.5 overflow-hidden">
           <span className="text-[11px] font-rajdhani font-bold text-ivexi-neon tracking-wider uppercase block truncate">
-            DISCORD OFICIAL DA GUILDA
+            DISCORD OFICIAL DA GUILDA IVEXI
           </span>
           <p className="font-inter text-[11px] text-white/90 leading-tight truncate">
             Aponte a câmera e entre na call da guilda!
           </p>
           <span className="font-rajdhani text-[13px] font-bold text-ivexi-light tracking-wide block truncate">
-            DISCORD.GG/IVEXI
+            DISCORD.GG/S246XDGP7Q
           </span>
         </div>
       </div>

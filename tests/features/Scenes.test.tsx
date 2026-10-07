@@ -54,5 +54,22 @@ describe('US-002: Cenas Completas de Transmissão', () => {
     expect(chatBox).toBeInTheDocument();
     expect(screen.getByText(/Chat da Transmissão/i)).toBeInTheDocument();
   });
+
+  it('AC-014: deve exibir o link real verificado do Discord (discord.gg/s246XdGp7q) nas cenas e não conter discord.gg/ivexi', () => {
+    const { container: brbContainer } = render(<BrbScene />);
+    expect(brbContainer.textContent).toContain('DISCORD.GG/S246XDGP7Q');
+    expect(brbContainer.textContent).not.toContain('discord.gg/ivexi');
+    expect(brbContainer.textContent).not.toContain('DISCORD.GG/IVEXI');
+
+    const { container: endingContainer } = render(<EndingScene />);
+    expect(endingContainer.textContent).toContain('discord.gg/s246XdGp7q');
+    expect(endingContainer.textContent).not.toContain('discord.gg/ivexi');
+    expect(endingContainer.textContent).not.toContain('DISCORD.GG/IVEXI');
+
+    const { container: chattingContainer } = render(<ChattingScene />);
+    expect(chattingContainer.textContent).toContain('discord.gg/s246XdGp7q');
+    expect(chattingContainer.textContent).not.toContain('discord.gg/ivexi');
+    expect(chattingContainer.textContent).not.toContain('DISCORD.GG/IVEXI');
+  });
 });
 

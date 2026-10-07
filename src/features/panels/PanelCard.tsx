@@ -11,7 +11,10 @@ export interface PanelCardProps {
 export const PanelCard: React.FC<PanelCardProps> = ({ id, title, description }) => {
   const [copied, setCopied] = React.useState(false);
 
-  const markdownSnippet = `## ${title}\n\n${description}\n\n*VulgoManiaco • Albion Online*`;
+  const markdownSnippet =
+    id === 'discord-guilda'
+      ? `## ${title}\n\n${description}\n\n👉 [Entrar no Discord Oficial da Guilda IVEXI](https://discord.gg/s246XdGp7q)\n\n*VulgoManiaco • Albion Online*`
+      : `## ${title}\n\n${description}\n\n*VulgoManiaco • Albion Online*`;
 
   const copyMarkdown = () => {
     navigator.clipboard?.writeText(markdownSnippet);

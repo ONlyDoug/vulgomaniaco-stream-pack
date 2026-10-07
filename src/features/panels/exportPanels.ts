@@ -25,7 +25,7 @@ export const CHANNEL_PANELS_DATA = [
   {
     id: 'discord-guilda',
     title: 'Discord / Guilda',
-    description: 'Nosso ponto de encontro diário. Entre pra bater papo, tirar dúvidas de builds, montar party pro Albion e participar das ações do canal!',
+    description: 'Nosso ponto de encontro diário. Entre pra bater papo, tirar dúvidas de builds, montar party pro Albion e participar das ações do canal! Discord oficial: discord.gg/s246XdGp7q',
     imagePng: '/assets/panels/painel-discord-guilda.png',
     imageSvg: '/assets/panels/painel-discord-guilda.svg',
   },
