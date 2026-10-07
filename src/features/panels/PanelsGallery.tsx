@@ -174,10 +174,20 @@ export const PanelsGallery: React.FC = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {/* Offline Screen */}
-            <div className="p-4 rounded-xl bg-ivexi-dark/80 border border-ivexi-purple/50 flex flex-col justify-between space-y-3">
-              <div>
-                <span className="font-rajdhani text-sm font-bold text-ivexi-light uppercase">Tela Offline Twitch (1080p)</span>
-                <p className="text-[11px] text-ivexi-muted mt-1">Exibida quando o canal estiver fora do ar</p>
+            <div className="p-4 rounded-xl bg-ivexi-dark/80 border border-ivexi-purple/50 flex flex-col justify-between space-y-4 shadow-card-glow">
+              <div className="space-y-3">
+                <div className="flex items-center justify-between">
+                  <span className="font-rajdhani text-sm font-bold text-ivexi-light uppercase">Tela Offline Twitch (1080p)</span>
+                  <span className="text-[10px] text-ivexi-neon bg-ivexi-dark px-2 py-0.5 rounded border border-ivexi-purple/40 font-bold uppercase">1920x1080</span>
+                </div>
+                <div className="w-full aspect-video rounded-lg overflow-hidden border border-ivexi-purple/40 bg-[#0e0716] flex items-center justify-center">
+                  <img
+                    src="/brand/social/twitch/twitch-offline-banner-1080p.png"
+                    alt="Tela Offline Twitch"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <p className="text-[11px] text-ivexi-muted">Layout 100% centralizado com agenda oficial da guilda</p>
               </div>
               <a
                 href="/brand/social/twitch/twitch-offline-banner-1080p.png"
@@ -189,10 +199,20 @@ export const PanelsGallery: React.FC = () => {
             </div>
 
             {/* Twitch Header */}
-            <div className="p-4 rounded-xl bg-ivexi-dark/80 border border-ivexi-purple/50 flex flex-col justify-between space-y-3">
-              <div>
-                <span className="font-rajdhani text-sm font-bold text-ivexi-light uppercase">Header Twitch Perfil (1200x480)</span>
-                <p className="text-[11px] text-ivexi-muted mt-1">Banner superior de cabeçalho do perfil Twitch</p>
+            <div className="p-4 rounded-xl bg-ivexi-dark/80 border border-ivexi-purple/50 flex flex-col justify-between space-y-4 shadow-card-glow">
+              <div className="space-y-3">
+                <div className="flex items-center justify-between">
+                  <span className="font-rajdhani text-sm font-bold text-ivexi-light uppercase">Header Twitch Perfil (1200x480)</span>
+                  <span className="text-[10px] text-ivexi-neon bg-ivexi-dark px-2 py-0.5 rounded border border-ivexi-purple/40 font-bold uppercase">1200x480</span>
+                </div>
+                <div className="w-full aspect-[1200/480] rounded-lg overflow-hidden border border-ivexi-purple/40 bg-[#0e0716] flex items-center justify-center">
+                  <img
+                    src="/brand/social/twitch/twitch-header-banner-1200x480.png"
+                    alt="Header Twitch Perfil"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <p className="text-[11px] text-ivexi-muted">Banner de cabeçalho com logotipo horizontal integrado</p>
               </div>
               <a
                 href="/brand/social/twitch/twitch-header-banner-1200x480.png"
@@ -204,10 +224,20 @@ export const PanelsGallery: React.FC = () => {
             </div>
 
             {/* YouTube Header */}
-            <div className="p-4 rounded-xl bg-ivexi-dark/80 border border-ivexi-purple/50 flex flex-col justify-between space-y-3">
-              <div>
-                <span className="font-rajdhani text-sm font-bold text-ivexi-light uppercase">Banner YouTube Canal (2560x1440)</span>
-                <p className="text-[11px] text-ivexi-muted mt-1">Com safe zone centralizada de 1546x423 px</p>
+            <div className="p-4 rounded-xl bg-ivexi-dark/80 border border-ivexi-purple/50 flex flex-col justify-between space-y-4 shadow-card-glow">
+              <div className="space-y-3">
+                <div className="flex items-center justify-between">
+                  <span className="font-rajdhani text-sm font-bold text-ivexi-light uppercase">Banner YouTube Canal (2560x1440)</span>
+                  <span className="text-[10px] text-ivexi-neon bg-ivexi-dark px-2 py-0.5 rounded border border-ivexi-purple/40 font-bold uppercase">2560x1440</span>
+                </div>
+                <div className="w-full aspect-video rounded-lg overflow-hidden border border-ivexi-purple/40 bg-[#0e0716] flex items-center justify-center">
+                  <img
+                    src="/brand/social/youtube/youtube-header-banner-2560x1440.png"
+                    alt="Banner YouTube Canal"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <p className="text-[11px] text-ivexi-muted">Safe zone centralizada de 1546x423 px para todos os dispositivos</p>
               </div>
               <a
                 href="/brand/social/youtube/youtube-header-banner-2560x1440.png"
