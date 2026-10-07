@@ -10,7 +10,7 @@ export interface ObsSceneCollectionOptions {
 }
 
 export function generateObsSceneCollection(options: ObsSceneCollectionOptions = {}) {
-  const baseUrl = (options.baseUrl || 'http://localhost:5173').replace(/\/$/, '');
+  const baseUrl = (options.baseUrl || 'https://vulgomaniaco-stream-pack.vercel.app').replace(/\/$/, '');
   const collectionName = options.collectionName || 'VulgoManiaco - Albion Online Stream Pack';
 
   // CSS padrão para garantir transparência absoluta e sem barras de rolagem no OBS

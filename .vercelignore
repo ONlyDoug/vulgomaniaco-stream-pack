@@ -1,0 +1,27 @@
+# Ambientes e binários pesados
+.venv/
+pandoc*
+*.tar.gz
+get-pip.py
+node_modules/
+dist/
+
+# Frameworks e agentes
+.agents/
+.brandfy/
+.specsfy/
+.claude/
+specs/
+docs/
+
+# Templates pesados não usados na web
+brand/templates/
+brand/archive/
+brand/pdf/
+brand/*.pdf
+
+# Arquivos de sistema e logs
+.DS_Store
+Thumbs.db
+*.log
+*.Zone.Identifier

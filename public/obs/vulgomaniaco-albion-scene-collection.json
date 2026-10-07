@@ -26,7 +26,7 @@
       "muted": false,
       "volume": 1.0,
       "settings": {
-        "url": "http://localhost:5173/alerts",
+        "url": "https://vulgomaniaco-stream-pack.vercel.app/alerts",
         "width": 1920,
         "height": 1080,
         "fps": 60,
@@ -41,7 +41,7 @@
       "muted": false,
       "volume": 1.0,
       "settings": {
-        "url": "http://localhost:5173/scenes/starting",
+        "url": "https://vulgomaniaco-stream-pack.vercel.app/scenes/starting",
         "width": 1920,
         "height": 1080,
         "fps": 60,
@@ -56,7 +56,7 @@
       "muted": false,
       "volume": 1.0,
       "settings": {
-        "url": "http://localhost:5173/overlay/gameplay",
+        "url": "https://vulgomaniaco-stream-pack.vercel.app/overlay/gameplay",
         "width": 1920,
         "height": 1080,
         "fps": 60,
@@ -71,7 +71,7 @@
       "muted": false,
       "volume": 1.0,
       "settings": {
-        "url": "http://localhost:5173/scenes/brb",
+        "url": "https://vulgomaniaco-stream-pack.vercel.app/scenes/brb",
         "width": 1920,
         "height": 1080,
         "fps": 60,
@@ -86,7 +86,7 @@
       "muted": false,
       "volume": 1.0,
       "settings": {
-        "url": "http://localhost:5173/scenes/chatting",
+        "url": "https://vulgomaniaco-stream-pack.vercel.app/scenes/chatting",
         "width": 1920,
         "height": 1080,
         "fps": 60,
@@ -101,7 +101,7 @@
       "muted": false,
       "volume": 1.0,
       "settings": {
-        "url": "http://localhost:5173/scenes/ending",
+        "url": "https://vulgomaniaco-stream-pack.vercel.app/scenes/ending",
         "width": 1920,
         "height": 1080,
         "fps": 60,

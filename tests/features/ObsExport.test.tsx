@@ -60,6 +60,6 @@ describe('Exportador de Coleção de Cenas do OBS Studio', () => {
 
     expect(screen.getByText(/Exportar Coleção OBS Studio/i)).toBeInTheDocument();
     expect(screen.getByRole('button', { name: /Baixar Coleção de Cenas OBS/i })).toBeInTheDocument();
-    expect(screen.getByPlaceholderText('http://localhost:5173')).toBeInTheDocument();
+    expect(screen.getByPlaceholderText('https://vulgomaniaco-stream-pack.vercel.app')).toBeInTheDocument();
   });
 });

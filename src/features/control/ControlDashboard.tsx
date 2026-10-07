@@ -5,7 +5,7 @@ import { downloadObsSceneCollection } from '../obs/generateObsCollection';
 export const ControlDashboard: React.FC = () => {
   const [antiSnipeState, setAntiSnipeState] = useState<boolean>(false);
   const [lastDispatched, setLastDispatched] = useState<string>('Nenhum');
-  const [obsBaseUrl, setObsBaseUrl] = useState<string>('http://localhost:5173');
+  const [obsBaseUrl, setObsBaseUrl] = useState<string>('https://vulgomaniaco-stream-pack.vercel.app');
 
   useEffect(() => {
     if (typeof window !== 'undefined') {
@@ -190,7 +190,7 @@ export const ControlDashboard: React.FC = () => {
               type="text"
               value={obsBaseUrl}
               onChange={(e) => setObsBaseUrl(e.target.value)}
-              placeholder="http://localhost:5173"
+              placeholder="https://vulgomaniaco-stream-pack.vercel.app"
               className="w-full px-4 py-2 rounded-xl bg-ivexi-dark border border-ivexi-purple/50 text-sm text-ivexi-light focus:outline-none focus:border-ivexi-neon font-mono"
             />
           </div>

@@ -17,7 +17,7 @@ PUBLIC_OBS_DIR = os.path.join(BASE_DIR, 'public', 'obs')
 os.makedirs(OBS_DIR, exist_ok=True)
 os.makedirs(PUBLIC_OBS_DIR, exist_ok=True)
 
-def build_scene_collection(base_url="http://localhost:5173", collection_name="VulgoManiaco - Albion Online Stream Pack"):
+def build_scene_collection(base_url="https://vulgomaniaco-stream-pack.vercel.app", collection_name="VulgoManiaco - Albion Online Stream Pack"):
     base_url = base_url.rstrip('/')
     custom_css = "body { background-color: rgba(0, 0, 0, 0); margin: 0px auto; overflow: hidden; }"
 
@@ -312,7 +312,7 @@ def build_scene_collection(base_url="http://localhost:5173", collection_name="Vu
 
 def main():
     parser = argparse.ArgumentParser(description="Gera Coleção de Cenas oficial do OBS Studio (.json)")
-    parser.add_argument("--base-url", default="http://localhost:5173", help="URL base onde os overlays estão hospedados (ex: http://localhost:5173 ou http://100.77.72.54:5173)")
+    parser.add_argument("--base-url", default="https://vulgomaniaco-stream-pack.vercel.app", help="URL base onde os overlays estão hospedados (padrão: https://vulgomaniaco-stream-pack.vercel.app)")
     parser.add_argument("--output", default="", help="Caminho do arquivo de saída customizado")
     args = parser.parse_args()
 
