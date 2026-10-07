@@ -54,7 +54,7 @@ export const GameplayOverlay: React.FC<GameplayOverlayProps> = ({
             <span className="w-1.5 h-1.5 rounded-full bg-ivexi-neon animate-ping" />
           </div>
           <div className="flex items-center gap-1 px-2.5 py-0.5 rounded bg-ivexi-surface border border-ivexi-purple text-[10px] font-rajdhani font-bold tracking-wider text-ivexi-light uppercase">
-            ALBION ONLINE <span className="text-ivexi-neon">•</span> CLÃ IVEXI
+            ALBION ONLINE <span className="text-ivexi-neon">•</span> GUILDA IVEXI
           </div>
         </div>
       </div>

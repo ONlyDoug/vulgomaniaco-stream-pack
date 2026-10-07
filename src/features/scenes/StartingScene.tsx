@@ -47,7 +47,7 @@ export const StartingScene: React.FC = () => {
         <div className="flex items-center gap-2 px-4 py-1 rounded-full bg-ivexi-surface/80 border border-ivexi-purple/50 text-xs font-inter tracking-widest uppercase text-ivexi-muted">
           <span>ALBION ONLINE</span>
           <span className="text-ivexi-neon">•</span>
-          <span>VULGOMANIACO & CLÃ IVEXI</span>
+          <span>VULGOMANIACO & GUILDA IVEXI</span>
         </div>
         <h1 className="font-rajdhani text-6xl font-bold tracking-wider text-ivexi-neon drop-shadow-neon-yellow uppercase">
           A Transmissão Começará Em Breve
@@ -71,7 +71,7 @@ export const StartingScene: React.FC = () => {
 
         {/* Banner do Tópico de Albion da Live */}
         <div className="px-6 py-1.5 clip-tactical-sm bg-ivexi-surface/90 border border-ivexi-neon/80 text-xs font-rajdhani font-bold tracking-widest text-ivexi-neon uppercase shadow-card-glow">
-          ⚔️ COMBATE BLACK ZONE & ROAMING • RESENHA COM O CLÃ
+          ⚔️ COMBATE BLACK ZONE & ROAMING • RESENHA COM A GUILDA
         </div>
 
         {/* Temporizador Regressivo MM:SS em Moldura Tática */}

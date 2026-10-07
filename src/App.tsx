@@ -184,6 +184,31 @@ export const App: React.FC = () => {
           </p>
         </header>
 
+        {/* Banner de Download Oficial da Coleção OBS Studio */}
+        <section className="p-6 rounded-2xl bg-ivexi-surface/90 border-2 border-ivexi-neon/70 shadow-neon-border flex flex-col md:flex-row items-center justify-between gap-4">
+          <div className="space-y-1 text-center md:text-left">
+            <div className="flex items-center justify-center md:justify-start gap-2">
+              <span className="text-xl">📦</span>
+              <h2 className="font-rajdhani text-2xl font-bold uppercase text-ivexi-neon">
+                Coleção de Cenas OBS Studio Pronta
+              </h2>
+              <span className="px-2 py-0.5 rounded bg-ivexi-dark text-[10px] font-bold text-ivexi-neon border border-ivexi-neon uppercase">
+                1-Clique
+              </span>
+            </div>
+            <p className="text-sm text-ivexi-light/90">
+              Arquivo pré-configurado com as 5 cenas em 1080p60, alertas, Anti-Ghost calibrado e webcam pixel-perfect.
+            </p>
+          </div>
+          <a
+            href="/obs/vulgomaniaco-albion-scene-collection.json"
+            download="vulgomaniaco-albion-scene-collection.json"
+            className="px-6 py-3 rounded-xl font-rajdhani text-base font-bold uppercase bg-ivexi-neon hover:bg-yellow-400 text-ivexi-dark shadow-neon-border transition duration-200 flex items-center gap-2 cursor-pointer whitespace-nowrap"
+          >
+            <span>⬇️</span> Baixar Cenas OBS (.json)
+          </a>
+        </section>
+
         <section className="grid grid-cols-1 md:grid-cols-2 gap-4">
           {/* Card: Overlay de Gameplay */}
           <div

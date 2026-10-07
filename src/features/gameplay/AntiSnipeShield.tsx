@@ -46,7 +46,7 @@ export const AntiSnipeShield: React.FC<AntiSnipeShieldProps> = ({ active = false
         {/* Informações diretas e link curto */}
         <div className="flex-1 text-left space-y-0.5 overflow-hidden">
           <span className="text-[11px] font-rajdhani font-bold text-ivexi-neon tracking-wider uppercase block truncate">
-            DISCORD OFICIAL DO CLÃ
+            DISCORD OFICIAL DA GUILDA
           </span>
           <p className="font-inter text-[11px] text-white/90 leading-tight truncate">
             Aponte a câmera e entre na call da guilda!

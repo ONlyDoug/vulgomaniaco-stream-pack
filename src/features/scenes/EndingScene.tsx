@@ -44,7 +44,7 @@ export const EndingScene: React.FC = () => {
           </div>
 
           <div className="space-y-2.5 text-sm font-inter text-ivexi-light/90">
-            <p>⚔️ A todos que colaram no chat, mandaram energia e jogaram junto com o <strong>Clã IVEXI</strong></p>
+            <p>⚔️ A todos que colaram no chat, mandaram energia e jogaram junto com a <strong>Guilda IVEXI</strong></p>
             <p>🏆 Inscritos, VIPs, apoiadores no Pix e doadores de bits que fortalecem o canal</p>
             <p>💬 Comunidade do Discord e espectadores da Twitch, YouTube e Kick</p>
           </div>
