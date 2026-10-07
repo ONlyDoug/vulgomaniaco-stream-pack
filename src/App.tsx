@@ -160,7 +160,7 @@ export const App: React.FC = () => {
             ← Voltar ao Hub
           </button>
           <span className="text-xs text-ivexi-muted font-rajdhani font-semibold">
-            Galeria de Painéis 320px Twitch & Kick
+            Galeria de Painéis 320px Twitch
           </span>
         </div>
         <PanelsGallery />
@@ -173,14 +173,24 @@ export const App: React.FC = () => {
     <div className="min-h-screen bg-ivexi-dark p-6 sm:p-8 text-ivexi-light font-inter">
       <div className="max-w-4xl mx-auto space-y-6">
         <header className="border-b border-ivexi-purple/40 pb-6 text-center space-y-2">
-          <div className="inline-block px-3 py-1 rounded-full bg-ivexi-surface border border-ivexi-purple text-xs font-rajdhani font-bold text-ivexi-neon uppercase tracking-wider mb-2">
-            Tailscale & Rede Local Habilitados
+          <div className="flex items-center justify-center gap-2 mb-2 flex-wrap">
+            <div className="inline-block px-3 py-1 rounded-full bg-ivexi-surface border border-ivexi-purple text-xs font-rajdhani font-bold text-ivexi-neon uppercase tracking-wider">
+              Tailscale & Rede Local Habilitados
+            </div>
+            <a
+              href="https://www.twitch.tv/vulgoomaniaco"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full bg-[#9146FF]/25 border border-[#9146FF] text-xs font-rajdhani font-bold text-white hover:bg-[#9146FF]/40 transition shadow-[0_0_12px_rgba(145,70,255,0.4)]"
+            >
+              <span>🟣</span> twitch.tv/vulgoomaniaco ↗
+            </a>
           </div>
           <h1 className="text-4xl sm:text-5xl font-rajdhani font-bold text-ivexi-neon tracking-wide uppercase drop-shadow-neon-yellow">
             Streamer Pack | VulgoManiaco
           </h1>
           <p className="text-ivexi-muted max-w-xl mx-auto text-sm sm:text-base">
-            Identidade visual inspirada na Guilda IVEXI — Albion Online (PvP, ZvZ e Black Zone)
+            Identidade visual inspirada na Guilda IVEXI — Albion Online na Twitch
           </p>
         </header>
 
@@ -243,7 +253,7 @@ export const App: React.FC = () => {
                 <h2 className="font-rajdhani text-xl font-bold text-ivexi-neon">Cena de Início (Starting Soon)</h2>
                 <span className="text-xs px-2 py-0.5 rounded bg-ivexi-dark border border-ivexi-purple text-ivexi-muted">OBS</span>
               </div>
-              <p className="text-sm text-ivexi-muted">Timer regressivo de 5 minutos e carrossel rotativo Twitch/Kick/YouTube/Discord.</p>
+              <p className="text-sm text-ivexi-muted">Timer regressivo de 5 minutos com foco no canal da Twitch e Discord da Guilda IVEXI.</p>
             </div>
             <div className="mt-4 pt-3 border-t border-ivexi-purple/30 flex items-center justify-between">
               <span className="text-xs text-ivexi-neon font-rajdhani font-bold uppercase">Abrir Prévia →</span>
@@ -375,7 +385,7 @@ export const App: React.FC = () => {
             <div>
               <div className="flex items-center justify-between mb-2">
                 <h2 className="font-rajdhani text-xl font-bold text-ivexi-neon">Galeria e Exportador de Painéis</h2>
-                <span className="text-xs px-2 py-0.5 rounded bg-ivexi-neon/20 border border-ivexi-neon/40 text-ivexi-neon">Twitch & Kick</span>
+                <span className="text-xs px-2 py-0.5 rounded bg-ivexi-neon/20 border border-ivexi-neon/40 text-ivexi-neon">Twitch Oficial</span>
               </div>
               <p className="text-sm text-ivexi-muted">6 painéis padronizados de 320px com botão de download individual e em lote em PNG e SVG.</p>
             </div>

@@ -24,7 +24,7 @@ export const PanelCard: React.FC<PanelCardProps> = ({ id, title, description }) 
       data-testid="channel-panel-card"
       className="w-[320px] rounded-2xl bg-ivexi-dark border-2 border-ivexi-purple/80 shadow-card-glow overflow-hidden flex flex-col transition hover:border-ivexi-neon duration-200"
     >
-      {/* Banner Gráfico Real 320x120 gerado no padrão Twitch/Kick com o ícone compacto oficial */}
+      {/* Banner Gráfico Real 320x120 gerado no padrão nativo da Twitch com o ícone compacto oficial */}
       <div className="relative w-[320px] h-[120px] bg-[#140A1F] border-b border-ivexi-purple/50 overflow-hidden">
         <img
           src={`/assets/panels/painel-${id}.png`}

@@ -103,15 +103,15 @@ export const ChattingScene: React.FC = () => {
               <div className="w-12 h-12 rounded-full border border-ivexi-purple/40 flex items-center justify-center text-ivexi-neon">
                 💬
               </div>
-              <span>[ WIDGET DE CHAT TWITCH / KICK ]</span>
+              <span>[ WIDGET DE CHAT DA TWITCH ]</span>
               <span className="text-xs font-inter text-ivexi-muted/40">
-                Alinhe a fonte de navegador do chat nesta janela
+                Alinhe a fonte de navegador do chat da Twitch nesta janela
               </span>
             </div>
 
             {/* Rodapé da Caixa de Chat */}
             <div className="pt-3 border-t border-ivexi-purple/40 text-center text-xs font-inter text-ivexi-muted">
-              Digite no chat e participe das raids da guilda!
+              Digite no chat da Twitch e participe das raids da guilda!
             </div>
           </div>
         </div>
@@ -121,11 +121,11 @@ export const ChattingScene: React.FC = () => {
       <footer className="z-10 flex items-center justify-between text-xs font-inter text-ivexi-muted border-t border-ivexi-purple/40 pt-3">
         <span>Albion Online MMORPG • Transmissão Oficial VulgoManiaco</span>
         <div className="flex items-center gap-6">
-          <span>twitch.tv/VulgoManiaco</span>
+          <span className="text-ivexi-neon font-bold">twitch.tv/vulgoomaniaco</span>
           <span>•</span>
-          <span>youtube.com/@VulgoManiaco</span>
+          <span className="text-white font-bold">discord.gg/ivexi</span>
           <span>•</span>
-          <span>discord.gg/ivexi</span>
+          <span className="text-ivexi-light/80">GUILDA IVEXI</span>
         </div>
       </footer>
     </div>

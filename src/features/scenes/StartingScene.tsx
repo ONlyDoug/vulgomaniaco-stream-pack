@@ -2,10 +2,9 @@ import React, { useState, useEffect } from 'react';
 import logoBadgeImg from '@/assets/images/logo-streamer-vulgomaniaco-badge.png';
 
 const SOCIAL_LINKS = [
-  { platform: 'Twitch', handle: 'twitch.tv/VulgoManiaco', color: '#9146FF', icon: '🟣' },
-  { platform: 'Kick', handle: 'kick.com/VulgoManiaco', color: '#53FC18', icon: '🟢' },
-  { platform: 'YouTube', handle: 'youtube.com/@VulgoManiaco', color: '#FF0000', icon: '🔴' },
-  { platform: 'Discord', handle: 'discord.gg/ivexi (Guilda IVEXI)', color: '#732EB8', icon: '🦅' },
+  { platform: 'Twitch Oficial', handle: 'twitch.tv/vulgoomaniaco', color: '#9146FF', icon: '🟣' },
+  { platform: 'Guilda IVEXI', handle: 'discord.gg/ivexi (Comunidade Oficial)', color: '#732EB8', icon: '🦅' },
+  { platform: 'Transmissão Ao Vivo', handle: 'twitch.tv/vulgoomaniaco • Siga o canal!', color: '#9146FF', icon: '⚡' },
 ];
 
 export const StartingScene: React.FC = () => {

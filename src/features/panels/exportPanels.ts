@@ -1,5 +1,5 @@
 /**
- * Exportador de painéis de canal (Twitch e Kick) nos formatos PNG e SVG (320px de largura)
+ * Exportador de painéis de canal da Twitch nos formatos PNG e SVG (320px de largura)
  */
 
 export interface ExportResult {

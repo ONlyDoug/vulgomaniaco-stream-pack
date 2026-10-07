@@ -45,8 +45,8 @@ export const EndingScene: React.FC = () => {
 
           <div className="space-y-2.5 text-sm font-inter text-ivexi-light/90">
             <p>⚔️ A todos que colaram no chat, mandaram energia e jogaram junto com a <strong>Guilda IVEXI</strong></p>
-            <p>🏆 Inscritos, VIPs, apoiadores no Pix e doadores de bits que fortalecem o canal</p>
-            <p>💬 Comunidade do Discord e espectadores da Twitch, YouTube e Kick</p>
+            <p>🏆 Inscritos Prime, Subs, VIPs e doadores de bits que fortalecem o canal na Twitch</p>
+            <p>💬 Comunidade do Discord e espectadores assíduos da Twitch</p>
           </div>
 
           <div className="pt-3 text-xs text-ivexi-neon font-rajdhani font-bold tracking-wider uppercase border-t border-ivexi-purple/30 flex items-center justify-between">
@@ -58,13 +58,11 @@ export const EndingScene: React.FC = () => {
 
       {/* Rodapé com links de apoio */}
       <footer className="z-10 flex items-center gap-6 text-sm font-inter text-ivexi-muted">
-        <span className="text-ivexi-neon font-bold">discord.gg/ivexi</span>
+        <span className="text-ivexi-neon font-bold">twitch.tv/vulgoomaniaco</span>
         <span>•</span>
-        <span>twitch.tv/VulgoManiaco</span>
+        <span className="text-white font-bold">discord.gg/ivexi</span>
         <span>•</span>
-        <span>youtube.com/@VulgoManiaco</span>
-        <span>•</span>
-        <span>kick.com/VulgoManiaco</span>
+        <span className="text-ivexi-light/80">GUILDA IVEXI • ALBION ONLINE</span>
       </footer>
     </div>
   );

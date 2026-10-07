@@ -34,10 +34,10 @@ export const PanelsGallery: React.FC = () => {
         <header className="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-ivexi-purple/40 pb-6">
           <div>
             <h1 className="font-rajdhani text-4xl font-bold uppercase text-ivexi-neon drop-shadow-neon-yellow tracking-wide">
-              Painéis do Canal (Twitch & Kick)
+              Painéis Oficiais do Canal na Twitch (320px)
             </h1>
             <p className="text-sm text-ivexi-muted mt-1">
-              6 painéis padronizados na largura nativa de 320px com identidade visual oficial do streamer VulgoManiaco
+              6 painéis padronizados na largura nativa de 320px da Twitch com identidade visual oficial do streamer VulgoManiaco
             </p>
           </div>
 
@@ -159,14 +159,14 @@ export const PanelsGallery: React.FC = () => {
           <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b border-ivexi-purple/40 pb-4">
             <div>
               <h2 className="font-rajdhani text-2xl font-bold uppercase text-ivexi-neon drop-shadow-neon-yellow">
-                Banners de Canal & Redes Sociais
+                Banners Oficiais do Canal na Twitch
               </h2>
               <p className="text-xs text-ivexi-muted">
-                Banners padronizados para tela de offline na Twitch/Kick e cabeçalhos oficiais
+                Banners padronizados para tela de offline na Twitch e cabeçalhos de perfil
               </p>
             </div>
             <span className="self-start sm:self-auto px-3 py-1 rounded-full bg-ivexi-dark border border-ivexi-neon text-xs font-rajdhani font-bold text-ivexi-neon uppercase">
-              Brandfy Channels
+              Twitch Channel
             </span>
           </div>
 
@@ -174,7 +174,7 @@ export const PanelsGallery: React.FC = () => {
             {/* Offline Screen */}
             <div className="p-4 rounded-xl bg-ivexi-dark/80 border border-ivexi-purple/50 flex flex-col justify-between space-y-3">
               <div>
-                <span className="font-rajdhani text-sm font-bold text-ivexi-light uppercase">Tela Offline Twitch/Kick (1080p)</span>
+                <span className="font-rajdhani text-sm font-bold text-ivexi-light uppercase">Tela Offline Twitch (1080p)</span>
                 <p className="text-[11px] text-ivexi-muted mt-1">Exibida quando o canal estiver fora do ar</p>
               </div>
               <a
