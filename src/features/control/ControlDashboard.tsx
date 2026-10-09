@@ -202,10 +202,18 @@ export const ControlDashboard: React.FC = () => {
             <span>⬇️</span> Baixar Coleção de Cenas OBS (.json)
           </button>
 
-          <p className="text-[11px] text-center text-ivexi-muted">
-            Para instalar: Abra o OBS &gt; <strong>Coleção de Cenas</strong> &gt; <strong>Importar</strong> &gt; selecione este arquivo baixado.
-            Guia completo disponível em <code className="text-ivexi-neon">obs/COMO_IMPORTAR_NO_OBS.md</code>.
-          </p>
+          <div className="p-3.5 rounded-xl bg-ivexi-dark/90 border border-ivexi-neon/40 text-xs space-y-2">
+            <div className="font-rajdhani font-bold text-ivexi-neon text-sm uppercase flex items-center gap-1.5">
+              <span>⚠️</span> Passo essencial para ativar as cenas no OBS:
+            </div>
+            <ol className="list-decimal list-inside space-y-1 text-ivexi-light/90 text-[11px] leading-relaxed">
+              <li>No OBS, clique em <strong>Coleção de Cenas</strong> &gt; <strong>Importar</strong> &gt; selecione o arquivo baixado e clique em <strong>Importar</strong>.</li>
+              <li className="text-ivexi-neon font-semibold">
+                <strong>IMPORTANTE:</strong> Após importar, volte no menu superior <strong>Coleção de Cenas</strong> e <u>clique no nome da coleção</u>: <span className="underline">VulgoManiaco - Albion Online Stream Pack</span> para ativá-la (o OBS não troca sozinho).
+              </li>
+              <li>Pronto! Todas as 5 cenas em 1080p, Facecam bezel, Anti-Ghost e Alertas carregarão automaticamente.</li>
+            </ol>
+          </div>
         </section>
 
         {/* Registro de Último Comando Disparado */}

@@ -24,7 +24,7 @@
       "id": "browser_source",
       "name": "🔔 Camada de Alertas OBS (Follow / Sub / Dono / Raid)",
       "muted": false,
-      "volume": 1.0,
+      "volume": 1,
       "settings": {
         "url": "https://vulgomaniaco-stream-pack.vercel.app/alerts",
         "width": 1920,
@@ -39,7 +39,7 @@
       "id": "browser_source",
       "name": "⏳ HUD Abertura (Starting Soon)",
       "muted": false,
-      "volume": 1.0,
+      "volume": 1,
       "settings": {
         "url": "https://vulgomaniaco-stream-pack.vercel.app/scenes/starting",
         "width": 1920,
@@ -54,7 +54,7 @@
       "id": "browser_source",
       "name": "🎮 Overlay de Gameplay (Facecam & Anti-Snipe)",
       "muted": false,
-      "volume": 1.0,
+      "volume": 1,
       "settings": {
         "url": "https://vulgomaniaco-stream-pack.vercel.app/overlay/gameplay",
         "width": 1920,
@@ -69,7 +69,7 @@
       "id": "browser_source",
       "name": "☕ HUD Intervalo (BRB)",
       "muted": false,
-      "volume": 1.0,
+      "volume": 1,
       "settings": {
         "url": "https://vulgomaniaco-stream-pack.vercel.app/scenes/brb",
         "width": 1920,
@@ -84,7 +84,7 @@
       "id": "browser_source",
       "name": "💬 HUD Just Chatting",
       "muted": false,
-      "volume": 1.0,
+      "volume": 1,
       "settings": {
         "url": "https://vulgomaniaco-stream-pack.vercel.app/scenes/chatting",
         "width": 1920,
@@ -99,7 +99,7 @@
       "id": "browser_source",
       "name": "🛑 HUD Encerramento (Ending)",
       "muted": false,
-      "volume": 1.0,
+      "volume": 1,
       "settings": {
         "url": "https://vulgomaniaco-stream-pack.vercel.app/scenes/ending",
         "width": 1920,
@@ -114,7 +114,7 @@
       "id": "game_capture",
       "name": "⚔️ Captura de Jogo (Albion Online)",
       "muted": false,
-      "volume": 1.0,
+      "volume": 1,
       "settings": {
         "capture_mode": "window",
         "window": "Albion-Online.exe:Albion-Online:Albion-Online",
@@ -126,14 +126,14 @@
       "id": "dshow_input",
       "name": "📷 Webcam do Streamer (Facecam Gameplay)",
       "muted": false,
-      "volume": 1.0,
+      "volume": 1,
       "settings": {}
     },
     {
       "id": "dshow_input",
       "name": "📷 Webcam do Streamer (Just Chatting Grande)",
       "muted": false,
-      "volume": 1.0,
+      "volume": 1,
       "settings": {}
     },
     {
@@ -146,12 +146,12 @@
             "visible": true,
             "locked": true,
             "pos": {
-              "x": 0.0,
-              "y": 0.0
+              "x": 0,
+              "y": 0
             },
             "scale": {
-              "x": 1.0,
-              "y": 1.0
+              "x": 1,
+              "y": 1
             }
           },
           {
@@ -159,12 +159,12 @@
             "visible": true,
             "locked": true,
             "pos": {
-              "x": 0.0,
-              "y": 0.0
+              "x": 0,
+              "y": 0
             },
             "scale": {
-              "x": 1.0,
-              "y": 1.0
+              "x": 1,
+              "y": 1
             }
           }
         ]
@@ -180,12 +180,12 @@
             "visible": true,
             "locked": false,
             "pos": {
-              "x": 0.0,
-              "y": 0.0
+              "x": 0,
+              "y": 0
             },
             "scale": {
-              "x": 1.0,
-              "y": 1.0
+              "x": 1,
+              "y": 1
             }
           },
           {
@@ -193,17 +193,17 @@
             "visible": true,
             "locked": false,
             "pos": {
-              "x": 32.0,
-              "y": 824.0
+              "x": 28,
+              "y": 706
             },
             "bounds": {
-              "x": 384.0,
-              "y": 216.0
+              "x": 388,
+              "y": 244
             },
             "bounds_type": 2,
             "scale": {
-              "x": 1.0,
-              "y": 1.0
+              "x": 1,
+              "y": 1
             }
           },
           {
@@ -211,12 +211,12 @@
             "visible": true,
             "locked": true,
             "pos": {
-              "x": 0.0,
-              "y": 0.0
+              "x": 0,
+              "y": 0
             },
             "scale": {
-              "x": 1.0,
-              "y": 1.0
+              "x": 1,
+              "y": 1
             }
           },
           {
@@ -224,12 +224,12 @@
             "visible": true,
             "locked": true,
             "pos": {
-              "x": 0.0,
-              "y": 0.0
+              "x": 0,
+              "y": 0
             },
             "scale": {
-              "x": 1.0,
-              "y": 1.0
+              "x": 1,
+              "y": 1
             }
           }
         ]
@@ -245,12 +245,12 @@
             "visible": true,
             "locked": true,
             "pos": {
-              "x": 0.0,
-              "y": 0.0
+              "x": 0,
+              "y": 0
             },
             "scale": {
-              "x": 1.0,
-              "y": 1.0
+              "x": 1,
+              "y": 1
             }
           },
           {
@@ -258,12 +258,12 @@
             "visible": true,
             "locked": true,
             "pos": {
-              "x": 0.0,
-              "y": 0.0
+              "x": 0,
+              "y": 0
             },
             "scale": {
-              "x": 1.0,
-              "y": 1.0
+              "x": 1,
+              "y": 1
             }
           }
         ]
@@ -279,17 +279,17 @@
             "visible": true,
             "locked": false,
             "pos": {
-              "x": 40.0,
-              "y": 106.0
+              "x": 40,
+              "y": 106
             },
             "bounds": {
-              "x": 1224.0,
-              "y": 640.0
+              "x": 1224,
+              "y": 640
             },
             "bounds_type": 2,
             "scale": {
-              "x": 1.0,
-              "y": 1.0
+              "x": 1,
+              "y": 1
             }
           },
           {
@@ -297,12 +297,12 @@
             "visible": true,
             "locked": true,
             "pos": {
-              "x": 0.0,
-              "y": 0.0
+              "x": 0,
+              "y": 0
             },
             "scale": {
-              "x": 1.0,
-              "y": 1.0
+              "x": 1,
+              "y": 1
             }
           },
           {
@@ -310,12 +310,12 @@
             "visible": true,
             "locked": true,
             "pos": {
-              "x": 0.0,
-              "y": 0.0
+              "x": 0,
+              "y": 0
             },
             "scale": {
-              "x": 1.0,
-              "y": 1.0
+              "x": 1,
+              "y": 1
             }
           }
         ]
@@ -331,12 +331,12 @@
             "visible": true,
             "locked": true,
             "pos": {
-              "x": 0.0,
-              "y": 0.0
+              "x": 0,
+              "y": 0
             },
             "scale": {
-              "x": 1.0,
-              "y": 1.0
+              "x": 1,
+              "y": 1
             }
           },
           {
@@ -344,12 +344,12 @@
             "visible": true,
             "locked": true,
             "pos": {
-              "x": 0.0,
-              "y": 0.0
+              "x": 0,
+              "y": 0
             },
             "scale": {
-              "x": 1.0,
-              "y": 1.0
+              "x": 1,
+              "y": 1
             }
           }
         ]

@@ -45,7 +45,7 @@ Ou fazer o download com 1 clique direto pelo **Painel de Controle Oficial** em:
 | Cena | Descrição | Fontes Inclusas (Conectadas na Nuvem) |
 | :--- | :--- | :--- |
 | **`⏳ 01 - ABERTURA (Starting Soon)`** | Tela de início da live com cronômetro regressivo e redes | Navegador: `https://vulgomaniaco-stream-pack.vercel.app/scenes/starting` |
-| **`🎮 02 - GAMEPLAY (Albion Online)`** | Cena principal com Facecam 16:9 e **Anti-Ghost SEMPRE ATIVO no minimapa** | • **Alertas de Stream**: `/alerts`<br>• **Overlay Gameplay**: `/overlay/gameplay`<br>• **Webcam**: Posição `x:32, y:824` (384×216 px)<br>• **Captura de Jogo**: Albion Online |
+| **`🎮 02 - GAMEPLAY (Albion Online)`** | Cena principal com Facecam 16:9 e **Anti-Ghost SEMPRE ATIVO no minimapa** | • **Alertas de Stream**: `/alerts`<br>• **Overlay Gameplay**: `/overlay/gameplay`<br>• **Webcam**: Posição `x:28, y:706` (388×244 px)<br>• **Captura de Jogo**: Albion Online |
 | **`☕ 03 - INTERVALO (Pausa / BRB)`** | Tela de pausa rápida com chat interativo e mascote oficial | Navegador: `https://vulgomaniaco-stream-pack.vercel.app/scenes/brb` |
 | **`💬 04 - JUST CHATTING`** | Cena de conversa com o chat, reunião e resenha | • Navegador: `https://vulgomaniaco-stream-pack.vercel.app/scenes/chatting`<br>• **Webcam**: Enquadramento 16:9 expandido (`1224×640 px`) |
 | **`🛑 05 - ENCERRAMENTO (Ending Stream)`** | Tela final de agradecimento e redes sociais | Navegador: `https://vulgomaniaco-stream-pack.vercel.app/scenes/ending` |
