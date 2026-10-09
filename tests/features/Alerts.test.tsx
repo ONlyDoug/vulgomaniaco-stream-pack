@@ -1,6 +1,7 @@
 import { describe, it, expect } from 'vitest';
 import { render, screen } from '@testing-library/react';
 import { AlertOverlay } from '@/features/alerts/AlertOverlay';
+import { AlertCard } from '@/features/alerts/AlertCard';
 import { ControlDashboard } from '@/features/control/ControlDashboard';
 
 describe('US-003: Alertas Animados e Painel de Controle', () => {
@@ -47,5 +48,21 @@ describe('US-003: Alertas Animados e Painel de Controle', () => {
 
     // Limpa estado da URL
     window.history.pushState({}, '', '/alerts');
+  });
+
+  it('deve renderizar o título focado no canal VulgoManiaco', () => {
+    render(
+      <AlertCard
+        alert={{
+          id: 'test-1',
+          type: 'follow',
+          username: 'GuerreiroAlbion_99',
+          durationMs: 5000,
+        }}
+      />
+    );
+
+    expect(screen.getByText('NOVO SEGUIDOR NO CANAL!')).toBeInTheDocument();
+    expect(screen.getByText(/CANAL VULGOMANIACO/i)).toBeInTheDocument();
   });
 });

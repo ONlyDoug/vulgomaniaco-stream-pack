@@ -37,7 +37,7 @@ export const ControlDashboard: React.FC = () => {
       id: String(Date.now()),
       type: 'follow',
       username: 'GuerreiroAlbion_' + Math.floor(Math.random() * 900 + 100),
-      message: 'Começou a seguir o canal!',
+      message: 'Começou a seguir o canal VulgoManiaco!',
       durationMs: 5000,
     };
     broadcastEvent('TRIGGER_ALERT', alert);
@@ -49,7 +49,7 @@ export const ControlDashboard: React.FC = () => {
       id: String(Date.now()),
       type: 'sub',
       username: 'Lord_Ivexi_' + Math.floor(Math.random() * 900 + 100),
-      message: 'Inscrito na guilda Tier 8!',
+      message: 'Novo inscrito no canal VulgoManiaco!',
       durationMs: 5000,
     };
     broadcastEvent('TRIGGER_ALERT', alert);
@@ -62,7 +62,7 @@ export const ControlDashboard: React.FC = () => {
       type: 'donation',
       username: 'PatronoBlackzone',
       amount: 'R$ 50,00',
-      message: 'Para comprar o set 8.3 e dominar o mapa!',
+      message: 'Apoio para a live do VulgoManiaco e sets de Albion!',
       durationMs: 6000,
     };
     broadcastEvent('TRIGGER_ALERT', alert);
@@ -74,7 +74,7 @@ export const ControlDashboard: React.FC = () => {
       id: String(Date.now()),
       type: 'raid',
       username: 'GuildaAliada_ZvZ',
-      message: 'Invadiu a live com 48 guerreiros da Black Zone!',
+      message: 'Invadiu a live do VulgoManiaco com 48 guerreiros da Black Zone!',
       durationMs: 6000,
     };
     broadcastEvent('TRIGGER_ALERT', alert);

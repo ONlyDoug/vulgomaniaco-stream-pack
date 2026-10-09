@@ -23,10 +23,10 @@ export const STREAM_ELEMENTS_WIDGET_HTML = `<!-- ===============================
     <div class="alert-content">
       <div class="alert-badges">
         <span id="alert-tag" class="alert-badge-tag">ALERTA AO VIVO</span>
-        <span class="alert-badge-guild">IVEXI GUILD • ALBION ONLINE</span>
+        <span class="alert-badge-guild">CANAL VULGOMANIACO • GUILDA IVEXI</span>
       </div>
 
-      <h2 id="alert-title" class="alert-title">NOVO SEGUIDOR!</h2>
+      <h2 id="alert-title" class="alert-title">NOVO SEGUIDOR NO CANAL!</h2>
       <p id="alert-username" class="alert-username">Guerreiro_Albion</p>
       
       <p id="alert-message" class="alert-message" style="display: none;"></p>
@@ -348,7 +348,7 @@ export const STREAM_ELEMENTS_WIDGET_JS = `/**
         alertData = {
           type: 'follow',
           badgeText: 'NOVO SEGUIDOR',
-          titleText: userFieldData.followTitle || 'NOVO SEGUIDOR NA GUILDA!',
+          titleText: userFieldData.followTitle || 'NOVO SEGUIDOR NO CANAL!',
           username: event.name || 'Guerreiro_Albion',
           message: null,
         };
@@ -360,7 +360,7 @@ export const STREAM_ELEMENTS_WIDGET_JS = `/**
         alertData = {
           type: 'sub',
           badgeText: 'NOVO INSCRITO',
-          titleText: userFieldData.subTitle || 'HONRA DE GUILDA: SUB!',
+          titleText: userFieldData.subTitle || 'NOVO INSCRITO NO CANAL!',
           username: (event.name || 'Guerreiro_Albion') + ' (' + tier + months + ')',
           message: event.message || null,
         };
@@ -370,8 +370,8 @@ export const STREAM_ELEMENTS_WIDGET_JS = `/**
         const formattedAmount = typeof event.amount === 'number' ? 'R$ ' + event.amount.toFixed(2) : event.amount || 'R$ 10,00';
         alertData = {
           type: 'tip',
-          badgeText: 'DOAÇÃO PIX',
-          titleText: 'DOAÇÃO DE ' + formattedAmount + '!',
+          badgeText: 'APOIO AO CANAL',
+          titleText: 'DOAÇÃO PARA A LIVE: ' + formattedAmount + '!',
           username: event.name || 'Patrono_Albion',
           message: event.message || null,
         };
@@ -380,8 +380,8 @@ export const STREAM_ELEMENTS_WIDGET_JS = `/**
       case 'cheer-latest':
         alertData = {
           type: 'cheer',
-          badgeText: 'BITS RECEBIDOS',
-          titleText: (event.amount || 100) + ' BITS DA TWITCH!',
+          badgeText: 'BITS NO CANAL',
+          titleText: (event.amount || 100) + ' BITS NO CANAL!',
           username: event.name || 'Apoiador_Albion',
           message: event.message || null,
         };
@@ -390,8 +390,8 @@ export const STREAM_ELEMENTS_WIDGET_JS = `/**
       case 'raid-latest':
         alertData = {
           type: 'raid',
-          badgeText: 'INVASÃO DE GUILDA',
-          titleText: 'RAID COM ' + (event.amount || 10) + ' COMBATENTES!',
+          badgeText: 'INVASÃO / RAID',
+          titleText: 'RAID NO CANAL COM ' + (event.amount || 10) + ' ESPECTADORES!',
           username: event.name || 'Guilda_Aliada',
           message: null,
         };
@@ -441,11 +441,11 @@ export const STREAM_ELEMENTS_WIDGET_FIELDS = `{
   "followTitle": {
     "type": "text",
     "label": "Título para Novo Seguidor",
-    "value": "NOVO SEGUIDOR NA GUILDA!"
+    "value": "NOVO SEGUIDOR NO CANAL!"
   },
   "subTitle": {
     "type": "text",
     "label": "Título para Novo Sub",
-    "value": "HONRA DE GUILDA: SUB!"
+    "value": "NOVO INSCRITO NO CANAL!"
   }
-}`;
+};`;

@@ -134,7 +134,7 @@
         alertData = {
           type: 'follow',
           badgeText: 'NOVO SEGUIDOR',
-          titleText: userFieldData.followTitle || 'NOVO SEGUIDOR NA GUILDA!',
+          titleText: userFieldData.followTitle || 'NOVO SEGUIDOR NO CANAL!',
           username: event.name || 'Guerreiro_Albion',
           message: null,
         };
@@ -146,7 +146,7 @@
         alertData = {
           type: 'sub',
           badgeText: 'NOVO INSCRITO',
-          titleText: userFieldData.subTitle || 'HONRA DE GUILDA: SUB!',
+          titleText: userFieldData.subTitle || 'NOVO INSCRITO NO CANAL!',
           username: `${event.name || 'Guerreiro_Albion'} (${tier}${months})`,
           message: event.message || null,
         };
@@ -156,8 +156,8 @@
         const formattedAmount = typeof event.amount === 'number' ? `R$ ${event.amount.toFixed(2)}` : event.amount || 'R$ 10,00';
         alertData = {
           type: 'tip',
-          badgeText: 'DOAÇÃO PIX',
-          titleText: `DOAÇÃO DE ${formattedAmount}!`,
+          badgeText: 'APOIO AO CANAL',
+          titleText: `DOAÇÃO PARA A LIVE: ${formattedAmount}!`,
           username: event.name || 'Patrono_Albion',
           message: event.message || null,
         };
@@ -166,8 +166,8 @@
       case 'cheer-latest':
         alertData = {
           type: 'cheer',
-          badgeText: 'BITS RECEBIDOS',
-          titleText: `${event.amount || 100} BITS DA TWITCH!`,
+          badgeText: 'BITS NO CANAL',
+          titleText: `${event.amount || 100} BITS NO CANAL!`,
           username: event.name || 'Apoiador_Albion',
           message: event.message || null,
         };
@@ -176,8 +176,8 @@
       case 'raid-latest':
         alertData = {
           type: 'raid',
-          badgeText: 'INVASÃO DE GUILDA',
-          titleText: `RAID COM ${event.amount || 10} COMBATENTES!`,
+          badgeText: 'INVASÃO / RAID',
+          titleText: `RAID NO CANAL COM ${event.amount || 10} ESPECTADORES!`,
           username: event.name || 'Guilda_Aliada',
           message: null,
         };

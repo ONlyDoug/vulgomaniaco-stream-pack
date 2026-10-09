@@ -23,11 +23,11 @@
   "followTitle": {
     "type": "text",
     "label": "Título para Novo Seguidor",
-    "value": "NOVO SEGUIDOR NA GUILDA!"
+    "value": "NOVO SEGUIDOR NO CANAL!"
   },
   "subTitle": {
     "type": "text",
     "label": "Título para Novo Sub",
-    "value": "HONRA DE GUILDA: SUB!"
+    "value": "NOVO INSCRITO NO CANAL!"
   }
 }

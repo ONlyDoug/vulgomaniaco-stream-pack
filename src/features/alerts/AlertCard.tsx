@@ -11,13 +11,13 @@ export const AlertCard: React.FC<AlertCardProps> = ({ alert }) => {
   const getTitle = () => {
     switch (alert.type) {
       case 'follow':
-        return 'NOVO SEGUIDOR!';
+        return 'NOVO SEGUIDOR NO CANAL!';
       case 'sub':
-        return 'NOVO INSCRITO NA GUILDA!';
+        return 'NOVO INSCRITO NO CANAL!';
       case 'donation':
         return `DOAÇÃO DE ${alert.amount || 'R$ 10,00'}!`;
       case 'raid':
-        return 'INVASÃO DE GUILDA / RAID!';
+        return 'RAID NO CANAL VULGOMANIACO!';
       default:
         return 'NOTIFICAÇÃO!';
     }
@@ -76,7 +76,7 @@ export const AlertCard: React.FC<AlertCardProps> = ({ alert }) => {
             ALERTA AO VIVO
           </span>
           <span className="text-[10px] uppercase font-rajdhani font-semibold text-ivexi-muted tracking-wider">
-            IVEXI GUILD
+            CANAL VULGOMANIACO • GUILDA IVEXI
           </span>
         </div>
         <h2 className="font-rajdhani text-2xl font-bold tracking-wide text-ivexi-neon drop-shadow-neon-yellow uppercase">
