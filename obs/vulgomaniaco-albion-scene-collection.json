@@ -26,11 +26,12 @@
       "muted": false,
       "volume": 1,
       "settings": {
-        "url": "https://vulgomaniaco-stream-pack.vercel.app/alerts",
+        "url": "https://streamelements.com/overlay/6ac87c7d8ff1dac0ef699fa4/vDEpqFuJcluqDlsaIs4sQ9uIjN7-Z1-_V8Tg79aqgzZ5OT_3",
         "width": 1920,
         "height": 1080,
         "fps": 60,
         "css": "body { background-color: rgba(0, 0, 0, 0); margin: 0px auto; overflow: hidden; }",
+        "reroute_audio": true,
         "shutdown": false,
         "restart_when_active": false
       }

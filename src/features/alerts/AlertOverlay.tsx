@@ -10,11 +10,12 @@ export const AlertOverlay: React.FC = () => {
     (navigator.userAgent && navigator.userAgent.includes('OBS/'))
   );
 
+  const DEFAULT_SE_URL = 'https://streamelements.com/overlay/6ac87c7d8ff1dac0ef699fa4/vDEpqFuJcluqDlsaIs4sQ9uIjN7-Z1-_V8Tg79aqgzZ5OT_3';
   const seOverlayUrl = typeof window !== 'undefined' ? (
     new URLSearchParams(window.location.search).get('se_url') ||
     localStorage.getItem('streamelements_overlay_url') ||
-    ''
-  ) : '';
+    DEFAULT_SE_URL
+  ) : DEFAULT_SE_URL;
 
   const handleTestAlert = (type: StreamAlert['type']) => {
     const alert: StreamAlert = {

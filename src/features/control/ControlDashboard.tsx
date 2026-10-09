@@ -12,15 +12,20 @@ export const ControlDashboard: React.FC = () => {
   const [antiSnipeState, setAntiSnipeState] = useState<boolean>(false);
   const [lastDispatched, setLastDispatched] = useState<string>('Nenhum');
   const [obsBaseUrl, setObsBaseUrl] = useState<string>('https://vulgomaniaco-stream-pack.vercel.app');
+  const DEFAULT_SE_URL = 'https://streamelements.com/overlay/6ac87c7d8ff1dac0ef699fa4/vDEpqFuJcluqDlsaIs4sQ9uIjN7-Z1-_V8Tg79aqgzZ5OT_3';
   const [copiedKey, setCopiedKey] = useState<string | null>(null);
-  const [seOverlayUrl, setSeOverlayUrl] = useState<string>('');
+  const [seOverlayUrl, setSeOverlayUrl] = useState<string>(DEFAULT_SE_URL);
   const [seSavedSuccess, setSeSavedSuccess] = useState<boolean>(false);
 
   useEffect(() => {
     if (typeof window !== 'undefined') {
       setObsBaseUrl(window.location.origin);
       const storedSeUrl = localStorage.getItem('streamelements_overlay_url');
-      if (storedSeUrl) setSeOverlayUrl(storedSeUrl);
+      if (storedSeUrl) {
+        setSeOverlayUrl(storedSeUrl);
+      } else {
+        localStorage.setItem('streamelements_overlay_url', DEFAULT_SE_URL);
+      }
     }
   }, []);
 

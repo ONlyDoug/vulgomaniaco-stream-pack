@@ -7,11 +7,17 @@
 export interface ObsSceneCollectionOptions {
   baseUrl?: string;
   collectionName?: string;
+  alertsUrl?: string;
 }
 
 export function generateObsSceneCollection(options: ObsSceneCollectionOptions = {}) {
   const baseUrl = (options.baseUrl || 'https://vulgomaniaco-stream-pack.vercel.app').replace(/\/$/, '');
   const collectionName = options.collectionName || 'VulgoManiaco - Albion Online Stream Pack';
+  const alertsUrl =
+    options.alertsUrl ||
+    (options.baseUrl
+      ? `${baseUrl}/alerts`
+      : 'https://streamelements.com/overlay/6ac87c7d8ff1dac0ef699fa4/vDEpqFuJcluqDlsaIs4sQ9uIjN7-Z1-_V8Tg79aqgzZ5OT_3');
 
   // CSS padrão para garantir transparência absoluta e sem barras de rolagem no OBS
   const customCss = 'body { background-color: rgba(0, 0, 0, 0); margin: 0px auto; overflow: hidden; }';
@@ -35,11 +41,12 @@ export function generateObsSceneCollection(options: ObsSceneCollectionOptions = 
         muted: false,
         volume: 1.0,
         settings: {
-          url: `${baseUrl}/alerts`,
+          url: alertsUrl,
           width: 1920,
           height: 1080,
           fps: 60,
           css: customCss,
+          reroute_audio: true,
           shutdown: false,
           restart_when_active: false,
         },
