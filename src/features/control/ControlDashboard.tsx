@@ -1,15 +1,26 @@
 import React, { useState, useEffect } from 'react';
 import { StreamAlert } from '../alerts/useAlertQueue';
 import { downloadObsSceneCollection } from '../obs/generateObsCollection';
+import {
+  STREAM_ELEMENTS_WIDGET_HTML,
+  STREAM_ELEMENTS_WIDGET_CSS,
+  STREAM_ELEMENTS_WIDGET_JS,
+  STREAM_ELEMENTS_WIDGET_FIELDS,
+} from '../alerts/streamElementsWidgetCode';
 
 export const ControlDashboard: React.FC = () => {
   const [antiSnipeState, setAntiSnipeState] = useState<boolean>(false);
   const [lastDispatched, setLastDispatched] = useState<string>('Nenhum');
   const [obsBaseUrl, setObsBaseUrl] = useState<string>('https://vulgomaniaco-stream-pack.vercel.app');
+  const [copiedKey, setCopiedKey] = useState<string | null>(null);
+  const [seOverlayUrl, setSeOverlayUrl] = useState<string>('');
+  const [seSavedSuccess, setSeSavedSuccess] = useState<boolean>(false);
 
   useEffect(() => {
     if (typeof window !== 'undefined') {
       setObsBaseUrl(window.location.origin);
+      const storedSeUrl = localStorage.getItem('streamelements_overlay_url');
+      if (storedSeUrl) setSeOverlayUrl(storedSeUrl);
     }
   }, []);
 
@@ -75,6 +86,28 @@ export const ControlDashboard: React.FC = () => {
     setAntiSnipeState(nextState);
     broadcastEvent('TOGGLE_ANTI_SNIPE', nextState);
     setLastDispatched(`Anti-Snipe: ${nextState ? 'ATIVADO' : 'DESATIVADO'}`);
+  };
+
+  const handleCopyCode = async (key: string, content: string) => {
+    try {
+      if (typeof navigator !== 'undefined' && navigator.clipboard) {
+        await navigator.clipboard.writeText(content);
+        setCopiedKey(key);
+        setLastDispatched(`Código ${key.toUpperCase()} copiado para a área de transferência!`);
+        setTimeout(() => setCopiedKey(null), 3000);
+      }
+    } catch (e) {
+      console.error('Falha ao copiar:', e);
+    }
+  };
+
+  const handleSaveSeUrl = () => {
+    if (typeof window !== 'undefined') {
+      localStorage.setItem('streamelements_overlay_url', seOverlayUrl.trim());
+      setSeSavedSuccess(true);
+      setLastDispatched(seOverlayUrl.trim() ? 'URL do StreamElements vinculada!' : 'URL do StreamElements removida.');
+      setTimeout(() => setSeSavedSuccess(false), 3000);
+    }
   };
 
   const handleDownloadObs = () => {
@@ -159,10 +192,108 @@ export const ControlDashboard: React.FC = () => {
 
             <button
               onClick={handleTestRaid}
-              className="py-3 px-3 rounded-xl bg-ivexi-dark border border-red-500/60 hover:border-red-400 hover:text-red-400 font-rajdhani font-bold text-xs uppercase transition"
+              className="py-3 px-3 rounded-xl bg-ivexi-dark border border-red-500/60 hover:border-red-400 hover:text-red-400 font-rajdhani font-bold text-xs uppercase transition cursor-pointer"
             >
               Testar Raid
             </button>
+          </div>
+        </section>
+
+        {/* Seção Custom Widget StreamElements (Acesso Compartilhado) */}
+        <section className="p-5 rounded-2xl bg-ivexi-surface/80 border border-ivexi-purple/50 space-y-4">
+          <div className="flex items-center justify-between">
+            <div>
+              <h2 className="font-rajdhani text-xl font-bold uppercase text-ivexi-neon flex items-center gap-2">
+                <span>🛡️</span> Widget de Alertas StreamElements (Acesso Compartilhado)
+              </h2>
+              <p className="text-xs text-ivexi-muted">
+                Copie o pacote oficial da IVEXI e cole nas abas do Custom Widget no canal <strong>vulgoomaniaco</strong>
+              </p>
+            </div>
+            <span className="px-3 py-1 rounded-full text-xs font-bold uppercase bg-ivexi-purple/30 text-ivexi-neon border border-ivexi-purple">
+              1080p nativo
+            </span>
+          </div>
+
+          {/* Botões de Cópia Rápida 1-Clique */}
+          <div className="space-y-2">
+            <label className="text-xs text-ivexi-light/90 block font-semibold">
+              Copiar código para as 4 abas do editor do StreamElements:
+            </label>
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-2.5">
+              <button
+                onClick={() => handleCopyCode('html', STREAM_ELEMENTS_WIDGET_HTML)}
+                className="py-2.5 px-3 rounded-xl bg-ivexi-dark border border-ivexi-purple/60 hover:border-ivexi-neon hover:text-ivexi-neon font-rajdhani font-bold text-xs uppercase transition flex items-center justify-center gap-1.5 cursor-pointer"
+              >
+                {copiedKey === 'html' ? '✅ Copiado!' : '📋 Copiar HTML'}
+              </button>
+
+              <button
+                onClick={() => handleCopyCode('css', STREAM_ELEMENTS_WIDGET_CSS)}
+                className="py-2.5 px-3 rounded-xl bg-ivexi-dark border border-ivexi-purple/60 hover:border-ivexi-neon hover:text-ivexi-neon font-rajdhani font-bold text-xs uppercase transition flex items-center justify-center gap-1.5 cursor-pointer"
+              >
+                {copiedKey === 'css' ? '✅ Copiado!' : '📋 Copiar CSS'}
+              </button>
+
+              <button
+                onClick={() => handleCopyCode('js', STREAM_ELEMENTS_WIDGET_JS)}
+                className="py-2.5 px-3 rounded-xl bg-ivexi-dark border border-ivexi-purple/60 hover:border-ivexi-neon hover:text-ivexi-neon font-rajdhani font-bold text-xs uppercase transition flex items-center justify-center gap-1.5 cursor-pointer"
+              >
+                {copiedKey === 'js' ? '✅ Copiado!' : '📋 Copiar JS'}
+              </button>
+
+              <button
+                onClick={() => handleCopyCode('fields', STREAM_ELEMENTS_WIDGET_FIELDS)}
+                className="py-2.5 px-3 rounded-xl bg-ivexi-dark border border-ivexi-purple/60 hover:border-ivexi-neon hover:text-ivexi-neon font-rajdhani font-bold text-xs uppercase transition flex items-center justify-center gap-1.5 cursor-pointer"
+              >
+                {copiedKey === 'fields' ? '✅ Copiado!' : '📋 Copiar Fields'}
+              </button>
+            </div>
+          </div>
+
+          {/* Vínculo opcional do Overlay Link */}
+          <div className="pt-2 border-t border-ivexi-purple/30 space-y-2">
+            <div className="flex items-center justify-between">
+              <label className="text-xs text-ivexi-muted block font-semibold">
+                Link do Overlay Gerado no StreamElements (opcional):
+              </label>
+              {seOverlayUrl.trim() && (
+                <span className="text-[10px] text-green-400 font-bold uppercase flex items-center gap-1">
+                  ● Conectado ao /alerts
+                </span>
+              )}
+            </div>
+            <div className="flex gap-2">
+              <input
+                type="text"
+                value={seOverlayUrl}
+                onChange={(e) => setSeOverlayUrl(e.target.value)}
+                placeholder="https://streamelements.com/overlay/..."
+                className="flex-1 px-3 py-2 rounded-xl bg-ivexi-dark border border-ivexi-purple/50 text-xs text-ivexi-light focus:outline-none focus:border-ivexi-neon font-mono"
+              />
+              <button
+                onClick={handleSaveSeUrl}
+                className="px-4 py-2 rounded-xl bg-ivexi-purple hover:bg-ivexi-purple/80 text-white font-rajdhani font-bold text-xs uppercase transition cursor-pointer"
+              >
+                {seSavedSuccess ? 'Salvo!' : 'Salvar'}
+              </button>
+            </div>
+            <p className="text-[11px] text-ivexi-muted">
+              Ao salvar, a rota oficial <code>/alerts</code> exibirá automaticamente este overlay no OBS Studio.
+            </p>
+          </div>
+
+          {/* Mini Passo a Passo */}
+          <div className="p-3 rounded-xl bg-ivexi-dark/70 border border-ivexi-purple/30 text-xs space-y-1 text-ivexi-muted">
+            <span className="font-bold text-ivexi-light flex items-center gap-1 text-[11px] uppercase">
+              <span>💡</span> Resumo do Passo a Passo (Menos de 3 minutos):
+            </span>
+            <ol className="list-decimal list-inside space-y-0.5 text-[11px] leading-relaxed">
+              <li>No StreamElements, troque para o canal <strong>vulgoomaniaco</strong>.</li>
+              <li>Em <strong>Streaming Tools &gt; Overlays</strong>, crie um overlay em 1080p e adicione <strong>Custom Widget</strong>.</li>
+              <li>Cole cada código acima nas abas <strong>HTML</strong>, <strong>CSS</strong>, <strong>JS</strong> e <strong>FIELDS</strong>.</li>
+              <li>Clique em <strong>Done &gt; Save</strong>, copie o link do overlay e cole no OBS ou no campo acima.</li>
+            </ol>
           </div>
         </section>
 

@@ -67,3 +67,8 @@ Após importar a coleção, faça apenas a seleção dos seus dispositivos físi
 1. Na cena **`🎮 02 - GAMEPLAY (Albion Online)`**, dê duplo clique em **`⚔️ Captura de Jogo (Albion Online)`**.
 2. Escolha **Capturar janela específica** e selecione o executável do Albion Online (ou captura de tela).
 3. Clique em **OK**.
+
+### 3. Alertas Oficiais da Live (StreamElements)
+A coleção já vem com a fonte de navegador **`🔔 Camada de Alertas OBS`** configurada em `1920x1080`:
+- **Opção A (Mais rápida via Painel)**: Deixe a URL padrão e cole o link do seu overlay do StreamElements no [Painel de Controle](https://vulgomaniaco-stream-pack.vercel.app/control). A rota `/alerts` renderiza o widget automaticamente.
+- **Opção B (Direto no OBS)**: Dê duplo clique em **`🔔 Camada de Alertas OBS`**, cole a URL copiada do StreamElements (`https://streamelements.com/overlay/...`) e marque **"Controlar áudio via OBS"**.

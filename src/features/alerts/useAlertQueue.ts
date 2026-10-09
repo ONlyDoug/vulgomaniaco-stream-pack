@@ -1,4 +1,5 @@
 import { useState, useEffect, useCallback } from 'react';
+import { playProceduralAlertSound } from './alertSound';
 
 export interface StreamAlert {
   id: string;
@@ -23,6 +24,13 @@ export function useAlertQueue() {
       const nextAlert = queue[0];
       setQueue((prev) => prev.slice(1));
       setCurrentAlert(nextAlert);
+
+      // Toca chime sonoro procedural nativo (calibrado em -15dB)
+      try {
+        playProceduralAlertSound(40);
+      } catch (e) {
+        // Ignora silenciosamente se o navegador bloquear autoplay
+      }
 
       const timer = setTimeout(() => {
         setCurrentAlert(null);

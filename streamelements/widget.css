@@ -1,0 +1,199 @@
+/* ============================================================
+   IVEXI GUILD & VULGOMANIACO - STREAM PACK
+   Folha de Estilos Oficial para StreamElements (Overlay 1080p)
+   ============================================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Orbitron:wght@700;900&family=Rajdhani:wght@600;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-color: transparent !important;
+  font-family: 'Rajdhani', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Container de Centralização no Topo (Zona Segura Albion Online) */
+.alert-wrapper {
+  position: absolute;
+  top: 70px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 580px;
+  max-width: 90vw;
+  pointer-events: none;
+  z-index: 9999;
+}
+
+/* Card Principal Tático */
+.alert-card {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background: rgba(11, 5, 18, 0.95);
+  border: 2px solid #732EB8;
+  clip-path: polygon(14px 0, 100% 0, 100% calc(100% - 14px), calc(100% - 14px) 100%, 0 100%, 0 14px);
+  padding: 18px 24px;
+  backdrop-filter: blur(12px);
+  box-shadow: 0 0 25px rgba(115, 46, 184, 0.45);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-40px) scale(0.95);
+  transition: transform 0.45s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.45s ease, visibility 0.45s;
+}
+
+/* Estado Visível Ativado */
+.alert-card.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0) scale(1);
+}
+
+/* Variantes de Cores e Glow por Tipo de Evento */
+.alert-card.event-follow {
+  border-color: #732EB8;
+  box-shadow: 0 0 30px rgba(115, 46, 184, 0.6);
+}
+
+.alert-card.event-sub {
+  border-color: #D6D65C;
+  box-shadow: 0 0 35px rgba(214, 214, 92, 0.65);
+}
+
+.alert-card.event-tip {
+  border-color: #F5A623;
+  box-shadow: 0 0 35px rgba(245, 166, 35, 0.65);
+}
+
+.alert-card.event-cheer {
+  border-color: #00E5FF;
+  box-shadow: 0 0 35px rgba(0, 229, 255, 0.65);
+}
+
+.alert-card.event-raid {
+  border-color: #FF3B30;
+  box-shadow: 0 0 40px rgba(255, 59, 48, 0.75);
+}
+
+/* Box do Mascote Oficial Chibi */
+.alert-avatar-box {
+  width: 82px;
+  height: 82px;
+  flex-shrink: 0;
+  background: #140A1F;
+  border: 2px solid #732EB8;
+  clip-path: polygon(8px 0, 100% 0, 100% calc(100% - 8px), calc(100% - 8px) 100%, 0 100%, 0 8px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px;
+  box-shadow: inset 0 0 15px rgba(115, 46, 184, 0.3);
+}
+
+.alert-avatar-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  filter: drop-shadow(0 0 8px rgba(214, 214, 92, 0.6));
+}
+
+/* Conteúdo Textual */
+.alert-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+/* Badges de Cabeçalho */
+.alert-badges {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.alert-badge-tag {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  padding: 2px 8px;
+  border-radius: 4px;
+  background: #732EB8;
+  color: #FFFFFF;
+}
+
+.alert-card.event-sub .alert-badge-tag {
+  background: #D6D65C;
+  color: #0B0512;
+}
+
+.alert-card.event-tip .alert-badge-tag {
+  background: #F5A623;
+  color: #000000;
+}
+
+.alert-card.event-cheer .alert-badge-tag {
+  background: #00E5FF;
+  color: #000000;
+}
+
+.alert-card.event-raid .alert-badge-tag {
+  background: #FF3B30;
+  color: #FFFFFF;
+}
+
+.alert-badge-guild {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  color: #9E82B8;
+}
+
+/* Título do Evento */
+.alert-title {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #D6D65C;
+  text-shadow: 0 0 12px rgba(214, 214, 92, 0.5);
+  line-height: 1.1;
+}
+
+/* Nome do Usuário */
+.alert-username {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 21px;
+  font-weight: 700;
+  color: #FFFFFF;
+  letter-spacing: 0.8px;
+  line-height: 1.2;
+}
+
+/* Mensagem de Apoio (Doações/Subs) */
+.alert-message {
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  font-style: italic;
+  color: rgba(240, 235, 245, 0.9);
+  background: rgba(20, 10, 31, 0.7);
+  padding: 6px 10px;
+  border-left: 3px solid #D6D65C;
+  border-radius: 4px;
+  margin-top: 4px;
+  word-break: break-word;
+  max-height: 52px;
+  overflow: hidden;
+}

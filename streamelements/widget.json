@@ -1,0 +1,33 @@
+{
+  "alertDuration": {
+    "type": "number",
+    "label": "Duração do Alerta na Tela (segundos)",
+    "value": 6,
+    "min": 3,
+    "max": 15,
+    "step": 1
+  },
+  "alertVolume": {
+    "type": "slider",
+    "label": "Volume do Som de Alerta (%)",
+    "value": 40,
+    "min": 0,
+    "max": 100,
+    "step": 5
+  },
+  "alertSound": {
+    "type": "sound-input",
+    "label": "Arquivo de Áudio do Alerta (Opcional)",
+    "value": ""
+  },
+  "followTitle": {
+    "type": "text",
+    "label": "Título para Novo Seguidor",
+    "value": "NOVO SEGUIDOR NA GUILDA!"
+  },
+  "subTitle": {
+    "type": "text",
+    "label": "Título para Novo Sub",
+    "value": "HONRA DE GUILDA: SUB!"
+  }
+}

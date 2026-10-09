@@ -29,5 +29,23 @@ describe('US-003: Alertas Animados e Painel de Controle', () => {
 
     const antiSnipeToggle = screen.getByRole('button', { name: /alternar anti-snipe/i });
     expect(antiSnipeToggle).toBeInTheDocument();
+
+    const copyHtmlBtn = screen.getByRole('button', { name: /copiar html/i });
+    expect(copyHtmlBtn).toBeInTheDocument();
+
+    const copyCssBtn = screen.getByRole('button', { name: /copiar css/i });
+    expect(copyCssBtn).toBeInTheDocument();
+  });
+
+  it('deve renderizar iframe do StreamElements quando url for configurada', () => {
+    window.history.pushState({}, '', '/alerts?se_url=https://streamelements.com/overlay/test1234');
+    render(<AlertOverlay />);
+
+    const iframe = screen.getByTestId('streamelements-iframe');
+    expect(iframe).toBeInTheDocument();
+    expect(iframe).toHaveAttribute('src', 'https://streamelements.com/overlay/test1234');
+
+    // Limpa estado da URL
+    window.history.pushState({}, '', '/alerts');
   });
 });

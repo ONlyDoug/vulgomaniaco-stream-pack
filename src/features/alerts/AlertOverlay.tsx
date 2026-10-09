@@ -10,6 +10,12 @@ export const AlertOverlay: React.FC = () => {
     (navigator.userAgent && navigator.userAgent.includes('OBS/'))
   );
 
+  const seOverlayUrl = typeof window !== 'undefined' ? (
+    new URLSearchParams(window.location.search).get('se_url') ||
+    localStorage.getItem('streamelements_overlay_url') ||
+    ''
+  ) : '';
+
   const handleTestAlert = (type: StreamAlert['type']) => {
     const alert: StreamAlert = {
       id: String(Date.now()),
@@ -47,7 +53,18 @@ export const AlertOverlay: React.FC = () => {
         className="hidden"
       />
 
-      {/* Exibição centralizada do alerta ativo */}
+      {/* Camada do Overlay StreamElements caso configurado */}
+      {seOverlayUrl && (
+        <iframe
+          src={seOverlayUrl}
+          title="StreamElements Alert Overlay"
+          data-testid="streamelements-iframe"
+          className="absolute inset-0 w-full h-full border-0 pointer-events-none bg-transparent"
+          allow="autoplay"
+        />
+      )}
+
+      {/* Exibição centralizada do alerta ativo local/teste */}
       {currentAlert && <AlertCard alert={currentAlert} />}
 
       {/* Cartão de Ajuda Interativo na Prévia (Oculto no OBS e quando há alerta ativo) */}
