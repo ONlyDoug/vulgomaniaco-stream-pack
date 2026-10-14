@@ -54,7 +54,7 @@ export const AlertCard: React.FC<AlertCardProps> = ({ alert }) => {
   return (
     <div
       data-testid="alert-card"
-      className={`w-[540px] clip-tactical-md bg-ivexi-dark/95 border-2 ${getBorderColor()} p-5 flex items-center gap-5 backdrop-blur-md animate-bounce duration-700`}
+      className={`w-full max-w-[540px] clip-tactical-md bg-ivexi-dark/95 border-2 ${getBorderColor()} p-5 flex items-center gap-5 backdrop-blur-md animate-bounce duration-700`}
     >
       {/* Avatar do Mascote Chibi com Boné IVEXI */}
       <div className="relative w-20 h-20 clip-tactical-sm bg-ivexi-surface border-2 border-ivexi-purple flex items-center justify-center p-1.5 shadow-card-glow flex-shrink-0">
@@ -69,8 +69,8 @@ export const AlertCard: React.FC<AlertCardProps> = ({ alert }) => {
         />
       </div>
 
-      {/* Conteúdo textual do alerta */}
-      <div className="flex-1 space-y-1">
+      {/* Conteúdo textual do alerta com min-w-0 contra overflow */}
+      <div className="flex-1 min-w-0 space-y-1">
         <div className="flex items-center gap-2">
           <span className={`text-[10px] uppercase font-rajdhani font-bold tracking-widest px-2.5 py-0.5 clip-tactical-sm ${getTagColor()}`}>
             ALERTA AO VIVO

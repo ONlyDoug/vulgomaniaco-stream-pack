@@ -27,7 +27,15 @@ Este guia explica como configurar os **Alertas Profissionais da Guilda IVEXI & V
    - Clique em **Start** (*Iniciar*).
 4. No menu inferior ou central, clique em **(+) Add Widget** (*Adicionar Widget*).
 5. Navegue até a categoria: **Static / Custom** > selecione **Custom Widget**.
-6. No menu lateral esquerdo do widget, clique em **Open Editor** (*Abrir Editor*).
+6. ⚠️ **IMPORTANTE (Para o alerta NÃO aparecer cortado)**:
+   - No menu lateral esquerdo, clique na aba **Position, size and style** (*Posição, tamanho e estilo*).
+   - Defina as dimensões para cobrir a tela cheia:
+     - **Width (Largura):** `1920`
+     - **Height (Altura):** `1080`
+     - **Top:** `0`
+     - **Left:** `0`
+   *(Isso garante que a área útil do widget seja 1080p completa, sem fatiar o card nem as sombras neon).*
+7. Ainda no menu do widget, clique em **Open Editor** (*Abrir Editor*).
 
 ---
 
@@ -94,3 +102,17 @@ No editor do StreamElements, você verá 5 abas na parte superior. Você pode co
 * **Zona Segura em Albion**: Centralizado no topo (`y: 70px`), mantendo a visão do combate livre e sem cobrir a Facecam ou o Minimapa.
 * **Zero Risco de Segurança**: Nenhuma senha ou dado confidencial é exposto.
 * **Fila Anti-Sobreposição**: Se vários eventos ocorrerem ao mesmo tempo, são exibidos um a um ordenadamente.
+
+---
+
+## 🛠️ Resolução de Problemas: O alerta está aparecendo cortado?
+Se você já tinha criado o widget e o card apareceu cortado nas pontas:
+1. No editor do StreamElements, selecione a camada do **Custom Widget** na barra de camadas à esquerda.
+2. Acesse a aba **Position, size and style** (*Posição, tamanho e estilo*).
+3. Ajuste:
+   - **Width:** `1920`
+   - **Height:** `1080`
+   - **Top:** `0`
+   - **Left:** `0`
+4. Na aba **CSS** do editor do widget, certifique-se de colar a versão mais recente do [`widget.css`](file:///home/onlydoug/projetos/IVEXI-GUILDA-ALBION-ONLINE/streamelements/widget.css).
+5. Clique em **Done** e depois em **Save**!

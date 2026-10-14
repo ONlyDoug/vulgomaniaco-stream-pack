@@ -50,42 +50,52 @@ export const STREAM_ELEMENTS_WIDGET_CSS = `/* ==================================
   padding: 0;
 }
 
-body {
-  width: 100vw;
-  height: 100vh;
-  overflow: hidden;
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: visible;
   background-color: transparent !important;
   font-family: 'Rajdhani', sans-serif;
   -webkit-font-smoothing: antialiased;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
 }
 
-/* Container de Centralização no Topo (Zona Segura Albion Online) */
+/* Container de Centralização Fluido e Responsivo (Auto-adaptável a qualquer tamanho de caixa) */
 .alert-wrapper {
-  position: absolute;
-  top: 70px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 580px;
-  max-width: 90vw;
+  position: relative;
+  width: 100%;
+  max-width: 540px;
+  margin: 25px auto 0 auto;
+  padding: 10px 14px;
   pointer-events: none;
   z-index: 9999;
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
 }
 
 /* Card Principal Tático */
 .alert-card {
+  width: 100%;
+  max-width: 540px;
+  box-sizing: border-box;
   display: flex;
   align-items: center;
-  gap: 20px;
-  background: rgba(11, 5, 18, 0.95);
+  gap: 16px;
+  background: rgba(11, 5, 18, 0.96);
   border: 2px solid #732EB8;
   clip-path: polygon(14px 0, 100% 0, 100% calc(100% - 14px), calc(100% - 14px) 100%, 0 100%, 0 14px);
-  padding: 18px 24px;
+  padding: 14px 18px;
   backdrop-filter: blur(12px);
   box-shadow: 0 0 25px rgba(115, 46, 184, 0.45);
   opacity: 0;
   visibility: hidden;
-  transform: translateY(-40px) scale(0.95);
-  transition: transform 0.45s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.45s ease, visibility 0.45s;
+  transform: translateY(-30px) scale(0.96);
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.4s ease, visibility 0.4s;
 }
 
 /* Estado Visível Ativado */
@@ -123,8 +133,8 @@ body {
 
 /* Box do Mascote Oficial Chibi */
 .alert-avatar-box {
-  width: 82px;
-  height: 82px;
+  width: 76px;
+  height: 76px;
   flex-shrink: 0;
   background: #140A1F;
   border: 2px solid #732EB8;
@@ -132,7 +142,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 6px;
+  padding: 5px;
   box-shadow: inset 0 0 15px rgba(115, 46, 184, 0.3);
 }
 
@@ -143,31 +153,34 @@ body {
   filter: drop-shadow(0 0 8px rgba(214, 214, 92, 0.6));
 }
 
-/* Conteúdo Textual */
+/* Conteúdo Textual com min-width: 0 para evitar estouro em flexbox */
 .alert-content {
   flex: 1;
+  min-width: 0;
   display: flex;
   flex-direction: column;
-  gap: 4px;
+  gap: 3px;
 }
 
 /* Badges de Cabeçalho */
 .alert-badges {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 6px;
+  flex-wrap: wrap;
 }
 
 .alert-badge-tag {
   font-family: 'Rajdhani', sans-serif;
-  font-size: 11px;
+  font-size: 10px;
   font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 1.5px;
-  padding: 2px 8px;
+  letter-spacing: 1.2px;
+  padding: 2px 7px;
   border-radius: 4px;
   background: #732EB8;
   color: #FFFFFF;
+  white-space: nowrap;
 }
 
 .alert-card.event-sub .alert-badge-tag {
@@ -192,46 +205,51 @@ body {
 
 .alert-badge-guild {
   font-family: 'Rajdhani', sans-serif;
-  font-size: 11px;
+  font-size: 10.5px;
   font-weight: 600;
   text-transform: uppercase;
-  letter-spacing: 1.2px;
+  letter-spacing: 1px;
   color: #9E82B8;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 /* Título do Evento */
 .alert-title {
   font-family: 'Rajdhani', sans-serif;
-  font-size: 24px;
+  font-size: 22px;
   font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 1px;
+  letter-spacing: 0.8px;
   color: #D6D65C;
   text-shadow: 0 0 12px rgba(214, 214, 92, 0.5);
-  line-height: 1.1;
+  line-height: 1.15;
+  word-break: break-word;
 }
 
 /* Nome do Usuário */
 .alert-username {
   font-family: 'Rajdhani', sans-serif;
-  font-size: 21px;
+  font-size: 19px;
   font-weight: 700;
   color: #FFFFFF;
-  letter-spacing: 0.8px;
+  letter-spacing: 0.6px;
   line-height: 1.2;
+  word-break: break-word;
 }
 
 /* Mensagem de Apoio (Doações/Subs) */
 .alert-message {
   font-family: 'Inter', sans-serif;
-  font-size: 13px;
+  font-size: 12.5px;
   font-style: italic;
   color: rgba(240, 235, 245, 0.9);
   background: rgba(20, 10, 31, 0.7);
-  padding: 6px 10px;
+  padding: 5px 9px;
   border-left: 3px solid #D6D65C;
   border-radius: 4px;
-  margin-top: 4px;
+  margin-top: 3px;
   word-break: break-word;
   max-height: 52px;
   overflow: hidden;
