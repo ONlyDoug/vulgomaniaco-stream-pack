@@ -7,6 +7,7 @@ import { ChattingScene } from '@/features/scenes/ChattingScene';
 import { AlertOverlay } from '@/features/alerts/AlertOverlay';
 import { ControlDashboard } from '@/features/control/ControlDashboard';
 import { PanelsGallery } from '@/features/panels/PanelsGallery';
+import { BadgesGallery } from '@/features/badges/BadgesGallery';
 import { PreviewWrapper } from '@/shared/components/PreviewWrapper';
 
 export const App: React.FC = () => {
@@ -164,6 +165,25 @@ export const App: React.FC = () => {
           </span>
         </div>
         <PanelsGallery />
+      </div>
+    );
+  }
+
+  if (currentPath === '/badges') {
+    return (
+      <div className="relative min-h-screen bg-ivexi-dark">
+        <div className="px-6 py-3 bg-ivexi-surface/80 border-b border-ivexi-purple/40 flex items-center justify-between">
+          <button
+            onClick={() => navigateTo('/')}
+            className="px-3 py-1.5 rounded-lg bg-ivexi-dark hover:bg-ivexi-purple/50 border border-ivexi-purple/60 text-xs font-rajdhani font-bold uppercase text-ivexi-light transition"
+          >
+            ← Voltar ao Hub
+          </button>
+          <span className="text-xs text-ivexi-muted font-rajdhani font-semibold">
+            Pack de Afiliado Twitch (Distintivos & Emotes)
+          </span>
+        </div>
+        <BadgesGallery />
       </div>
     );
   }
@@ -382,6 +402,35 @@ export const App: React.FC = () => {
             <div className="mt-4 pt-3 border-t border-ivexi-purple/30 flex items-center justify-between">
               <span className="text-xs text-ivexi-neon font-rajdhani font-bold uppercase">Abrir Painel →</span>
               <span className="text-xs text-ivexi-muted">Para celular ou monitor 2</span>
+            </div>
+          </div>
+
+          {/* Card: Pack de Afiliado Twitch */}
+          <div
+            onClick={() => navigateTo('/badges')}
+            className="cursor-pointer p-5 text-left rounded-xl bg-ivexi-surface/90 border border-ivexi-purple/50 hover:border-ivexi-neon hover:shadow-card-glow transition duration-200 md:col-span-2 flex flex-col justify-between"
+          >
+            <div>
+              <div className="flex items-center justify-between mb-2">
+                <div className="flex items-center gap-2">
+                  <span className="text-xl">⭐</span>
+                  <h2 className="font-rajdhani text-xl font-bold text-ivexi-neon">
+                    Pack Oficial de Afiliado Twitch (Distintivos & Emotes)
+                  </h2>
+                </div>
+                <span className="text-xs px-2 py-0.5 rounded bg-ivexi-neon/20 border border-ivexi-neon/40 text-ivexi-neon font-bold">
+                  Novo Afiliado
+                </span>
+              </div>
+              <p className="text-sm text-ivexi-muted">
+                6 Distintivos de Inscrito (1m a 1 ano), 7 Emotes (incluindo o bordão <em>"Bota pra fora, energiza e monta!"</em>), Moeda IVEXI de Pontos do Canal e Badges de Bits com download em 1-clique (.ZIP).
+              </p>
+            </div>
+            <div className="mt-4 pt-3 border-t border-ivexi-purple/30 flex items-center justify-between">
+              <span className="text-xs text-ivexi-neon font-rajdhani font-bold uppercase">
+                Ver Pack e Baixar ZIP →
+              </span>
+              <span className="text-xs text-ivexi-muted">Formatos 18px, 28px, 36px, 56px, 72px, 112px e 512px</span>
             </div>
           </div>
 
