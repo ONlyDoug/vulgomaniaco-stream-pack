@@ -36,6 +36,9 @@ describe('US-003: Alertas Animados e Painel de Controle', () => {
 
     const copyCssBtn = screen.getByRole('button', { name: /copiar css/i });
     expect(copyCssBtn).toBeInTheDocument();
+
+    const copyDataBtn = screen.getByRole('button', { name: /copiar data/i });
+    expect(copyDataBtn).toBeInTheDocument();
   });
 
   it('deve renderizar iframe do StreamElements quando url for configurada', () => {

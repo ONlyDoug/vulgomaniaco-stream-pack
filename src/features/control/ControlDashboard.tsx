@@ -6,6 +6,7 @@ import {
   STREAM_ELEMENTS_WIDGET_CSS,
   STREAM_ELEMENTS_WIDGET_JS,
   STREAM_ELEMENTS_WIDGET_FIELDS,
+  STREAM_ELEMENTS_WIDGET_DATA,
 } from '../alerts/streamElementsWidgetCode';
 
 export const ControlDashboard: React.FC = () => {
@@ -223,9 +224,9 @@ export const ControlDashboard: React.FC = () => {
           {/* Botões de Cópia Rápida 1-Clique */}
           <div className="space-y-2">
             <label className="text-xs text-ivexi-light/90 block font-semibold">
-              Copiar código para as 4 abas do editor do StreamElements:
+              Copiar código para as 5 abas do editor do StreamElements:
             </label>
-            <div className="grid grid-cols-2 sm:grid-cols-4 gap-2.5">
+            <div className="grid grid-cols-2 sm:grid-cols-5 gap-2">
               <button
                 onClick={() => handleCopyCode('html', STREAM_ELEMENTS_WIDGET_HTML)}
                 className="py-2.5 px-3 rounded-xl bg-ivexi-dark border border-ivexi-purple/60 hover:border-ivexi-neon hover:text-ivexi-neon font-rajdhani font-bold text-xs uppercase transition flex items-center justify-center gap-1.5 cursor-pointer"
@@ -252,6 +253,13 @@ export const ControlDashboard: React.FC = () => {
                 className="py-2.5 px-3 rounded-xl bg-ivexi-dark border border-ivexi-purple/60 hover:border-ivexi-neon hover:text-ivexi-neon font-rajdhani font-bold text-xs uppercase transition flex items-center justify-center gap-1.5 cursor-pointer"
               >
                 {copiedKey === 'fields' ? '✅ Copiado!' : '📋 Copiar Fields'}
+              </button>
+
+              <button
+                onClick={() => handleCopyCode('data', STREAM_ELEMENTS_WIDGET_DATA)}
+                className="py-2.5 px-3 rounded-xl bg-ivexi-dark border border-ivexi-purple/60 hover:border-ivexi-neon hover:text-ivexi-neon font-rajdhani font-bold text-xs uppercase transition flex items-center justify-center gap-1.5 cursor-pointer col-span-2 sm:col-span-1"
+              >
+                {copiedKey === 'data' ? '✅ Copiado!' : '📋 Copiar Data'}
               </button>
             </div>
           </div>

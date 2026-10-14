@@ -449,3 +449,12 @@ export const STREAM_ELEMENTS_WIDGET_FIELDS = `{
     "value": "NOVO INSCRITO NO CANAL!"
   }
 };`;
+
+export const STREAM_ELEMENTS_WIDGET_DATA = `{
+  "alertDuration": 6,
+  "alertVolume": 40,
+  "alertSound": "",
+  "followTitle": "NOVO SEGUIDOR NO CANAL!",
+  "subTitle": "NOVO INSCRITO NO CANAL!"
+}`;
+
