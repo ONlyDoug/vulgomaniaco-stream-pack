@@ -139,13 +139,43 @@ def extract_alpha_from_black(im_path, threshold=20):
     rgba = np.dstack([arr.astype(np.uint8), alpha])
     return Image.fromarray(rgba, 'RGBA')
 
-def load_ai_asset_if_exists(filenames, default_func=None):
-    """Verifica se algum arquivo de IA foi salvo na pasta ai_raw e carrega com alfa."""
+def tight_crop_to_square(im, padding_ratio=0.02):
+    """Remove o excesso de borda transparente e enquadra o sujeito preenchendo ~96% do canvas quadrado."""
+    alpha = im.split()[-1]
+    bbox = alpha.point(lambda p: 255 if p > 15 else 0).getbbox()
+    if not bbox:
+        return im
+    x0, y0, x1, y1 = bbox
+    w = x1 - x0
+    h = y1 - y0
+    max_side = max(w, h)
+    
+    pad = int(max_side * padding_ratio)
+    cx = (x0 + x1) / 2.0
+    cy = (y0 + y1) / 2.0
+    
+    half_side = (max_side / 2.0) + pad
+    new_x0 = int(cx - half_side)
+    new_y0 = int(cy - half_side)
+    new_x1 = int(cx + half_side)
+    new_y1 = int(cy + half_side)
+    
+    crop_w = new_x1 - new_x0
+    crop_h = new_y1 - new_y0
+    
+    square = Image.new('RGBA', (crop_w, crop_h), (0, 0, 0, 0))
+    square.paste(im, (-new_x0, -new_y0))
+    return square
+
+def load_ai_asset_if_exists(filenames, default_func=None, tight_crop=True):
+    """Verifica se algum arquivo de IA foi salvo na pasta ai_raw e carrega com alfa e enquadramento otimizado."""
     for fname in filenames:
         fpath = os.path.join(BRAND_TWITCH_DIR, 'ai_raw', fname)
         if os.path.exists(fpath):
             img = extract_alpha_from_black(fpath)
             if img:
+                if tight_crop:
+                    img = tight_crop_to_square(img, padding_ratio=0.02)
                 return img.resize((512, 512), Image.Resampling.LANCZOS)
     if default_func:
         return default_func()
@@ -760,6 +790,36 @@ def generate_all():
     ]
     for name, img in sub_badges:
         export_asset_sizes(img, name, os.path.join(BRAND_TWITCH_DIR, 'sub_badges'), os.path.join(PUBLIC_TWITCH_DIR, 'sub_badges'), os.path.join(SRC_TWITCH_DIR, 'sub_badges'), badge_sizes)
+        
+    # Organiza pasta dedicada para upload direto na Twitch por Tier
+    upload_dest_dir = os.path.join(BRAND_TWITCH_DIR, 'upload_twitch_distintivos')
+    os.makedirs(upload_dest_dir, exist_ok=True)
+    tier_map = [
+        ('01_Mes_1_Recruta', 'sub_1m'),
+        ('02_Mes_2_Membro', 'sub_2m'),
+        ('03_Mes_3_Capa_IVEXI', 'sub_3m'),
+        ('04_Mes_6_Soldado_CTA', 'sub_6m'),
+        ('05_Mes_9_Overcharge', 'sub_9m'),
+        ('06_Ano_1_Imperador', 'sub_1y'),
+    ]
+    for folder_name, prefix in tier_map:
+        t_dir = os.path.join(upload_dest_dir, folder_name)
+        os.makedirs(t_dir, exist_ok=True)
+        for sz_str in ['18x18', '36x36', '72x72']:
+            src_f = os.path.join(BRAND_TWITCH_DIR, 'sub_badges', sz_str, f'{prefix}-{sz_str}.png')
+            if os.path.exists(src_f):
+                shutil.copy2(src_f, os.path.join(t_dir, f'{prefix}_{sz_str}.png'))
+                
+    # Cria ZIP dedicado dos distintivos
+    for zpath in [
+        os.path.join(BRAND_TWITCH_DIR, 'distintivos-twitch-todos-tamanhos.zip'),
+        os.path.join(PUBLIC_TWITCH_DIR, 'distintivos-twitch-todos-tamanhos.zip')
+    ]:
+        with zipfile.ZipFile(zpath, 'w', zipfile.ZIP_DEFLATED) as zf:
+            for root, dirs, files in os.walk(upload_dest_dir):
+                for file in sorted(files):
+                    fp = os.path.join(root, file)
+                    zf.write(fp, os.path.relpath(fp, upload_dest_dir))
         
     # 2. Emotes da Live
     print("-> Renderizando 7 Emotes Designer (incluindo vulgoENERGIZA e vulgoMONTA)...")
