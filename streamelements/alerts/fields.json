@@ -17,8 +17,7 @@
   },
   "alertSound": {
     "type": "sound-input",
-    "label": "Arquivo de Áudio do Alerta (Opcional - Deixe vazio para áudio procedural)",
-    "value": ""
+    "label": "Arquivo de Áudio do Alerta (Opcional)"
   },
   "followTitle": {
     "type": "text",
