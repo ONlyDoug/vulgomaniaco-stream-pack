@@ -10,12 +10,12 @@ describe('Pack Oficial de Afiliado Twitch (Distintivos e Emotes)', () => {
     const badgeCards = screen.getAllByTestId('sub-badge-card');
     expect(badgeCards).toHaveLength(6);
 
-    expect(screen.getByText('Pena Mística de Corvo')).toBeInTheDocument();
-    expect(screen.getByText('Garra de Aço Tática')).toBeInTheDocument();
-    expect(screen.getByText('Escudo Tático IVEXI')).toBeInTheDocument();
-    expect(screen.getByText('Elmo de Corvo Sombrio')).toBeInTheDocument();
-    expect(screen.getByText('Cristal de Energia Sifada')).toBeInTheDocument();
-    expect(screen.getByText('Coroa Imperial de Corvo')).toBeInTheDocument();
+    expect(screen.getByText('Recruta do Bando')).toBeInTheDocument();
+    expect(screen.getByText('Membro da Live')).toBeInTheDocument();
+    expect(screen.getByText('O Fardado (Capa IVEXI)')).toBeInTheDocument();
+    expect(screen.getByText('Soldado do CTA')).toBeInTheDocument();
+    expect(screen.getByText('Mestre Overcharge')).toBeInTheDocument();
+    expect(screen.getByText('Imperador Supremo')).toBeInTheDocument();
 
     const durations = ['1 Mês', '2 Meses', '3 Meses', '6 Meses', '9 Meses', '1 Ano'];
     durations.forEach((d) => {

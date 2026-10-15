@@ -124,15 +124,32 @@ def add_badge_tag(im, text, bg_color=C_DARK, border_color=C_NEON, text_color=C_N
     draw.text((tx, ty), text, font=font, fill=text_color)
 
 def extract_alpha_from_black(im_path, threshold=20):
-    """Remove fundo preto puro preservando bordas com anti-aliasing e cores suaves"""
+    """Remove fundo preto puro preservando bordas com anti-aliasing e cores suaves, ou preserva canal alfa se já existir."""
     if not os.path.exists(im_path):
         return None
-    im = Image.open(im_path).convert('RGB')
+    raw = Image.open(im_path)
+    if raw.mode == 'RGBA':
+        extrema = raw.getextrema()
+        if len(extrema) >= 4 and extrema[3][0] < 220:
+            return raw
+    im = raw.convert('RGB')
     arr = np.array(im, dtype=np.float32)
     brightness = np.max(arr, axis=2)
     alpha = np.clip((brightness - threshold) / 28.0 * 255.0, 0, 255).astype(np.uint8)
     rgba = np.dstack([arr.astype(np.uint8), alpha])
     return Image.fromarray(rgba, 'RGBA')
+
+def load_ai_asset_if_exists(filenames, default_func=None):
+    """Verifica se algum arquivo de IA foi salvo na pasta ai_raw e carrega com alfa."""
+    for fname in filenames:
+        fpath = os.path.join(BRAND_TWITCH_DIR, 'ai_raw', fname)
+        if os.path.exists(fpath):
+            img = extract_alpha_from_black(fpath)
+            if img:
+                return img.resize((512, 512), Image.Resampling.LANCZOS)
+    if default_func:
+        return default_func()
+    return None
 
 # =============================================================================
 # 1. EMOTES DESIGNER (512x512 Master)
@@ -734,12 +751,12 @@ def generate_all():
     # 1. Distintivos de Sub 3D
     print("-> Renderizando 6 Distintivos de Sub de Alta Resolução...")
     sub_badges = [
-        ('sub_1m', render_sub_badge_1m_pro()),
-        ('sub_2m', render_sub_badge_2m_pro()),
-        ('sub_3m', render_sub_badge_3m_pro()),
-        ('sub_6m', render_sub_badge_6m_pro()),
-        ('sub_9m', render_sub_badge_9m_pro()),
-        ('sub_1y', render_sub_badge_12m_pro()),
+        ('sub_1m', load_ai_asset_if_exists(['sub_1m.png', 'badge_1m.png', 'sub_badge_1m.png'], render_sub_badge_1m_pro)),
+        ('sub_2m', load_ai_asset_if_exists(['sub_2m.png', 'badge_2m.png', 'sub_badge_2m.png'], render_sub_badge_2m_pro)),
+        ('sub_3m', load_ai_asset_if_exists(['sub_3m.png', 'badge_3m.png', 'sub_badge_3m.png'], render_sub_badge_3m_pro)),
+        ('sub_6m', load_ai_asset_if_exists(['sub_6m.png', 'badge_6m.png', 'sub_badge_6m.png'], render_sub_badge_6m_pro)),
+        ('sub_9m', load_ai_asset_if_exists(['sub_9m.png', 'badge_9m.png', 'sub_badge_9m.png'], render_sub_badge_9m_pro)),
+        ('sub_1y', load_ai_asset_if_exists(['sub_1y.png', 'badge_1y.png', 'sub_badge_1y.png', 'sub_12m.png'], render_sub_badge_12m_pro)),
     ]
     for name, img in sub_badges:
         export_asset_sizes(img, name, os.path.join(BRAND_TWITCH_DIR, 'sub_badges'), os.path.join(PUBLIC_TWITCH_DIR, 'sub_badges'), os.path.join(SRC_TWITCH_DIR, 'sub_badges'), badge_sizes)
@@ -747,20 +764,20 @@ def generate_all():
     # 2. Emotes da Live
     print("-> Renderizando 7 Emotes Designer (incluindo vulgoENERGIZA e vulgoMONTA)...")
     emotes = [
-        ('vulgoENERGIZA', render_emote_energiza_pro()),
-        ('vulgoMONTA', render_emote_monta_pro()),
-        ('vulgoHYPE', render_emote_hype_pro()),
-        ('vulgoGG', render_emote_gg_pro()),
-        ('vulgoRAGE', render_emote_rage_pro()),
-        ('vulgoLURK', render_emote_lurk_pro()),
-        ('vulgoRIP', render_emote_rip_pro()),
+        ('vulgoENERGIZA', load_ai_asset_if_exists(['emote_energiza.png', 'energiza.png'], render_emote_energiza_pro)),
+        ('vulgoMONTA', load_ai_asset_if_exists(['emote_monta.png', 'monta.png'], render_emote_monta_pro)),
+        ('vulgoHYPE', load_ai_asset_if_exists(['emote_hype.png', 'hype.png'], render_emote_hype_pro)),
+        ('vulgoGG', load_ai_asset_if_exists(['emote_gg.png', 'gg.png'], render_emote_gg_pro)),
+        ('vulgoRAGE', load_ai_asset_if_exists(['emote_rage.png', 'rage.png'], render_emote_rage_pro)),
+        ('vulgoLURK', load_ai_asset_if_exists(['emote_lurk.png', 'lurk.png'], render_emote_lurk_pro)),
+        ('vulgoRIP', load_ai_asset_if_exists(['emote_rip.png', 'rip.png'], render_emote_rip_pro)),
     ]
     for name, img in emotes:
         export_asset_sizes(img, name, os.path.join(BRAND_TWITCH_DIR, 'emotes'), os.path.join(PUBLIC_TWITCH_DIR, 'emotes'), os.path.join(SRC_TWITCH_DIR, 'emotes'), emote_sizes)
         
     # 3. Moeda de Pontos do Canal
     print("-> Renderizando Moeda Rúnica da Guilda IVEXI...")
-    coin_img = render_channel_point_coin_pro()
+    coin_img = load_ai_asset_if_exists(['coin_channel_points.png', 'moeda_ivexi.png', 'coin.png'], render_channel_point_coin_pro)
     export_asset_sizes(coin_img, 'moeda_ivexi', os.path.join(BRAND_TWITCH_DIR, 'channel_points'), os.path.join(PUBLIC_TWITCH_DIR, 'channel_points'), os.path.join(SRC_TWITCH_DIR, 'channel_points'), emote_sizes)
     
     # 4. Badges de Bits
