@@ -157,7 +157,10 @@
 
   function handleEvent(listener, event) {
     if (!event) return;
-    const l = String(listener || '').toLowerCase();
+    const l = String(listener || (event && (event.type || event.listener)) || '').toLowerCase();
+    try {
+      console.log('[IVEXI Stream Widget] Evento detectado:', l, event);
+    } catch (e) {}
 
     let alertData = null;
 
@@ -309,6 +312,9 @@
 
   window.addEventListener('onEventReceived', function (obj) {
     if (!obj || !obj.detail) return;
-    handleEvent(obj.detail.listener, obj.detail.event);
+    const detail = obj.detail;
+    const listener = detail.listener || detail.type || '';
+    const event = detail.event || detail.data || detail;
+    handleEvent(listener, event);
   });
 })();
