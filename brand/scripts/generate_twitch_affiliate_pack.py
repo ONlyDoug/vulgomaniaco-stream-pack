@@ -188,60 +188,57 @@ def load_ai_asset_if_exists(filenames, default_func=None, tight_crop=True):
 def render_emote_energiza_pro():
     """vulgoENERGIZA: A Piada Interna Oficial ('Bota pra fora, energiza e monta, GG!')"""
     size = 512
-    im = Image.new('RGBA', (size, size), (0, 0, 0, 0))
-    draw = ImageDraw.Draw(im)
-    
-    # 1. Super Aura de Overcharge
-    glow = Image.new('RGBA', (size, size), (0, 0, 0, 0))
-    gdraw = ImageDraw.Draw(glow)
-    gdraw.ellipse([30, 20, 482, 472], fill=(115, 46, 184, 180))
-    glow = glow.filter(ImageFilter.GaussianBlur(45))
-    im.paste(glow, (0, 0), glow)
-    
-    # 2. Raios Elétricos de Alta Voltagem ao redor
-    lightnings = [
-        ((40, 80), (140, 160)),
-        ((470, 70), (370, 160)),
-        ((30, 310), (130, 250)),
-        ((480, 300), (380, 250)),
-        ((256, 15), (256, 110)),
-    ]
-    for p1, p2 in lightnings:
-        draw_lightning(draw, p1, p2, 9, C_CYAN)
-        draw_lightning(draw, p1, p2, 4, C_WHITE, branch=False)
+    ai_path = os.path.join(BRAND_TWITCH_DIR, 'ai_raw', 'emote_energiza.png')
+    ai_img = extract_alpha_from_black(ai_path)
+    if ai_img:
+        ai_img = tight_crop_to_square(ai_img, padding_ratio=0.02)
+        im = ai_img.resize((size, size), Image.Resampling.LANCZOS)
+    else:
+        im = Image.new('RGBA', (size, size), (0, 0, 0, 0))
+        draw = ImageDraw.Draw(im)
+        glow = Image.new('RGBA', (size, size), (0, 0, 0, 0))
+        gdraw = ImageDraw.Draw(glow)
+        gdraw.ellipse([30, 20, 482, 472], fill=(115, 46, 184, 180))
+        glow = glow.filter(ImageFilter.GaussianBlur(45))
+        im.paste(glow, (0, 0), glow)
         
-    # 3. Mascote Chibi de Alta Fidelidade
-    if os.path.exists(CHIBI_PATH):
-        chibi = Image.open(CHIBI_PATH).convert('RGBA')
-        chibi.thumbnail((370, 370), Image.Resampling.LANCZOS)
-        cx = (size - chibi.width) // 2
-        cy = 40
-        im.paste(chibi, (cx, cy), chibi)
+        lightnings = [
+            ((40, 80), (140, 160)),
+            ((470, 70), (370, 160)),
+            ((30, 310), (130, 250)),
+            ((480, 300), (380, 250)),
+            ((256, 15), (256, 110)),
+        ]
+        for p1, p2 in lightnings:
+            draw_lightning(draw, p1, p2, 9, C_CYAN)
+            draw_lightning(draw, p1, p2, 4, C_WHITE, branch=False)
+            
+        if os.path.exists(CHIBI_PATH):
+            chibi = Image.open(CHIBI_PATH).convert('RGBA')
+            chibi.thumbnail((370, 370), Image.Resampling.LANCZOS)
+            cx = (size - chibi.width) // 2
+            cy = 40
+            im.paste(chibi, (cx, cy), chibi)
+            draw_star(draw, cx + 135, cy + 148, 16, 5, C_NEON)
+            draw_star(draw, cx + 220, cy + 148, 16, 5, C_NEON)
+            draw_star(draw, cx + 135, cy + 148, 8, 3, C_WHITE)
+            draw_star(draw, cx + 220, cy + 148, 8, 3, C_WHITE)
         
-        # 4. Olhos em Faísca Neon Elétrica (Overcharge Mode)
-        draw_star(draw, cx + 135, cy + 148, 16, 5, C_NEON)
-        draw_star(draw, cx + 220, cy + 148, 16, 5, C_NEON)
-        draw_star(draw, cx + 135, cy + 148, 8, 3, C_WHITE)
-        draw_star(draw, cx + 220, cy + 148, 8, 3, C_WHITE)
-    
-    # 5. Gema de Energia Sifada Flutuante
-    gem = [(370, 200), (430, 250), (370, 310), (310, 250)]
-    draw.polygon(gem, fill=C_PURPLE, outline=C_CYAN, width=6)
-    draw.polygon([(370, 200), (430, 250), (370, 250)], fill=C_PURPLE_LIGHT)
-    draw_star(draw, 370, 250, 18, 5, C_WHITE)
-    
-    # 6. Tag E-Sports Oficial
+        gem = [(370, 200), (430, 250), (370, 310), (310, 250)]
+        draw.polygon(gem, fill=C_PURPLE, outline=C_CYAN, width=6)
+        draw.polygon([(370, 200), (430, 250), (370, 250)], fill=C_PURPLE_LIGHT)
+        draw_star(draw, 370, 250, 18, 5, C_WHITE)
+        
     add_badge_tag(im, "ENERGIZA!", bg_color=C_DARK, border_color=C_NEON, text_color=C_NEON, y_offset=392)
     return im
 
 def render_emote_monta_pro():
     """vulgoMONTA: Chamada de Cavalgada em Bando na Black Zone"""
     size = 512
-    # Utiliza a arte rica gerada por IA se disponível
     ai_img = extract_alpha_from_black(AI_MONTA_PATH)
     if ai_img:
-        ai_img = ai_img.resize((size, size), Image.Resampling.LANCZOS)
-        im = ai_img
+        ai_img = tight_crop_to_square(ai_img, padding_ratio=0.02)
+        im = ai_img.resize((size, size), Image.Resampling.LANCZOS)
     else:
         im = Image.new('RGBA', (size, size), (0, 0, 0, 0))
         if os.path.exists(CHIBI_PATH):
@@ -249,7 +246,6 @@ def render_emote_monta_pro():
             chibi.thumbnail((360, 360), Image.Resampling.LANCZOS)
             im.paste(chibi, (76, 50), chibi)
             
-    # Tag Oficial MONTA!
     add_badge_tag(im, "MONTA!", bg_color=C_PURPLE_DARK, border_color=C_GOLD, text_color=C_GOLD_LIGHT, y_offset=392)
     return im
 
@@ -258,8 +254,8 @@ def render_emote_hype_pro():
     size = 512
     ai_img = extract_alpha_from_black(AI_HYPE_PATH)
     if ai_img:
-        ai_img = ai_img.resize((size, size), Image.Resampling.LANCZOS)
-        im = ai_img
+        ai_img = tight_crop_to_square(ai_img, padding_ratio=0.02)
+        im = ai_img.resize((size, size), Image.Resampling.LANCZOS)
     else:
         im = Image.new('RGBA', (size, size), (0, 0, 0, 0))
         if os.path.exists(CHIBI_PATH):
@@ -273,15 +269,42 @@ def render_emote_hype_pro():
 def render_emote_gg_pro():
     """vulgoGG: Troféu de Ouro e Óculos de Streamer Pro-Player"""
     size = 512
-    im = Image.new('RGBA', (size, size), (0, 0, 0, 0))
-    draw = ImageDraw.Draw(im)
-    
-    # Glow dourado de vitória
-    glow = Image.new('RGBA', (size, size), (0, 0, 0, 0))
-    gdraw = ImageDraw.Draw(glow)
-    gdraw.ellipse([50, 40, 462, 452], fill=(245, 195, 55, 140))
-    glow = glow.filter(ImageFilter.GaussianBlur(40))
-    im.paste(glow, (0, 0), glow)
+    ai_path = os.path.join(BRAND_TWITCH_DIR, 'ai_raw', 'emote_gg.png')
+    ai_img = extract_alpha_from_black(ai_path)
+    if ai_img:
+        ai_img = tight_crop_to_square(ai_img, padding_ratio=0.02)
+        im = ai_img.resize((size, size), Image.Resampling.LANCZOS)
+    else:
+        im = Image.new('RGBA', (size, size), (0, 0, 0, 0))
+        draw = ImageDraw.Draw(im)
+        glow = Image.new('RGBA', (size, size), (0, 0, 0, 0))
+        gdraw = ImageDraw.Draw(glow)
+        gdraw.ellipse([50, 40, 462, 452], fill=(245, 195, 55, 140))
+        glow = glow.filter(ImageFilter.GaussianBlur(40))
+        im.paste(glow, (0, 0), glow)
+        
+        if os.path.exists(CHIBI_PATH):
+            chibi = Image.open(CHIBI_PATH).convert('RGBA')
+            chibi.thumbnail((340, 340), Image.Resampling.LANCZOS)
+            im.paste(chibi, (40, 60), chibi)
+            cx, cy = 40, 60
+            draw.polygon([(cx + 105, cy + 135), (cx + 175, cy + 135), (cx + 165, cy + 170), (cx + 115, cy + 170)], fill=(10, 5, 15, 255), outline=C_GOLD, width=4)
+            draw.polygon([(cx + 195, cy + 135), (cx + 265, cy + 135), (cx + 255, cy + 170), (cx + 205, cy + 170)], fill=(10, 5, 15, 255), outline=C_GOLD, width=4)
+            draw.line([(cx + 175, cy + 145), (cx + 195, cy + 145)], fill=C_GOLD, width=5)
+            draw.line([(cx + 115, cy + 142), (cx + 135, cy + 162)], fill=C_WHITE, width=3)
+            draw.line([(cx + 205, cy + 142), (cx + 225, cy + 162)], fill=C_WHITE, width=3)
+            
+        trophy = [(330, 160), (460, 160), (430, 275), (360, 275)]
+        draw.polygon(trophy, fill=C_GOLD, outline=C_WHITE, width=6)
+        draw.polygon([(360, 275), (430, 275), (410, 320), (380, 320)], fill=C_GOLD_DARK)
+        draw.polygon([(350, 320), (440, 320), (450, 360), (340, 360)], fill=C_DARK, outline=C_GOLD, width=4)
+        draw.arc([300, 170, 350, 240], 90, 270, fill=C_GOLD, width=9)
+        draw.arc([440, 170, 490, 240], 270, 90, fill=C_GOLD, width=9)
+        draw.polygon([(395, 200), (410, 225), (395, 250), (380, 225)], fill=C_PURPLE, outline=C_NEON, width=3)
+        draw_star(draw, 395, 160, 20, 6, C_WHITE)
+        
+    add_badge_tag(im, "GG!", bg_color=C_PURPLE_DARK, border_color=C_GOLD, text_color=C_GOLD_LIGHT, y_offset=392)
+    return im
     
     # Mascote Chibi
     if os.path.exists(CHIBI_PATH):
