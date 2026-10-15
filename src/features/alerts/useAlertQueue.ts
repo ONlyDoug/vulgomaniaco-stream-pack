@@ -1,13 +1,21 @@
 import { useState, useEffect, useCallback } from 'react';
-import { playProceduralAlertSound } from './alertSound';
+import { playProceduralAlertSound, AlertSoundType } from './alertSound';
 
 export interface StreamAlert {
   id: string;
-  type: 'follow' | 'sub' | 'donation' | 'raid';
+  type: 'follow' | 'sub' | 'donation' | 'raid' | 'cheer' | 'hypetrain';
+  subType?: 'tier1' | 'tier2' | 'tier3' | 'prime' | 'resub' | 'gift' | 'subbomb';
   username: string;
   amount?: string;
   message?: string;
   durationMs?: number;
+  months?: number;
+  recipient?: string;
+  giftCount?: number;
+  viewersCount?: number;
+  bitsAmount?: number;
+  hypeLevel?: number;
+  hypeStatus?: 'start' | 'levelup' | 'complete';
 }
 
 export function useAlertQueue() {
@@ -25,22 +33,35 @@ export function useAlertQueue() {
       setQueue((prev) => prev.slice(1));
       setCurrentAlert(nextAlert);
 
-      // Toca chime sonoro procedural nativo (calibrado em -15dB)
+      // Determina a assinatura sonora equalizada a -14 LUFS para cada evento
+      let soundType: AlertSoundType = 'follow';
+      if (nextAlert.type === 'sub') {
+        soundType = nextAlert.subType === 'subbomb' ? 'subbomb' : 'sub';
+      } else if (nextAlert.type === 'donation') {
+        soundType = 'donation';
+      } else if (nextAlert.type === 'cheer') {
+        soundType = 'cheer';
+      } else if (nextAlert.type === 'raid') {
+        soundType = 'raid';
+      } else if (nextAlert.type === 'hypetrain') {
+        soundType = 'hypetrain';
+      }
+
       try {
-        playProceduralAlertSound(40);
+        playProceduralAlertSound(soundType, 40);
       } catch (e) {
         // Ignora silenciosamente se o navegador bloquear autoplay
       }
 
       const timer = setTimeout(() => {
         setCurrentAlert(null);
-      }, (nextAlert.durationMs || 5000) + 1000); // Exibição + 1s de intervalo limpo
+      }, (nextAlert.durationMs || 5500) + 800); // Exibição + intervalo limpo
 
       return () => clearTimeout(timer);
     }
   }, [queue, currentAlert]);
 
-  // Escuta canal BroadcastChannel para sincronização remota
+  // Escuta canal BroadcastChannel para sincronização remota (OBS Studio & Control Dashboard)
   useEffect(() => {
     if (typeof window !== 'undefined' && 'BroadcastChannel' in window) {
       const channel = new BroadcastChannel('vulgomaniaco_obs_channel');
@@ -63,3 +84,4 @@ export function useAlertQueue() {
     enqueueAlert,
   };
 }
+

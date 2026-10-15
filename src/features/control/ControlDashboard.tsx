@@ -87,6 +87,94 @@ export const ControlDashboard: React.FC = () => {
     setLastDispatched(`Raid: ${alert.username}`);
   };
 
+  // Novos disparadores para cobertura completa do checklist
+  const handleTestSubTier = (subType: 'tier1' | 'tier2' | 'tier3' | 'prime') => {
+    const titles = {
+      tier1: 'Tier 1 (Recruta)',
+      tier2: 'Tier 2 (Soldado CTA)',
+      tier3: 'Tier 3 (Imperador)',
+      prime: 'Twitch Prime',
+    };
+    const alert: StreamAlert = {
+      id: String(Date.now()),
+      type: 'sub',
+      subType,
+      username: 'Membro_' + subType.toUpperCase(),
+      message: `Inscrito com sucesso no canal como ${titles[subType]}!`,
+      durationMs: 5500,
+    };
+    broadcastEvent('TRIGGER_ALERT', alert);
+    setLastDispatched(`Sub ${titles[subType]}: ${alert.username}`);
+  };
+
+  const handleTestResub = () => {
+    const alert: StreamAlert = {
+      id: String(Date.now()),
+      type: 'sub',
+      subType: 'resub',
+      username: 'Veterano_Ivexi',
+      months: 6,
+      message: '6 meses de guilda e honra na Black Zone de Albion!',
+      durationMs: 6000,
+    };
+    broadcastEvent('TRIGGER_ALERT', alert);
+    setLastDispatched(`Resub 6 meses: ${alert.username}`);
+  };
+
+  const handleTestGiftSub = () => {
+    const alert: StreamAlert = {
+      id: String(Date.now()),
+      type: 'sub',
+      subType: 'gift',
+      username: 'Benfeitor_Albion',
+      recipient: 'Recruta_Iniciante',
+      message: 'Bem-vindo à guilda, bom proveito no sub!',
+      durationMs: 6000,
+    };
+    broadcastEvent('TRIGGER_ALERT', alert);
+    setLastDispatched(`Gift Sub: ${alert.username} -> ${alert.recipient}`);
+  };
+
+  const handleTestSubBomb = (count = 10) => {
+    const alert: StreamAlert = {
+      id: String(Date.now()),
+      type: 'sub',
+      subType: 'subbomb',
+      username: 'Lord_Maniaco',
+      giftCount: count,
+      durationMs: 6500,
+    };
+    broadcastEvent('TRIGGER_ALERT', alert);
+    setLastDispatched(`Sub Bomb (${count} subs): ${alert.username}`);
+  };
+
+  const handleTestBits = (bits: number) => {
+    const alert: StreamAlert = {
+      id: String(Date.now()),
+      type: 'cheer',
+      username: 'Apoiador_Overcharge',
+      bitsAmount: bits,
+      amount: String(bits),
+      message: bits >= 5000 ? 'OVERCHARGE TOTAL NA LIVE! BORA PRO PVP!' : 'Toma esses bits pra fortalecer a live!',
+      durationMs: 6000,
+    };
+    broadcastEvent('TRIGGER_ALERT', alert);
+    setLastDispatched(`Bits (${bits}): ${alert.username}`);
+  };
+
+  const handleTestHypeTrain = (status: 'start' | 'complete') => {
+    const alert: StreamAlert = {
+      id: String(Date.now()),
+      type: 'hypetrain',
+      username: 'Guilda IVEXI',
+      hypeLevel: status === 'complete' ? 5 : 1,
+      hypeStatus: status,
+      durationMs: 6000,
+    };
+    broadcastEvent('TRIGGER_ALERT', alert);
+    setLastDispatched(`Trem do Hype (${status === 'complete' ? 'Vitória Nvl 5' : 'Início'}): ${alert.username}`);
+  };
+
   const handleToggleAntiSnipe = () => {
     const nextState = !antiSnipeState;
     setAntiSnipeState(nextState);
@@ -123,7 +211,7 @@ export const ControlDashboard: React.FC = () => {
 
   return (
     <div className="min-h-screen bg-ivexi-dark p-6 text-ivexi-light font-inter">
-      <div className="max-w-2xl mx-auto space-y-6">
+      <div className="max-w-3xl mx-auto space-y-6">
         <header className="border-b border-ivexi-purple/40 pb-4 flex items-center justify-between">
           <div>
             <h1 className="font-rajdhani text-3xl font-bold text-ivexi-neon uppercase drop-shadow-neon-yellow">
@@ -168,42 +256,153 @@ export const ControlDashboard: React.FC = () => {
           </button>
         </section>
 
-        {/* Disparo de Alertas em Tempo Real */}
-        <section className="p-5 rounded-2xl bg-ivexi-surface/80 border border-ivexi-purple/50 space-y-4">
-          <h2 className="font-rajdhani text-xl font-bold uppercase text-ivexi-light">
-            Testar Alertas Animados
-          </h2>
+        {/* Disparo de Alertas em Tempo Real - Checklist Completo */}
+        <section className="p-5 rounded-2xl bg-ivexi-surface/80 border border-ivexi-purple/50 space-y-5">
+          <div className="flex items-center justify-between border-b border-ivexi-purple/30 pb-3">
+            <div>
+              <h2 className="font-rajdhani text-xl font-bold uppercase text-ivexi-neon">
+                Testar Alertas do Checklist (Ao Vivo)
+              </h2>
+              <p className="text-xs text-ivexi-muted">Dispara simulações em tempo real para a camada /alerts e OBS Studio</p>
+            </div>
+            <span className="text-xs px-2.5 py-1 rounded bg-ivexi-dark border border-ivexi-neon/50 text-ivexi-neon font-bold uppercase">
+              14 Eventos
+            </span>
+          </div>
 
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
-            <button
-              onClick={handleTestFollow}
-              className="py-3 px-3 rounded-xl bg-ivexi-dark border border-ivexi-purple/60 hover:border-ivexi-neon hover:text-ivexi-neon font-rajdhani font-bold text-xs uppercase transition"
-            >
-              Testar Seguidor
-            </button>
+          {/* Categoria 1: Engajamento & Comunidade */}
+          <div className="space-y-2">
+            <span className="text-xs font-rajdhani font-bold uppercase tracking-wider text-ivexi-muted">
+              1. Engajamento & Comunidade:
+            </span>
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-2.5">
+              <button
+                onClick={handleTestFollow}
+                className="py-2.5 px-3 rounded-xl bg-ivexi-dark border border-ivexi-purple/60 hover:border-ivexi-neon hover:text-ivexi-neon font-rajdhani font-bold text-xs uppercase transition"
+              >
+                Testar Seguidor
+              </button>
+              <button
+                onClick={handleTestRaid}
+                className="py-2.5 px-3 rounded-xl bg-ivexi-dark border border-red-500/60 hover:border-red-400 hover:text-red-400 font-rajdhani font-bold text-xs uppercase transition cursor-pointer"
+              >
+                Testar Raid
+              </button>
+            </div>
+          </div>
 
-            <button
-              onClick={handleTestSub}
-              className="py-3 px-3 rounded-xl bg-ivexi-dark border border-ivexi-purple/60 hover:border-ivexi-neon hover:text-ivexi-neon font-rajdhani font-bold text-xs uppercase transition"
-            >
-              Testar Sub
-            </button>
+          {/* Categoria 2: Inscrições & Apoio Recorrente */}
+          <div className="space-y-2">
+            <span className="text-xs font-rajdhani font-bold uppercase tracking-wider text-ivexi-muted">
+              2. Inscrições & Apoio Recorrente (Subs):
+            </span>
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-2.5">
+              <button
+                onClick={handleTestSub}
+                className="py-2.5 px-3 rounded-xl bg-ivexi-dark border border-ivexi-purple/60 hover:border-ivexi-neon hover:text-ivexi-neon font-rajdhani font-bold text-xs uppercase transition"
+              >
+                Testar Sub
+              </button>
+              <button
+                onClick={() => handleTestSubTier('tier2')}
+                className="py-2.5 px-3 rounded-xl bg-ivexi-dark border border-[#5CE1E6]/60 hover:border-[#5CE1E6] hover:text-[#5CE1E6] font-rajdhani font-bold text-xs uppercase transition"
+              >
+                Sub Tier 2
+              </button>
+              <button
+                onClick={() => handleTestSubTier('tier3')}
+                className="py-2.5 px-3 rounded-xl bg-ivexi-dark border border-[#FFD700]/60 hover:border-[#FFD700] hover:text-[#FFD700] font-rajdhani font-bold text-xs uppercase transition"
+              >
+                Sub Tier 3
+              </button>
+              <button
+                onClick={() => handleTestSubTier('prime')}
+                className="py-2.5 px-3 rounded-xl bg-ivexi-dark border border-[#9146FF]/60 hover:border-[#9146FF] hover:text-white font-rajdhani font-bold text-xs uppercase transition"
+              >
+                Sub Prime
+              </button>
+              <button
+                onClick={handleTestResub}
+                className="py-2.5 px-3 rounded-xl bg-ivexi-dark border border-ivexi-neon/60 hover:border-ivexi-neon hover:text-ivexi-neon font-rajdhani font-bold text-xs uppercase transition"
+              >
+                Renovação (6m)
+              </button>
+              <button
+                onClick={handleTestGiftSub}
+                className="py-2.5 px-3 rounded-xl bg-ivexi-dark border border-ivexi-purple/60 hover:border-ivexi-neon hover:text-ivexi-neon font-rajdhani font-bold text-xs uppercase transition"
+              >
+                Gift Sub Indiv.
+              </button>
+              <button
+                onClick={() => handleTestSubBomb(10)}
+                className="py-2.5 px-3 rounded-xl bg-ivexi-dark border border-red-500/60 hover:border-red-400 hover:text-red-400 font-rajdhani font-bold text-xs uppercase transition col-span-2"
+              >
+                💣 Sub Bomb (10 Subs)
+              </button>
+            </div>
+          </div>
 
-            <button
-              onClick={handleTestDonation}
-              className="py-3 px-3 rounded-xl bg-ivexi-dark border border-ivexi-purple/60 hover:border-ivexi-neon hover:text-ivexi-neon font-rajdhani font-bold text-xs uppercase transition"
-            >
-              Testar Doação
-            </button>
+          {/* Categoria 3: Apoio Financeiro & Moedas */}
+          <div className="space-y-2">
+            <span className="text-xs font-rajdhani font-bold uppercase tracking-wider text-ivexi-muted">
+              3. Apoio Financeiro & Moedas (Pix / Bits):
+            </span>
+            <div className="grid grid-cols-2 sm:grid-cols-5 gap-2.5">
+              <button
+                onClick={handleTestDonation}
+                className="py-2.5 px-3 rounded-xl bg-ivexi-dark border border-[#00F5A0]/60 hover:border-[#00F5A0] hover:text-[#00F5A0] font-rajdhani font-bold text-xs uppercase transition"
+              >
+                Testar Doação
+              </button>
+              <button
+                onClick={() => handleTestBits(100)}
+                className="py-2.5 px-3 rounded-xl bg-ivexi-dark border border-ivexi-purple/60 hover:border-ivexi-neon hover:text-ivexi-neon font-rajdhani font-bold text-xs uppercase transition"
+              >
+                Bits 100
+              </button>
+              <button
+                onClick={() => handleTestBits(500)}
+                className="py-2.5 px-3 rounded-xl bg-ivexi-dark border border-[#00E5FF]/60 hover:border-[#00E5FF] hover:text-[#00E5FF] font-rajdhani font-bold text-xs uppercase transition"
+              >
+                Bits 500
+              </button>
+              <button
+                onClick={() => handleTestBits(1000)}
+                className="py-2.5 px-3 rounded-xl bg-ivexi-dark border border-ivexi-neon/60 hover:border-ivexi-neon hover:text-ivexi-neon font-rajdhani font-bold text-xs uppercase transition"
+              >
+                Bits 1.000
+              </button>
+              <button
+                onClick={() => handleTestBits(5000)}
+                className="py-2.5 px-3 rounded-xl bg-ivexi-dark border border-[#FF007F]/60 hover:border-[#FF007F] hover:text-[#FF007F] font-rajdhani font-bold text-xs uppercase transition"
+              >
+                ⚡ Bits 5.000+
+              </button>
+            </div>
+          </div>
 
-            <button
-              onClick={handleTestRaid}
-              className="py-3 px-3 rounded-xl bg-ivexi-dark border border-red-500/60 hover:border-red-400 hover:text-red-400 font-rajdhani font-bold text-xs uppercase transition cursor-pointer"
-            >
-              Testar Raid
-            </button>
+          {/* Categoria 4: Eventos Especiais */}
+          <div className="space-y-2">
+            <span className="text-xs font-rajdhani font-bold uppercase tracking-wider text-ivexi-muted">
+              4. Eventos Especiais & Metas:
+            </span>
+            <div className="grid grid-cols-2 sm:grid-cols-2 gap-2.5">
+              <button
+                onClick={() => handleTestHypeTrain('start')}
+                className="py-2.5 px-3 rounded-xl bg-ivexi-dark border border-[#FFD700]/60 hover:border-[#FFD700] hover:text-[#FFD700] font-rajdhani font-bold text-xs uppercase transition"
+              >
+                🚂 Trem do Hype (Início)
+              </button>
+              <button
+                onClick={() => handleTestHypeTrain('complete')}
+                className="py-2.5 px-3 rounded-xl bg-ivexi-dark border border-[#FFD700]/60 hover:border-[#FFD700] hover:text-[#FFD700] font-rajdhani font-bold text-xs uppercase transition"
+              >
+                🏆 Trem do Hype (Conclusão Nvl 5)
+              </button>
+            </div>
           </div>
         </section>
+
 
         {/* Seção Custom Widget StreamElements (Acesso Compartilhado) */}
         <section className="p-5 rounded-2xl bg-ivexi-surface/80 border border-ivexi-purple/50 space-y-4">

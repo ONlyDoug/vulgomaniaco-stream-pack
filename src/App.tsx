@@ -9,6 +9,10 @@ import { ControlDashboard } from '@/features/control/ControlDashboard';
 import { PanelsGallery } from '@/features/panels/PanelsGallery';
 import { BadgesGallery } from '@/features/badges/BadgesGallery';
 import { PreviewWrapper } from '@/shared/components/PreviewWrapper';
+import { SubGoal } from '@/features/goals/SubGoal';
+import { FollowerGoal } from '@/features/goals/FollowerGoal';
+import { TipGoal } from '@/features/goals/TipGoal';
+import { GoalsShowcase } from '@/features/goals/GoalsShowcase';
 
 export const App: React.FC = () => {
   const [currentPath, setCurrentPath] = useState<string>(() => {
@@ -45,6 +49,50 @@ export const App: React.FC = () => {
       prompt('Copie a URL para o OBS:', fullUrl);
     });
   };
+
+  // Rotas isoladas para OBS Browser Source dos Widgets de Metas
+  if (currentPath === '/goals/subs') {
+    return (
+      <div className="w-full h-full min-h-screen bg-transparent flex items-center justify-center p-4">
+        <SubGoal />
+      </div>
+    );
+  }
+
+  if (currentPath === '/goals/followers') {
+    return (
+      <div className="w-full h-full min-h-screen bg-transparent flex items-center justify-center p-4">
+        <FollowerGoal />
+      </div>
+    );
+  }
+
+  if (currentPath === '/goals/tips') {
+    return (
+      <div className="w-full h-full min-h-screen bg-transparent flex items-center justify-center p-4">
+        <TipGoal />
+      </div>
+    );
+  }
+
+  if (currentPath === '/goals') {
+    return (
+      <div className="relative min-h-screen bg-ivexi-dark">
+        <div className="px-6 py-3 bg-ivexi-surface/80 border-b border-ivexi-purple/40 flex items-center justify-between">
+          <button
+            onClick={() => navigateTo('/')}
+            className="px-3 py-1.5 rounded-lg bg-ivexi-dark hover:bg-ivexi-purple/50 border border-ivexi-purple/60 text-xs font-rajdhani font-bold uppercase text-ivexi-light transition"
+          >
+            ← Voltar ao Hub
+          </button>
+          <span className="text-xs text-ivexi-muted font-rajdhani font-semibold">
+            Widgets de Metas (Goals) OBS
+          </span>
+        </div>
+        <GoalsShowcase />
+      </div>
+    );
+  }
 
   if (currentPath === '/overlay/gameplay') {
     return (
@@ -402,6 +450,35 @@ export const App: React.FC = () => {
             <div className="mt-4 pt-3 border-t border-ivexi-purple/30 flex items-center justify-between">
               <span className="text-xs text-ivexi-neon font-rajdhani font-bold uppercase">Abrir Painel →</span>
               <span className="text-xs text-ivexi-muted">Para celular ou monitor 2</span>
+            </div>
+          </div>
+
+          {/* Card: Widgets de Metas (Goals) OBS */}
+          <div
+            onClick={() => navigateTo('/goals')}
+            className="cursor-pointer p-5 text-left rounded-xl bg-ivexi-surface/90 border border-ivexi-purple/50 hover:border-ivexi-neon hover:shadow-card-glow transition duration-200 md:col-span-2 flex flex-col justify-between"
+          >
+            <div>
+              <div className="flex items-center justify-between mb-2">
+                <div className="flex items-center gap-2">
+                  <span className="text-xl">🎯</span>
+                  <h2 className="font-rajdhani text-xl font-bold text-ivexi-neon">
+                    Widgets de Metas da Transmissão (Goals OBS)
+                  </h2>
+                </div>
+                <span className="text-xs px-2 py-0.5 rounded bg-ivexi-neon/20 border border-ivexi-neon/40 text-ivexi-neon font-bold">
+                  Checklist Live
+                </span>
+              </div>
+              <p className="text-sm text-ivexi-muted">
+                Barras de progresso estilizadas com identidade visual IVEXI para Meta de Subs (⭐), Meta de Seguidores (👥) e Meta de Pix/Doações (💎) prontas para OBS Browser Source.
+              </p>
+            </div>
+            <div className="mt-4 pt-3 border-t border-ivexi-purple/30 flex items-center justify-between">
+              <span className="text-xs text-ivexi-neon font-rajdhani font-bold uppercase">
+                Ver Widgets e Copiar Links OBS →
+              </span>
+              <span className="text-xs text-ivexi-muted">Rotas /goals/subs, /goals/followers e /goals/tips</span>
             </div>
           </div>
 
