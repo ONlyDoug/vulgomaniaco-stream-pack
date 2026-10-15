@@ -845,18 +845,39 @@ def generate_all():
                     zf.write(fp, os.path.relpath(fp, upload_dest_dir))
         
     # 2. Emotes da Live
-    print("-> Renderizando 7 Emotes Designer (incluindo vulgoENERGIZA e vulgoMONTA)...")
+    print("-> Renderizando 7 Emotes Designer (incluindo vulgoENERGIZA, vulgoMONTA, vulgoHYPE e vulgoGG)...")
     emotes = [
-        ('vulgoENERGIZA', load_ai_asset_if_exists(['emote_energiza.png', 'energiza.png'], render_emote_energiza_pro)),
-        ('vulgoMONTA', load_ai_asset_if_exists(['emote_monta.png', 'monta.png'], render_emote_monta_pro)),
-        ('vulgoHYPE', load_ai_asset_if_exists(['emote_hype.png', 'hype.png'], render_emote_hype_pro)),
-        ('vulgoGG', load_ai_asset_if_exists(['emote_gg.png', 'gg.png'], render_emote_gg_pro)),
-        ('vulgoRAGE', load_ai_asset_if_exists(['emote_rage.png', 'rage.png'], render_emote_rage_pro)),
-        ('vulgoLURK', load_ai_asset_if_exists(['emote_lurk.png', 'lurk.png'], render_emote_lurk_pro)),
-        ('vulgoRIP', load_ai_asset_if_exists(['emote_rip.png', 'rip.png'], render_emote_rip_pro)),
+        ('vulgoENERGIZA', render_emote_energiza_pro()),
+        ('vulgoMONTA', render_emote_monta_pro()),
+        ('vulgoHYPE', render_emote_hype_pro()),
+        ('vulgoGG', render_emote_gg_pro()),
+        ('vulgoRAGE', render_emote_rage_pro()),
+        ('vulgoLURK', render_emote_lurk_pro()),
+        ('vulgoRIP', render_emote_rip_pro()),
     ]
     for name, img in emotes:
         export_asset_sizes(img, name, os.path.join(BRAND_TWITCH_DIR, 'emotes'), os.path.join(PUBLIC_TWITCH_DIR, 'emotes'), os.path.join(SRC_TWITCH_DIR, 'emotes'), emote_sizes)
+        
+    # Organiza pasta dedicada para upload de emotes e ZIP
+    dest_emotes_dir = os.path.join(BRAND_TWITCH_DIR, 'upload_twitch_emotes')
+    os.makedirs(dest_emotes_dir, exist_ok=True)
+    for code, _ in emotes:
+        edir = os.path.join(dest_emotes_dir, code)
+        os.makedirs(edir, exist_ok=True)
+        for sz_folder, sz_label in [('28x28', '28x28'), ('56x56', '56x56'), ('112x112', '112x112'), ('512_master', '512x512')]:
+            src_f = os.path.join(BRAND_TWITCH_DIR, 'emotes', sz_folder, f'{code}-{sz_folder}.png')
+            if os.path.exists(src_f):
+                shutil.copy2(src_f, os.path.join(edir, f'{code}_{sz_label}.png'))
+                
+    for zp in [
+        os.path.join(BRAND_TWITCH_DIR, 'emotes-twitch-todos-tamanhos.zip'),
+        os.path.join(PUBLIC_TWITCH_DIR, 'emotes-twitch-todos-tamanhos.zip')
+    ]:
+        with zipfile.ZipFile(zp, 'w', zipfile.ZIP_DEFLATED) as zf:
+            for root, dirs, files in os.walk(dest_emotes_dir):
+                for file in sorted(files):
+                    fp = os.path.join(root, file)
+                    zf.write(fp, os.path.relpath(fp, dest_emotes_dir))
         
     # 3. Moeda de Pontos do Canal
     print("-> Renderizando Moeda Rúnica da Guilda IVEXI...")
