@@ -1,4 +1,4 @@
-/* jshint esversion: 8, browser: true */
+/* jshint esversion: 6, browser: true */
 /**
  * ============================================================
  * IVEXI GUILD & VULGOMANIACO - STREAM PACK
@@ -8,32 +8,32 @@
  */
 
 (function () {
-  let userFieldData = {};
-  const alertQueue = [];
-  let isDisplaying = false;
+  var userFieldData = {};
+  var alertQueue = [];
+  var isDisplaying = false;
 
-  const alertCard = document.getElementById('alert-card');
-  const alertTag = document.getElementById('alert-tag');
-  const alertTitle = document.getElementById('alert-title');
-  const alertUsername = document.getElementById('alert-username');
-  const alertMessage = document.getElementById('alert-message');
-  const alertAudio = document.getElementById('alert-audio');
+  var alertCard = document.getElementById('alert-card');
+  var alertTag = document.getElementById('alert-tag');
+  var alertTitle = document.getElementById('alert-title');
+  var alertUsername = document.getElementById('alert-username');
+  var alertMessage = document.getElementById('alert-message');
+  var alertAudio = document.getElementById('alert-audio');
 
-  // Gerador Sonoro Procedural Nativo equalizado a -14 LUFS
+  // Gerador Sonoro Procedural Nativo equalizado a -14 LUFS (100% seguro)
   function playProceduralSound(type, volumePercent) {
     try {
-      const AudioCtx = window.AudioContext || window.webkitAudioContext;
-      if (!AudioCtx) return;
-      const ctx = new AudioCtx();
-      const masterGain = ctx.createGain();
-      const vol = Math.max(0, Math.min(1, (volumePercent || 40) / 100)) * 0.22;
+      var AudioContextClass = (typeof window !== 'undefined' && (window.AudioContext || window.webkitAudioContext)) || null;
+      if (!AudioContextClass) return;
+      var ctx = new AudioContextClass();
+      var masterGain = ctx.createGain();
+      var vol = Math.max(0, Math.min(1, (volumePercent || 40) / 100)) * 0.22;
       masterGain.gain.setValueAtTime(vol, ctx.currentTime);
       masterGain.connect(ctx.destination);
-      const now = ctx.currentTime;
+      var now = ctx.currentTime;
 
       if (type === 'subbomb') {
-        const bass = ctx.createOscillator();
-        const bGain = ctx.createGain();
+        var bass = ctx.createOscillator();
+        var bGain = ctx.createGain();
         bass.type = 'sine';
         bass.frequency.setValueAtTime(110, now);
         bass.frequency.exponentialRampToValueAtTime(55, now + 0.4);
@@ -44,54 +44,59 @@
         bass.start(now);
         bass.stop(now + 0.5);
 
-        [392.0, 523.25, 659.25, 783.99, 1046.5].forEach((freq, idx) => {
-          const osc = ctx.createOscillator();
-          osc.type = 'triangle';
-          osc.frequency.setValueAtTime(freq, now + idx * 0.07);
-          osc.connect(masterGain);
-          osc.start(now + idx * 0.07);
-          osc.stop(now + 1.5);
-        });
+        var subBombNotes = [392.0, 523.25, 659.25, 783.99, 1046.5];
+        for (var i = 0; i < subBombNotes.length; i++) {
+          var osc1 = ctx.createOscillator();
+          osc1.type = 'triangle';
+          osc1.frequency.setValueAtTime(subBombNotes[i], now + i * 0.07);
+          osc1.connect(masterGain);
+          osc1.start(now + i * 0.07);
+          osc1.stop(now + 1.5);
+        }
         masterGain.gain.exponentialRampToValueAtTime(0.0001, now + 1.5);
       } else if (type && type.indexOf('sub') !== -1) {
-        [440.0, 554.37, 659.25, 880.0].forEach((freq, idx) => {
-          const osc = ctx.createOscillator();
-          osc.type = 'triangle';
-          osc.frequency.setValueAtTime(freq, now + idx * 0.08);
-          osc.connect(masterGain);
-          osc.start(now + idx * 0.08);
-          osc.stop(now + 1.3);
-        });
+        var subNotes = [440.0, 554.37, 659.25, 880.0];
+        for (var j = 0; j < subNotes.length; j++) {
+          var osc2 = ctx.createOscillator();
+          osc2.type = 'triangle';
+          osc2.frequency.setValueAtTime(subNotes[j], now + j * 0.08);
+          osc2.connect(masterGain);
+          osc2.start(now + j * 0.08);
+          osc2.stop(now + 1.3);
+        }
         masterGain.gain.exponentialRampToValueAtTime(0.0001, now + 1.3);
       } else if (type === 'tip') {
-        [880.0, 1318.5, 1760.0, 2093.0].forEach((freq, idx) => {
-          const osc = ctx.createOscillator();
-          osc.type = 'sine';
-          osc.frequency.setValueAtTime(freq, now + idx * 0.06);
-          osc.connect(masterGain);
-          osc.start(now + idx * 0.06);
-          osc.stop(now + 1.0);
-        });
+        var tipNotes = [880.0, 1318.5, 1760.0, 2093.0];
+        for (var k = 0; k < tipNotes.length; k++) {
+          var osc3 = ctx.createOscillator();
+          osc3.type = 'sine';
+          osc3.frequency.setValueAtTime(tipNotes[k], now + k * 0.06);
+          osc3.connect(masterGain);
+          osc3.start(now + k * 0.06);
+          osc3.stop(now + 1.0);
+        }
         masterGain.gain.exponentialRampToValueAtTime(0.0001, now + 1.0);
       } else if (type === 'raid') {
-        [220.0, 329.63, 440.0].forEach((freq, idx) => {
-          const osc = ctx.createOscillator();
-          osc.type = 'sawtooth';
-          osc.frequency.setValueAtTime(freq, now + idx * 0.12);
-          osc.connect(masterGain);
-          osc.start(now + idx * 0.12);
-          osc.stop(now + 1.6);
-        });
+        var raidNotes = [220.0, 329.63, 440.0];
+        for (var m = 0; m < raidNotes.length; m++) {
+          var osc4 = ctx.createOscillator();
+          osc4.type = 'sawtooth';
+          osc4.frequency.setValueAtTime(raidNotes[m], now + m * 0.12);
+          osc4.connect(masterGain);
+          osc4.start(now + m * 0.12);
+          osc4.stop(now + 1.6);
+        }
         masterGain.gain.exponentialRampToValueAtTime(0.0001, now + 1.6);
       } else {
-        [523.25, 659.25, 783.99, 1046.5].forEach((freq, idx) => {
-          const osc = ctx.createOscillator();
-          osc.type = 'triangle';
-          osc.frequency.setValueAtTime(freq, now + idx * 0.08);
-          osc.connect(masterGain);
-          osc.start(now + idx * 0.08);
-          osc.stop(now + 1.2);
-        });
+        var defaultNotes = [523.25, 659.25, 783.99, 1046.5];
+        for (var n = 0; n < defaultNotes.length; n++) {
+          var osc5 = ctx.createOscillator();
+          osc5.type = 'triangle';
+          osc5.frequency.setValueAtTime(defaultNotes[n], now + n * 0.08);
+          osc5.connect(masterGain);
+          osc5.start(now + n * 0.08);
+          osc5.stop(now + 1.2);
+        }
         masterGain.gain.exponentialRampToValueAtTime(0.0001, now + 1.2);
       }
     } catch (e) {
@@ -100,18 +105,28 @@
   }
 
   function playSound(type) {
-    const soundUrl = userFieldData.alertSound;
-    const volume = typeof userFieldData.alertVolume === 'number' ? userFieldData.alertVolume : 40;
+    var volume = typeof userFieldData.alertVolume === 'number' ? userFieldData.alertVolume : 40;
+    var soundUrl = userFieldData.alertSound;
 
-    if (soundUrl && soundUrl.trim() !== '') {
-      if (alertAudio) {
-        alertAudio.src = soundUrl;
-        alertAudio.volume = volume / 100;
-        alertAudio.play().catch(() => playProceduralSound(type, volume));
+    if (soundUrl && typeof soundUrl === 'string' && soundUrl.trim() !== '') {
+      try {
+        if (alertAudio) {
+          alertAudio.src = soundUrl.trim();
+          alertAudio.volume = Math.max(0, Math.min(1, volume / 100));
+          var playPromise = alertAudio.play();
+          if (playPromise && typeof playPromise.catch === 'function') {
+            playPromise.catch(function () {
+              playProceduralSound(type, volume);
+            });
+          }
+          return;
+        }
+      } catch (err) {
+        console.warn('Falha no audio HTML5:', err);
       }
-    } else {
-      playProceduralSound(type, volume);
     }
+
+    playProceduralSound(type, volume);
   }
 
   function displayAlert(data) {
@@ -133,15 +148,22 @@
       }
     }
 
-    playSound(data.soundType);
+    // Exibe o card visual imediatamente (garantia de renderização)
     alertCard.classList.add('show');
 
-    const durationSeconds = typeof userFieldData.alertDuration === 'number' ? userFieldData.alertDuration : 6;
-    const durationMs = durationSeconds * 1000;
+    // Dispara o áudio protegido contra qualquer falha
+    try {
+      playSound(data.soundType);
+    } catch (audioErr) {
+      console.warn('Audio protegido:', audioErr);
+    }
 
-    setTimeout(() => {
+    var durationSeconds = typeof userFieldData.alertDuration === 'number' ? userFieldData.alertDuration : 6;
+    var durationMs = durationSeconds * 1000;
+
+    setTimeout(function () {
       alertCard.classList.remove('show');
-      setTimeout(() => {
+      setTimeout(function () {
         isDisplaying = false;
         processNextAlert();
       }, 700);
@@ -151,18 +173,18 @@
   function processNextAlert() {
     if (isDisplaying || alertQueue.length === 0) return;
     isDisplaying = true;
-    const nextItem = alertQueue.shift();
+    var nextItem = alertQueue.shift();
     displayAlert(nextItem);
   }
 
   function handleEvent(listener, event) {
     if (!event) return;
-    const l = String(listener || (event && (event.type || event.listener)) || '').toLowerCase();
+    var l = String(listener || (event && (event.type || event.listener)) || '').toLowerCase();
     try {
       console.log('[IVEXI Stream Widget] Evento detectado:', l, event);
     } catch (e) {}
 
-    let alertData = null;
+    var alertData = null;
 
     if (l === 'follower-latest' || l.indexOf('follower') !== -1 || l.indexOf('follow') !== -1) {
       alertData = {
@@ -174,8 +196,8 @@
         message: null,
       };
     } else if (l === 'subscriber-latest' || l.indexOf('sub') !== -1) {
-      const isBulk = event.bulkGifted || event.isCommunityGift;
-      const count = event.count || event.amount || 5;
+      var isBulk = event.bulkGifted || event.isCommunityGift;
+      var count = event.count || event.amount || 5;
 
       if (isBulk) {
         alertData = {
@@ -242,7 +264,7 @@
         };
       }
     } else if (l === 'tip-latest' || l.indexOf('tip') !== -1 || l.indexOf('donation') !== -1) {
-      const formattedAmount = typeof event.amount === 'number' ? 'R$ ' + event.amount.toFixed(2) : (event.amount || 'R$ 10,00');
+      var formattedAmount = typeof event.amount === 'number' ? 'R$ ' + event.amount.toFixed(2) : (event.amount || 'R$ 10,00');
       alertData = {
         className: 'event-tip',
         soundType: 'tip',
@@ -252,10 +274,10 @@
         message: event.message || null,
       };
     } else if (l === 'cheer-latest' || l.indexOf('cheer') !== -1 || l.indexOf('bit') !== -1) {
-      const bits = typeof event.amount === 'number' ? event.amount : parseInt(event.amount || '100', 10);
-      let tierClass = 'event-cheer-tier1';
-      let badge = '🔮 BITS AMETISTA';
-      let title = bits.toLocaleString('pt-BR') + ' BITS NO CANAL!';
+      var bits = typeof event.amount === 'number' ? event.amount : parseInt(event.amount || '100', 10);
+      var tierClass = 'event-cheer-tier1';
+      var badge = '🔮 BITS AMETISTA';
+      var title = bits.toLocaleString('pt-BR') + ' BITS NO CANAL!';
 
       if (bits >= 5000) {
         tierClass = 'event-cheer-tier4';
@@ -278,7 +300,7 @@
         message: event.message || null,
       };
     } else if (l === 'raid-latest' || l.indexOf('raid') !== -1 || l.indexOf('host') !== -1) {
-      const viewers = event.amount || event.viewers || 10;
+      var viewers = event.amount || event.viewers || 10;
       alertData = {
         className: 'event-raid',
         soundType: 'raid',
@@ -312,9 +334,9 @@
 
   window.addEventListener('onEventReceived', function (obj) {
     if (!obj || !obj.detail) return;
-    const detail = obj.detail;
-    const listener = detail.listener || detail.type || '';
-    const event = detail.event || detail.data || detail;
+    var detail = obj.detail;
+    var listener = detail.listener || detail.type || '';
+    var event = detail.event || detail.data || detail;
     handleEvent(listener, event);
   });
 })();
