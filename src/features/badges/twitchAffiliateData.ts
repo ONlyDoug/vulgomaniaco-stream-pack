@@ -132,6 +132,19 @@ export const SUB_BADGES_DATA: SubBadgeItem[] = [
 
 export const EMOTES_DATA: EmoteItem[] = [
   {
+    id: 'vulgo-botaprafora',
+    code: 'vulgoBOTAPRAFORA',
+    name: 'Bota pra fora!',
+    category: 'piada_interna',
+    isInsideJoke: true,
+    description: 'Corvo Chibi guerreiro sacando a espada de Albion envolta em raios e faíscas místicas.',
+    contextUsage: 'Comando de puxar as armas e engajar o combate na Black Zone!',
+    masterUrl: '/assets/twitch/emotes/vulgoBOTAPRAFORA_512_master.png',
+    size112Url: '/assets/twitch/emotes/vulgoBOTAPRAFORA_112x112.png',
+    size56Url: '/assets/twitch/emotes/vulgoBOTAPRAFORA_56x56.png',
+    size28Url: '/assets/twitch/emotes/vulgoBOTAPRAFORA_28x28.png',
+  },
+  {
     id: 'vulgo-energiza',
     code: 'vulgoENERGIZA',
     name: 'Bota pra fora, energiza e monta!',
@@ -156,6 +169,19 @@ export const EMOTES_DATA: EmoteItem[] = [
     size112Url: '/assets/twitch/emotes/vulgoMONTA_112x112.png',
     size56Url: '/assets/twitch/emotes/vulgoMONTA_56x56.png',
     size28Url: '/assets/twitch/emotes/vulgoMONTA_28x28.png',
+  },
+  {
+    id: 'vulgo-batefood',
+    code: 'vulgoBATEFOOD',
+    name: 'Bate food genti!',
+    category: 'piada_interna',
+    isInsideJoke: true,
+    description: 'Corvo Chibi devorando apressadamente a Torta de Porco fumegante e cobrando o time.',
+    contextUsage: 'O meme oficial de Albion: comer a comida de buff antes da treta começar!',
+    masterUrl: '/assets/twitch/emotes/vulgoBATEFOOD_512_master.png',
+    size112Url: '/assets/twitch/emotes/vulgoBATEFOOD_112x112.png',
+    size56Url: '/assets/twitch/emotes/vulgoBATEFOOD_56x56.png',
+    size28Url: '/assets/twitch/emotes/vulgoBATEFOOD_28x28.png',
   },
   {
     id: 'vulgo-hype',

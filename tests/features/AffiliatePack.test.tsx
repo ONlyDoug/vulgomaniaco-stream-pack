@@ -23,16 +23,20 @@ describe('Pack Oficial de Afiliado Twitch (Distintivos e Emotes)', () => {
     });
   });
 
-  it('deve renderizar os 7 emotes da live com destaque especial para a piada interna vulgoENERGIZA', () => {
+  it('deve renderizar os 9 emotes da live com destaque especial para as piadas internas de combate', () => {
     render(<BadgesGallery />);
 
     const emoteCards = screen.getAllByTestId('emote-card');
-    expect(emoteCards).toHaveLength(7);
+    expect(emoteCards).toHaveLength(9);
 
-    // Verifica a presença e tag da piada interna oficial
+    // Verifica a presença e tag das piadas internas oficiais
+    expect(screen.getByText(/Bota pra fora!/i)).toBeInTheDocument();
     expect(screen.getByText(/Bota pra fora, energiza e monta!/i)).toBeInTheDocument();
+    expect(screen.getByText(/Bate food genti!/i)).toBeInTheDocument();
+    expect(screen.getAllByText('vulgoBOTAPRAFORA').length).toBeGreaterThanOrEqual(1);
     expect(screen.getAllByText('vulgoENERGIZA').length).toBeGreaterThanOrEqual(1);
-    expect(screen.getAllByText(/Piada Interna Oficial/i)).toHaveLength(2);
+    expect(screen.getAllByText('vulgoBATEFOOD').length).toBeGreaterThanOrEqual(1);
+    expect(screen.getAllByText(/Piada Interna Oficial/i)).toHaveLength(4);
 
     // Verifica os outros emotes essenciais
     const codes = ['vulgoMONTA', 'vulgoHYPE', 'vulgoGG', 'vulgoRAGE', 'vulgoLURK', 'vulgoRIP'];
@@ -75,6 +79,6 @@ describe('Pack Oficial de Afiliado Twitch (Distintivos e Emotes)', () => {
     expect(BIT_BADGES_DATA).toHaveLength(5);
     expect(BIT_BADGES_DATA.map((b) => b.bits)).toEqual([1, 100, 1000, 5000, 10000]);
     expect(SUB_BADGES_DATA).toHaveLength(6);
-    expect(EMOTES_DATA).toHaveLength(7);
+    expect(EMOTES_DATA).toHaveLength(9);
   });
 });

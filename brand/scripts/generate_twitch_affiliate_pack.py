@@ -232,6 +232,40 @@ def render_emote_energiza_pro():
     add_badge_tag(im, "ENERGIZA!", bg_color=C_DARK, border_color=C_NEON, text_color=C_NEON, y_offset=392)
     return im
 
+def render_emote_botaprafora_pro():
+    """vulgoBOTAPRAFORA: Chamada de Combate e Saque de Espada ('Bota pra fora!')"""
+    size = 512
+    ai_path = os.path.join(BRAND_TWITCH_DIR, 'ai_raw', 'emote_botaprafora.png')
+    ai_img = extract_alpha_from_black(ai_path)
+    if ai_img:
+        ai_img = tight_crop_to_square(ai_img, padding_ratio=0.02)
+        im = ai_img.resize((size, size), Image.Resampling.LANCZOS)
+    else:
+        im = Image.new('RGBA', (size, size), (0, 0, 0, 0))
+        if os.path.exists(CHIBI_PATH):
+            chibi = Image.open(CHIBI_PATH).convert('RGBA')
+            chibi.thumbnail((360, 360), Image.Resampling.LANCZOS)
+            im.paste(chibi, (76, 50), chibi)
+    add_badge_tag(im, "BOTA PRA FORA!", bg_color=C_PURPLE_DARK, border_color=C_CYAN, text_color=C_WHITE, y_offset=392)
+    return im
+
+def render_emote_batefood_pro():
+    """vulgoBATEFOOD: Chamada Clássica de Torta de Porco ('Bate food genti!')"""
+    size = 512
+    ai_path = os.path.join(BRAND_TWITCH_DIR, 'ai_raw', 'emote_batefood.png')
+    ai_img = extract_alpha_from_black(ai_path)
+    if ai_img:
+        ai_img = tight_crop_to_square(ai_img, padding_ratio=0.02)
+        im = ai_img.resize((size, size), Image.Resampling.LANCZOS)
+    else:
+        im = Image.new('RGBA', (size, size), (0, 0, 0, 0))
+        if os.path.exists(CHIBI_PATH):
+            chibi = Image.open(CHIBI_PATH).convert('RGBA')
+            chibi.thumbnail((360, 360), Image.Resampling.LANCZOS)
+            im.paste(chibi, (76, 50), chibi)
+    add_badge_tag(im, "BATE FOOD!", bg_color=C_DARK, border_color=C_NEON, text_color=C_NEON, y_offset=392)
+    return im
+
 def render_emote_monta_pro():
     """vulgoMONTA: Chamada de Cavalgada em Bando na Black Zone"""
     size = 512
@@ -845,10 +879,12 @@ def generate_all():
                     zf.write(fp, os.path.relpath(fp, upload_dest_dir))
         
     # 2. Emotes da Live
-    print("-> Renderizando 7 Emotes Designer (incluindo vulgoENERGIZA, vulgoMONTA, vulgoHYPE e vulgoGG)...")
+    print("-> Renderizando 9 Emotes Designer (incluindo vulgoBOTAPRAFORA, vulgoENERGIZA, vulgoMONTA, vulgoBATEFOOD, vulgoHYPE e vulgoGG)...")
     emotes = [
+        ('vulgoBOTAPRAFORA', render_emote_botaprafora_pro()),
         ('vulgoENERGIZA', render_emote_energiza_pro()),
         ('vulgoMONTA', render_emote_monta_pro()),
+        ('vulgoBATEFOOD', render_emote_batefood_pro()),
         ('vulgoHYPE', render_emote_hype_pro()),
         ('vulgoGG', render_emote_gg_pro()),
         ('vulgoRAGE', render_emote_rage_pro()),
