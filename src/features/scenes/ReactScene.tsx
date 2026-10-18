@@ -5,11 +5,30 @@ export const ReactScene: React.FC = () => {
   return (
     <div
       data-testid="react-scene-container"
-      className="w-[1920px] h-[1080px] bg-ivexi-dark text-ivexi-light p-8 relative overflow-hidden select-none flex flex-col justify-between"
+      className="w-[1920px] h-[1080px] bg-transparent text-ivexi-light p-8 relative overflow-hidden select-none flex flex-col justify-between"
     >
-      {/* Luzes de fundo atmosféricas */}
-      <div className="absolute -top-40 left-1/4 w-[750px] h-[750px] rounded-full bg-ivexi-purple/20 blur-[170px] pointer-events-none" />
-      <div className="absolute -bottom-40 right-1/4 w-[650px] h-[650px] rounded-full bg-ivexi-surface/50 blur-[160px] pointer-events-none" />
+      {/* Máscara de Fundo SVG: Recorta furos 100% transparentes para o Vídeo e a Webcam */}
+      <svg
+        className="absolute inset-0 w-[1920px] h-[1080px] pointer-events-none z-0"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <defs>
+          <mask id="react-cutout-mask">
+            {/* Branco = Fundo escuro opaco preenchido */}
+            <rect width="1920" height="1080" fill="white" />
+            {/* Preto = Furo 100% transparente para captura de vídeo/conteúdo (1380x776 em x:32, y:86) */}
+            <rect x="32" y="86" width="1380" height="776" rx="8" fill="black" />
+            {/* Preto = Furo 100% transparente para webcam lateral (440x248 em x:1448, y:86) */}
+            <rect x="1448" y="86" width="440" height="248" rx="8" fill="black" />
+          </mask>
+        </defs>
+        {/* Camada de fundo escuro da guilda com furos recortados */}
+        <g mask="url(#react-cutout-mask)">
+          <rect width="1920" height="1080" fill="#140A1F" />
+          <circle cx="500" cy="0" r="550" fill="#732EB8" opacity="0.3" />
+          <circle cx="1600" cy="1080" r="450" fill="#2E124D" opacity="0.45" />
+        </g>
+      </svg>
 
       {/* Cabeçalho Oficial (h ~ 80px) com o Escudo Principal (Corvo sobre VulgoManiaco) */}
       <header className="z-10 flex items-center justify-between border-b border-ivexi-purple/50 pb-3">
@@ -51,10 +70,10 @@ export const ReactScene: React.FC = () => {
       <main className="z-10 flex items-start justify-between gap-6 my-auto h-[860px]">
         {/* Lado Esquerdo: Área Principal de Vídeo / Conteúdo (1380 × 776 px) */}
         <div className="flex flex-col justify-between h-full w-[1380px]">
-          {/* Moldura Tática de Vídeo 16:9 */}
+          {/* Moldura Tática de Vídeo 16:9 (100% transparente para a janela de vídeo abaixo) */}
           <div
             data-testid="react-content-frame"
-            className="relative w-[1380px] h-[776px] clip-tactical-md bg-[#140A1F]/40 border-2 border-ivexi-purple/90 shadow-card-glow overflow-hidden"
+            className="relative w-[1380px] h-[776px] clip-tactical-md bg-transparent border-2 border-ivexi-purple/90 shadow-card-glow overflow-hidden pointer-events-none"
           >
             {/* Cantoneiras neon */}
             <div className="absolute top-0 left-0 w-8 h-8 border-t-4 border-l-4 border-ivexi-neon" />
@@ -67,17 +86,6 @@ export const ReactScene: React.FC = () => {
               <span className="w-2 h-2 rounded-full bg-red-500 animate-ping" />
               <span className="text-ivexi-neon">ANALISANDO CONTEÚDO</span>
               <span className="text-ivexi-muted">• 1080p 60 FPS</span>
-            </div>
-
-            {/* Marcador transparente para fonte de janela/vídeo do OBS */}
-            <div className="w-full h-full bg-transparent flex flex-col items-center justify-center text-ivexi-muted/30 font-rajdhani text-2xl tracking-widest space-y-2 pointer-events-none">
-              <div className="w-16 h-16 rounded-full border border-ivexi-purple/30 flex items-center justify-center text-3xl text-ivexi-neon/40">
-                ▶
-              </div>
-              <span>[ ÁREA DE CAPTURA DO VÍDEO / YOUTUBE / NAVEGADOR ]</span>
-              <span className="text-xs font-inter text-ivexi-muted/30 tracking-normal">
-                Alinhe a janela de exibição de lutas e vídeos exatamente nesta moldura (1380 × 776 px)
-              </span>
             </div>
           </div>
 
@@ -100,10 +108,10 @@ export const ReactScene: React.FC = () => {
 
         {/* Lado Direito: Coluna Lateral (440px) com Câmera no topo e Chat abaixo */}
         <div className="flex flex-col justify-between h-full w-[440px]">
-          {/* 1. Moldura da Webcam do Streamer 16:9 (440 × 248 px) */}
+          {/* 1. Moldura da Webcam do Streamer 16:9 (440 × 248 px - 100% transparente para a câmera abaixo) */}
           <div
             data-testid="react-webcam-frame"
-            className="relative w-[440px] h-[248px] clip-tactical-md bg-[#140A1F]/50 border-2 border-ivexi-purple/90 shadow-card-glow overflow-hidden"
+            className="relative w-[440px] h-[248px] clip-tactical-md bg-transparent border-2 border-ivexi-purple/90 shadow-card-glow overflow-hidden pointer-events-none"
           >
             {/* Cantoneiras neon */}
             <div className="absolute top-0 left-0 w-6 h-6 border-t-3 border-l-3 border-ivexi-neon" />
@@ -114,11 +122,6 @@ export const ReactScene: React.FC = () => {
             {/* Pedestal do Streamer */}
             <div className="absolute bottom-3 left-4 px-3 py-1 clip-tactical-pedestal bg-ivexi-dark/95 border border-ivexi-neon text-xs font-rajdhani font-bold text-ivexi-neon uppercase tracking-wider">
               VULGOMANIACO • AO VIVO
-            </div>
-
-            {/* Área transparente para a câmera do OBS */}
-            <div className="w-full h-full bg-transparent flex items-center justify-center text-ivexi-muted/40 font-rajdhani text-sm tracking-widest">
-              [ WEBCAM OBS 16:9 ]
             </div>
           </div>
 

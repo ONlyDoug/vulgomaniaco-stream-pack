@@ -5,11 +5,28 @@ export const ChattingScene: React.FC = () => {
   return (
     <div
       data-testid="chatting-scene-container"
-      className="w-[1920px] h-[1080px] bg-ivexi-dark text-ivexi-light p-10 relative overflow-hidden select-none flex flex-col justify-between"
+      className="w-[1920px] h-[1080px] bg-transparent text-ivexi-light p-10 relative overflow-hidden select-none flex flex-col justify-between"
     >
-      {/* Luzes de fundo atmosféricas */}
-      <div className="absolute -top-40 left-1/3 w-[700px] h-[700px] rounded-full bg-ivexi-purple/20 blur-[160px] pointer-events-none" />
-      <div className="absolute -bottom-40 right-1/4 w-[600px] h-[600px] rounded-full bg-ivexi-surface/50 blur-[150px] pointer-events-none" />
+      {/* Máscara de Fundo SVG: Recorta furo 100% transparente para a Câmera Grande do OBS */}
+      <svg
+        className="absolute inset-0 w-[1920px] h-[1080px] pointer-events-none z-0"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <defs>
+          <mask id="chatting-cutout-mask">
+            {/* Branco = Fundo escuro opaco preenchido */}
+            <rect width="1920" height="1080" fill="white" />
+            {/* Preto = Furo 100% transparente para a webcam (1224x640 em x:40, y:106) */}
+            <rect x="40" y="106" width="1224" height="640" rx="8" fill="black" />
+          </mask>
+        </defs>
+        {/* Camada de fundo escuro da guilda recortada pelo furo */}
+        <g mask="url(#chatting-cutout-mask)">
+          <rect width="1920" height="1080" fill="#140A1F" />
+          <circle cx="500" cy="0" r="550" fill="#732EB8" opacity="0.3" />
+          <circle cx="1600" cy="1080" r="450" fill="#2E124D" opacity="0.45" />
+        </g>
+      </svg>
 
       {/* Cabeçalho com Logotipo Horizontal e Status da Sessão */}
       <header className="z-10 flex items-center justify-between border-b border-ivexi-purple/50 pb-4">
@@ -40,10 +57,10 @@ export const ChattingScene: React.FC = () => {
       <main className="z-10 grid grid-cols-12 gap-8 my-auto h-[780px]">
         {/* Lado Esquerdo: Câmera Principal do Streamer (Col 8) */}
         <div className="col-span-8 flex flex-col justify-between">
-          {/* Moldura de Câmera Principal 16:9 */}
+          {/* Moldura de Câmera Principal 16:9 (100% transparente para a câmera abaixo) */}
           <div
             data-testid="chatting-webcam-frame"
-            className="relative w-full h-[640px] clip-tactical-md bg-[#140A1F]/50 border-2 border-ivexi-purple/90 shadow-card-glow overflow-hidden"
+            className="relative w-full h-[640px] clip-tactical-md bg-transparent border-2 border-ivexi-purple/90 shadow-card-glow overflow-hidden pointer-events-none"
           >
             {/* Cantoneiras neon */}
             <div className="absolute top-0 left-0 w-8 h-8 border-t-4 border-l-4 border-ivexi-neon" />
@@ -52,13 +69,8 @@ export const ChattingScene: React.FC = () => {
             <div className="absolute bottom-0 right-0 w-8 h-8 border-b-4 border-r-4 border-ivexi-purple" />
 
             {/* Tag do Streamer */}
-            <div className="absolute bottom-4 left-6 px-4 py-1.5 clip-tactical-pedestal bg-ivexi-dark/90 border border-ivexi-neon text-sm font-rajdhani font-bold text-ivexi-neon uppercase">
+            <div className="absolute bottom-4 left-6 px-4 py-1.5 clip-tactical-pedestal bg-ivexi-dark/95 border border-ivexi-neon text-sm font-rajdhani font-bold text-ivexi-neon uppercase">
               VULGOMANIACO • AO VIVO
-            </div>
-
-            {/* Área transparente para fonte de câmera OBS */}
-            <div className="w-full h-full bg-transparent flex items-center justify-center text-ivexi-muted/40 font-rajdhani text-2xl tracking-widest">
-              [ ÁREA DE CAPTURA WEBCAM OBS ]
             </div>
           </div>
 
