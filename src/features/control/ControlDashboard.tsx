@@ -10,6 +10,7 @@ import {
 } from '../alerts/streamElementsWidgetCode';
 import {
   TWITCH_CHAT_POPOUT_URL,
+  DEFAULT_STREAMELEMENTS_CHAT_OVERLAY_URL,
   TWITCH_CHAT_OBS_CSS,
   CHAT_OBS_CALIBRATION,
 } from '../obs/chatWidgetConfig';
@@ -22,6 +23,8 @@ export const ControlDashboard: React.FC = () => {
   const [copiedKey, setCopiedKey] = useState<string | null>(null);
   const [seOverlayUrl, setSeOverlayUrl] = useState<string>(DEFAULT_SE_URL);
   const [seSavedSuccess, setSeSavedSuccess] = useState<boolean>(false);
+  const [seChatOverlayUrl, setSeChatOverlayUrl] = useState<string>(DEFAULT_STREAMELEMENTS_CHAT_OVERLAY_URL);
+  const [seChatSavedSuccess, setSeChatSavedSuccess] = useState<boolean>(false);
 
   useEffect(() => {
     if (typeof window !== 'undefined') {
@@ -32,8 +35,23 @@ export const ControlDashboard: React.FC = () => {
       } else {
         localStorage.setItem('streamelements_overlay_url', DEFAULT_SE_URL);
       }
+      const storedSeChatUrl = localStorage.getItem('streamelements_chat_overlay_url');
+      if (storedSeChatUrl) {
+        setSeChatOverlayUrl(storedSeChatUrl);
+      } else {
+        localStorage.setItem('streamelements_chat_overlay_url', DEFAULT_STREAMELEMENTS_CHAT_OVERLAY_URL);
+      }
     }
   }, []);
+
+  const handleSaveSeChatUrl = () => {
+    if (typeof window !== 'undefined') {
+      localStorage.setItem('streamelements_chat_overlay_url', seChatOverlayUrl.trim());
+      setSeChatSavedSuccess(true);
+      setLastDispatched('URL do Overlay de Chat StreamElements salva com sucesso!');
+      setTimeout(() => setSeChatSavedSuccess(false), 3000);
+    }
+  };
 
   const broadcastEvent = (type: string, payload?: any) => {
     if (typeof window !== 'undefined' && 'BroadcastChannel' in window) {
@@ -536,7 +554,7 @@ export const ControlDashboard: React.FC = () => {
               <div>
                 <div className="flex items-center justify-between mb-2">
                   <span className="font-rajdhani text-sm font-bold text-ivexi-light uppercase flex items-center gap-1.5">
-                    <span>⚡</span> Método 1: Chat Popout Nativo (Recomendado)
+                    <span>⚡</span> Método 1: Chat Popout Nativo (Twitch)
                   </span>
                   <span className="text-[10px] text-ivexi-neon font-bold uppercase bg-ivexi-purple/40 px-2 py-0.5 rounded">
                     Sem Cadastro
@@ -564,35 +582,79 @@ export const ControlDashboard: React.FC = () => {
               </div>
             </div>
 
-            {/* Medidas Calibradas */}
-            <div className="p-4 rounded-xl bg-ivexi-dark/90 border border-ivexi-purple/50 space-y-3 text-xs">
-              <span className="font-rajdhani text-sm font-bold text-ivexi-light uppercase flex items-center gap-1.5">
-                <span>📐</span> Medidas no OBS (Pixel-Perfect)
-              </span>
-              <ul className="space-y-2 text-ivexi-muted">
-                <li className="p-2 rounded-lg bg-[#0e0716] border border-ivexi-purple/30">
-                  <div className="font-bold text-ivexi-light text-[11px] uppercase text-ivexi-neon">
-                    {CHAT_OBS_CALIBRATION.reactScene.label}
-                  </div>
-                  <div className="text-[11px] mt-0.5">
-                    Largura: <strong>{CHAT_OBS_CALIBRATION.reactScene.width}px</strong> • Altura: <strong>{CHAT_OBS_CALIBRATION.reactScene.height}px</strong>
-                  </div>
-                  <div className="text-[10px] text-ivexi-muted/70">
-                    Posição sugerida: X: {CHAT_OBS_CALIBRATION.reactScene.x}, Y: {CHAT_OBS_CALIBRATION.reactScene.y} (abaixo da webcam lateral)
-                  </div>
-                </li>
-                <li className="p-2 rounded-lg bg-[#0e0716] border border-ivexi-purple/30">
-                  <div className="font-bold text-ivexi-light text-[11px] uppercase text-ivexi-neon">
-                    {CHAT_OBS_CALIBRATION.chattingScene.label}
-                  </div>
-                  <div className="text-[11px] mt-0.5">
-                    Largura: <strong>{CHAT_OBS_CALIBRATION.chattingScene.width}px</strong> • Altura: <strong>{CHAT_OBS_CALIBRATION.chattingScene.height}px</strong>
-                  </div>
-                  <div className="text-[10px] text-ivexi-muted/70">
-                    Posição sugerida: X: {CHAT_OBS_CALIBRATION.chattingScene.x}, Y: {CHAT_OBS_CALIBRATION.chattingScene.y} (coluna direita inteira)
-                  </div>
-                </li>
-              </ul>
+            {/* Método 2: Overlay StreamElements Dedicado */}
+            <div className="p-4 rounded-xl bg-ivexi-dark/90 border border-ivexi-purple/50 space-y-3 flex flex-col justify-between">
+              <div>
+                <div className="flex items-center justify-between mb-2">
+                  <span className="font-rajdhani text-sm font-bold text-ivexi-light uppercase flex items-center gap-1.5">
+                    <span>🎨</span> Método 2: Overlay StreamElements (Dedicado)
+                  </span>
+                  <span className="text-[10px] text-[#00F5A0] font-bold uppercase bg-[#00F5A0]/20 px-2 py-0.5 rounded border border-[#00F5A0]/30">
+                    Ativo & Conectado
+                  </span>
+                </div>
+                <p className="text-xs text-ivexi-muted leading-relaxed">
+                  Overlay dedicado criado no StreamElements do canal <strong>vulgoomaniaco</strong> com fade-out de mensagens.
+                </p>
+                <div className="mt-2 flex gap-2">
+                  <input
+                    type="text"
+                    value={seChatOverlayUrl}
+                    onChange={(e) => setSeChatOverlayUrl(e.target.value)}
+                    placeholder="https://streamelements.com/overlay/..."
+                    className="flex-1 px-3 py-1.5 rounded-lg bg-ivexi-surface border border-ivexi-purple/50 text-[11px] text-ivexi-light focus:outline-none focus:border-ivexi-neon font-mono"
+                  />
+                  <button
+                    onClick={handleSaveSeChatUrl}
+                    className="px-3 py-1.5 rounded-lg bg-ivexi-purple hover:bg-ivexi-purple/80 text-white font-rajdhani font-bold text-xs uppercase transition cursor-pointer"
+                  >
+                    {seChatSavedSuccess ? 'Salvo!' : 'Salvar'}
+                  </button>
+                </div>
+              </div>
+
+              <div className="space-y-2 pt-2 border-t border-ivexi-purple/30">
+                <button
+                  onClick={() => handleCopyCode('se-chat-url', seChatOverlayUrl)}
+                  className="w-full py-2.5 px-3 rounded-xl bg-ivexi-surface border border-ivexi-purple/60 hover:border-ivexi-neon hover:text-ivexi-neon font-rajdhani font-bold text-xs uppercase transition flex items-center justify-center gap-1.5 cursor-pointer"
+                >
+                  {copiedKey === 'se-chat-url' ? '✅ Link StreamElements Copiado!' : '📋 Copiar Link StreamElements'}
+                </button>
+                <div className="text-[10px] text-ivexi-muted/70 text-center">
+                  No OBS: Navegador &gt; Cole a URL acima &gt; Largura <strong>420</strong>, Altura <strong>500</strong>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Medidas Calibradas */}
+          <div className="p-4 rounded-xl bg-ivexi-dark/90 border border-ivexi-purple/50 space-y-3 text-xs">
+            <span className="font-rajdhani text-sm font-bold text-ivexi-light uppercase flex items-center gap-1.5">
+              <span>📐</span> Medidas e Coordenadas no OBS Studio (Pixel-Perfect)
+            </span>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+              <div className="p-3 rounded-lg bg-[#0e0716] border border-ivexi-purple/30">
+                <div className="font-bold text-ivexi-light text-[11px] uppercase text-ivexi-neon">
+                  {CHAT_OBS_CALIBRATION.reactScene.label}
+                </div>
+                <div className="text-[11px] mt-1 text-white">
+                  Largura: <strong>{CHAT_OBS_CALIBRATION.reactScene.width}px</strong> • Altura: <strong>{CHAT_OBS_CALIBRATION.reactScene.height}px</strong>
+                </div>
+                <div className="text-[10px] text-ivexi-muted/80 mt-0.5">
+                  Posição sugerida: <code>X: {CHAT_OBS_CALIBRATION.reactScene.x}, Y: {CHAT_OBS_CALIBRATION.reactScene.y}</code> (canto inferior direito)
+                </div>
+              </div>
+              <div className="p-3 rounded-lg bg-[#0e0716] border border-ivexi-purple/30">
+                <div className="font-bold text-ivexi-light text-[11px] uppercase text-ivexi-neon">
+                  {CHAT_OBS_CALIBRATION.chattingScene.label}
+                </div>
+                <div className="text-[11px] mt-1 text-white">
+                  Largura: <strong>{CHAT_OBS_CALIBRATION.chattingScene.width}px</strong> • Altura: <strong>{CHAT_OBS_CALIBRATION.chattingScene.height}px</strong>
+                </div>
+                <div className="text-[10px] text-ivexi-muted/80 mt-0.5">
+                  Posição sugerida: <code>X: {CHAT_OBS_CALIBRATION.chattingScene.x}, Y: {CHAT_OBS_CALIBRATION.chattingScene.y}</code> (coluna direita inteira)
+                </div>
+              </div>
             </div>
           </div>
         </section>

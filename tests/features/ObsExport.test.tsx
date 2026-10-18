@@ -92,5 +92,6 @@ describe('Exportador de Coleção de Cenas do OBS Studio', () => {
     expect(screen.getByText(/Configuração do Widget de Chat no OBS Studio/i)).toBeInTheDocument();
     expect(screen.getByRole('button', { name: /Copiar URL do Chat Twitch/i })).toBeInTheDocument();
     expect(screen.getByRole('button', { name: /Copiar Estilo Transparente OBS/i })).toBeInTheDocument();
+    expect(screen.getByRole('button', { name: /Copiar Link StreamElements/i })).toBeInTheDocument();
   });
 });

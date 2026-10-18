@@ -82,24 +82,23 @@ body {
 
 ## 🎨 Método 2: StreamElements Chatbox (Com Animações & Desaparecimento de Mensagens)
 
-Se você preferir que as mensagens desapareçam automaticamente após 30 segundos (fade out) ou usar temas com animações:
+O streamer já possui o overlay dedicado criado e configurado no canal **vulgoomaniaco**:
+👉 **URL Oficial**:  
+`https://streamelements.com/overlay/6ad54eeb1f662c7724523154/vDEpqFuJcluqDlsaIs4sQ9uIjN7-Z1-_V8Tg79aqgzZ5OT_3`
 
-1. Acesse o **[Dashboard do StreamElements](https://streamelements.com)** conectado com a Twitch do canal **vulgoomaniaco**.
-2. No menu lateral, acesse **Streaming Tools** > **Overlays**.
-3. Clique em **New Overlay** (resolução 1080p).
-4. Clique no botão azul **`+` (Add Widget)** > **Stream Tools** > **Your Stream's Chat**.
-5. No menu lateral do widget de chat:
-   - **Theme**: Selecione *Dark* ou *Custom*.
-   - **Font**: Selecione *Rajdhani* ou *Inter*.
-   - **Message Fade**: Ative se quiser que mensagens sumam após 15s ou 30s.
-   - **Background**: Garanta que o fundo esteja com opacidade zero (transparente).
-6. Clique em **Save** no canto superior direito (nomeie como `Chat React IVEXI`).
-7. Clique no botão de corrente 🔗 (**Copy Overlay URL**).
-8. No OBS Studio:
-   - Adicione uma fonte de **Navegador** (*Browser*).
-   - Cole a URL copiada do StreamElements.
-   - Largura: `420`, Altura: `500`.
-   - Posicione em `X: 1458`, `Y: 486`.
+### Como Inserir no OBS Studio:
+1. No OBS Studio, na cena **`🎬 06 - REACT & VOD REVIEW`**:
+2. Em **Fontes** (*Sources*), clique em **`+`** > **Navegador** (*Browser*).
+3. Nomeie como **`💬 Chat StreamElements`**.
+4. No campo **URL**, cole o link oficial acima.
+5. Defina as dimensões:
+   - Se o widget no StreamElements foi configurado para a janela do chat:  
+     Largura: **`420`** | Altura: **`500`** (Posição: `X: 1458, Y: 486`).
+   - Se o canvas no editor do StreamElements estiver em 1080p tela cheia:  
+     Largura: **`1920`** | Altura: **`1080`** (Posição: `X: 0, Y: 0`).
+6. Marque:
+   - `[x] Desativar fonte quando não visível`
+   - `[x] Reiniciar navegador quando a cena se tornar ativa`
 
 ---
 

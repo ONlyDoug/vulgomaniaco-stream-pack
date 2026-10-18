@@ -5,6 +5,9 @@
 
 export const TWITCH_CHAT_POPOUT_URL = 'https://www.twitch.tv/popout/vulgoomaniaco/chat?popout=';
 
+export const DEFAULT_STREAMELEMENTS_CHAT_OVERLAY_URL =
+  'https://streamelements.com/overlay/6ad54eeb1f662c7724523154/vDEpqFuJcluqDlsaIs4sQ9uIjN7-Z1-_V8Tg79aqgzZ5OT_3';
+
 export const TWITCH_CHAT_OBS_CSS = `/* CSS Tático Guilda IVEXI para Chat Transparente no OBS */
 body {
   background-color: transparent !important;
