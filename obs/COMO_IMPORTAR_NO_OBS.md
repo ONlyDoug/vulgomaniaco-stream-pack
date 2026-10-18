@@ -36,7 +36,7 @@ Ou fazer o download com 1 clique direto pelo **Painel de Controle Oficial** em:
 1. No menu superior, clique novamente em **Coleção de Cenas**.
 2. Clique sobre o nome da coleção recém-importada:  
    👉 **`VulgoManiaco - Albion Online Stream Pack`**.
-3. O OBS carregará automaticamente todas as **5 cenas profissionais**, overlays, alertas e proteção anti-ghost direto da nuvem!
+3. O OBS carregará automaticamente todas as **6 cenas profissionais**, overlays, alertas e proteção anti-ghost direto da nuvem!
 
 ---
 
@@ -49,6 +49,7 @@ Ou fazer o download com 1 clique direto pelo **Painel de Controle Oficial** em:
 | **`☕ 03 - INTERVALO (Pausa / BRB)`** | Tela de pausa rápida com chat interativo e mascote oficial | Navegador: `https://vulgomaniaco-stream-pack.vercel.app/scenes/brb` |
 | **`💬 04 - JUST CHATTING`** | Cena de conversa com o chat, reunião e resenha | • Navegador: `https://vulgomaniaco-stream-pack.vercel.app/scenes/chatting`<br>• **Webcam**: Enquadramento 16:9 expandido (`1224×640 px`) |
 | **`🛑 05 - ENCERRAMENTO (Ending Stream)`** | Tela final de agradecimento e redes sociais | Navegador: `https://vulgomaniaco-stream-pack.vercel.app/scenes/ending` |
+| **`🎬 06 - REACT & VOD REVIEW`** | Análise tática de lutas de Albion e vídeos da comunidade | • Navegador: `https://vulgomaniaco-stream-pack.vercel.app/scenes/react`<br>• **Captura de Conteúdo**: Moldura Cinema 16:9 (`1380×776 px`)<br>• **Webcam**: Canto superior direito (`440×248 px`)<br>• **Chat**: Integrado na coluna lateral |
 
 ---
 

@@ -4,12 +4,12 @@ import { generateObsSceneCollection } from '@/features/obs/generateObsCollection
 import { ControlDashboard } from '@/features/control/ControlDashboard';
 
 describe('Exportador de Coleção de Cenas do OBS Studio', () => {
-  it('deve gerar a coleção OBS com as 5 cenas oficiais na ordem correta', () => {
+  it('deve gerar a coleção OBS com as 6 cenas oficiais na ordem correta', () => {
     const collection = generateObsSceneCollection();
 
     expect(collection.name).toBe('VulgoManiaco - Albion Online Stream Pack');
     expect(collection.current_scene).toBe('🎮 02 - GAMEPLAY (Albion Online)');
-    expect(collection.scene_order).toHaveLength(5);
+    expect(collection.scene_order).toHaveLength(6);
 
     const sceneNames = collection.scene_order.map((s) => s.name);
     expect(sceneNames).toEqual([
@@ -18,6 +18,7 @@ describe('Exportador de Coleção de Cenas do OBS Studio', () => {
       '☕ 03 - INTERVALO (Pausa / BRB)',
       '💬 04 - JUST CHATTING (Conversa & Reunião)',
       '🛑 05 - ENCERRAMENTO (Ending Stream)',
+      '🎬 06 - REACT & VOD REVIEW (Review de Lutas & Vídeos)',
     ]);
   });
 
@@ -61,5 +62,27 @@ describe('Exportador de Coleção de Cenas do OBS Studio', () => {
     expect(screen.getByText(/Exportar Coleção OBS Studio/i)).toBeInTheDocument();
     expect(screen.getByRole('button', { name: /Baixar Coleção de Cenas OBS/i })).toBeInTheDocument();
     expect(screen.getByPlaceholderText('https://vulgomaniaco-stream-pack.vercel.app')).toBeInTheDocument();
+  });
+
+  it('deve calibrar a cena de React com captura de conteúdo (1380x776) e webcam lateral (440x248)', () => {
+    const collection = generateObsSceneCollection();
+
+    const reactScene = collection.sources.find(
+      (s) => s.id === 'scene' && s.name === '🎬 06 - REACT & VOD REVIEW (Review de Lutas & Vídeos)'
+    );
+    expect(reactScene).toBeDefined();
+
+    const items = (reactScene?.settings as any)?.items || [];
+    const contentItem = items.find(
+      (item: any) => item.name === '🎬 Captura de Conteúdo (Vídeo / YouTube / Review)'
+    );
+    expect(contentItem).toBeDefined();
+    expect(contentItem?.bounds).toEqual({ x: 1380.0, y: 776.0 });
+
+    const webcamItem = items.find(
+      (item: any) => item.name === '📷 Webcam do Streamer (React Lateral)'
+    );
+    expect(webcamItem).toBeDefined();
+    expect(webcamItem?.bounds).toEqual({ x: 440.0, y: 248.0 });
   });
 });

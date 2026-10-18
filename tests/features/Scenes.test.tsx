@@ -4,6 +4,7 @@ import { StartingScene } from '@/features/scenes/StartingScene';
 import { BrbScene } from '@/features/scenes/BrbScene';
 import { EndingScene } from '@/features/scenes/EndingScene';
 import { ChattingScene } from '@/features/scenes/ChattingScene';
+import { ReactScene } from '@/features/scenes/ReactScene';
 
 describe('US-002: Cenas Completas de Transmissão', () => {
   // SPECSFY: US-002 FR-003 FR-004 NFR-001 AC-004
@@ -70,6 +71,26 @@ describe('US-002: Cenas Completas de Transmissão', () => {
     expect(chattingContainer.textContent).toContain('discord.gg/s246XdGp7q');
     expect(chattingContainer.textContent).not.toContain('discord.gg/ivexi');
     expect(chattingContainer.textContent).not.toContain('DISCORD.GG/IVEXI');
+  });
+
+  it('AC-015: deve renderizar a cena de React & VOD Review com moldura de conteúdo 1380px, webcam lateral e chat', () => {
+    render(<ReactScene />);
+
+    const container = screen.getByTestId('react-scene-container');
+    expect(container).toBeInTheDocument();
+
+    const contentFrame = screen.getByTestId('react-content-frame');
+    expect(contentFrame).toBeInTheDocument();
+
+    const webcamFrame = screen.getByTestId('react-webcam-frame');
+    expect(webcamFrame).toBeInTheDocument();
+
+    const chatBox = screen.getByTestId('react-chat-box');
+    expect(chatBox).toBeInTheDocument();
+
+    expect(screen.getByText(/REACT & VOD REVIEW/i)).toBeInTheDocument();
+    expect(screen.getByText(/ANALISANDO CONTEÚDO/i)).toBeInTheDocument();
+    expect(screen.getByText(/CHAT DA LIVE/i)).toBeInTheDocument();
   });
 });
 

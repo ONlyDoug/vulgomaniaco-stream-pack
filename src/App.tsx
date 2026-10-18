@@ -4,6 +4,7 @@ import { StartingScene } from '@/features/scenes/StartingScene';
 import { BrbScene } from '@/features/scenes/BrbScene';
 import { EndingScene } from '@/features/scenes/EndingScene';
 import { ChattingScene } from '@/features/scenes/ChattingScene';
+import { ReactScene } from '@/features/scenes/ReactScene';
 import { AlertOverlay } from '@/features/alerts/AlertOverlay';
 import { ControlDashboard } from '@/features/control/ControlDashboard';
 import { PanelsGallery } from '@/features/panels/PanelsGallery';
@@ -163,6 +164,18 @@ export const App: React.FC = () => {
         onNavigateHome={() => navigateTo('/')}
       >
         <ChattingScene />
+      </PreviewWrapper>
+    );
+  }
+
+  if (currentPath === '/scenes/react') {
+    return (
+      <PreviewWrapper
+        title="Cena de React & VOD Review (1080p)"
+        obsPath="/scenes/react"
+        onNavigateHome={() => navigateTo('/')}
+      >
+        <ReactScene />
       </PreviewWrapper>
     );
   }
@@ -407,6 +420,29 @@ export const App: React.FC = () => {
                 className="text-xs px-2.5 py-1 rounded bg-ivexi-dark hover:bg-ivexi-purple border border-ivexi-purple text-ivexi-light font-rajdhani font-semibold transition"
               >
                 {copiedLink === '/scenes/chatting' ? '✓ Copiado!' : 'Copiar URL OBS'}
+              </button>
+            </div>
+          </div>
+
+          {/* Card: Cena de React & VOD Review */}
+          <div
+            onClick={() => navigateTo('/scenes/react')}
+            className="cursor-pointer p-5 text-left rounded-xl bg-ivexi-surface/90 border border-ivexi-purple/50 hover:border-ivexi-neon hover:shadow-card-glow transition duration-200 flex flex-col justify-between"
+          >
+            <div>
+              <div className="flex items-center justify-between mb-2">
+                <h2 className="font-rajdhani text-xl font-bold text-ivexi-neon">Cena de React & VOD Review (1080p)</h2>
+                <span className="text-xs px-2 py-0.5 rounded bg-ivexi-neon/20 border border-ivexi-neon/40 text-ivexi-neon font-bold">NOVO</span>
+              </div>
+              <p className="text-sm text-ivexi-muted">Layout Cinema 16:9 grande (1380x776), moldura lateral de webcam e chat da Twitch.</p>
+            </div>
+            <div className="mt-4 pt-3 border-t border-ivexi-purple/30 flex items-center justify-between">
+              <span className="text-xs text-ivexi-neon font-rajdhani font-bold uppercase">Abrir Prévia →</span>
+              <button
+                onClick={(e) => copyObsLink(e, '/scenes/react')}
+                className="text-xs px-2.5 py-1 rounded bg-ivexi-dark hover:bg-ivexi-purple border border-ivexi-purple text-ivexi-light font-rajdhani font-semibold transition"
+              >
+                {copiedLink === '/scenes/react' ? '✓ Copiado!' : 'Copiar URL OBS'}
               </button>
             </div>
           </div>

@@ -30,7 +30,8 @@ def build_scene_collection(base_url="https://vulgomaniaco-stream-pack.vercel.app
             {"name": "🎮 02 - GAMEPLAY (Albion Online)"},
             {"name": "☕ 03 - INTERVALO (Pausa / BRB)"},
             {"name": "💬 04 - JUST CHATTING (Conversa & Reunião)"},
-            {"name": "🛑 05 - ENCERRAMENTO (Ending Stream)"}
+            {"name": "🛑 05 - ENCERRAMENTO (Ending Stream)"},
+            {"name": "🎬 06 - REACT & VOD REVIEW (Review de Lutas & Vídeos)"}
         ],
         "sources": [
             # 1. Alertas Globais OBS
@@ -128,6 +129,38 @@ def build_scene_collection(base_url="https://vulgomaniaco-stream-pack.vercel.app
                     "shutdown": True,
                     "restart_when_active": True
                 }
+            },
+            # 7. Cena de React & VOD Review
+            {
+                "id": "browser_source",
+                "name": "🎬 HUD React & VOD Review",
+                "muted": False,
+                "volume": 1.0,
+                "settings": {
+                    "url": f"{base_url}/scenes/react",
+                    "width": 1920,
+                    "height": 1080,
+                    "fps": 60,
+                    "css": custom_css,
+                    "shutdown": True,
+                    "restart_when_active": True
+                }
+            },
+            # 8. Captura de Conteúdo (Vídeo / YouTube / Review)
+            {
+                "id": "window_capture",
+                "name": "🎬 Captura de Conteúdo (Vídeo / YouTube / Review)",
+                "muted": False,
+                "volume": 1.0,
+                "settings": {}
+            },
+            # 9. Webcam Lateral (React & VOD Review - 440x248)
+            {
+                "id": "dshow_input",
+                "name": "📷 Webcam do Streamer (React Lateral)",
+                "muted": False,
+                "volume": 1.0,
+                "settings": {}
             },
             # 7. Captura de Jogo (Albion Online)
             {
@@ -297,6 +330,51 @@ def build_scene_collection(base_url="https://vulgomaniaco-stream-pack.vercel.app
                             "pos": {"x": 0.0, "y": 0.0},
                             "scale": {"x": 1.0, "y": 1.0}
                         },
+                        {
+                            "name": "🔔 Camada de Alertas OBS (Follow / Sub / Dono / Raid)",
+                            "visible": True,
+                            "locked": True,
+                            "pos": {"x": 0.0, "y": 0.0},
+                            "scale": {"x": 1.0, "y": 1.0}
+                        }
+                    ]
+                }
+            },
+            # ================= CENA 06: REACT & VOD REVIEW =================
+            {
+                "id": "scene",
+                "name": "🎬 06 - REACT & VOD REVIEW (Review de Lutas & Vídeos)",
+                "settings": {
+                    "items": [
+                        # Camada 1: Janela de Conteúdo (Vídeo/YouTube/Review) posicionada na moldura (1380x776 em x=32, y=86)
+                        {
+                            "name": "🎬 Captura de Conteúdo (Vídeo / YouTube / Review)",
+                            "visible": True,
+                            "locked": False,
+                            "pos": {"x": 32.0, "y": 86.0},
+                            "bounds": {"x": 1380.0, "y": 776.0},
+                            "bounds_type": 2,
+                            "scale": {"x": 1.0, "y": 1.0}
+                        },
+                        # Camada 2: Webcam Lateral no topo direito posicionada na moldura (440x248 em x=1448, y=86)
+                        {
+                            "name": "📷 Webcam do Streamer (React Lateral)",
+                            "visible": True,
+                            "locked": False,
+                            "pos": {"x": 1448.0, "y": 86.0},
+                            "bounds": {"x": 440.0, "y": 248.0},
+                            "bounds_type": 2,
+                            "scale": {"x": 1.0, "y": 1.0}
+                        },
+                        # Camada 3: Overlay HUD da Cena
+                        {
+                            "name": "🎬 HUD React & VOD Review",
+                            "visible": True,
+                            "locked": True,
+                            "pos": {"x": 0.0, "y": 0.0},
+                            "scale": {"x": 1.0, "y": 1.0}
+                        },
+                        # Camada 4: Alertas Globais
                         {
                             "name": "🔔 Camada de Alertas OBS (Follow / Sub / Dono / Raid)",
                             "visible": True,

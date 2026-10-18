@@ -17,6 +17,9 @@
     },
     {
       "name": "🛑 05 - ENCERRAMENTO (Ending Stream)"
+    },
+    {
+      "name": "🎬 06 - REACT & VOD REVIEW (Review de Lutas & Vídeos)"
     }
   ],
   "sources": [
@@ -24,14 +27,13 @@
       "id": "browser_source",
       "name": "🔔 Camada de Alertas OBS (Follow / Sub / Dono / Raid)",
       "muted": false,
-      "volume": 1,
+      "volume": 1.0,
       "settings": {
-        "url": "https://streamelements.com/overlay/6ac87c7d8ff1dac0ef699fa4/vDEpqFuJcluqDlsaIs4sQ9uIjN7-Z1-_V8Tg79aqgzZ5OT_3",
+        "url": "https://vulgomaniaco-stream-pack.vercel.app/alerts",
         "width": 1920,
         "height": 1080,
         "fps": 60,
         "css": "body { background-color: rgba(0, 0, 0, 0); margin: 0px auto; overflow: hidden; }",
-        "reroute_audio": true,
         "shutdown": false,
         "restart_when_active": false
       }
@@ -40,7 +42,7 @@
       "id": "browser_source",
       "name": "⏳ HUD Abertura (Starting Soon)",
       "muted": false,
-      "volume": 1,
+      "volume": 1.0,
       "settings": {
         "url": "https://vulgomaniaco-stream-pack.vercel.app/scenes/starting",
         "width": 1920,
@@ -55,7 +57,7 @@
       "id": "browser_source",
       "name": "🎮 Overlay de Gameplay (Facecam & Anti-Snipe)",
       "muted": false,
-      "volume": 1,
+      "volume": 1.0,
       "settings": {
         "url": "https://vulgomaniaco-stream-pack.vercel.app/overlay/gameplay",
         "width": 1920,
@@ -70,7 +72,7 @@
       "id": "browser_source",
       "name": "☕ HUD Intervalo (BRB)",
       "muted": false,
-      "volume": 1,
+      "volume": 1.0,
       "settings": {
         "url": "https://vulgomaniaco-stream-pack.vercel.app/scenes/brb",
         "width": 1920,
@@ -85,7 +87,7 @@
       "id": "browser_source",
       "name": "💬 HUD Just Chatting",
       "muted": false,
-      "volume": 1,
+      "volume": 1.0,
       "settings": {
         "url": "https://vulgomaniaco-stream-pack.vercel.app/scenes/chatting",
         "width": 1920,
@@ -100,7 +102,7 @@
       "id": "browser_source",
       "name": "🛑 HUD Encerramento (Ending)",
       "muted": false,
-      "volume": 1,
+      "volume": 1.0,
       "settings": {
         "url": "https://vulgomaniaco-stream-pack.vercel.app/scenes/ending",
         "width": 1920,
@@ -112,10 +114,39 @@
       }
     },
     {
+      "id": "browser_source",
+      "name": "🎬 HUD React & VOD Review",
+      "muted": false,
+      "volume": 1.0,
+      "settings": {
+        "url": "https://vulgomaniaco-stream-pack.vercel.app/scenes/react",
+        "width": 1920,
+        "height": 1080,
+        "fps": 60,
+        "css": "body { background-color: rgba(0, 0, 0, 0); margin: 0px auto; overflow: hidden; }",
+        "shutdown": true,
+        "restart_when_active": true
+      }
+    },
+    {
+      "id": "window_capture",
+      "name": "🎬 Captura de Conteúdo (Vídeo / YouTube / Review)",
+      "muted": false,
+      "volume": 1.0,
+      "settings": {}
+    },
+    {
+      "id": "dshow_input",
+      "name": "📷 Webcam do Streamer (React Lateral)",
+      "muted": false,
+      "volume": 1.0,
+      "settings": {}
+    },
+    {
       "id": "game_capture",
       "name": "⚔️ Captura de Jogo (Albion Online)",
       "muted": false,
-      "volume": 1,
+      "volume": 1.0,
       "settings": {
         "capture_mode": "window",
         "window": "Albion-Online.exe:Albion-Online:Albion-Online",
@@ -127,14 +158,14 @@
       "id": "dshow_input",
       "name": "📷 Webcam do Streamer (Facecam Gameplay)",
       "muted": false,
-      "volume": 1,
+      "volume": 1.0,
       "settings": {}
     },
     {
       "id": "dshow_input",
       "name": "📷 Webcam do Streamer (Just Chatting Grande)",
       "muted": false,
-      "volume": 1,
+      "volume": 1.0,
       "settings": {}
     },
     {
@@ -147,12 +178,12 @@
             "visible": true,
             "locked": true,
             "pos": {
-              "x": 0,
-              "y": 0
+              "x": 0.0,
+              "y": 0.0
             },
             "scale": {
-              "x": 1,
-              "y": 1
+              "x": 1.0,
+              "y": 1.0
             }
           },
           {
@@ -160,12 +191,12 @@
             "visible": true,
             "locked": true,
             "pos": {
-              "x": 0,
-              "y": 0
+              "x": 0.0,
+              "y": 0.0
             },
             "scale": {
-              "x": 1,
-              "y": 1
+              "x": 1.0,
+              "y": 1.0
             }
           }
         ]
@@ -181,12 +212,12 @@
             "visible": true,
             "locked": false,
             "pos": {
-              "x": 0,
-              "y": 0
+              "x": 0.0,
+              "y": 0.0
             },
             "scale": {
-              "x": 1,
-              "y": 1
+              "x": 1.0,
+              "y": 1.0
             }
           },
           {
@@ -194,17 +225,17 @@
             "visible": true,
             "locked": false,
             "pos": {
-              "x": 28,
-              "y": 706
+              "x": 32.0,
+              "y": 824.0
             },
             "bounds": {
-              "x": 388,
-              "y": 244
+              "x": 384.0,
+              "y": 216.0
             },
             "bounds_type": 2,
             "scale": {
-              "x": 1,
-              "y": 1
+              "x": 1.0,
+              "y": 1.0
             }
           },
           {
@@ -212,12 +243,12 @@
             "visible": true,
             "locked": true,
             "pos": {
-              "x": 0,
-              "y": 0
+              "x": 0.0,
+              "y": 0.0
             },
             "scale": {
-              "x": 1,
-              "y": 1
+              "x": 1.0,
+              "y": 1.0
             }
           },
           {
@@ -225,12 +256,12 @@
             "visible": true,
             "locked": true,
             "pos": {
-              "x": 0,
-              "y": 0
+              "x": 0.0,
+              "y": 0.0
             },
             "scale": {
-              "x": 1,
-              "y": 1
+              "x": 1.0,
+              "y": 1.0
             }
           }
         ]
@@ -246,12 +277,12 @@
             "visible": true,
             "locked": true,
             "pos": {
-              "x": 0,
-              "y": 0
+              "x": 0.0,
+              "y": 0.0
             },
             "scale": {
-              "x": 1,
-              "y": 1
+              "x": 1.0,
+              "y": 1.0
             }
           },
           {
@@ -259,12 +290,12 @@
             "visible": true,
             "locked": true,
             "pos": {
-              "x": 0,
-              "y": 0
+              "x": 0.0,
+              "y": 0.0
             },
             "scale": {
-              "x": 1,
-              "y": 1
+              "x": 1.0,
+              "y": 1.0
             }
           }
         ]
@@ -280,17 +311,17 @@
             "visible": true,
             "locked": false,
             "pos": {
-              "x": 40,
-              "y": 106
+              "x": 40.0,
+              "y": 106.0
             },
             "bounds": {
-              "x": 1224,
-              "y": 640
+              "x": 1224.0,
+              "y": 640.0
             },
             "bounds_type": 2,
             "scale": {
-              "x": 1,
-              "y": 1
+              "x": 1.0,
+              "y": 1.0
             }
           },
           {
@@ -298,12 +329,12 @@
             "visible": true,
             "locked": true,
             "pos": {
-              "x": 0,
-              "y": 0
+              "x": 0.0,
+              "y": 0.0
             },
             "scale": {
-              "x": 1,
-              "y": 1
+              "x": 1.0,
+              "y": 1.0
             }
           },
           {
@@ -311,12 +342,12 @@
             "visible": true,
             "locked": true,
             "pos": {
-              "x": 0,
-              "y": 0
+              "x": 0.0,
+              "y": 0.0
             },
             "scale": {
-              "x": 1,
-              "y": 1
+              "x": 1.0,
+              "y": 1.0
             }
           }
         ]
@@ -332,12 +363,12 @@
             "visible": true,
             "locked": true,
             "pos": {
-              "x": 0,
-              "y": 0
+              "x": 0.0,
+              "y": 0.0
             },
             "scale": {
-              "x": 1,
-              "y": 1
+              "x": 1.0,
+              "y": 1.0
             }
           },
           {
@@ -345,12 +376,82 @@
             "visible": true,
             "locked": true,
             "pos": {
-              "x": 0,
-              "y": 0
+              "x": 0.0,
+              "y": 0.0
             },
             "scale": {
-              "x": 1,
-              "y": 1
+              "x": 1.0,
+              "y": 1.0
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "scene",
+      "name": "🎬 06 - REACT & VOD REVIEW (Review de Lutas & Vídeos)",
+      "settings": {
+        "items": [
+          {
+            "name": "🎬 Captura de Conteúdo (Vídeo / YouTube / Review)",
+            "visible": true,
+            "locked": false,
+            "pos": {
+              "x": 32.0,
+              "y": 86.0
+            },
+            "bounds": {
+              "x": 1380.0,
+              "y": 776.0
+            },
+            "bounds_type": 2,
+            "scale": {
+              "x": 1.0,
+              "y": 1.0
+            }
+          },
+          {
+            "name": "📷 Webcam do Streamer (React Lateral)",
+            "visible": true,
+            "locked": false,
+            "pos": {
+              "x": 1448.0,
+              "y": 86.0
+            },
+            "bounds": {
+              "x": 440.0,
+              "y": 248.0
+            },
+            "bounds_type": 2,
+            "scale": {
+              "x": 1.0,
+              "y": 1.0
+            }
+          },
+          {
+            "name": "🎬 HUD React & VOD Review",
+            "visible": true,
+            "locked": true,
+            "pos": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "scale": {
+              "x": 1.0,
+              "y": 1.0
+            }
+          },
+          {
+            "name": "🔔 Camada de Alertas OBS (Follow / Sub / Dono / Raid)",
+            "visible": true,
+            "locked": true,
+            "pos": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "scale": {
+              "x": 1.0,
+              "y": 1.0
             }
           }
         ]

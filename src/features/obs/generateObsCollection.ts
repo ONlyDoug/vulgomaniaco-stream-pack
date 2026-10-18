@@ -32,6 +32,7 @@ export function generateObsSceneCollection(options: ObsSceneCollectionOptions = 
       { name: '☕ 03 - INTERVALO (Pausa / BRB)' },
       { name: '💬 04 - JUST CHATTING (Conversa & Reunião)' },
       { name: '🛑 05 - ENCERRAMENTO (Ending Stream)' },
+      { name: '🎬 06 - REACT & VOD REVIEW (Review de Lutas & Vídeos)' },
     ],
     sources: [
       // 1. Fonte de Navegador Global de Alertas
@@ -135,6 +136,41 @@ export function generateObsSceneCollection(options: ObsSceneCollectionOptions = 
           shutdown: true,
           restart_when_active: true,
         },
+      },
+
+      // 7. Fonte de Navegador: Cena de React & VOD Review
+      {
+        id: 'browser_source',
+        name: '🎬 HUD React & VOD Review',
+        muted: false,
+        volume: 1.0,
+        settings: {
+          url: `${baseUrl}/scenes/react`,
+          width: 1920,
+          height: 1080,
+          fps: 60,
+          css: customCss,
+          shutdown: true,
+          restart_when_active: true,
+        },
+      },
+
+      // 8. Captura de Conteúdo (Vídeo / YouTube / Review)
+      {
+        id: 'window_capture',
+        name: '🎬 Captura de Conteúdo (Vídeo / YouTube / Review)',
+        muted: false,
+        volume: 1.0,
+        settings: {},
+      },
+
+      // 9. Webcam Lateral (React & VOD Review - 440x248)
+      {
+        id: 'dshow_input',
+        name: '📷 Webcam do Streamer (React Lateral)',
+        muted: false,
+        volume: 1.0,
+        settings: {},
       },
 
       // 7. Captura de Jogo (Albion Online)
@@ -310,6 +346,52 @@ export function generateObsSceneCollection(options: ObsSceneCollectionOptions = 
               pos: { x: 0.0, y: 0.0 },
               scale: { x: 1.0, y: 1.0 },
             },
+            {
+              name: '🔔 Camada de Alertas OBS (Follow / Sub / Dono / Raid)',
+              visible: true,
+              locked: true,
+              pos: { x: 0.0, y: 0.0 },
+              scale: { x: 1.0, y: 1.0 },
+            },
+          ],
+        },
+      },
+
+      // ================= CENA 06: REACT & VOD REVIEW =================
+      {
+        id: 'scene',
+        name: '🎬 06 - REACT & VOD REVIEW (Review de Lutas & Vídeos)',
+        settings: {
+          items: [
+            // Camada 1: Janela de Conteúdo (Vídeo/YouTube/Review) posicionada na moldura (1380x776 em x=32, y=86)
+            {
+              name: '🎬 Captura de Conteúdo (Vídeo / YouTube / Review)',
+              visible: true,
+              locked: false,
+              pos: { x: 32.0, y: 86.0 },
+              bounds: { x: 1380.0, y: 776.0 },
+              bounds_type: 2, // OBS_BOUNDS_SCALE_INNER
+              scale: { x: 1.0, y: 1.0 },
+            },
+            // Camada 2: Webcam Lateral no topo direito posicionada na moldura (440x248 em x=1448, y=86)
+            {
+              name: '📷 Webcam do Streamer (React Lateral)',
+              visible: true,
+              locked: false,
+              pos: { x: 1448.0, y: 86.0 },
+              bounds: { x: 440.0, y: 248.0 },
+              bounds_type: 2, // OBS_BOUNDS_SCALE_INNER
+              scale: { x: 1.0, y: 1.0 },
+            },
+            // Camada 3: Overlay HUD da Cena
+            {
+              name: '🎬 HUD React & VOD Review',
+              visible: true,
+              locked: true,
+              pos: { x: 0.0, y: 0.0 },
+              scale: { x: 1.0, y: 1.0 },
+            },
+            // Camada 4: Alertas Globais
             {
               name: '🔔 Camada de Alertas OBS (Follow / Sub / Dono / Raid)',
               visible: true,

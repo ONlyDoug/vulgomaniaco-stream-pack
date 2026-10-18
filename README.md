@@ -13,6 +13,7 @@ Pacote oficial e profissional de Overlays, Cenas, Alertas e Painéis para lives 
 | **☕ 03 - INTERVALO** | `/scenes/brb` | Pausa tática rápida com chat integrado e mascote oficial |
 | **💬 04 - JUST CHATTING** | `/scenes/chatting` | Câmera ampla, bate-papo e resenha com o clã |
 | **🛑 05 - ENCERRAMENTO** | `/scenes/ending` | Agradecimentos, créditos finais e redes sociais |
+| **🎬 06 - REACT & VOD REVIEW** | `/scenes/react` | Layout Cinema 16:9 grande (1380x776), webcam e chat da Twitch |
 | **🔔 ALERTAS OBS** | `/alerts` | Alertas dinâmicos com animações neon (Follow, Sub, Pix, Raid) |
 | **🎛️ CONTROLE STREAMER** | `/control` | Painel web interativo para disparo de alertas e testes |
 | **🎨 PAINÉIS 320px** | `/panels` | 6 painéis para perfil da Twitch/Kick prontos para download |
