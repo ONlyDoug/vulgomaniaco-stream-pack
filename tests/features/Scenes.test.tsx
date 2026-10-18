@@ -91,6 +91,9 @@ describe('US-002: Cenas Completas de Transmissão', () => {
     expect(screen.getByText(/REACT & VOD REVIEW/i)).toBeInTheDocument();
     expect(screen.getByText(/ANALISANDO CONTEÚDO/i)).toBeInTheDocument();
     expect(screen.getByText(/CHAT DA LIVE/i)).toBeInTheDocument();
+
+    const logoBadge = screen.getByAltText(/VulgoManiaco Logo Principal/i);
+    expect(logoBadge).toBeInTheDocument();
   });
 });
 

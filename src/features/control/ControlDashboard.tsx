@@ -8,6 +8,11 @@ import {
   STREAM_ELEMENTS_WIDGET_FIELDS,
   STREAM_ELEMENTS_WIDGET_DATA,
 } from '../alerts/streamElementsWidgetCode';
+import {
+  TWITCH_CHAT_POPOUT_URL,
+  TWITCH_CHAT_OBS_CSS,
+  CHAT_OBS_CALIBRATION,
+} from '../obs/chatWidgetConfig';
 
 export const ControlDashboard: React.FC = () => {
   const [antiSnipeState, setAntiSnipeState] = useState<boolean>(false);
@@ -509,6 +514,89 @@ export const ControlDashboard: React.FC = () => {
           </div>
         </section>
 
+        {/* Seção Widget de Chat para OBS Studio */}
+        <section className="p-5 rounded-2xl bg-ivexi-surface/80 border border-ivexi-purple/50 space-y-4">
+          <div className="flex items-center justify-between">
+            <div>
+              <h2 className="font-rajdhani text-xl font-bold uppercase text-ivexi-neon flex items-center gap-2">
+                <span>💬</span> Configuração do Widget de Chat no OBS Studio
+              </h2>
+              <p className="text-xs text-ivexi-muted">
+                Para as cenas <strong>🎬 06 - REACT & VOD REVIEW</strong> e <strong>💬 04 - JUST CHATTING</strong>
+              </p>
+            </div>
+            <span className="px-3 py-1 rounded-full text-xs font-bold uppercase bg-ivexi-purple/30 text-ivexi-neon border border-ivexi-purple">
+              Twitch & StreamElements
+            </span>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            {/* Método 1: Twitch Popout Oficial */}
+            <div className="p-4 rounded-xl bg-ivexi-dark/90 border border-ivexi-purple/50 space-y-3 flex flex-col justify-between">
+              <div>
+                <div className="flex items-center justify-between mb-2">
+                  <span className="font-rajdhani text-sm font-bold text-ivexi-light uppercase flex items-center gap-1.5">
+                    <span>⚡</span> Método 1: Chat Popout Nativo (Recomendado)
+                  </span>
+                  <span className="text-[10px] text-ivexi-neon font-bold uppercase bg-ivexi-purple/40 px-2 py-0.5 rounded">
+                    Sem Cadastro
+                  </span>
+                </div>
+                <p className="text-xs text-ivexi-muted leading-relaxed">
+                  Adicione uma fonte de <strong>Navegador</strong> no OBS com a URL oficial da Twitch e aplique nosso CSS com fundo transparente e sem poluição.
+                </p>
+              </div>
+
+              <div className="space-y-2 pt-2 border-t border-ivexi-purple/30">
+                <button
+                  onClick={() => handleCopyCode('chat-url', TWITCH_CHAT_POPOUT_URL)}
+                  className="w-full py-2.5 px-3 rounded-xl bg-ivexi-surface border border-ivexi-purple/60 hover:border-ivexi-neon hover:text-ivexi-neon font-rajdhani font-bold text-xs uppercase transition flex items-center justify-center gap-1.5 cursor-pointer"
+                >
+                  {copiedKey === 'chat-url' ? '✅ URL Copiada!' : '📋 Copiar URL do Chat Twitch'}
+                </button>
+
+                <button
+                  onClick={() => handleCopyCode('chat-css', TWITCH_CHAT_OBS_CSS)}
+                  className="w-full py-2.5 px-3 rounded-xl bg-ivexi-surface border border-ivexi-purple/60 hover:border-ivexi-neon hover:text-ivexi-neon font-rajdhani font-bold text-xs uppercase transition flex items-center justify-center gap-1.5 cursor-pointer"
+                >
+                  {copiedKey === 'chat-css' ? '✅ Estilo Copiado!' : '📋 Copiar Estilo Transparente OBS'}
+                </button>
+              </div>
+            </div>
+
+            {/* Medidas Calibradas */}
+            <div className="p-4 rounded-xl bg-ivexi-dark/90 border border-ivexi-purple/50 space-y-3 text-xs">
+              <span className="font-rajdhani text-sm font-bold text-ivexi-light uppercase flex items-center gap-1.5">
+                <span>📐</span> Medidas no OBS (Pixel-Perfect)
+              </span>
+              <ul className="space-y-2 text-ivexi-muted">
+                <li className="p-2 rounded-lg bg-[#0e0716] border border-ivexi-purple/30">
+                  <div className="font-bold text-ivexi-light text-[11px] uppercase text-ivexi-neon">
+                    {CHAT_OBS_CALIBRATION.reactScene.label}
+                  </div>
+                  <div className="text-[11px] mt-0.5">
+                    Largura: <strong>{CHAT_OBS_CALIBRATION.reactScene.width}px</strong> • Altura: <strong>{CHAT_OBS_CALIBRATION.reactScene.height}px</strong>
+                  </div>
+                  <div className="text-[10px] text-ivexi-muted/70">
+                    Posição sugerida: X: {CHAT_OBS_CALIBRATION.reactScene.x}, Y: {CHAT_OBS_CALIBRATION.reactScene.y} (abaixo da webcam lateral)
+                  </div>
+                </li>
+                <li className="p-2 rounded-lg bg-[#0e0716] border border-ivexi-purple/30">
+                  <div className="font-bold text-ivexi-light text-[11px] uppercase text-ivexi-neon">
+                    {CHAT_OBS_CALIBRATION.chattingScene.label}
+                  </div>
+                  <div className="text-[11px] mt-0.5">
+                    Largura: <strong>{CHAT_OBS_CALIBRATION.chattingScene.width}px</strong> • Altura: <strong>{CHAT_OBS_CALIBRATION.chattingScene.height}px</strong>
+                  </div>
+                  <div className="text-[10px] text-ivexi-muted/70">
+                    Posição sugerida: X: {CHAT_OBS_CALIBRATION.chattingScene.x}, Y: {CHAT_OBS_CALIBRATION.chattingScene.y} (coluna direita inteira)
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
         {/* Exportador Oficial OBS Studio */}
         <section className="p-5 rounded-2xl bg-ivexi-surface/80 border border-ivexi-purple/50 space-y-4">
           <div className="flex items-center justify-between">
@@ -517,7 +605,7 @@ export const ControlDashboard: React.FC = () => {
                 <span>🎬</span> Exportar Coleção OBS Studio
               </h2>
               <p className="text-xs text-ivexi-muted">
-                Arquivo .json completo com as 5 cenas em 1080p60, alertas e webcam 16:9 pré-calibrada
+                Arquivo .json completo com as 6 cenas em 1080p60, alertas e webcam 16:9 pré-calibrada
               </p>
             </div>
             <span className="px-3 py-1 rounded-full text-xs font-bold uppercase bg-ivexi-purple/30 text-ivexi-neon border border-ivexi-purple">
@@ -554,7 +642,7 @@ export const ControlDashboard: React.FC = () => {
               <li className="text-ivexi-neon font-semibold">
                 <strong>IMPORTANTE:</strong> Após importar, volte no menu superior <strong>Coleção de Cenas</strong> e <u>clique no nome da coleção</u>: <span className="underline">VulgoManiaco - Albion Online Stream Pack</span> para ativá-la (o OBS não troca sozinho).
               </li>
-              <li>Pronto! Todas as 5 cenas em 1080p, Facecam bezel, Anti-Ghost e Alertas carregarão automaticamente.</li>
+              <li>Pronto! Todas as 6 cenas em 1080p, Facecam bezel, Anti-Ghost e Alertas carregarão automaticamente.</li>
             </ol>
           </div>
         </section>

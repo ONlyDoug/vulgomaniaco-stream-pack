@@ -1,5 +1,5 @@
 import React from 'react';
-import logoHorizontalImg from '@/assets/images/logo-streamer-vulgomaniaco-horizontal.png';
+import logoBadgeImg from '@/assets/images/logo-streamer-vulgomaniaco-badge.png';
 
 export const ReactScene: React.FC = () => {
   return (
@@ -11,28 +11,36 @@ export const ReactScene: React.FC = () => {
       <div className="absolute -top-40 left-1/4 w-[750px] h-[750px] rounded-full bg-ivexi-purple/20 blur-[170px] pointer-events-none" />
       <div className="absolute -bottom-40 right-1/4 w-[650px] h-[650px] rounded-full bg-ivexi-surface/50 blur-[160px] pointer-events-none" />
 
-      {/* Cabeçalho Oficial (h ~ 75px) */}
+      {/* Cabeçalho Oficial (h ~ 80px) com o Escudo Principal (Corvo sobre VulgoManiaco) */}
       <header className="z-10 flex items-center justify-between border-b border-ivexi-purple/50 pb-3">
-        <div className="flex items-center gap-4">
-          <img
-            src={logoHorizontalImg}
-            alt="VulgoManiaco Logo Horizontal"
-            className="h-14 object-contain filter drop-shadow-neon-yellow"
-          />
-          <div className="h-7 w-[1px] bg-ivexi-purple/60" />
-          <div className="flex items-center gap-2">
-            <span className="text-xl">🎬</span>
-            <span className="font-rajdhani text-xl font-bold uppercase tracking-wider text-ivexi-neon">
-              REACT & VOD REVIEW • ANÁLISE TÁTICA
+        <div className="flex items-center gap-5">
+          <div className="relative flex items-center justify-center">
+            <div className="absolute inset-0 rounded-full bg-ivexi-purple/40 blur-lg pointer-events-none" />
+            <img
+              src={logoBadgeImg}
+              alt="VulgoManiaco Logo Principal"
+              className="h-20 w-auto object-contain relative z-10 filter drop-shadow-[0_4px_14px_rgba(214,214,92,0.45)]"
+            />
+          </div>
+          <div className="h-12 w-[1px] bg-ivexi-purple/60" />
+          <div className="flex flex-col justify-center">
+            <div className="flex items-center gap-2">
+              <span className="text-xl">🎬</span>
+              <span className="font-rajdhani text-2xl font-bold uppercase tracking-wider text-ivexi-neon leading-none">
+                REACT & VOD REVIEW
+              </span>
+            </div>
+            <span className="text-xs font-rajdhani font-semibold text-ivexi-muted uppercase tracking-widest mt-1">
+              ANÁLISE TÁTICA DE COMBATE & CONTEÚDO • GUILDA IVEXI
             </span>
           </div>
         </div>
 
         <div className="flex items-center gap-3">
-          <div className="flex items-center gap-2 px-3 py-1 clip-tactical-sm bg-ivexi-surface border border-ivexi-purple text-xs font-rajdhani font-bold text-white uppercase tracking-wider">
+          <div className="flex items-center gap-2 px-3 py-1.5 clip-tactical-sm bg-ivexi-surface border border-ivexi-purple text-xs font-rajdhani font-bold text-white uppercase tracking-wider shadow-card-glow">
             <span>⚔️ ZvZ & BLACK ZONE REVIEW</span>
           </div>
-          <div className="flex items-center gap-2 px-3 py-1 clip-tactical-sm bg-ivexi-dark border border-ivexi-neon text-xs font-rajdhani font-bold text-ivexi-neon uppercase tracking-wider">
+          <div className="flex items-center gap-2 px-3 py-1.5 clip-tactical-sm bg-ivexi-dark border border-ivexi-neon text-xs font-rajdhani font-bold text-ivexi-neon uppercase tracking-wider shadow-card-glow">
             <span className="w-2 h-2 rounded-full bg-ivexi-neon animate-pulse" />
             DISCORD.GG/S246XDGP7Q
           </div>
@@ -133,13 +141,13 @@ export const ReactScene: React.FC = () => {
             </div>
 
             {/* Espaço transparente para o widget de chat do OBS/Twitch */}
-            <div className="flex-1 flex flex-col items-center justify-center text-center p-4 text-ivexi-muted/50 font-rajdhani text-base space-y-2">
-              <div className="w-10 h-10 rounded-full border border-ivexi-purple/40 flex items-center justify-center text-ivexi-neon text-lg">
+            <div className="flex-1 flex flex-col items-center justify-center text-center p-4 text-ivexi-muted/25 font-rajdhani text-base space-y-1.5 pointer-events-none">
+              <div className="w-9 h-9 rounded-full border border-ivexi-purple/30 flex items-center justify-center text-ivexi-neon/30 text-base">
                 💬
               </div>
-              <span>[ WIDGET DE CHAT DA TWITCH ]</span>
-              <span className="text-[11px] font-inter text-ivexi-muted/40 leading-relaxed">
-                Adicione a fonte de navegador do chat da Twitch alinhada nesta janela
+              <span className="text-sm font-bold tracking-wider">[ ÁREA DO CHAT DA TWITCH ]</span>
+              <span className="text-[10px] font-inter text-ivexi-muted/30 leading-relaxed max-w-[280px]">
+                Adicione a fonte de navegador do chat (Twitch Popout ou StreamElements) alinhada nesta janela
               </span>
             </div>
 

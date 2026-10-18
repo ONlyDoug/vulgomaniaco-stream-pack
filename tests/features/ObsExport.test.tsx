@@ -85,4 +85,12 @@ describe('Exportador de Coleção de Cenas do OBS Studio', () => {
     expect(webcamItem).toBeDefined();
     expect(webcamItem?.bounds).toEqual({ x: 440.0, y: 248.0 });
   });
+
+  it('deve renderizar a seção de configuração do widget de chat no ControlDashboard com botões de cópia', () => {
+    render(<ControlDashboard />);
+
+    expect(screen.getByText(/Configuração do Widget de Chat no OBS Studio/i)).toBeInTheDocument();
+    expect(screen.getByRole('button', { name: /Copiar URL do Chat Twitch/i })).toBeInTheDocument();
+    expect(screen.getByRole('button', { name: /Copiar Estilo Transparente OBS/i })).toBeInTheDocument();
+  });
 });
