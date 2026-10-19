@@ -71,10 +71,10 @@ PANELS = [
     {
         'id': 'painel-horarios',
         'title': 'HORÁRIOS DE LIVE',
-        'subtitle': 'SEG A SEX 19H • FDS EVENTOS & RESENHA',
+        'subtitle': 'TODOS OS DIAS A PARTIR DAS 00:00',
         'tag': 'AGENDA',
         'color': '#FAFAFA',
-        'desc_short': 'Segunda a Sexta às 19h e eventos especiais no final de semana.',
+        'desc_short': 'Lives diárias a partir das 00:00 com Albion Online e PvP.',
     },
 ]
 

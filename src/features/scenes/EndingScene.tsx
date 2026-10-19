@@ -50,7 +50,7 @@ export const EndingScene: React.FC = () => {
           </div>
 
           <div className="pt-3 text-xs text-ivexi-neon font-rajdhani font-bold tracking-wider uppercase border-t border-ivexi-purple/30 flex items-center justify-between">
-            <span>⚔️ PRÓXIMA LIVE: AMANHÃ ÀS 19H</span>
+            <span>⚔️ LIVES TODOS OS DIAS A PARTIR DAS 00:00</span>
             <span className="text-white">DISCORD.GG/S246XDGP7Q</span>
           </div>
         </div>

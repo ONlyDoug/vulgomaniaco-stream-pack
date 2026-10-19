@@ -123,7 +123,7 @@ def generate_offline_banner():
     draw.line([(card_x + c_cut, card_y), (card_x + 70, card_y)], fill=(214, 214, 92, 255), width=3)
     draw.line([(card_x + card_w - 70, card_y + card_h), (card_x + card_w - c_cut, card_y + card_h)], fill=(214, 214, 92, 255), width=3)
 
-    sched_t = "LIVES DE SEGUNDA A SEXTA ÀS 19H   •   DISCORD.GG/S246XDGP7Q   •   TWITCH.TV/VULGOMANIACO"
+    sched_t = "LIVES TODOS OS DIAS A PARTIR DAS 00:00   •   DISCORD.GG/S246XDGP7Q   •   TWITCH.TV/VULGOMANIACO"
     bb_s = font_sched.getbbox(sched_t)
     tw_s = bb_s[2] - bb_s[0]
     draw.text(((w - tw_s) // 2, card_y + 20), sched_t, font=font_sched, fill=(214, 214, 92, 255))
@@ -197,7 +197,7 @@ def generate_twitch_header():
 
     draw.line([(card_x + 80, card_y + 49), (card_x + card_w - 80, card_y + 49)], fill=(75, 30, 120, 255), width=1)
 
-    links_text = "DISCORD DA GUILDA: DISCORD.GG/S246XDGP7Q   •   SEG A SEX 19H   •   TWITCH.TV/VULGOMANIACO"
+    links_text = "DISCORD DA GUILDA: DISCORD.GG/S246XDGP7Q   •   TODOS OS DIAS A PARTIR DAS 00:00   •   TWITCH.TV/VULGOMANIACO"
     draw_centered_text(draw, card_y + 57, links_text, font_links, (245, 240, 255, 255), w)
 
     out_file = os.path.join(TWITCH_DIR, 'twitch-header-banner-1200x480.png')

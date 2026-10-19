@@ -46,7 +46,7 @@ export const CHANNEL_PANELS_DATA = [
   {
     id: 'horarios',
     title: 'Horários',
-    description: 'Lives de Segunda a Sexta a partir das 19h (Horário de Brasília), com eventos especiais, dungeons e resenha com a galera aos finais de semana.',
+    description: 'Lives todos os dias a partir das 00:00 (Horário de Brasília), com foco em Albion Online, combate PvP e resenha com a galera.',
     imagePng: '/assets/panels/painel-horarios.png',
     imageSvg: '/assets/panels/painel-horarios.svg',
   },
