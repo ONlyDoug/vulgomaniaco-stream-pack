@@ -241,7 +241,7 @@ export const App: React.FC = () => {
             ← Voltar ao Hub
           </button>
           <span className="text-xs text-ivexi-muted font-rajdhani font-semibold">
-            Pack de Afiliado Twitch (Distintivos & Emotes)
+            Pack Twitch v2 · Emotes e ícones
           </span>
         </div>
         <BadgesGallery />
@@ -519,8 +519,8 @@ export const App: React.FC = () => {
           </div>
 
           {/* Card: Pack de Afiliado Twitch */}
-          <div
-            onClick={() => navigateTo('/badges')}
+          <a
+            href="/badges"
             className="cursor-pointer p-5 text-left rounded-xl bg-ivexi-surface/90 border border-ivexi-purple/50 hover:border-ivexi-neon hover:shadow-card-glow transition duration-200 md:col-span-2 flex flex-col justify-between"
           >
             <div>
@@ -528,24 +528,24 @@ export const App: React.FC = () => {
                 <div className="flex items-center gap-2">
                   <span className="text-xl">⭐</span>
                   <h2 className="font-rajdhani text-xl font-bold text-ivexi-neon">
-                    Pack Oficial de Afiliado Twitch (Distintivos & Emotes)
+                    Pack Twitch v2 — Emotes, Badges e Resgates
                   </h2>
                 </div>
                 <span className="text-xs px-2 py-0.5 rounded bg-ivexi-neon/20 border border-ivexi-neon/40 text-ivexi-neon font-bold">
-                  Novo Afiliado
+                  Pacote v2
                 </span>
               </div>
               <p className="text-sm text-ivexi-muted">
-                6 Distintivos de Inscrito (1m a 1 ano), 7 Emotes (incluindo o bordão <em>"Bota pra fora, energiza e monta!"</em>), Moeda IVEXI de Pontos do Canal e Badges de Bits com download em 1-clique (.ZIP).
+                20 emotes, dois flairs, nove Bit Badges, moeda IVEXI e seis resgates: 114 arquivos novos, prévias e manual PDF. Seis Sub Badges originais preservadas.
               </p>
             </div>
             <div className="mt-4 pt-3 border-t border-ivexi-purple/30 flex items-center justify-between">
               <span className="text-xs text-ivexi-neon font-rajdhani font-bold uppercase">
                 Ver Pack e Baixar ZIP →
               </span>
-              <span className="text-xs text-ivexi-muted">Formatos 18px, 28px, 36px, 56px, 72px, 112px e 512px</span>
+              <span className="text-xs text-ivexi-muted">PNG e GIF · Tamanhos reais de 18 a 112px</span>
             </div>
-          </div>
+          </a>
 
           {/* Card: Galeria de Painéis */}
           <div

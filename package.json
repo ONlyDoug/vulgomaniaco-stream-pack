@@ -8,7 +8,10 @@
     "build": "tsc -b && vite build",
     "preview": "vite preview",
     "test": "vitest run",
-    "test:tdd": "vitest run"
+    "test:tdd": "vitest run",
+    "sync:twitch": "node scripts/sync-twitch-v2.mjs",
+    "predev": "npm run sync:twitch",
+    "prebuild": "npm run sync:twitch"
   },
   "dependencies": {
     "clsx": "^2.1.1",

@@ -24,3 +24,7 @@ get-pip.py
 .specsfy/
 .claude/
 .vercel
+
+# Pacote Twitch v2: gerado por npm run sync:twitch antes de dev/build
+/public/assets/twitch/v2/
+/public/assets/twitch/sub-badges-vulgomaniaco.zip

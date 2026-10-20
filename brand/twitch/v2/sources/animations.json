@@ -1,0 +1,17 @@
+{
+  "engine": "image_gen integrado",
+  "reference": "brand/twitch/referencias/03_referencia_personagem_mascote.png",
+  "promptTemplate": "sources/prompts.json#animationTemplate",
+  "grid": {"columns": 6, "rows": 4, "order": "row-major"},
+  "targetFrames": 24,
+  "durationMs": 2000,
+  "frameDurationsMs": [80, 80, 90],
+  "motions": {
+    "hype": "excited raven cheers by gently raising and lowering both wings beside its face; open happy beak; cycle smoothly back to starting pose",
+    "energiza": "energetic raven face with ONE thick cyan lightning bolt. Raven gently leans left to right and bolt gently expands and contracts, NO blinking or luminosity changes",
+    "monta": "raven riding a cute chunky grey armored horse. Show BIG raven head above BIG horse head, both nod in a subtle trotting cycle, horse forelegs make small alternating steps",
+    "batefood": "raven bites and chews a large golden pork pie beneath its beak, beak opens and closes gently and pie tilts; keep head mostly stationary",
+    "rage": "comically angry raven face with clenched wing fists near chin; gentle left-right short shake over full cycle, furrowed eyebrows, no strobing"
+  },
+  "export": "Recorte da silhueta principal de cada célula, normalização proporcional a 93% do canvas fixo e codificação GIF com paleta comum, índice zero transparente e disposal 2. Fontes preservadas."
+}

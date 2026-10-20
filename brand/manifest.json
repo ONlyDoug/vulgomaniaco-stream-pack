@@ -280,6 +280,918 @@
       "width": 2560,
       "height": 1440,
       "sha256": "b999a13976cac9e9ca7a9c344eacebd9a525d2604a5e2a9d6b86ae53e7a3d1a5"
+    },
+    {
+      "path": "twitch/v2/upload/follower/vulgoGG/vulgoGG_112x112.png",
+      "format": "png",
+      "role": "twitch_follower",
+      "width": 112,
+      "height": 112,
+      "sha256": "2d6a947b1b16c8b2651468138c355ef21d816967c2dd90fa40e361064096e5f3"
+    },
+    {
+      "path": "twitch/v2/upload/follower/vulgoGG/vulgoGG_56x56.png",
+      "format": "png",
+      "role": "twitch_follower",
+      "width": 56,
+      "height": 56,
+      "sha256": "a07c28a1993140c6f43a8b01c90c9948b8bc95ac599a1069664879f157e2a456"
+    },
+    {
+      "path": "twitch/v2/upload/follower/vulgoGG/vulgoGG_28x28.png",
+      "format": "png",
+      "role": "twitch_follower",
+      "width": 28,
+      "height": 28,
+      "sha256": "6d61bfb89d32e2263c95caa9504fa326f437d62cc8e1951c466eba3427d1e9ce"
+    },
+    {
+      "path": "twitch/v2/upload/follower/vulgoLURK/vulgoLURK_112x112.png",
+      "format": "png",
+      "role": "twitch_follower",
+      "width": 112,
+      "height": 112,
+      "sha256": "8d0294dafd5a49ee6f68699c28a784f93698abb9c50e18b49ad557f0d1fe9e23"
+    },
+    {
+      "path": "twitch/v2/upload/follower/vulgoLURK/vulgoLURK_56x56.png",
+      "format": "png",
+      "role": "twitch_follower",
+      "width": 56,
+      "height": 56,
+      "sha256": "2b4df0fd761fb2377cc0b1098f2871428eb794b75df38c7b3ba836791fd6dfb1"
+    },
+    {
+      "path": "twitch/v2/upload/follower/vulgoLURK/vulgoLURK_28x28.png",
+      "format": "png",
+      "role": "twitch_follower",
+      "width": 28,
+      "height": 28,
+      "sha256": "4fe6609c29df6c8f7b742699ecdaeafbea829db04fa525ea78f01bd4a41dc150"
+    },
+    {
+      "path": "twitch/v2/upload/follower/vulgoRIP/vulgoRIP_112x112.png",
+      "format": "png",
+      "role": "twitch_follower",
+      "width": 112,
+      "height": 112,
+      "sha256": "475c66e1add375adab7e43606b472eae8108089327c3fc0d1acc9e324e980256"
+    },
+    {
+      "path": "twitch/v2/upload/follower/vulgoRIP/vulgoRIP_56x56.png",
+      "format": "png",
+      "role": "twitch_follower",
+      "width": 56,
+      "height": 56,
+      "sha256": "93a10f23e698043989239d87e524dc5d11dbbaed2fbc8354e26c65e6306b10bb"
+    },
+    {
+      "path": "twitch/v2/upload/follower/vulgoRIP/vulgoRIP_28x28.png",
+      "format": "png",
+      "role": "twitch_follower",
+      "width": 28,
+      "height": 28,
+      "sha256": "536073be7f31826d9f041ee18ea24cd076510244dcb87af1abaab311005fa90b"
+    },
+    {
+      "path": "twitch/v2/upload/follower/vulgoLOVE/vulgoLOVE_112x112.png",
+      "format": "png",
+      "role": "twitch_follower",
+      "width": 112,
+      "height": 112,
+      "sha256": "315858b8c6d64f3afcb8c244a257966905fff4ce827b120474441b38f4f7a8b4"
+    },
+    {
+      "path": "twitch/v2/upload/follower/vulgoLOVE/vulgoLOVE_56x56.png",
+      "format": "png",
+      "role": "twitch_follower",
+      "width": 56,
+      "height": 56,
+      "sha256": "16ed4ee3eb5eb09c603e749d2497b6cad8defaa559112601030fe4d6805d6557"
+    },
+    {
+      "path": "twitch/v2/upload/follower/vulgoLOVE/vulgoLOVE_28x28.png",
+      "format": "png",
+      "role": "twitch_follower",
+      "width": 28,
+      "height": 28,
+      "sha256": "32ee5fa6fbfb189bb28e7c69b748d31abe18f9aa81cb28859ae301e39786fd35"
+    },
+    {
+      "path": "twitch/v2/upload/follower/vulgoKKK/vulgoKKK_112x112.png",
+      "format": "png",
+      "role": "twitch_follower",
+      "width": 112,
+      "height": 112,
+      "sha256": "667968edadb9bbb53cafc326aa34064379deb6aa5488b4f9789e373dfbc1d591"
+    },
+    {
+      "path": "twitch/v2/upload/follower/vulgoKKK/vulgoKKK_56x56.png",
+      "format": "png",
+      "role": "twitch_follower",
+      "width": 56,
+      "height": 56,
+      "sha256": "912bc226602ef83e06826b7b3ce34075e647aa40a8b14b49815cba261b52f7a0"
+    },
+    {
+      "path": "twitch/v2/upload/follower/vulgoKKK/vulgoKKK_28x28.png",
+      "format": "png",
+      "role": "twitch_follower",
+      "width": 28,
+      "height": 28,
+      "sha256": "ff76e645694f9740eaf4c8a5726c3957364264b3748502cba8e9480e2d74a0cf"
+    },
+    {
+      "path": "twitch/v2/upload/tier1_static/vulgoBOTAPRAFORA/vulgoBOTAPRAFORA_112x112.png",
+      "format": "png",
+      "role": "twitch_tier1_static",
+      "width": 112,
+      "height": 112,
+      "sha256": "96fb25b9073a05a7418c5ecb1b966580e95d7dcb0eea671d1a1b31dc132cf3eb"
+    },
+    {
+      "path": "twitch/v2/upload/tier1_static/vulgoBOTAPRAFORA/vulgoBOTAPRAFORA_56x56.png",
+      "format": "png",
+      "role": "twitch_tier1_static",
+      "width": 56,
+      "height": 56,
+      "sha256": "4ac4d21d91a62f9e2e73ff0ded0d61eac1c69b78a6add333c9b4750568cbd27a"
+    },
+    {
+      "path": "twitch/v2/upload/tier1_static/vulgoBOTAPRAFORA/vulgoBOTAPRAFORA_28x28.png",
+      "format": "png",
+      "role": "twitch_tier1_static",
+      "width": 28,
+      "height": 28,
+      "sha256": "3072a3f0a2e247c5d28f0ed7470c294d2783824f4158da9458689a6f6f1389fe"
+    },
+    {
+      "path": "twitch/v2/upload/tier1_static/vulgoENERGIZA/vulgoENERGIZA_112x112.png",
+      "format": "png",
+      "role": "twitch_tier1_static",
+      "width": 112,
+      "height": 112,
+      "sha256": "3e5b5e3f040a77b6b09fa4f84b6f9dd62f786e4485c75c8827a98dc4b2c4b98a"
+    },
+    {
+      "path": "twitch/v2/upload/tier1_static/vulgoENERGIZA/vulgoENERGIZA_56x56.png",
+      "format": "png",
+      "role": "twitch_tier1_static",
+      "width": 56,
+      "height": 56,
+      "sha256": "d834d963a6765da711e5cd2f773a24acb56921867562bb2284fc5e7b2bac8a63"
+    },
+    {
+      "path": "twitch/v2/upload/tier1_static/vulgoENERGIZA/vulgoENERGIZA_28x28.png",
+      "format": "png",
+      "role": "twitch_tier1_static",
+      "width": 28,
+      "height": 28,
+      "sha256": "ad998b6af36424bad0971a794d8cfc947c67e7ce41635b0ef380b1f819d9c5c4"
+    },
+    {
+      "path": "twitch/v2/upload/tier1_static/vulgoMONTA/vulgoMONTA_112x112.png",
+      "format": "png",
+      "role": "twitch_tier1_static",
+      "width": 112,
+      "height": 112,
+      "sha256": "da8c54446ceef19189d7cc9880c112495ce478d88efe4aa204b142bb0db8d439"
+    },
+    {
+      "path": "twitch/v2/upload/tier1_static/vulgoMONTA/vulgoMONTA_56x56.png",
+      "format": "png",
+      "role": "twitch_tier1_static",
+      "width": 56,
+      "height": 56,
+      "sha256": "8ee481eee16c625c826c368bd5ecbec47c2a4b45e37bda8f522b666022799699"
+    },
+    {
+      "path": "twitch/v2/upload/tier1_static/vulgoMONTA/vulgoMONTA_28x28.png",
+      "format": "png",
+      "role": "twitch_tier1_static",
+      "width": 28,
+      "height": 28,
+      "sha256": "7d4b8c4fe0fa1859504032970070ff721ee1ec02c299359280a018dc6c1362be"
+    },
+    {
+      "path": "twitch/v2/upload/tier1_static/vulgoBATEFOOD/vulgoBATEFOOD_112x112.png",
+      "format": "png",
+      "role": "twitch_tier1_static",
+      "width": 112,
+      "height": 112,
+      "sha256": "80032cef311145437143d167b2a0a7a08451af5978033e0455a88a54a5b5d09d"
+    },
+    {
+      "path": "twitch/v2/upload/tier1_static/vulgoBATEFOOD/vulgoBATEFOOD_56x56.png",
+      "format": "png",
+      "role": "twitch_tier1_static",
+      "width": 56,
+      "height": 56,
+      "sha256": "8d71d5fdc2e79a25abb2327b7bd2bb5ed23b599f1c884a9bb53a26fda7ddaaeb"
+    },
+    {
+      "path": "twitch/v2/upload/tier1_static/vulgoBATEFOOD/vulgoBATEFOOD_28x28.png",
+      "format": "png",
+      "role": "twitch_tier1_static",
+      "width": 28,
+      "height": 28,
+      "sha256": "97467f73ca471f70fef023164323c2338246f92cbde505c2f976d303d75c8d14"
+    },
+    {
+      "path": "twitch/v2/upload/tier1_static/vulgoHYPE/vulgoHYPE_112x112.png",
+      "format": "png",
+      "role": "twitch_tier1_static",
+      "width": 112,
+      "height": 112,
+      "sha256": "84ceafbef200d908dfe3c0e842e6d8be8bae412f5097e26f4d921d478d81e201"
+    },
+    {
+      "path": "twitch/v2/upload/tier1_static/vulgoHYPE/vulgoHYPE_56x56.png",
+      "format": "png",
+      "role": "twitch_tier1_static",
+      "width": 56,
+      "height": 56,
+      "sha256": "49da1f7db53cc2f15c160807ba4db885fc7d52ab001fa92f550b51b97d106217"
+    },
+    {
+      "path": "twitch/v2/upload/tier1_static/vulgoHYPE/vulgoHYPE_28x28.png",
+      "format": "png",
+      "role": "twitch_tier1_static",
+      "width": 28,
+      "height": 28,
+      "sha256": "99eeb6b39acf216f9b0d9149c52e3bdf9c77ede7fb5bf8b2a34859710da650b4"
+    },
+    {
+      "path": "twitch/v2/upload/tier2_static/vulgoRAGE/vulgoRAGE_112x112.png",
+      "format": "png",
+      "role": "twitch_tier2_static",
+      "width": 112,
+      "height": 112,
+      "sha256": "d8ea9df19f6b17e03e32bff2007e54a5797234ab84da91a3d94807c170e036ae"
+    },
+    {
+      "path": "twitch/v2/upload/tier2_static/vulgoRAGE/vulgoRAGE_56x56.png",
+      "format": "png",
+      "role": "twitch_tier2_static",
+      "width": 56,
+      "height": 56,
+      "sha256": "436ca5e97849943786c2f22913206f619949507643f345541978b46c92a4137f"
+    },
+    {
+      "path": "twitch/v2/upload/tier2_static/vulgoRAGE/vulgoRAGE_28x28.png",
+      "format": "png",
+      "role": "twitch_tier2_static",
+      "width": 28,
+      "height": 28,
+      "sha256": "5f71e2b8a059d8e3bba3cb128ac45470a6137bbe14f9397518d62abb4c5980a3"
+    },
+    {
+      "path": "twitch/v2/upload/tier3_static/vulgoREI/vulgoREI_112x112.png",
+      "format": "png",
+      "role": "twitch_tier3_static",
+      "width": 112,
+      "height": 112,
+      "sha256": "92cbdfbc1a945512056821fdaf975d2bf81b476b95925e34eda8f2be6f5c4b94"
+    },
+    {
+      "path": "twitch/v2/upload/tier3_static/vulgoREI/vulgoREI_56x56.png",
+      "format": "png",
+      "role": "twitch_tier3_static",
+      "width": 56,
+      "height": 56,
+      "sha256": "70f64c31fb55b701d67ed71b8624d62da093fa6fc87828aecd56caa8d1998993"
+    },
+    {
+      "path": "twitch/v2/upload/tier3_static/vulgoREI/vulgoREI_28x28.png",
+      "format": "png",
+      "role": "twitch_tier3_static",
+      "width": 28,
+      "height": 28,
+      "sha256": "02d4831036b2962e54e3b66d4e09eea7eaf59561386184cbec141d961c6e28f8"
+    },
+    {
+      "path": "twitch/v2/upload/bits_emotes/vulgoCRISTAL/vulgoCRISTAL_112x112.png",
+      "format": "png",
+      "role": "twitch_bits_emotes",
+      "width": 112,
+      "height": 112,
+      "sha256": "6ae8df70b68def99c09a98872ab9deb089089aa765db9188c1a706c02c385672"
+    },
+    {
+      "path": "twitch/v2/upload/bits_emotes/vulgoCRISTAL/vulgoCRISTAL_56x56.png",
+      "format": "png",
+      "role": "twitch_bits_emotes",
+      "width": 56,
+      "height": 56,
+      "sha256": "4025cd39f5396df04142713b7ea8611f5fd5d35f81064a31ff8adb7df42da459"
+    },
+    {
+      "path": "twitch/v2/upload/bits_emotes/vulgoCRISTAL/vulgoCRISTAL_28x28.png",
+      "format": "png",
+      "role": "twitch_bits_emotes",
+      "width": 28,
+      "height": 28,
+      "sha256": "4032607a7656b89fbfd87c15372c3da28d4c08c2aced82f997511a617cb94c38"
+    },
+    {
+      "path": "twitch/v2/upload/bits_emotes/vulgoTESOURO/vulgoTESOURO_112x112.png",
+      "format": "png",
+      "role": "twitch_bits_emotes",
+      "width": 112,
+      "height": 112,
+      "sha256": "0a369e8c02aec6df015f6792670310c135d76c39ff156639846c1981b3d55fa3"
+    },
+    {
+      "path": "twitch/v2/upload/bits_emotes/vulgoTESOURO/vulgoTESOURO_56x56.png",
+      "format": "png",
+      "role": "twitch_bits_emotes",
+      "width": 56,
+      "height": 56,
+      "sha256": "ce18f65850067c118d8a8b3c9818f297557fc93a6a7e7d957905e27a81a7ef2f"
+    },
+    {
+      "path": "twitch/v2/upload/bits_emotes/vulgoTESOURO/vulgoTESOURO_28x28.png",
+      "format": "png",
+      "role": "twitch_bits_emotes",
+      "width": 28,
+      "height": 28,
+      "sha256": "39f87b11c79279b945033db75c85b6e0e2ae257ee11cb3bb25ac9646881db988"
+    },
+    {
+      "path": "twitch/v2/upload/bits_emotes/vulgoLENDA/vulgoLENDA_112x112.png",
+      "format": "png",
+      "role": "twitch_bits_emotes",
+      "width": 112,
+      "height": 112,
+      "sha256": "3f8e4b1eb84b692e8ab718af9679ee0dd032e88fa90aea4ad7fc305b2b8d8644"
+    },
+    {
+      "path": "twitch/v2/upload/bits_emotes/vulgoLENDA/vulgoLENDA_56x56.png",
+      "format": "png",
+      "role": "twitch_bits_emotes",
+      "width": 56,
+      "height": 56,
+      "sha256": "5b51ad525c5ab6f5b6d58e04d0e79f613c37eac7533456b8743aec044e9553a8"
+    },
+    {
+      "path": "twitch/v2/upload/bits_emotes/vulgoLENDA/vulgoLENDA_28x28.png",
+      "format": "png",
+      "role": "twitch_bits_emotes",
+      "width": 28,
+      "height": 28,
+      "sha256": "be4aa9eaaee646ae10c49266711479ea99c456970ee3e3f15561ec0e5a0f4209"
+    },
+    {
+      "path": "twitch/v2/upload/tier1_animated/vulgoHYPEANIM/vulgoHYPEANIM_112x112.gif",
+      "format": "gif",
+      "role": "twitch_tier1_animated",
+      "width": 112,
+      "height": 112,
+      "sha256": "ec7941d23006bbba66f498df21c7c44c007fd806fcc76e67d1f1516dfb11bc47"
+    },
+    {
+      "path": "twitch/v2/upload/tier1_animated/vulgoHYPEANIM/vulgoHYPEANIM_56x56.gif",
+      "format": "gif",
+      "role": "twitch_tier1_animated",
+      "width": 56,
+      "height": 56,
+      "sha256": "9b99af590de99854f3f4bb4b74f638500c09c28b7f33ba38445d1f8c750a361a"
+    },
+    {
+      "path": "twitch/v2/upload/tier1_animated/vulgoHYPEANIM/vulgoHYPEANIM_28x28.gif",
+      "format": "gif",
+      "role": "twitch_tier1_animated",
+      "width": 28,
+      "height": 28,
+      "sha256": "fdd1cfdea8e678a8287944814cd6f93d378dbda4203ca839cfb8d8719d892e25"
+    },
+    {
+      "path": "twitch/v2/upload/tier1_animated/vulgoENERGIZAANIM/vulgoENERGIZAANIM_112x112.gif",
+      "format": "gif",
+      "role": "twitch_tier1_animated",
+      "width": 112,
+      "height": 112,
+      "sha256": "edc4240edf396c5b557807801734cfd60f928baeb375039363c822d0e85db8b2"
+    },
+    {
+      "path": "twitch/v2/upload/tier1_animated/vulgoENERGIZAANIM/vulgoENERGIZAANIM_56x56.gif",
+      "format": "gif",
+      "role": "twitch_tier1_animated",
+      "width": 56,
+      "height": 56,
+      "sha256": "643a9586226db742fd202bde0b5969794e78f482cfc8e14567b2019c72c4e13e"
+    },
+    {
+      "path": "twitch/v2/upload/tier1_animated/vulgoENERGIZAANIM/vulgoENERGIZAANIM_28x28.gif",
+      "format": "gif",
+      "role": "twitch_tier1_animated",
+      "width": 28,
+      "height": 28,
+      "sha256": "d22a2408cf98949e0cd2558c940f9bfeaa0db8b41e9373c31f15a779a1e0b493"
+    },
+    {
+      "path": "twitch/v2/upload/tier1_animated/vulgoMONTAANIM/vulgoMONTAANIM_112x112.gif",
+      "format": "gif",
+      "role": "twitch_tier1_animated",
+      "width": 112,
+      "height": 112,
+      "sha256": "c9f0a5253325f97b8b7c0824cfe1833779fb0cda77e2404f67143672439a2093"
+    },
+    {
+      "path": "twitch/v2/upload/tier1_animated/vulgoMONTAANIM/vulgoMONTAANIM_56x56.gif",
+      "format": "gif",
+      "role": "twitch_tier1_animated",
+      "width": 56,
+      "height": 56,
+      "sha256": "c9b1909539d68e28667941a6f6d8013ca260f8bba3cae21f2cdf4af9b734fdbd"
+    },
+    {
+      "path": "twitch/v2/upload/tier1_animated/vulgoMONTAANIM/vulgoMONTAANIM_28x28.gif",
+      "format": "gif",
+      "role": "twitch_tier1_animated",
+      "width": 28,
+      "height": 28,
+      "sha256": "b33d93e6acd3e5ae8ec99f01eba101c9680eb25840130fd0220665fe1f531f21"
+    },
+    {
+      "path": "twitch/v2/upload/tier1_animated/vulgoBATEFOODANIM/vulgoBATEFOODANIM_112x112.gif",
+      "format": "gif",
+      "role": "twitch_tier1_animated",
+      "width": 112,
+      "height": 112,
+      "sha256": "75bcfbe037fd923fdf856c7da9f157b26ddd076bbfbf27522227ef5b1af2a5ef"
+    },
+    {
+      "path": "twitch/v2/upload/tier1_animated/vulgoBATEFOODANIM/vulgoBATEFOODANIM_56x56.gif",
+      "format": "gif",
+      "role": "twitch_tier1_animated",
+      "width": 56,
+      "height": 56,
+      "sha256": "e958094a6a4092dedae32c99a1b2b5c59fe012a8779d41799f5c12d6dee27f36"
+    },
+    {
+      "path": "twitch/v2/upload/tier1_animated/vulgoBATEFOODANIM/vulgoBATEFOODANIM_28x28.gif",
+      "format": "gif",
+      "role": "twitch_tier1_animated",
+      "width": 28,
+      "height": 28,
+      "sha256": "2508f127ed8e73922102ccbd660833bb42af322bc9a72f7618c25c0668b7145f"
+    },
+    {
+      "path": "twitch/v2/upload/tier1_animated/vulgoRAGEANIM/vulgoRAGEANIM_112x112.gif",
+      "format": "gif",
+      "role": "twitch_tier1_animated",
+      "width": 112,
+      "height": 112,
+      "sha256": "deeb3aa6110de58418dc17810a5cff37eb7cec65f0a0e75ecc2157195443a4fe"
+    },
+    {
+      "path": "twitch/v2/upload/tier1_animated/vulgoRAGEANIM/vulgoRAGEANIM_56x56.gif",
+      "format": "gif",
+      "role": "twitch_tier1_animated",
+      "width": 56,
+      "height": 56,
+      "sha256": "e7bb41be37269a6a4de4ea0e128ed7348304697a2207c784d845db63250d1779"
+    },
+    {
+      "path": "twitch/v2/upload/tier1_animated/vulgoRAGEANIM/vulgoRAGEANIM_28x28.gif",
+      "format": "gif",
+      "role": "twitch_tier1_animated",
+      "width": 28,
+      "height": 28,
+      "sha256": "c1e21f962d173fcf62e128b0435e26ab6832639cc55ac62bd003cbc47965b607"
+    },
+    {
+      "path": "twitch/v2/upload/bit_badges/bits_1/bits_1_72x72.png",
+      "format": "png",
+      "role": "twitch_bit_badges",
+      "width": 72,
+      "height": 72,
+      "sha256": "3cfee93162aecb3b708fe574f0968015266cfabb3599057e42912d70c2d22f63"
+    },
+    {
+      "path": "twitch/v2/upload/bit_badges/bits_1/bits_1_36x36.png",
+      "format": "png",
+      "role": "twitch_bit_badges",
+      "width": 36,
+      "height": 36,
+      "sha256": "a265ef8c398099fcc89a4405ecc9cd10dad9d1f02bfa224617c98f4d84c6ced0"
+    },
+    {
+      "path": "twitch/v2/upload/bit_badges/bits_1/bits_1_18x18.png",
+      "format": "png",
+      "role": "twitch_bit_badges",
+      "width": 18,
+      "height": 18,
+      "sha256": "2f7ba41aaa8ab01335775e3af5a0db97abaa19e72238ee8171b9b350acfa417e"
+    },
+    {
+      "path": "twitch/v2/upload/bit_badges/bits_100/bits_100_72x72.png",
+      "format": "png",
+      "role": "twitch_bit_badges",
+      "width": 72,
+      "height": 72,
+      "sha256": "97611ab725928cfbaf48a5405cb815e77c7ee6dda4243a8591f1732ab6285aa7"
+    },
+    {
+      "path": "twitch/v2/upload/bit_badges/bits_100/bits_100_36x36.png",
+      "format": "png",
+      "role": "twitch_bit_badges",
+      "width": 36,
+      "height": 36,
+      "sha256": "9ee61a694ef186e2734764bbc3ca313f6a3671d549215ef0cfc96288f0512437"
+    },
+    {
+      "path": "twitch/v2/upload/bit_badges/bits_100/bits_100_18x18.png",
+      "format": "png",
+      "role": "twitch_bit_badges",
+      "width": 18,
+      "height": 18,
+      "sha256": "955fa5adb71ad51ca7012d0e76e2891b4c44d6dc148edc133d2e787ee4879322"
+    },
+    {
+      "path": "twitch/v2/upload/bit_badges/bits_1000/bits_1000_72x72.png",
+      "format": "png",
+      "role": "twitch_bit_badges",
+      "width": 72,
+      "height": 72,
+      "sha256": "d98de18d6d5f768318985da4163a44b35a1eeba1c5c81ef96cef0f091ed690e5"
+    },
+    {
+      "path": "twitch/v2/upload/bit_badges/bits_1000/bits_1000_36x36.png",
+      "format": "png",
+      "role": "twitch_bit_badges",
+      "width": 36,
+      "height": 36,
+      "sha256": "ad82e6dc9c35c4bafba01597e7f4b99265c96e56b4ed858a239a4a84c68676f8"
+    },
+    {
+      "path": "twitch/v2/upload/bit_badges/bits_1000/bits_1000_18x18.png",
+      "format": "png",
+      "role": "twitch_bit_badges",
+      "width": 18,
+      "height": 18,
+      "sha256": "c84d42e2577ba1d07d40c5f82523e2823c9e372fe583e8dc3fa144b81d59c23b"
+    },
+    {
+      "path": "twitch/v2/upload/bit_badges/bits_5000/bits_5000_72x72.png",
+      "format": "png",
+      "role": "twitch_bit_badges",
+      "width": 72,
+      "height": 72,
+      "sha256": "8550f2923c52ba4756ffdd2d47a5d208f86a1534b63afa8fd1864090baf31489"
+    },
+    {
+      "path": "twitch/v2/upload/bit_badges/bits_5000/bits_5000_36x36.png",
+      "format": "png",
+      "role": "twitch_bit_badges",
+      "width": 36,
+      "height": 36,
+      "sha256": "1b919db862efa765f143a929dce6cc4f6390bc2d4317923dfacdc86ebeaa2af2"
+    },
+    {
+      "path": "twitch/v2/upload/bit_badges/bits_5000/bits_5000_18x18.png",
+      "format": "png",
+      "role": "twitch_bit_badges",
+      "width": 18,
+      "height": 18,
+      "sha256": "b8bbbc2b2eb173c6adbed3589b1a7eba529b33bb34a1f2fbcd2ae3de4b79dc57"
+    },
+    {
+      "path": "twitch/v2/upload/bit_badges/bits_10000/bits_10000_72x72.png",
+      "format": "png",
+      "role": "twitch_bit_badges",
+      "width": 72,
+      "height": 72,
+      "sha256": "feb5e6f3ac8476296cfeb07ff9fa6cb47ba9894567bad89684a4901294c4d7fd"
+    },
+    {
+      "path": "twitch/v2/upload/bit_badges/bits_10000/bits_10000_36x36.png",
+      "format": "png",
+      "role": "twitch_bit_badges",
+      "width": 36,
+      "height": 36,
+      "sha256": "3a598ade4468a292640741f974a3a691f5b49509cb287c8be634cdcd6dcba1e5"
+    },
+    {
+      "path": "twitch/v2/upload/bit_badges/bits_10000/bits_10000_18x18.png",
+      "format": "png",
+      "role": "twitch_bit_badges",
+      "width": 18,
+      "height": 18,
+      "sha256": "b8dcc5ce965be9d56f4e6ce5c1d115c77e1445b66cd330a47dedcccf9f809144"
+    },
+    {
+      "path": "twitch/v2/upload/bit_badges/bits_25000/bits_25000_72x72.png",
+      "format": "png",
+      "role": "twitch_bit_badges",
+      "width": 72,
+      "height": 72,
+      "sha256": "d6d5a1a3ae27b49967a0df1a110252c7bcfb9c8cbc6fd9cf4e0a2c63c9d5f5c0"
+    },
+    {
+      "path": "twitch/v2/upload/bit_badges/bits_25000/bits_25000_36x36.png",
+      "format": "png",
+      "role": "twitch_bit_badges",
+      "width": 36,
+      "height": 36,
+      "sha256": "96694e024cdef6f5b18cd8c9df695667692561c2a79207ff63b8fb4583f52882"
+    },
+    {
+      "path": "twitch/v2/upload/bit_badges/bits_25000/bits_25000_18x18.png",
+      "format": "png",
+      "role": "twitch_bit_badges",
+      "width": 18,
+      "height": 18,
+      "sha256": "e4cdc474944190704742be23fe428fa6c07ea3bdb612841ed1affba7c753ee25"
+    },
+    {
+      "path": "twitch/v2/upload/bit_badges/bits_50000/bits_50000_72x72.png",
+      "format": "png",
+      "role": "twitch_bit_badges",
+      "width": 72,
+      "height": 72,
+      "sha256": "dd6fee3fedd408fc637a58451d7ec9a9aaa2cbf9a7fb8e4fcc02578e4c57aa6a"
+    },
+    {
+      "path": "twitch/v2/upload/bit_badges/bits_50000/bits_50000_36x36.png",
+      "format": "png",
+      "role": "twitch_bit_badges",
+      "width": 36,
+      "height": 36,
+      "sha256": "d7fec57c19ba4569ed3e673d77a4a7b02afb01f6dce374f0aca144248ebd354f"
+    },
+    {
+      "path": "twitch/v2/upload/bit_badges/bits_50000/bits_50000_18x18.png",
+      "format": "png",
+      "role": "twitch_bit_badges",
+      "width": 18,
+      "height": 18,
+      "sha256": "6c56ceb7c90ba58c373a05d071b351db668d70fa26f16242d00d1165c5a9f6da"
+    },
+    {
+      "path": "twitch/v2/upload/bit_badges/bits_75000/bits_75000_72x72.png",
+      "format": "png",
+      "role": "twitch_bit_badges",
+      "width": 72,
+      "height": 72,
+      "sha256": "d9ab01699c4ee29a9efd9eb21bc609c9cd3dedc8d5058ac5afe6bd2cf0ad1ed8"
+    },
+    {
+      "path": "twitch/v2/upload/bit_badges/bits_75000/bits_75000_36x36.png",
+      "format": "png",
+      "role": "twitch_bit_badges",
+      "width": 36,
+      "height": 36,
+      "sha256": "dabf14a383c62839af4e094f576b8591c44ad9749b401add5c5d49bcdaa7f0e5"
+    },
+    {
+      "path": "twitch/v2/upload/bit_badges/bits_75000/bits_75000_18x18.png",
+      "format": "png",
+      "role": "twitch_bit_badges",
+      "width": 18,
+      "height": 18,
+      "sha256": "1a7b99f254141617fb9631de6b8221e80db138528dbeec8c03238605655ea8db"
+    },
+    {
+      "path": "twitch/v2/upload/bit_badges/bits_100000/bits_100000_72x72.png",
+      "format": "png",
+      "role": "twitch_bit_badges",
+      "width": 72,
+      "height": 72,
+      "sha256": "c6dfec3a654f4445dc3b887d9266cbc0c41c0293f00b71e26885366af1764105"
+    },
+    {
+      "path": "twitch/v2/upload/bit_badges/bits_100000/bits_100000_36x36.png",
+      "format": "png",
+      "role": "twitch_bit_badges",
+      "width": 36,
+      "height": 36,
+      "sha256": "e20a6c7af4b867d647f923eda3e6d7c94ee2e31c13121528e4a3d2a641193ffd"
+    },
+    {
+      "path": "twitch/v2/upload/bit_badges/bits_100000/bits_100000_18x18.png",
+      "format": "png",
+      "role": "twitch_bit_badges",
+      "width": 18,
+      "height": 18,
+      "sha256": "7b2dec3895a633f0f7c2f61a3c52f0e1d0e69528e7bc64717002ad5aa1b0025d"
+    },
+    {
+      "path": "twitch/v2/upload/channel_points/moeda_ivexi/moeda_ivexi_112x112.png",
+      "format": "png",
+      "role": "twitch_channel_points",
+      "width": 112,
+      "height": 112,
+      "sha256": "d0700f9dd5b01a6a142e72bb3c92ac243fb3ea782d6931c5aec342a2b97a6acd"
+    },
+    {
+      "path": "twitch/v2/upload/channel_points/moeda_ivexi/moeda_ivexi_56x56.png",
+      "format": "png",
+      "role": "twitch_channel_points",
+      "width": 56,
+      "height": 56,
+      "sha256": "91795d8fd8a0f2354226e6dc8502ec6eedf94c5b10fc145050ff0fb260e4827a"
+    },
+    {
+      "path": "twitch/v2/upload/channel_points/moeda_ivexi/moeda_ivexi_28x28.png",
+      "format": "png",
+      "role": "twitch_channel_points",
+      "width": 28,
+      "height": 28,
+      "sha256": "58d3c2c7888c8c3738b30e265201a13f651e1ff9bb9efb17af0dad3235889833"
+    },
+    {
+      "path": "twitch/v2/upload/rewards/hidratar/hidratar_112x112.png",
+      "format": "png",
+      "role": "twitch_rewards",
+      "width": 112,
+      "height": 112,
+      "sha256": "3b34ce0e90f10ba2cbcda4d52d9c1c913ea5145d7c12cb3f880bf2e4a1bdebaa"
+    },
+    {
+      "path": "twitch/v2/upload/rewards/hidratar/hidratar_56x56.png",
+      "format": "png",
+      "role": "twitch_rewards",
+      "width": 56,
+      "height": 56,
+      "sha256": "dbc42e9beefd7feda34ed843cb77077f7563563d3f143cd95bfb922368ceba2f"
+    },
+    {
+      "path": "twitch/v2/upload/rewards/hidratar/hidratar_28x28.png",
+      "format": "png",
+      "role": "twitch_rewards",
+      "width": 28,
+      "height": 28,
+      "sha256": "8e310ff0850dcb9869cbd18476264b553dc111b4bc7842010974733e65cd1438"
+    },
+    {
+      "path": "twitch/v2/upload/rewards/alongar/alongar_112x112.png",
+      "format": "png",
+      "role": "twitch_rewards",
+      "width": 112,
+      "height": 112,
+      "sha256": "e593a40516c6eaedc3bda2c7bd172817a187c203471091befca05517674ad14a"
+    },
+    {
+      "path": "twitch/v2/upload/rewards/alongar/alongar_56x56.png",
+      "format": "png",
+      "role": "twitch_rewards",
+      "width": 56,
+      "height": 56,
+      "sha256": "a30acb22e705122c0fffef217b5b39d1410bc99e2d2a8c06a5f3eb7ab7fe0cd4"
+    },
+    {
+      "path": "twitch/v2/upload/rewards/alongar/alongar_28x28.png",
+      "format": "png",
+      "role": "twitch_rewards",
+      "width": 28,
+      "height": 28,
+      "sha256": "b9a0781635b7073921a0237ba69b7ce23b81f976d37671e0bce13a03ea3edfab"
+    },
+    {
+      "path": "twitch/v2/upload/rewards/destacar_mensagem/destacar_mensagem_112x112.png",
+      "format": "png",
+      "role": "twitch_rewards",
+      "width": 112,
+      "height": 112,
+      "sha256": "7dc878e4b5565446ac34c2deb57a7ea6b66838856b2281cc22e5941c6d9404eb"
+    },
+    {
+      "path": "twitch/v2/upload/rewards/destacar_mensagem/destacar_mensagem_56x56.png",
+      "format": "png",
+      "role": "twitch_rewards",
+      "width": 56,
+      "height": 56,
+      "sha256": "36e123fc592e46a302a507b1e807bbca6155a9081ab06ad0f54d14a290354c65"
+    },
+    {
+      "path": "twitch/v2/upload/rewards/destacar_mensagem/destacar_mensagem_28x28.png",
+      "format": "png",
+      "role": "twitch_rewards",
+      "width": 28,
+      "height": 28,
+      "sha256": "b9a8a201fc076b0103ac357c6fb96258d06fd6d15f2a78c2fab147e43bd0451c"
+    },
+    {
+      "path": "twitch/v2/upload/rewards/escolher_musica/escolher_musica_112x112.png",
+      "format": "png",
+      "role": "twitch_rewards",
+      "width": 112,
+      "height": 112,
+      "sha256": "ce10359575e2531562b7a4f8263fe24b5a5e153cfb6b7a10389355f31c01c913"
+    },
+    {
+      "path": "twitch/v2/upload/rewards/escolher_musica/escolher_musica_56x56.png",
+      "format": "png",
+      "role": "twitch_rewards",
+      "width": 56,
+      "height": 56,
+      "sha256": "73468db276006dad559537b37d0ed2ef620a37c6736c6941e88b2ba3f00eb582"
+    },
+    {
+      "path": "twitch/v2/upload/rewards/escolher_musica/escolher_musica_28x28.png",
+      "format": "png",
+      "role": "twitch_rewards",
+      "width": 28,
+      "height": 28,
+      "sha256": "fc7d99a7d1890879610a0983cbe745565bfa800b344c2dfb6dc59b1f944582d9"
+    },
+    {
+      "path": "twitch/v2/upload/rewards/resgate_batefood/resgate_batefood_112x112.png",
+      "format": "png",
+      "role": "twitch_rewards",
+      "width": 112,
+      "height": 112,
+      "sha256": "3578047205779623b7037db59d346367650daff42852e577b8bda9b32fb3f53f"
+    },
+    {
+      "path": "twitch/v2/upload/rewards/resgate_batefood/resgate_batefood_56x56.png",
+      "format": "png",
+      "role": "twitch_rewards",
+      "width": 56,
+      "height": 56,
+      "sha256": "fce11ae3a2e6dc5127b645706ccc9801918eb233425cc2793d36e9112f68cbb0"
+    },
+    {
+      "path": "twitch/v2/upload/rewards/resgate_batefood/resgate_batefood_28x28.png",
+      "format": "png",
+      "role": "twitch_rewards",
+      "width": 28,
+      "height": 28,
+      "sha256": "45e6cf2e1fc2fd3c3fd1f50aaca67b29788d4d009bfc45626cc732ac472a8137"
+    },
+    {
+      "path": "twitch/v2/upload/rewards/resgate_energiza/resgate_energiza_112x112.png",
+      "format": "png",
+      "role": "twitch_rewards",
+      "width": 112,
+      "height": 112,
+      "sha256": "281ad76dc028966a7942c5aa7a3a6b490aabd858e0d7aa1da1695182d8e06d8a"
+    },
+    {
+      "path": "twitch/v2/upload/rewards/resgate_energiza/resgate_energiza_56x56.png",
+      "format": "png",
+      "role": "twitch_rewards",
+      "width": 56,
+      "height": 56,
+      "sha256": "97a39e07886cdec1fe6bd688324d0e6387e8bc921ac00378c38f66372bf637cb"
+    },
+    {
+      "path": "twitch/v2/upload/rewards/resgate_energiza/resgate_energiza_28x28.png",
+      "format": "png",
+      "role": "twitch_rewards",
+      "width": 28,
+      "height": 28,
+      "sha256": "53ed22d8e801edb27fed160922bdd9a11043bea4cc96d8e2f269b47b0f9d1779"
+    },
+    {
+      "path": "twitch/v2/upload/badge_flairs/flair_tier2/flair_tier2_72x72.png",
+      "format": "png",
+      "role": "twitch_badge_flairs",
+      "width": 72,
+      "height": 72,
+      "sha256": "8511a6350b68273efde782f79ebc6c4a9a9c5e822308543fca278c87da1981f5"
+    },
+    {
+      "path": "twitch/v2/upload/badge_flairs/flair_tier2/flair_tier2_36x36.png",
+      "format": "png",
+      "role": "twitch_badge_flairs",
+      "width": 36,
+      "height": 36,
+      "sha256": "c16099a1f70670eddc1f8207510dda72dd6f303751cd6e390b161352a254b872"
+    },
+    {
+      "path": "twitch/v2/upload/badge_flairs/flair_tier2/flair_tier2_18x18.png",
+      "format": "png",
+      "role": "twitch_badge_flairs",
+      "width": 18,
+      "height": 18,
+      "sha256": "b6ff9705f85fd7cc6094d9ab968c06a6ece3ea9fff39dc909bed143c7a9d90f9"
+    },
+    {
+      "path": "twitch/v2/upload/badge_flairs/flair_tier3/flair_tier3_72x72.png",
+      "format": "png",
+      "role": "twitch_badge_flairs",
+      "width": 72,
+      "height": 72,
+      "sha256": "5b52f1311a72f12dd1e59d349def9f22ae812bb161d38443b0842278a1d46707"
+    },
+    {
+      "path": "twitch/v2/upload/badge_flairs/flair_tier3/flair_tier3_36x36.png",
+      "format": "png",
+      "role": "twitch_badge_flairs",
+      "width": 36,
+      "height": 36,
+      "sha256": "dab3d8c21931d0e444e4a41386a20914f19e0314f2b16a57a9287acf4bdffd16"
+    },
+    {
+      "path": "twitch/v2/upload/badge_flairs/flair_tier3/flair_tier3_18x18.png",
+      "format": "png",
+      "role": "twitch_badge_flairs",
+      "width": 18,
+      "height": 18,
+      "sha256": "89a7ce84b4919283a4031193dd48d0da6acfe62e7c6c79dc7570cf0523a98dbd"
     }
   ]
 }

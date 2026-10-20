@@ -1,0 +1,9 @@
+{
+  "engine": "image_gen integrado",
+  "targets": [
+    "hype_sheet.png",
+    "energiza_sheet.png",
+    "rage_sheet.png"
+  ],
+  "originalsPreserved": true
+}

@@ -1,0 +1,190 @@
+{
+  "engine": "image_gen built-in",
+  "reference": "brand/twitch/referencias/03_referencia_personagem_mascote.png",
+  "gg": "Purple chibi raven streamer joyfully holding one golden trophy; large face, minimal flat cel shading, off-white stroke, transparent background, no text.",
+  "emoteTemplate": "Use case: stylized-concept. ONE production Twitch emote for VulgoManiaco / IVEXI. Reference image is identity reference only: purple-black chibi raven streamer, dark purple cap, large headset, big grey curved beak, expressive friendly eyes. SUBJECT: {subject}. Minimal bold close-up mascot sticker illustration, genuinely transparent background. Square silhouette fills 90-95% with safe transparent margin, thick solid OFF-WHITE outer stroke and dark inner outline. Purple #732EB8, black, yellow #D6D65C accent, grey beak. Very few LARGE flat cel shaded shapes, face dominates and only one main prop. Designed to read at 28 pixels. No words, letters, captions, badge plates, gradients, texture, fine feather details, scattered particles, soft glow or scenery. Do not include the reference background or tiny cap lettering.",
+  "iconTemplate": "Use case: stylized-concept. ONE Twitch {category} icon in IVEXI Caos Neon brand. SUBJECT: {subject}. Production-ready very simple chunky sticker icon. Genuine transparent background, square 1:1, focal silhouette occupies 93% with safe transparent margin. Very bold solid OFF-WHITE outer stroke, dark inner outline, purple #732EB8, yellow #D6D65C and silver or gold when specified. At most 3 large color planes per material. Designed to remain immediately distinguishable at 18 pixels. No text, no numbers, no runes, no letters, no fine lines, no gradient, no scenery, no particles, no glow. Only the requested single icon, no mockup, no multiple views.",
+  "emotes": [
+    [
+      "lurk",
+      "LURK",
+      "hooded raven peeking shyly over its two wings; quiet watchful eyes; no foliage"
+    ],
+    [
+      "rip",
+      "RIP",
+      "one chunky rounded grey tombstone with a large simple purple raven feather embossed at center; no letters, no skull, no character needed"
+    ],
+    [
+      "love",
+      "LOVE",
+      "raven with adoring heart-shaped eyes hugging ONE large pink-purple heart against its cheek"
+    ],
+    [
+      "kkk",
+      "KKK",
+      "raven laughing hard eyes squeezed into happy arcs, beak wide open, wing touching cheek"
+    ],
+    [
+      "botaprafora",
+      "BOTAPRAFORA",
+      "determined raven face holding ONE large short silver medieval sword diagonally beside its face, ready for battle"
+    ],
+    [
+      "energiza",
+      "ENERGIZA",
+      "raven face with wide energetic eyes and ONE thick cyan zigzag lightning bolt beside its cheek"
+    ],
+    [
+      "monta",
+      "MONTA",
+      "raven riding a cute chunky grey armored horse; tight head-and-shoulders composition with raven face above horse face, both faces big; no scenery"
+    ],
+    [
+      "batefood",
+      "BATEFOOD",
+      "hungry smiling raven biting into ONE large golden pork pie held immediately below beak; few crumbs only"
+    ],
+    [
+      "hype",
+      "HYPE",
+      "extremely excited raven with open cheering beak, happy large eyes, two wings raised close beside head"
+    ],
+    [
+      "rage",
+      "RAGE",
+      "comically angry raven face, thick furrowed eyebrows, clenched beak, wing fists up close to chin, small red accent; no violence"
+    ],
+    [
+      "rei",
+      "REI",
+      "proud smiling royal raven wearing ONE large simple three-point golden crown above purple cap; minimal collar of purple royal cape"
+    ],
+    [
+      "cristal",
+      "CRISTAL",
+      "delighted raven face holding ONE large bright purple amethyst crystal next to cheek, silver setting"
+    ],
+    [
+      "tesouro",
+      "TESOURO",
+      "delighted raven face above ONE open chunky golden treasure chest with few oversized purple gems; large face and chest"
+    ],
+    [
+      "lenda",
+      "LENDA",
+      "legendary royal raven face with large golden laurel leaves framing head and ONE purple gem in forehead crown, confident warm eyes"
+    ]
+  ],
+  "icons": [
+    [
+      "bits_1",
+      "bit_badges",
+      1,
+      "ONE chunky rounded slate-grey rune stone, single large purple diamond-shaped inset, no writing"
+    ],
+    [
+      "bits_100",
+      "bit_badges",
+      100,
+      "ONE upright broad silver hexagonal prism with single large purple diamond inset, no writing"
+    ],
+    [
+      "bits_1000",
+      "bit_badges",
+      1000,
+      "ONE large faceted purple amethyst diamond with simple silver base"
+    ],
+    [
+      "bits_5000",
+      "bit_badges",
+      5000,
+      "TWO large paired purple crystal peaks joined by chunky gold base"
+    ],
+    [
+      "bits_10000",
+      "bit_badges",
+      10000,
+      "ONE broad gold ancient chalice with big stylized purple flame, handles close to body"
+    ],
+    [
+      "bits_25000",
+      "bit_badges",
+      25000,
+      "ONE chunky six-point purple crystal star with thick silver setting"
+    ],
+    [
+      "bits_50000",
+      "bit_badges",
+      50000,
+      "ONE broad purple crystal shield with thick gold border and single simple white raven beak silhouette"
+    ],
+    [
+      "bits_75000",
+      "bit_badges",
+      75000,
+      "ONE broad three-point golden crown with large purple central gem and two side gems"
+    ],
+    [
+      "bits_100000",
+      "bit_badges",
+      100000,
+      "ONE broad three-point golden crown with two short bold purple wings close beside crown and central large white diamond"
+    ],
+    [
+      "moeda_ivexi",
+      "channel_points",
+      null,
+      "ONE round gold coin with thick gold rim, flat purple center and ONE large white simplified raven head silhouette. No runes, text or tiny engraving"
+    ],
+    [
+      "hidratar",
+      "rewards",
+      null,
+      "ONE chunky purple water bottle with big cyan water drop on front, white cap"
+    ],
+    [
+      "alongar",
+      "rewards",
+      null,
+      "ONE chibi purple raven stretching both wings upwards behind head, pleased eyes, close-up large head; cap and headset like reference"
+    ],
+    [
+      "destacar_mensagem",
+      "rewards",
+      null,
+      "ONE thick purple rounded chat bubble with a large yellow four-point star inside; no letters"
+    ],
+    [
+      "escolher_musica",
+      "rewards",
+      null,
+      "ONE large purple musical eighth-note pair with thick gold outline, no headset"
+    ],
+    [
+      "resgate_batefood",
+      "rewards",
+      null,
+      "ONE large golden pork pie with simple purple dish and one bite missing, no character"
+    ],
+    [
+      "resgate_energiza",
+      "rewards",
+      null,
+      "ONE bold cyan zigzag lightning bolt enclosed by a thick purple shield, yellow edge accent"
+    ],
+    [
+      "flair_tier2",
+      "badge_flairs",
+      2,
+      "A compact SILVER open lower-corner badge ornament overlay ONLY. Two thick silver angled brackets follow bottom left and bottom right corners and connect along bottom with ONE small purple gem; center and upper three quarters COMPLETELY EMPTY TRANSPARENT so existing raven badge remains visible. No badge base, no shield, no character, no filled center"
+    ],
+    [
+      "flair_tier3",
+      "badge_flairs",
+      3,
+      "A GOLD open lower-corner badge ornament overlay ONLY. Thick gold angled lower brackets with three tiny broad crown tips at bottom right and ONE large purple gem; center and upper three quarters COMPLETELY EMPTY TRANSPARENT so existing raven badge remains visible. No badge base, no shield, no character, no filled center"
+    ]
+  ],
+  "animationTemplate": "Use case: stylized-concept. Create ONE animation SPRITE SHEET asset for Twitch animated emote {id}, matching reference purple-black chibi raven streamer with cap and large headset, grey beak. IMPORTANT exact layout: SIX columns by FOUR rows, 24 equal square cells, row-major chronological sequence. Overall aspect ratio 3:2 landscape, ideally 1536x1024 with each cell 256x256. NO visible grid, NO labels, NO numbers, NO background, NO contact shadows. Entire sheet genuinely transparent RGBA. Each of the 24 cells contains exactly ONE full intact emote frame at the same camera framing, same scale and center, about 85% cell occupancy leaving safety margin so no neighbor touching. All cells contain same character and prop. This is 24 frames of ONE seamless slow 2-second loop. Animation: {motion}. Keep facial identity, colors, lighting, scale and cell position absolutely consistent across frames, no random changes in props. First and last frames nearly match. Bold SIMPLE flat cel-shaded purple #732EB8, grey beak, yellow #D6D65C accents, thick white outer sticker stroke and dark inner outline. Large expressive face, few large shapes, readable at 28px. No text or fine details. NO flashes, no blinking background, no particles, no glow gradients. This sheet will be sliced into 24 frames using exactly six equal columns and four equal rows, so spatial alignment is critical."
+}

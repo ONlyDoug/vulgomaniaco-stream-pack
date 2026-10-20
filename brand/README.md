@@ -21,6 +21,9 @@ completo da marca fica em [BRAND.md](../BRAND.md), na raiz do projeto.
 | `favicon/` | Ícones compactos e favicon. |
 | `panels/` | Banners gráficos 320x120 PNG e SVG para painéis de canal (Twitch e Kick). |
 | `social/` | Aplicações finais para redes sociais (offline banner 1080p, twitch header, youtube banner). |
+| [twitch/v2/README.md](twitch/v2/README.md) | Guia do pacote Twitch v2: 20 emotes, dois flairs, nove Bit Badges, moeda e seis resgates; 114 arquivos para upload. |
+| [twitch/v2/previews/index.html](twitch/v2/previews/index.html) | Catálogo local com tamanhos reais, animações e fundo claro/escuro. |
+| [twitch/v2/manifest.json](twitch/v2/manifest.json) | Slots, marcos, fontes e hashes do pacote Twitch v2. |
 | `email/` | Cabeçalhos, assinaturas e peças de email. |
 | `print/` | Materiais de impressão e produção. |
 | `templates/` | Fontes editáveis para agentes e designers. |

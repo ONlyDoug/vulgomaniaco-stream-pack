@@ -1,0 +1,811 @@
+{
+  "status": "pass",
+  "cards": 38,
+  "images": 114,
+  "nativeSizes": true,
+  "lightBackground": true,
+  "hideAnimations": true,
+  "overflow": false,
+  "mobileOverflow": false,
+  "errors": [],
+  "files": [
+    {
+      "path": "../upload/follower/vulgoGG/vulgoGG_112x112.png",
+      "loaded": true,
+      "width": 112,
+      "height": 112,
+      "native": true
+    },
+    {
+      "path": "../upload/follower/vulgoGG/vulgoGG_56x56.png",
+      "loaded": true,
+      "width": 56,
+      "height": 56,
+      "native": true
+    },
+    {
+      "path": "../upload/follower/vulgoGG/vulgoGG_28x28.png",
+      "loaded": true,
+      "width": 28,
+      "height": 28,
+      "native": true
+    },
+    {
+      "path": "../upload/follower/vulgoLURK/vulgoLURK_112x112.png",
+      "loaded": true,
+      "width": 112,
+      "height": 112,
+      "native": true
+    },
+    {
+      "path": "../upload/follower/vulgoLURK/vulgoLURK_56x56.png",
+      "loaded": true,
+      "width": 56,
+      "height": 56,
+      "native": true
+    },
+    {
+      "path": "../upload/follower/vulgoLURK/vulgoLURK_28x28.png",
+      "loaded": true,
+      "width": 28,
+      "height": 28,
+      "native": true
+    },
+    {
+      "path": "../upload/follower/vulgoRIP/vulgoRIP_112x112.png",
+      "loaded": true,
+      "width": 112,
+      "height": 112,
+      "native": true
+    },
+    {
+      "path": "../upload/follower/vulgoRIP/vulgoRIP_56x56.png",
+      "loaded": true,
+      "width": 56,
+      "height": 56,
+      "native": true
+    },
+    {
+      "path": "../upload/follower/vulgoRIP/vulgoRIP_28x28.png",
+      "loaded": true,
+      "width": 28,
+      "height": 28,
+      "native": true
+    },
+    {
+      "path": "../upload/follower/vulgoLOVE/vulgoLOVE_112x112.png",
+      "loaded": true,
+      "width": 112,
+      "height": 112,
+      "native": true
+    },
+    {
+      "path": "../upload/follower/vulgoLOVE/vulgoLOVE_56x56.png",
+      "loaded": true,
+      "width": 56,
+      "height": 56,
+      "native": true
+    },
+    {
+      "path": "../upload/follower/vulgoLOVE/vulgoLOVE_28x28.png",
+      "loaded": true,
+      "width": 28,
+      "height": 28,
+      "native": true
+    },
+    {
+      "path": "../upload/follower/vulgoKKK/vulgoKKK_112x112.png",
+      "loaded": true,
+      "width": 112,
+      "height": 112,
+      "native": true
+    },
+    {
+      "path": "../upload/follower/vulgoKKK/vulgoKKK_56x56.png",
+      "loaded": true,
+      "width": 56,
+      "height": 56,
+      "native": true
+    },
+    {
+      "path": "../upload/follower/vulgoKKK/vulgoKKK_28x28.png",
+      "loaded": true,
+      "width": 28,
+      "height": 28,
+      "native": true
+    },
+    {
+      "path": "../upload/tier1_static/vulgoBOTAPRAFORA/vulgoBOTAPRAFORA_112x112.png",
+      "loaded": true,
+      "width": 112,
+      "height": 112,
+      "native": true
+    },
+    {
+      "path": "../upload/tier1_static/vulgoBOTAPRAFORA/vulgoBOTAPRAFORA_56x56.png",
+      "loaded": true,
+      "width": 56,
+      "height": 56,
+      "native": true
+    },
+    {
+      "path": "../upload/tier1_static/vulgoBOTAPRAFORA/vulgoBOTAPRAFORA_28x28.png",
+      "loaded": true,
+      "width": 28,
+      "height": 28,
+      "native": true
+    },
+    {
+      "path": "../upload/tier1_static/vulgoENERGIZA/vulgoENERGIZA_112x112.png",
+      "loaded": true,
+      "width": 112,
+      "height": 112,
+      "native": true
+    },
+    {
+      "path": "../upload/tier1_static/vulgoENERGIZA/vulgoENERGIZA_56x56.png",
+      "loaded": true,
+      "width": 56,
+      "height": 56,
+      "native": true
+    },
+    {
+      "path": "../upload/tier1_static/vulgoENERGIZA/vulgoENERGIZA_28x28.png",
+      "loaded": true,
+      "width": 28,
+      "height": 28,
+      "native": true
+    },
+    {
+      "path": "../upload/tier1_static/vulgoMONTA/vulgoMONTA_112x112.png",
+      "loaded": true,
+      "width": 112,
+      "height": 112,
+      "native": true
+    },
+    {
+      "path": "../upload/tier1_static/vulgoMONTA/vulgoMONTA_56x56.png",
+      "loaded": true,
+      "width": 56,
+      "height": 56,
+      "native": true
+    },
+    {
+      "path": "../upload/tier1_static/vulgoMONTA/vulgoMONTA_28x28.png",
+      "loaded": true,
+      "width": 28,
+      "height": 28,
+      "native": true
+    },
+    {
+      "path": "../upload/tier1_static/vulgoBATEFOOD/vulgoBATEFOOD_112x112.png",
+      "loaded": true,
+      "width": 112,
+      "height": 112,
+      "native": true
+    },
+    {
+      "path": "../upload/tier1_static/vulgoBATEFOOD/vulgoBATEFOOD_56x56.png",
+      "loaded": true,
+      "width": 56,
+      "height": 56,
+      "native": true
+    },
+    {
+      "path": "../upload/tier1_static/vulgoBATEFOOD/vulgoBATEFOOD_28x28.png",
+      "loaded": true,
+      "width": 28,
+      "height": 28,
+      "native": true
+    },
+    {
+      "path": "../upload/tier1_static/vulgoHYPE/vulgoHYPE_112x112.png",
+      "loaded": true,
+      "width": 112,
+      "height": 112,
+      "native": true
+    },
+    {
+      "path": "../upload/tier1_static/vulgoHYPE/vulgoHYPE_56x56.png",
+      "loaded": true,
+      "width": 56,
+      "height": 56,
+      "native": true
+    },
+    {
+      "path": "../upload/tier1_static/vulgoHYPE/vulgoHYPE_28x28.png",
+      "loaded": true,
+      "width": 28,
+      "height": 28,
+      "native": true
+    },
+    {
+      "path": "../upload/tier2_static/vulgoRAGE/vulgoRAGE_112x112.png",
+      "loaded": true,
+      "width": 112,
+      "height": 112,
+      "native": true
+    },
+    {
+      "path": "../upload/tier2_static/vulgoRAGE/vulgoRAGE_56x56.png",
+      "loaded": true,
+      "width": 56,
+      "height": 56,
+      "native": true
+    },
+    {
+      "path": "../upload/tier2_static/vulgoRAGE/vulgoRAGE_28x28.png",
+      "loaded": true,
+      "width": 28,
+      "height": 28,
+      "native": true
+    },
+    {
+      "path": "../upload/tier3_static/vulgoREI/vulgoREI_112x112.png",
+      "loaded": true,
+      "width": 112,
+      "height": 112,
+      "native": true
+    },
+    {
+      "path": "../upload/tier3_static/vulgoREI/vulgoREI_56x56.png",
+      "loaded": true,
+      "width": 56,
+      "height": 56,
+      "native": true
+    },
+    {
+      "path": "../upload/tier3_static/vulgoREI/vulgoREI_28x28.png",
+      "loaded": true,
+      "width": 28,
+      "height": 28,
+      "native": true
+    },
+    {
+      "path": "../upload/bits_emotes/vulgoCRISTAL/vulgoCRISTAL_112x112.png",
+      "loaded": true,
+      "width": 112,
+      "height": 112,
+      "native": true
+    },
+    {
+      "path": "../upload/bits_emotes/vulgoCRISTAL/vulgoCRISTAL_56x56.png",
+      "loaded": true,
+      "width": 56,
+      "height": 56,
+      "native": true
+    },
+    {
+      "path": "../upload/bits_emotes/vulgoCRISTAL/vulgoCRISTAL_28x28.png",
+      "loaded": true,
+      "width": 28,
+      "height": 28,
+      "native": true
+    },
+    {
+      "path": "../upload/bits_emotes/vulgoTESOURO/vulgoTESOURO_112x112.png",
+      "loaded": true,
+      "width": 112,
+      "height": 112,
+      "native": true
+    },
+    {
+      "path": "../upload/bits_emotes/vulgoTESOURO/vulgoTESOURO_56x56.png",
+      "loaded": true,
+      "width": 56,
+      "height": 56,
+      "native": true
+    },
+    {
+      "path": "../upload/bits_emotes/vulgoTESOURO/vulgoTESOURO_28x28.png",
+      "loaded": true,
+      "width": 28,
+      "height": 28,
+      "native": true
+    },
+    {
+      "path": "../upload/bits_emotes/vulgoLENDA/vulgoLENDA_112x112.png",
+      "loaded": true,
+      "width": 112,
+      "height": 112,
+      "native": true
+    },
+    {
+      "path": "../upload/bits_emotes/vulgoLENDA/vulgoLENDA_56x56.png",
+      "loaded": true,
+      "width": 56,
+      "height": 56,
+      "native": true
+    },
+    {
+      "path": "../upload/bits_emotes/vulgoLENDA/vulgoLENDA_28x28.png",
+      "loaded": true,
+      "width": 28,
+      "height": 28,
+      "native": true
+    },
+    {
+      "path": "../upload/tier1_animated/vulgoHYPEANIM/vulgoHYPEANIM_112x112.gif",
+      "loaded": true,
+      "width": 112,
+      "height": 112,
+      "native": true
+    },
+    {
+      "path": "../upload/tier1_animated/vulgoHYPEANIM/vulgoHYPEANIM_56x56.gif",
+      "loaded": true,
+      "width": 56,
+      "height": 56,
+      "native": true
+    },
+    {
+      "path": "../upload/tier1_animated/vulgoHYPEANIM/vulgoHYPEANIM_28x28.gif",
+      "loaded": true,
+      "width": 28,
+      "height": 28,
+      "native": true
+    },
+    {
+      "path": "../upload/tier1_animated/vulgoENERGIZAANIM/vulgoENERGIZAANIM_112x112.gif",
+      "loaded": true,
+      "width": 112,
+      "height": 112,
+      "native": true
+    },
+    {
+      "path": "../upload/tier1_animated/vulgoENERGIZAANIM/vulgoENERGIZAANIM_56x56.gif",
+      "loaded": true,
+      "width": 56,
+      "height": 56,
+      "native": true
+    },
+    {
+      "path": "../upload/tier1_animated/vulgoENERGIZAANIM/vulgoENERGIZAANIM_28x28.gif",
+      "loaded": true,
+      "width": 28,
+      "height": 28,
+      "native": true
+    },
+    {
+      "path": "../upload/tier1_animated/vulgoMONTAANIM/vulgoMONTAANIM_112x112.gif",
+      "loaded": true,
+      "width": 112,
+      "height": 112,
+      "native": true
+    },
+    {
+      "path": "../upload/tier1_animated/vulgoMONTAANIM/vulgoMONTAANIM_56x56.gif",
+      "loaded": true,
+      "width": 56,
+      "height": 56,
+      "native": true
+    },
+    {
+      "path": "../upload/tier1_animated/vulgoMONTAANIM/vulgoMONTAANIM_28x28.gif",
+      "loaded": true,
+      "width": 28,
+      "height": 28,
+      "native": true
+    },
+    {
+      "path": "../upload/tier1_animated/vulgoBATEFOODANIM/vulgoBATEFOODANIM_112x112.gif",
+      "loaded": true,
+      "width": 112,
+      "height": 112,
+      "native": true
+    },
+    {
+      "path": "../upload/tier1_animated/vulgoBATEFOODANIM/vulgoBATEFOODANIM_56x56.gif",
+      "loaded": true,
+      "width": 56,
+      "height": 56,
+      "native": true
+    },
+    {
+      "path": "../upload/tier1_animated/vulgoBATEFOODANIM/vulgoBATEFOODANIM_28x28.gif",
+      "loaded": true,
+      "width": 28,
+      "height": 28,
+      "native": true
+    },
+    {
+      "path": "../upload/tier1_animated/vulgoRAGEANIM/vulgoRAGEANIM_112x112.gif",
+      "loaded": true,
+      "width": 112,
+      "height": 112,
+      "native": true
+    },
+    {
+      "path": "../upload/tier1_animated/vulgoRAGEANIM/vulgoRAGEANIM_56x56.gif",
+      "loaded": true,
+      "width": 56,
+      "height": 56,
+      "native": true
+    },
+    {
+      "path": "../upload/tier1_animated/vulgoRAGEANIM/vulgoRAGEANIM_28x28.gif",
+      "loaded": true,
+      "width": 28,
+      "height": 28,
+      "native": true
+    },
+    {
+      "path": "../upload/bit_badges/bits_1/bits_1_72x72.png",
+      "loaded": true,
+      "width": 72,
+      "height": 72,
+      "native": true
+    },
+    {
+      "path": "../upload/bit_badges/bits_1/bits_1_36x36.png",
+      "loaded": true,
+      "width": 36,
+      "height": 36,
+      "native": true
+    },
+    {
+      "path": "../upload/bit_badges/bits_1/bits_1_18x18.png",
+      "loaded": true,
+      "width": 18,
+      "height": 18,
+      "native": true
+    },
+    {
+      "path": "../upload/bit_badges/bits_100/bits_100_72x72.png",
+      "loaded": true,
+      "width": 72,
+      "height": 72,
+      "native": true
+    },
+    {
+      "path": "../upload/bit_badges/bits_100/bits_100_36x36.png",
+      "loaded": true,
+      "width": 36,
+      "height": 36,
+      "native": true
+    },
+    {
+      "path": "../upload/bit_badges/bits_100/bits_100_18x18.png",
+      "loaded": true,
+      "width": 18,
+      "height": 18,
+      "native": true
+    },
+    {
+      "path": "../upload/bit_badges/bits_1000/bits_1000_72x72.png",
+      "loaded": true,
+      "width": 72,
+      "height": 72,
+      "native": true
+    },
+    {
+      "path": "../upload/bit_badges/bits_1000/bits_1000_36x36.png",
+      "loaded": true,
+      "width": 36,
+      "height": 36,
+      "native": true
+    },
+    {
+      "path": "../upload/bit_badges/bits_1000/bits_1000_18x18.png",
+      "loaded": true,
+      "width": 18,
+      "height": 18,
+      "native": true
+    },
+    {
+      "path": "../upload/bit_badges/bits_5000/bits_5000_72x72.png",
+      "loaded": true,
+      "width": 72,
+      "height": 72,
+      "native": true
+    },
+    {
+      "path": "../upload/bit_badges/bits_5000/bits_5000_36x36.png",
+      "loaded": true,
+      "width": 36,
+      "height": 36,
+      "native": true
+    },
+    {
+      "path": "../upload/bit_badges/bits_5000/bits_5000_18x18.png",
+      "loaded": true,
+      "width": 18,
+      "height": 18,
+      "native": true
+    },
+    {
+      "path": "../upload/bit_badges/bits_10000/bits_10000_72x72.png",
+      "loaded": true,
+      "width": 72,
+      "height": 72,
+      "native": true
+    },
+    {
+      "path": "../upload/bit_badges/bits_10000/bits_10000_36x36.png",
+      "loaded": true,
+      "width": 36,
+      "height": 36,
+      "native": true
+    },
+    {
+      "path": "../upload/bit_badges/bits_10000/bits_10000_18x18.png",
+      "loaded": true,
+      "width": 18,
+      "height": 18,
+      "native": true
+    },
+    {
+      "path": "../upload/bit_badges/bits_25000/bits_25000_72x72.png",
+      "loaded": true,
+      "width": 72,
+      "height": 72,
+      "native": true
+    },
+    {
+      "path": "../upload/bit_badges/bits_25000/bits_25000_36x36.png",
+      "loaded": true,
+      "width": 36,
+      "height": 36,
+      "native": true
+    },
+    {
+      "path": "../upload/bit_badges/bits_25000/bits_25000_18x18.png",
+      "loaded": true,
+      "width": 18,
+      "height": 18,
+      "native": true
+    },
+    {
+      "path": "../upload/bit_badges/bits_50000/bits_50000_72x72.png",
+      "loaded": true,
+      "width": 72,
+      "height": 72,
+      "native": true
+    },
+    {
+      "path": "../upload/bit_badges/bits_50000/bits_50000_36x36.png",
+      "loaded": true,
+      "width": 36,
+      "height": 36,
+      "native": true
+    },
+    {
+      "path": "../upload/bit_badges/bits_50000/bits_50000_18x18.png",
+      "loaded": true,
+      "width": 18,
+      "height": 18,
+      "native": true
+    },
+    {
+      "path": "../upload/bit_badges/bits_75000/bits_75000_72x72.png",
+      "loaded": true,
+      "width": 72,
+      "height": 72,
+      "native": true
+    },
+    {
+      "path": "../upload/bit_badges/bits_75000/bits_75000_36x36.png",
+      "loaded": true,
+      "width": 36,
+      "height": 36,
+      "native": true
+    },
+    {
+      "path": "../upload/bit_badges/bits_75000/bits_75000_18x18.png",
+      "loaded": true,
+      "width": 18,
+      "height": 18,
+      "native": true
+    },
+    {
+      "path": "../upload/bit_badges/bits_100000/bits_100000_72x72.png",
+      "loaded": true,
+      "width": 72,
+      "height": 72,
+      "native": true
+    },
+    {
+      "path": "../upload/bit_badges/bits_100000/bits_100000_36x36.png",
+      "loaded": true,
+      "width": 36,
+      "height": 36,
+      "native": true
+    },
+    {
+      "path": "../upload/bit_badges/bits_100000/bits_100000_18x18.png",
+      "loaded": true,
+      "width": 18,
+      "height": 18,
+      "native": true
+    },
+    {
+      "path": "../upload/channel_points/moeda_ivexi/moeda_ivexi_112x112.png",
+      "loaded": true,
+      "width": 112,
+      "height": 112,
+      "native": true
+    },
+    {
+      "path": "../upload/channel_points/moeda_ivexi/moeda_ivexi_56x56.png",
+      "loaded": true,
+      "width": 56,
+      "height": 56,
+      "native": true
+    },
+    {
+      "path": "../upload/channel_points/moeda_ivexi/moeda_ivexi_28x28.png",
+      "loaded": true,
+      "width": 28,
+      "height": 28,
+      "native": true
+    },
+    {
+      "path": "../upload/rewards/hidratar/hidratar_112x112.png",
+      "loaded": true,
+      "width": 112,
+      "height": 112,
+      "native": true
+    },
+    {
+      "path": "../upload/rewards/hidratar/hidratar_56x56.png",
+      "loaded": true,
+      "width": 56,
+      "height": 56,
+      "native": true
+    },
+    {
+      "path": "../upload/rewards/hidratar/hidratar_28x28.png",
+      "loaded": true,
+      "width": 28,
+      "height": 28,
+      "native": true
+    },
+    {
+      "path": "../upload/rewards/alongar/alongar_112x112.png",
+      "loaded": true,
+      "width": 112,
+      "height": 112,
+      "native": true
+    },
+    {
+      "path": "../upload/rewards/alongar/alongar_56x56.png",
+      "loaded": true,
+      "width": 56,
+      "height": 56,
+      "native": true
+    },
+    {
+      "path": "../upload/rewards/alongar/alongar_28x28.png",
+      "loaded": true,
+      "width": 28,
+      "height": 28,
+      "native": true
+    },
+    {
+      "path": "../upload/rewards/destacar_mensagem/destacar_mensagem_112x112.png",
+      "loaded": true,
+      "width": 112,
+      "height": 112,
+      "native": true
+    },
+    {
+      "path": "../upload/rewards/destacar_mensagem/destacar_mensagem_56x56.png",
+      "loaded": true,
+      "width": 56,
+      "height": 56,
+      "native": true
+    },
+    {
+      "path": "../upload/rewards/destacar_mensagem/destacar_mensagem_28x28.png",
+      "loaded": true,
+      "width": 28,
+      "height": 28,
+      "native": true
+    },
+    {
+      "path": "../upload/rewards/escolher_musica/escolher_musica_112x112.png",
+      "loaded": true,
+      "width": 112,
+      "height": 112,
+      "native": true
+    },
+    {
+      "path": "../upload/rewards/escolher_musica/escolher_musica_56x56.png",
+      "loaded": true,
+      "width": 56,
+      "height": 56,
+      "native": true
+    },
+    {
+      "path": "../upload/rewards/escolher_musica/escolher_musica_28x28.png",
+      "loaded": true,
+      "width": 28,
+      "height": 28,
+      "native": true
+    },
+    {
+      "path": "../upload/rewards/resgate_batefood/resgate_batefood_112x112.png",
+      "loaded": true,
+      "width": 112,
+      "height": 112,
+      "native": true
+    },
+    {
+      "path": "../upload/rewards/resgate_batefood/resgate_batefood_56x56.png",
+      "loaded": true,
+      "width": 56,
+      "height": 56,
+      "native": true
+    },
+    {
+      "path": "../upload/rewards/resgate_batefood/resgate_batefood_28x28.png",
+      "loaded": true,
+      "width": 28,
+      "height": 28,
+      "native": true
+    },
+    {
+      "path": "../upload/rewards/resgate_energiza/resgate_energiza_112x112.png",
+      "loaded": true,
+      "width": 112,
+      "height": 112,
+      "native": true
+    },
+    {
+      "path": "../upload/rewards/resgate_energiza/resgate_energiza_56x56.png",
+      "loaded": true,
+      "width": 56,
+      "height": 56,
+      "native": true
+    },
+    {
+      "path": "../upload/rewards/resgate_energiza/resgate_energiza_28x28.png",
+      "loaded": true,
+      "width": 28,
+      "height": 28,
+      "native": true
+    },
+    {
+      "path": "../upload/badge_flairs/flair_tier2/flair_tier2_72x72.png",
+      "loaded": true,
+      "width": 72,
+      "height": 72,
+      "native": true
+    },
+    {
+      "path": "../upload/badge_flairs/flair_tier2/flair_tier2_36x36.png",
+      "loaded": true,
+      "width": 36,
+      "height": 36,
+      "native": true
+    },
+    {
+      "path": "../upload/badge_flairs/flair_tier2/flair_tier2_18x18.png",
+      "loaded": true,
+      "width": 18,
+      "height": 18,
+      "native": true
+    },
+    {
+      "path": "../upload/badge_flairs/flair_tier3/flair_tier3_72x72.png",
+      "loaded": true,
+      "width": 72,
+      "height": 72,
+      "native": true
+    },
+    {
+      "path": "../upload/badge_flairs/flair_tier3/flair_tier3_36x36.png",
+      "loaded": true,
+      "width": 36,
+      "height": 36,
+      "native": true
+    },
+    {
+      "path": "../upload/badge_flairs/flair_tier3/flair_tier3_18x18.png",
+      "loaded": true,
+      "width": 18,
+      "height": 18,
+      "native": true
+    }
+  ]
+}

@@ -1,0 +1,1454 @@
+{
+  "schemaVersion": 1,
+  "version": "2.0.0",
+  "brand": "IVEXI",
+  "channel": "VulgoManiaco",
+  "generation": "Imagegen integrado; prompts em sources/prompts.json",
+  "reference": "brand/twitch/referencias/03_referencia_personagem_mascote.png",
+  "assets": [
+    {
+      "id": "gg",
+      "code": "vulgoGG",
+      "category": "follower",
+      "milestone": null,
+      "source": "gg.png",
+      "sizes": [
+        112,
+        56,
+        28
+      ],
+      "extension": "png",
+      "limit": 1000000,
+      "sourceSha256": "b716b1c497e8b76f070e78590b58114813e8b46d1a556145a18913f5f598fa85",
+      "files": [
+        {
+          "path": "upload/follower/vulgoGG/vulgoGG_112x112.png",
+          "width": 112,
+          "height": 112,
+          "bytes": 26931,
+          "sha256": "2d6a947b1b16c8b2651468138c355ef21d816967c2dd90fa40e361064096e5f3"
+        },
+        {
+          "path": "upload/follower/vulgoGG/vulgoGG_56x56.png",
+          "width": 56,
+          "height": 56,
+          "bytes": 7782,
+          "sha256": "a07c28a1993140c6f43a8b01c90c9948b8bc95ac599a1069664879f157e2a456"
+        },
+        {
+          "path": "upload/follower/vulgoGG/vulgoGG_28x28.png",
+          "width": 28,
+          "height": 28,
+          "bytes": 2402,
+          "sha256": "6d61bfb89d32e2263c95caa9504fa326f437d62cc8e1951c466eba3427d1e9ce"
+        }
+      ]
+    },
+    {
+      "id": "lurk",
+      "code": "vulgoLURK",
+      "category": "follower",
+      "milestone": null,
+      "source": "lurk.png",
+      "sizes": [
+        112,
+        56,
+        28
+      ],
+      "extension": "png",
+      "limit": 1000000,
+      "sourceSha256": "b2abc56ab67f7d3362596fad67cb1780a37bb48de5ee850468e63d4c76d36f02",
+      "files": [
+        {
+          "path": "upload/follower/vulgoLURK/vulgoLURK_112x112.png",
+          "width": 112,
+          "height": 112,
+          "bytes": 26734,
+          "sha256": "8d0294dafd5a49ee6f68699c28a784f93698abb9c50e18b49ad557f0d1fe9e23"
+        },
+        {
+          "path": "upload/follower/vulgoLURK/vulgoLURK_56x56.png",
+          "width": 56,
+          "height": 56,
+          "bytes": 7970,
+          "sha256": "2b4df0fd761fb2377cc0b1098f2871428eb794b75df38c7b3ba836791fd6dfb1"
+        },
+        {
+          "path": "upload/follower/vulgoLURK/vulgoLURK_28x28.png",
+          "width": 28,
+          "height": 28,
+          "bytes": 2286,
+          "sha256": "4fe6609c29df6c8f7b742699ecdaeafbea829db04fa525ea78f01bd4a41dc150"
+        }
+      ]
+    },
+    {
+      "id": "rip",
+      "code": "vulgoRIP",
+      "category": "follower",
+      "milestone": null,
+      "source": "rip.png",
+      "sizes": [
+        112,
+        56,
+        28
+      ],
+      "extension": "png",
+      "limit": 1000000,
+      "sourceSha256": "2398e495246def75c857fb65a30393d25aa2980d3d78f5c6832dae56c71e19f3",
+      "files": [
+        {
+          "path": "upload/follower/vulgoRIP/vulgoRIP_112x112.png",
+          "width": 112,
+          "height": 112,
+          "bytes": 22665,
+          "sha256": "475c66e1add375adab7e43606b472eae8108089327c3fc0d1acc9e324e980256"
+        },
+        {
+          "path": "upload/follower/vulgoRIP/vulgoRIP_56x56.png",
+          "width": 56,
+          "height": 56,
+          "bytes": 6976,
+          "sha256": "93a10f23e698043989239d87e524dc5d11dbbaed2fbc8354e26c65e6306b10bb"
+        },
+        {
+          "path": "upload/follower/vulgoRIP/vulgoRIP_28x28.png",
+          "width": 28,
+          "height": 28,
+          "bytes": 2030,
+          "sha256": "536073be7f31826d9f041ee18ea24cd076510244dcb87af1abaab311005fa90b"
+        }
+      ]
+    },
+    {
+      "id": "love",
+      "code": "vulgoLOVE",
+      "category": "follower",
+      "milestone": null,
+      "source": "love.png",
+      "sizes": [
+        112,
+        56,
+        28
+      ],
+      "extension": "png",
+      "limit": 1000000,
+      "sourceSha256": "16029abfe08e958e86b049043a6d1252a27db0318c1e5553a0a4f8294dfe1523",
+      "files": [
+        {
+          "path": "upload/follower/vulgoLOVE/vulgoLOVE_112x112.png",
+          "width": 112,
+          "height": 112,
+          "bytes": 25785,
+          "sha256": "315858b8c6d64f3afcb8c244a257966905fff4ce827b120474441b38f4f7a8b4"
+        },
+        {
+          "path": "upload/follower/vulgoLOVE/vulgoLOVE_56x56.png",
+          "width": 56,
+          "height": 56,
+          "bytes": 7449,
+          "sha256": "16ed4ee3eb5eb09c603e749d2497b6cad8defaa559112601030fe4d6805d6557"
+        },
+        {
+          "path": "upload/follower/vulgoLOVE/vulgoLOVE_28x28.png",
+          "width": 28,
+          "height": 28,
+          "bytes": 2326,
+          "sha256": "32ee5fa6fbfb189bb28e7c69b748d31abe18f9aa81cb28859ae301e39786fd35"
+        }
+      ]
+    },
+    {
+      "id": "kkk",
+      "code": "vulgoKKK",
+      "category": "follower",
+      "milestone": null,
+      "source": "kkk.png",
+      "sizes": [
+        112,
+        56,
+        28
+      ],
+      "extension": "png",
+      "limit": 1000000,
+      "sourceSha256": "cc79fb939a508197113bf4e48706747df35d26f1700090bcc291688cd8d8d70f",
+      "files": [
+        {
+          "path": "upload/follower/vulgoKKK/vulgoKKK_112x112.png",
+          "width": 112,
+          "height": 112,
+          "bytes": 26683,
+          "sha256": "667968edadb9bbb53cafc326aa34064379deb6aa5488b4f9789e373dfbc1d591"
+        },
+        {
+          "path": "upload/follower/vulgoKKK/vulgoKKK_56x56.png",
+          "width": 56,
+          "height": 56,
+          "bytes": 7806,
+          "sha256": "912bc226602ef83e06826b7b3ce34075e647aa40a8b14b49815cba261b52f7a0"
+        },
+        {
+          "path": "upload/follower/vulgoKKK/vulgoKKK_28x28.png",
+          "width": 28,
+          "height": 28,
+          "bytes": 2223,
+          "sha256": "ff76e645694f9740eaf4c8a5726c3957364264b3748502cba8e9480e2d74a0cf"
+        }
+      ]
+    },
+    {
+      "id": "botaprafora",
+      "code": "vulgoBOTAPRAFORA",
+      "category": "tier1_static",
+      "milestone": null,
+      "source": "botaprafora.png",
+      "sizes": [
+        112,
+        56,
+        28
+      ],
+      "extension": "png",
+      "limit": 1000000,
+      "sourceSha256": "8b4e1c34f2e7c02746b8c546159cb67dfb6c3ae349c3f73b33e5e1be01ae2d60",
+      "files": [
+        {
+          "path": "upload/tier1_static/vulgoBOTAPRAFORA/vulgoBOTAPRAFORA_112x112.png",
+          "width": 112,
+          "height": 112,
+          "bytes": 26014,
+          "sha256": "96fb25b9073a05a7418c5ecb1b966580e95d7dcb0eea671d1a1b31dc132cf3eb"
+        },
+        {
+          "path": "upload/tier1_static/vulgoBOTAPRAFORA/vulgoBOTAPRAFORA_56x56.png",
+          "width": 56,
+          "height": 56,
+          "bytes": 7584,
+          "sha256": "4ac4d21d91a62f9e2e73ff0ded0d61eac1c69b78a6add333c9b4750568cbd27a"
+        },
+        {
+          "path": "upload/tier1_static/vulgoBOTAPRAFORA/vulgoBOTAPRAFORA_28x28.png",
+          "width": 28,
+          "height": 28,
+          "bytes": 2359,
+          "sha256": "3072a3f0a2e247c5d28f0ed7470c294d2783824f4158da9458689a6f6f1389fe"
+        }
+      ]
+    },
+    {
+      "id": "energiza",
+      "code": "vulgoENERGIZA",
+      "category": "tier1_static",
+      "milestone": null,
+      "source": "energiza.png",
+      "sizes": [
+        112,
+        56,
+        28
+      ],
+      "extension": "png",
+      "limit": 1000000,
+      "sourceSha256": "40700df7d589dc315ab1c85cbeaa16da1c07a1fdec109a51118a280122bca47f",
+      "files": [
+        {
+          "path": "upload/tier1_static/vulgoENERGIZA/vulgoENERGIZA_112x112.png",
+          "width": 112,
+          "height": 112,
+          "bytes": 26834,
+          "sha256": "3e5b5e3f040a77b6b09fa4f84b6f9dd62f786e4485c75c8827a98dc4b2c4b98a"
+        },
+        {
+          "path": "upload/tier1_static/vulgoENERGIZA/vulgoENERGIZA_56x56.png",
+          "width": 56,
+          "height": 56,
+          "bytes": 7882,
+          "sha256": "d834d963a6765da711e5cd2f773a24acb56921867562bb2284fc5e7b2bac8a63"
+        },
+        {
+          "path": "upload/tier1_static/vulgoENERGIZA/vulgoENERGIZA_28x28.png",
+          "width": 28,
+          "height": 28,
+          "bytes": 2290,
+          "sha256": "ad998b6af36424bad0971a794d8cfc947c67e7ce41635b0ef380b1f819d9c5c4"
+        }
+      ]
+    },
+    {
+      "id": "monta",
+      "code": "vulgoMONTA",
+      "category": "tier1_static",
+      "milestone": null,
+      "source": "monta.png",
+      "sizes": [
+        112,
+        56,
+        28
+      ],
+      "extension": "png",
+      "limit": 1000000,
+      "sourceSha256": "b3dfca09566f5f3c6117687b41984a2c755626f7fee8d4b49b9798bcc2e31118",
+      "files": [
+        {
+          "path": "upload/tier1_static/vulgoMONTA/vulgoMONTA_112x112.png",
+          "width": 112,
+          "height": 112,
+          "bytes": 25322,
+          "sha256": "da8c54446ceef19189d7cc9880c112495ce478d88efe4aa204b142bb0db8d439"
+        },
+        {
+          "path": "upload/tier1_static/vulgoMONTA/vulgoMONTA_56x56.png",
+          "width": 56,
+          "height": 56,
+          "bytes": 7193,
+          "sha256": "8ee481eee16c625c826c368bd5ecbec47c2a4b45e37bda8f522b666022799699"
+        },
+        {
+          "path": "upload/tier1_static/vulgoMONTA/vulgoMONTA_28x28.png",
+          "width": 28,
+          "height": 28,
+          "bytes": 2144,
+          "sha256": "7d4b8c4fe0fa1859504032970070ff721ee1ec02c299359280a018dc6c1362be"
+        }
+      ]
+    },
+    {
+      "id": "batefood",
+      "code": "vulgoBATEFOOD",
+      "category": "tier1_static",
+      "milestone": null,
+      "source": "batefood.png",
+      "sizes": [
+        112,
+        56,
+        28
+      ],
+      "extension": "png",
+      "limit": 1000000,
+      "sourceSha256": "16c032e77b278afa5e7952815e59264c233614a6ae495860e72bcc673b1e2dee",
+      "files": [
+        {
+          "path": "upload/tier1_static/vulgoBATEFOOD/vulgoBATEFOOD_112x112.png",
+          "width": 112,
+          "height": 112,
+          "bytes": 27025,
+          "sha256": "80032cef311145437143d167b2a0a7a08451af5978033e0455a88a54a5b5d09d"
+        },
+        {
+          "path": "upload/tier1_static/vulgoBATEFOOD/vulgoBATEFOOD_56x56.png",
+          "width": 56,
+          "height": 56,
+          "bytes": 7746,
+          "sha256": "8d71d5fdc2e79a25abb2327b7bd2bb5ed23b599f1c884a9bb53a26fda7ddaaeb"
+        },
+        {
+          "path": "upload/tier1_static/vulgoBATEFOOD/vulgoBATEFOOD_28x28.png",
+          "width": 28,
+          "height": 28,
+          "bytes": 2291,
+          "sha256": "97467f73ca471f70fef023164323c2338246f92cbde505c2f976d303d75c8d14"
+        }
+      ]
+    },
+    {
+      "id": "hype",
+      "code": "vulgoHYPE",
+      "category": "tier1_static",
+      "milestone": null,
+      "source": "hype.png",
+      "sizes": [
+        112,
+        56,
+        28
+      ],
+      "extension": "png",
+      "limit": 1000000,
+      "sourceSha256": "848b59a657d3031234a36a11206ef7d0ad6189784042ba5444673d7d833419a0",
+      "files": [
+        {
+          "path": "upload/tier1_static/vulgoHYPE/vulgoHYPE_112x112.png",
+          "width": 112,
+          "height": 112,
+          "bytes": 25979,
+          "sha256": "84ceafbef200d908dfe3c0e842e6d8be8bae412f5097e26f4d921d478d81e201"
+        },
+        {
+          "path": "upload/tier1_static/vulgoHYPE/vulgoHYPE_56x56.png",
+          "width": 56,
+          "height": 56,
+          "bytes": 7642,
+          "sha256": "49da1f7db53cc2f15c160807ba4db885fc7d52ab001fa92f550b51b97d106217"
+        },
+        {
+          "path": "upload/tier1_static/vulgoHYPE/vulgoHYPE_28x28.png",
+          "width": 28,
+          "height": 28,
+          "bytes": 2261,
+          "sha256": "99eeb6b39acf216f9b0d9149c52e3bdf9c77ede7fb5bf8b2a34859710da650b4"
+        }
+      ]
+    },
+    {
+      "id": "rage",
+      "code": "vulgoRAGE",
+      "category": "tier2_static",
+      "milestone": null,
+      "source": "rage.png",
+      "sizes": [
+        112,
+        56,
+        28
+      ],
+      "extension": "png",
+      "limit": 1000000,
+      "sourceSha256": "0d3a4e9c76666ed7e49109229941db666da9cc994c771cbd638e133742a299a3",
+      "files": [
+        {
+          "path": "upload/tier2_static/vulgoRAGE/vulgoRAGE_112x112.png",
+          "width": 112,
+          "height": 112,
+          "bytes": 26967,
+          "sha256": "d8ea9df19f6b17e03e32bff2007e54a5797234ab84da91a3d94807c170e036ae"
+        },
+        {
+          "path": "upload/tier2_static/vulgoRAGE/vulgoRAGE_56x56.png",
+          "width": 56,
+          "height": 56,
+          "bytes": 7860,
+          "sha256": "436ca5e97849943786c2f22913206f619949507643f345541978b46c92a4137f"
+        },
+        {
+          "path": "upload/tier2_static/vulgoRAGE/vulgoRAGE_28x28.png",
+          "width": 28,
+          "height": 28,
+          "bytes": 2301,
+          "sha256": "5f71e2b8a059d8e3bba3cb128ac45470a6137bbe14f9397518d62abb4c5980a3"
+        }
+      ]
+    },
+    {
+      "id": "rei",
+      "code": "vulgoREI",
+      "category": "tier3_static",
+      "milestone": null,
+      "source": "rei.png",
+      "sizes": [
+        112,
+        56,
+        28
+      ],
+      "extension": "png",
+      "limit": 1000000,
+      "sourceSha256": "5304be6fc2b21f448226f9fca9a8717e00c0cb04eb4e9b1c9add533067289748",
+      "files": [
+        {
+          "path": "upload/tier3_static/vulgoREI/vulgoREI_112x112.png",
+          "width": 112,
+          "height": 112,
+          "bytes": 24878,
+          "sha256": "92cbdfbc1a945512056821fdaf975d2bf81b476b95925e34eda8f2be6f5c4b94"
+        },
+        {
+          "path": "upload/tier3_static/vulgoREI/vulgoREI_56x56.png",
+          "width": 56,
+          "height": 56,
+          "bytes": 7230,
+          "sha256": "70f64c31fb55b701d67ed71b8624d62da093fa6fc87828aecd56caa8d1998993"
+        },
+        {
+          "path": "upload/tier3_static/vulgoREI/vulgoREI_28x28.png",
+          "width": 28,
+          "height": 28,
+          "bytes": 2251,
+          "sha256": "02d4831036b2962e54e3b66d4e09eea7eaf59561386184cbec141d961c6e28f8"
+        }
+      ]
+    },
+    {
+      "id": "cristal",
+      "code": "vulgoCRISTAL",
+      "category": "bits_emotes",
+      "milestone": 1000,
+      "source": "cristal.png",
+      "sizes": [
+        112,
+        56,
+        28
+      ],
+      "extension": "png",
+      "limit": 1000000,
+      "sourceSha256": "0a68198b76ef237017721cf4380b13098577ff1969ffb94c5c87f255b25f9bd6",
+      "files": [
+        {
+          "path": "upload/bits_emotes/vulgoCRISTAL/vulgoCRISTAL_112x112.png",
+          "width": 112,
+          "height": 112,
+          "bytes": 26872,
+          "sha256": "6ae8df70b68def99c09a98872ab9deb089089aa765db9188c1a706c02c385672"
+        },
+        {
+          "path": "upload/bits_emotes/vulgoCRISTAL/vulgoCRISTAL_56x56.png",
+          "width": 56,
+          "height": 56,
+          "bytes": 7556,
+          "sha256": "4025cd39f5396df04142713b7ea8611f5fd5d35f81064a31ff8adb7df42da459"
+        },
+        {
+          "path": "upload/bits_emotes/vulgoCRISTAL/vulgoCRISTAL_28x28.png",
+          "width": 28,
+          "height": 28,
+          "bytes": 2275,
+          "sha256": "4032607a7656b89fbfd87c15372c3da28d4c08c2aced82f997511a617cb94c38"
+        }
+      ]
+    },
+    {
+      "id": "tesouro",
+      "code": "vulgoTESOURO",
+      "category": "bits_emotes",
+      "milestone": 5000,
+      "source": "tesouro.png",
+      "sizes": [
+        112,
+        56,
+        28
+      ],
+      "extension": "png",
+      "limit": 1000000,
+      "sourceSha256": "2fdecd7f576d7f5f0b900911c0d73f8a83858fe96f506e698ab03180def87421",
+      "files": [
+        {
+          "path": "upload/bits_emotes/vulgoTESOURO/vulgoTESOURO_112x112.png",
+          "width": 112,
+          "height": 112,
+          "bytes": 27333,
+          "sha256": "0a369e8c02aec6df015f6792670310c135d76c39ff156639846c1981b3d55fa3"
+        },
+        {
+          "path": "upload/bits_emotes/vulgoTESOURO/vulgoTESOURO_56x56.png",
+          "width": 56,
+          "height": 56,
+          "bytes": 7846,
+          "sha256": "ce18f65850067c118d8a8b3c9818f297557fc93a6a7e7d957905e27a81a7ef2f"
+        },
+        {
+          "path": "upload/bits_emotes/vulgoTESOURO/vulgoTESOURO_28x28.png",
+          "width": 28,
+          "height": 28,
+          "bytes": 2285,
+          "sha256": "39f87b11c79279b945033db75c85b6e0e2ae257ee11cb3bb25ac9646881db988"
+        }
+      ]
+    },
+    {
+      "id": "lenda",
+      "code": "vulgoLENDA",
+      "category": "bits_emotes",
+      "milestone": 10000,
+      "source": "lenda.png",
+      "sizes": [
+        112,
+        56,
+        28
+      ],
+      "extension": "png",
+      "limit": 1000000,
+      "sourceSha256": "3ec3b8c606d0ff6f614e043ca23653c1d78bf2f38ffaaef268ec8b991b3a226b",
+      "files": [
+        {
+          "path": "upload/bits_emotes/vulgoLENDA/vulgoLENDA_112x112.png",
+          "width": 112,
+          "height": 112,
+          "bytes": 24415,
+          "sha256": "3f8e4b1eb84b692e8ab718af9679ee0dd032e88fa90aea4ad7fc305b2b8d8644"
+        },
+        {
+          "path": "upload/bits_emotes/vulgoLENDA/vulgoLENDA_56x56.png",
+          "width": 56,
+          "height": 56,
+          "bytes": 6881,
+          "sha256": "5b51ad525c5ab6f5b6d58e04d0e79f613c37eac7533456b8743aec044e9553a8"
+        },
+        {
+          "path": "upload/bits_emotes/vulgoLENDA/vulgoLENDA_28x28.png",
+          "width": 28,
+          "height": 28,
+          "bytes": 2101,
+          "sha256": "be4aa9eaaee646ae10c49266711479ea99c456970ee3e3f15561ec0e5a0f4209"
+        }
+      ]
+    },
+    {
+      "id": "hype_anim",
+      "code": "vulgoHYPEANIM",
+      "category": "tier1_animated",
+      "milestone": null,
+      "source": "hype_sheet_clean.png",
+      "sizes": [
+        112,
+        56,
+        28
+      ],
+      "extension": "gif",
+      "limit": 512000,
+      "sourceSha256": "c176a69030cfe49a0564dd49d171ca01cf1dd4927231a829f4bb720188d06221",
+      "files": [
+        {
+          "path": "upload/tier1_animated/vulgoHYPEANIM/vulgoHYPEANIM_112x112.gif",
+          "width": 112,
+          "height": 112,
+          "bytes": 183529,
+          "sha256": "ec7941d23006bbba66f498df21c7c44c007fd806fcc76e67d1f1516dfb11bc47"
+        },
+        {
+          "path": "upload/tier1_animated/vulgoHYPEANIM/vulgoHYPEANIM_56x56.gif",
+          "width": 56,
+          "height": 56,
+          "bytes": 69812,
+          "sha256": "9b99af590de99854f3f4bb4b74f638500c09c28b7f33ba38445d1f8c750a361a"
+        },
+        {
+          "path": "upload/tier1_animated/vulgoHYPEANIM/vulgoHYPEANIM_28x28.gif",
+          "width": 28,
+          "height": 28,
+          "bytes": 33050,
+          "sha256": "fdd1cfdea8e678a8287944814cd6f93d378dbda4203ca839cfb8d8719d892e25"
+        }
+      ]
+    },
+    {
+      "id": "energiza_anim",
+      "code": "vulgoENERGIZAANIM",
+      "category": "tier1_animated",
+      "milestone": null,
+      "source": "energiza_sheet_clean.png",
+      "sizes": [
+        112,
+        56,
+        28
+      ],
+      "extension": "gif",
+      "limit": 512000,
+      "sourceSha256": "134af2ac39f6ec4baaa5e0f2e3683794b33687f5cddfefccb3406aed7f456db3",
+      "files": [
+        {
+          "path": "upload/tier1_animated/vulgoENERGIZAANIM/vulgoENERGIZAANIM_112x112.gif",
+          "width": 112,
+          "height": 112,
+          "bytes": 184133,
+          "sha256": "edc4240edf396c5b557807801734cfd60f928baeb375039363c822d0e85db8b2"
+        },
+        {
+          "path": "upload/tier1_animated/vulgoENERGIZAANIM/vulgoENERGIZAANIM_56x56.gif",
+          "width": 56,
+          "height": 56,
+          "bytes": 70975,
+          "sha256": "643a9586226db742fd202bde0b5969794e78f482cfc8e14567b2019c72c4e13e"
+        },
+        {
+          "path": "upload/tier1_animated/vulgoENERGIZAANIM/vulgoENERGIZAANIM_28x28.gif",
+          "width": 28,
+          "height": 28,
+          "bytes": 33356,
+          "sha256": "d22a2408cf98949e0cd2558c940f9bfeaa0db8b41e9373c31f15a779a1e0b493"
+        }
+      ]
+    },
+    {
+      "id": "monta_anim",
+      "code": "vulgoMONTAANIM",
+      "category": "tier1_animated",
+      "milestone": null,
+      "source": "monta_sheet.png",
+      "sizes": [
+        112,
+        56,
+        28
+      ],
+      "extension": "gif",
+      "limit": 512000,
+      "sourceSha256": "889a82f220e0aeacdfdb3ff135d60059d1fa342c5eb44768eba1d7cb0f6e3d10",
+      "files": [
+        {
+          "path": "upload/tier1_animated/vulgoMONTAANIM/vulgoMONTAANIM_112x112.gif",
+          "width": 112,
+          "height": 112,
+          "bytes": 183779,
+          "sha256": "c9f0a5253325f97b8b7c0824cfe1833779fb0cda77e2404f67143672439a2093"
+        },
+        {
+          "path": "upload/tier1_animated/vulgoMONTAANIM/vulgoMONTAANIM_56x56.gif",
+          "width": 56,
+          "height": 56,
+          "bytes": 66922,
+          "sha256": "c9b1909539d68e28667941a6f6d8013ca260f8bba3cae21f2cdf4af9b734fdbd"
+        },
+        {
+          "path": "upload/tier1_animated/vulgoMONTAANIM/vulgoMONTAANIM_28x28.gif",
+          "width": 28,
+          "height": 28,
+          "bytes": 31963,
+          "sha256": "b33d93e6acd3e5ae8ec99f01eba101c9680eb25840130fd0220665fe1f531f21"
+        }
+      ]
+    },
+    {
+      "id": "batefood_anim",
+      "code": "vulgoBATEFOODANIM",
+      "category": "tier1_animated",
+      "milestone": null,
+      "source": "batefood_sheet.png",
+      "sizes": [
+        112,
+        56,
+        28
+      ],
+      "extension": "gif",
+      "limit": 512000,
+      "sourceSha256": "4e177548d91811786fee074c11a67336ab338ad005de26d6b696aa4b5714b1c5",
+      "files": [
+        {
+          "path": "upload/tier1_animated/vulgoBATEFOODANIM/vulgoBATEFOODANIM_112x112.gif",
+          "width": 112,
+          "height": 112,
+          "bytes": 177777,
+          "sha256": "75bcfbe037fd923fdf856c7da9f157b26ddd076bbfbf27522227ef5b1af2a5ef"
+        },
+        {
+          "path": "upload/tier1_animated/vulgoBATEFOODANIM/vulgoBATEFOODANIM_56x56.gif",
+          "width": 56,
+          "height": 56,
+          "bytes": 69261,
+          "sha256": "e958094a6a4092dedae32c99a1b2b5c59fe012a8779d41799f5c12d6dee27f36"
+        },
+        {
+          "path": "upload/tier1_animated/vulgoBATEFOODANIM/vulgoBATEFOODANIM_28x28.gif",
+          "width": 28,
+          "height": 28,
+          "bytes": 33416,
+          "sha256": "2508f127ed8e73922102ccbd660833bb42af322bc9a72f7618c25c0668b7145f"
+        }
+      ]
+    },
+    {
+      "id": "rage_anim",
+      "code": "vulgoRAGEANIM",
+      "category": "tier1_animated",
+      "milestone": null,
+      "source": "rage_sheet_clean.png",
+      "sizes": [
+        112,
+        56,
+        28
+      ],
+      "extension": "gif",
+      "limit": 512000,
+      "sourceSha256": "020b10264b0709fd6e903dceaf0b14f7cc38bc605c80ecad00b6e8ee3f5b5cef",
+      "files": [
+        {
+          "path": "upload/tier1_animated/vulgoRAGEANIM/vulgoRAGEANIM_112x112.gif",
+          "width": 112,
+          "height": 112,
+          "bytes": 190333,
+          "sha256": "deeb3aa6110de58418dc17810a5cff37eb7cec65f0a0e75ecc2157195443a4fe"
+        },
+        {
+          "path": "upload/tier1_animated/vulgoRAGEANIM/vulgoRAGEANIM_56x56.gif",
+          "width": 56,
+          "height": 56,
+          "bytes": 72053,
+          "sha256": "e7bb41be37269a6a4de4ea0e128ed7348304697a2207c784d845db63250d1779"
+        },
+        {
+          "path": "upload/tier1_animated/vulgoRAGEANIM/vulgoRAGEANIM_28x28.gif",
+          "width": 28,
+          "height": 28,
+          "bytes": 33922,
+          "sha256": "c1e21f962d173fcf62e128b0435e26ab6832639cc55ac62bd003cbc47965b607"
+        }
+      ]
+    },
+    {
+      "id": "bits_1",
+      "code": "bits_1",
+      "category": "bit_badges",
+      "milestone": 1,
+      "source": "bits_1.png",
+      "sizes": [
+        72,
+        36,
+        18
+      ],
+      "extension": "png",
+      "limit": 25000,
+      "sourceSha256": "dc55df05f0086d92e0e218f1869223b1a152407943ca8e5b2696ce0fbe4cd636",
+      "files": [
+        {
+          "path": "upload/bit_badges/bits_1/bits_1_72x72.png",
+          "width": 72,
+          "height": 72,
+          "bytes": 9507,
+          "sha256": "3cfee93162aecb3b708fe574f0968015266cfabb3599057e42912d70c2d22f63"
+        },
+        {
+          "path": "upload/bit_badges/bits_1/bits_1_36x36.png",
+          "width": 36,
+          "height": 36,
+          "bytes": 2911,
+          "sha256": "a265ef8c398099fcc89a4405ecc9cd10dad9d1f02bfa224617c98f4d84c6ced0"
+        },
+        {
+          "path": "upload/bit_badges/bits_1/bits_1_18x18.png",
+          "width": 18,
+          "height": 18,
+          "bytes": 1056,
+          "sha256": "2f7ba41aaa8ab01335775e3af5a0db97abaa19e72238ee8171b9b350acfa417e"
+        }
+      ]
+    },
+    {
+      "id": "bits_100",
+      "code": "bits_100",
+      "category": "bit_badges",
+      "milestone": 100,
+      "source": "bits_100.png",
+      "sizes": [
+        72,
+        36,
+        18
+      ],
+      "extension": "png",
+      "limit": 25000,
+      "sourceSha256": "7719d11929bff289e89a8d423c929adf557806201187a00eda43cbe77aa0ac2b",
+      "files": [
+        {
+          "path": "upload/bit_badges/bits_100/bits_100_72x72.png",
+          "width": 72,
+          "height": 72,
+          "bytes": 7039,
+          "sha256": "97611ab725928cfbaf48a5405cb815e77c7ee6dda4243a8591f1732ab6285aa7"
+        },
+        {
+          "path": "upload/bit_badges/bits_100/bits_100_36x36.png",
+          "width": 36,
+          "height": 36,
+          "bytes": 2298,
+          "sha256": "9ee61a694ef186e2734764bbc3ca313f6a3671d549215ef0cfc96288f0512437"
+        },
+        {
+          "path": "upload/bit_badges/bits_100/bits_100_18x18.png",
+          "width": 18,
+          "height": 18,
+          "bytes": 842,
+          "sha256": "955fa5adb71ad51ca7012d0e76e2891b4c44d6dc148edc133d2e787ee4879322"
+        }
+      ]
+    },
+    {
+      "id": "bits_1000",
+      "code": "bits_1000",
+      "category": "bit_badges",
+      "milestone": 1000,
+      "source": "bits_1000.png",
+      "sizes": [
+        72,
+        36,
+        18
+      ],
+      "extension": "png",
+      "limit": 25000,
+      "sourceSha256": "58c47c67f46ca9bfd08f95e4c36e202d1fd33bd977680a9305f283b92c276ec5",
+      "files": [
+        {
+          "path": "upload/bit_badges/bits_1000/bits_1000_72x72.png",
+          "width": 72,
+          "height": 72,
+          "bytes": 9098,
+          "sha256": "d98de18d6d5f768318985da4163a44b35a1eeba1c5c81ef96cef0f091ed690e5"
+        },
+        {
+          "path": "upload/bit_badges/bits_1000/bits_1000_36x36.png",
+          "width": 36,
+          "height": 36,
+          "bytes": 2934,
+          "sha256": "ad82e6dc9c35c4bafba01597e7f4b99265c96e56b4ed858a239a4a84c68676f8"
+        },
+        {
+          "path": "upload/bit_badges/bits_1000/bits_1000_18x18.png",
+          "width": 18,
+          "height": 18,
+          "bytes": 1036,
+          "sha256": "c84d42e2577ba1d07d40c5f82523e2823c9e372fe583e8dc3fa144b81d59c23b"
+        }
+      ]
+    },
+    {
+      "id": "bits_5000",
+      "code": "bits_5000",
+      "category": "bit_badges",
+      "milestone": 5000,
+      "source": "bits_5000.png",
+      "sizes": [
+        72,
+        36,
+        18
+      ],
+      "extension": "png",
+      "limit": 25000,
+      "sourceSha256": "032a954372356948e8e0f010741324a88052b8c5b45c8444ac773fa7581caf4e",
+      "files": [
+        {
+          "path": "upload/bit_badges/bits_5000/bits_5000_72x72.png",
+          "width": 72,
+          "height": 72,
+          "bytes": 9998,
+          "sha256": "8550f2923c52ba4756ffdd2d47a5d208f86a1534b63afa8fd1864090baf31489"
+        },
+        {
+          "path": "upload/bit_badges/bits_5000/bits_5000_36x36.png",
+          "width": 36,
+          "height": 36,
+          "bytes": 2984,
+          "sha256": "1b919db862efa765f143a929dce6cc4f6390bc2d4317923dfacdc86ebeaa2af2"
+        },
+        {
+          "path": "upload/bit_badges/bits_5000/bits_5000_18x18.png",
+          "width": 18,
+          "height": 18,
+          "bytes": 1036,
+          "sha256": "b8bbbc2b2eb173c6adbed3589b1a7eba529b33bb34a1f2fbcd2ae3de4b79dc57"
+        }
+      ]
+    },
+    {
+      "id": "bits_10000",
+      "code": "bits_10000",
+      "category": "bit_badges",
+      "milestone": 10000,
+      "source": "bits_10000.png",
+      "sizes": [
+        72,
+        36,
+        18
+      ],
+      "extension": "png",
+      "limit": 25000,
+      "sourceSha256": "08a9b698aae3b414f934a6c67845366ecb7743a08b382959773ce6fc37614022",
+      "files": [
+        {
+          "path": "upload/bit_badges/bits_10000/bits_10000_72x72.png",
+          "width": 72,
+          "height": 72,
+          "bytes": 8270,
+          "sha256": "feb5e6f3ac8476296cfeb07ff9fa6cb47ba9894567bad89684a4901294c4d7fd"
+        },
+        {
+          "path": "upload/bit_badges/bits_10000/bits_10000_36x36.png",
+          "width": 36,
+          "height": 36,
+          "bytes": 2520,
+          "sha256": "3a598ade4468a292640741f974a3a691f5b49509cb287c8be634cdcd6dcba1e5"
+        },
+        {
+          "path": "upload/bit_badges/bits_10000/bits_10000_18x18.png",
+          "width": 18,
+          "height": 18,
+          "bytes": 964,
+          "sha256": "b8dcc5ce965be9d56f4e6ce5c1d115c77e1445b66cd330a47dedcccf9f809144"
+        }
+      ]
+    },
+    {
+      "id": "bits_25000",
+      "code": "bits_25000",
+      "category": "bit_badges",
+      "milestone": 25000,
+      "source": "bits_25000.png",
+      "sizes": [
+        72,
+        36,
+        18
+      ],
+      "extension": "png",
+      "limit": 25000,
+      "sourceSha256": "f680d175f63f4a40cd2e246ec1873244f23f561012098f79569bc164df6178f6",
+      "files": [
+        {
+          "path": "upload/bit_badges/bits_25000/bits_25000_72x72.png",
+          "width": 72,
+          "height": 72,
+          "bytes": 9043,
+          "sha256": "d6d5a1a3ae27b49967a0df1a110252c7bcfb9c8cbc6fd9cf4e0a2c63c9d5f5c0"
+        },
+        {
+          "path": "upload/bit_badges/bits_25000/bits_25000_36x36.png",
+          "width": 36,
+          "height": 36,
+          "bytes": 2696,
+          "sha256": "96694e024cdef6f5b18cd8c9df695667692561c2a79207ff63b8fb4583f52882"
+        },
+        {
+          "path": "upload/bit_badges/bits_25000/bits_25000_18x18.png",
+          "width": 18,
+          "height": 18,
+          "bytes": 996,
+          "sha256": "e4cdc474944190704742be23fe428fa6c07ea3bdb612841ed1affba7c753ee25"
+        }
+      ]
+    },
+    {
+      "id": "bits_50000",
+      "code": "bits_50000",
+      "category": "bit_badges",
+      "milestone": 50000,
+      "source": "bits_50000.png",
+      "sizes": [
+        72,
+        36,
+        18
+      ],
+      "extension": "png",
+      "limit": 25000,
+      "sourceSha256": "c0add3ca46b327f2d90d7a2ccf503c6b2d6927fdfcdf719477c72af608c15298",
+      "files": [
+        {
+          "path": "upload/bit_badges/bits_50000/bits_50000_72x72.png",
+          "width": 72,
+          "height": 72,
+          "bytes": 8956,
+          "sha256": "dd6fee3fedd408fc637a58451d7ec9a9aaa2cbf9a7fb8e4fcc02578e4c57aa6a"
+        },
+        {
+          "path": "upload/bit_badges/bits_50000/bits_50000_36x36.png",
+          "width": 36,
+          "height": 36,
+          "bytes": 2807,
+          "sha256": "d7fec57c19ba4569ed3e673d77a4a7b02afb01f6dce374f0aca144248ebd354f"
+        },
+        {
+          "path": "upload/bit_badges/bits_50000/bits_50000_18x18.png",
+          "width": 18,
+          "height": 18,
+          "bytes": 1032,
+          "sha256": "6c56ceb7c90ba58c373a05d071b351db668d70fa26f16242d00d1165c5a9f6da"
+        }
+      ]
+    },
+    {
+      "id": "bits_75000",
+      "code": "bits_75000",
+      "category": "bit_badges",
+      "milestone": 75000,
+      "source": "bits_75000.png",
+      "sizes": [
+        72,
+        36,
+        18
+      ],
+      "extension": "png",
+      "limit": 25000,
+      "sourceSha256": "7c57546d10404981ae524a05fb2df089477617398a8df266548a17771d66a925",
+      "files": [
+        {
+          "path": "upload/bit_badges/bits_75000/bits_75000_72x72.png",
+          "width": 72,
+          "height": 72,
+          "bytes": 9923,
+          "sha256": "d9ab01699c4ee29a9efd9eb21bc609c9cd3dedc8d5058ac5afe6bd2cf0ad1ed8"
+        },
+        {
+          "path": "upload/bit_badges/bits_75000/bits_75000_36x36.png",
+          "width": 36,
+          "height": 36,
+          "bytes": 2819,
+          "sha256": "dabf14a383c62839af4e094f576b8591c44ad9749b401add5c5d49bcdaa7f0e5"
+        },
+        {
+          "path": "upload/bit_badges/bits_75000/bits_75000_18x18.png",
+          "width": 18,
+          "height": 18,
+          "bytes": 995,
+          "sha256": "1a7b99f254141617fb9631de6b8221e80db138528dbeec8c03238605655ea8db"
+        }
+      ]
+    },
+    {
+      "id": "bits_100000",
+      "code": "bits_100000",
+      "category": "bit_badges",
+      "milestone": 100000,
+      "source": "bits_100000.png",
+      "sizes": [
+        72,
+        36,
+        18
+      ],
+      "extension": "png",
+      "limit": 25000,
+      "sourceSha256": "aac3475469168bc8ba0938c79de1bad3ebf631f85559cd0f2d05c6cb50abbe8e",
+      "files": [
+        {
+          "path": "upload/bit_badges/bits_100000/bits_100000_72x72.png",
+          "width": 72,
+          "height": 72,
+          "bytes": 9915,
+          "sha256": "c6dfec3a654f4445dc3b887d9266cbc0c41c0293f00b71e26885366af1764105"
+        },
+        {
+          "path": "upload/bit_badges/bits_100000/bits_100000_36x36.png",
+          "width": 36,
+          "height": 36,
+          "bytes": 2882,
+          "sha256": "e20a6c7af4b867d647f923eda3e6d7c94ee2e31c13121528e4a3d2a641193ffd"
+        },
+        {
+          "path": "upload/bit_badges/bits_100000/bits_100000_18x18.png",
+          "width": 18,
+          "height": 18,
+          "bytes": 975,
+          "sha256": "7b2dec3895a633f0f7c2f61a3c52f0e1d0e69528e7bc64717002ad5aa1b0025d"
+        }
+      ]
+    },
+    {
+      "id": "moeda_ivexi",
+      "code": "moeda_ivexi",
+      "category": "channel_points",
+      "milestone": null,
+      "source": "moeda_ivexi.png",
+      "sizes": [
+        112,
+        56,
+        28
+      ],
+      "extension": "png",
+      "limit": 25000,
+      "sourceSha256": "8f0fadf3218b6502a1a16a43ad7186579688bde269ecf6f67e0068be4fd15b19",
+      "files": [
+        {
+          "path": "upload/channel_points/moeda_ivexi/moeda_ivexi_112x112.png",
+          "width": 112,
+          "height": 112,
+          "bytes": 22894,
+          "sha256": "d0700f9dd5b01a6a142e72bb3c92ac243fb3ea782d6931c5aec342a2b97a6acd"
+        },
+        {
+          "path": "upload/channel_points/moeda_ivexi/moeda_ivexi_56x56.png",
+          "width": 56,
+          "height": 56,
+          "bytes": 7090,
+          "sha256": "91795d8fd8a0f2354226e6dc8502ec6eedf94c5b10fc145050ff0fb260e4827a"
+        },
+        {
+          "path": "upload/channel_points/moeda_ivexi/moeda_ivexi_28x28.png",
+          "width": 28,
+          "height": 28,
+          "bytes": 2305,
+          "sha256": "58d3c2c7888c8c3738b30e265201a13f651e1ff9bb9efb17af0dad3235889833"
+        }
+      ]
+    },
+    {
+      "id": "hidratar",
+      "code": "hidratar",
+      "category": "rewards",
+      "milestone": null,
+      "source": "hidratar.png",
+      "sizes": [
+        112,
+        56,
+        28
+      ],
+      "extension": "png",
+      "limit": 25000,
+      "sourceSha256": "56615bc421933b35d40a0407fad3d9ba8826f11d4957b41c28662fca9f48733c",
+      "files": [
+        {
+          "path": "upload/rewards/hidratar/hidratar_112x112.png",
+          "width": 112,
+          "height": 112,
+          "bytes": 15403,
+          "sha256": "3b34ce0e90f10ba2cbcda4d52d9c1c913ea5145d7c12cb3f880bf2e4a1bdebaa"
+        },
+        {
+          "path": "upload/rewards/hidratar/hidratar_56x56.png",
+          "width": 56,
+          "height": 56,
+          "bytes": 4914,
+          "sha256": "dbc42e9beefd7feda34ed843cb77077f7563563d3f143cd95bfb922368ceba2f"
+        },
+        {
+          "path": "upload/rewards/hidratar/hidratar_28x28.png",
+          "width": 28,
+          "height": 28,
+          "bytes": 1639,
+          "sha256": "8e310ff0850dcb9869cbd18476264b553dc111b4bc7842010974733e65cd1438"
+        }
+      ]
+    },
+    {
+      "id": "alongar",
+      "code": "alongar",
+      "category": "rewards",
+      "milestone": null,
+      "source": "alongar.png",
+      "sizes": [
+        112,
+        56,
+        28
+      ],
+      "extension": "png",
+      "limit": 25000,
+      "sourceSha256": "e50b194a78d236e0ea3182f3f84d0347059dccb4d2d3e5ae5d695e675aef7385",
+      "files": [
+        {
+          "path": "upload/rewards/alongar/alongar_112x112.png",
+          "width": 112,
+          "height": 112,
+          "bytes": 24133,
+          "sha256": "e593a40516c6eaedc3bda2c7bd172817a187c203471091befca05517674ad14a"
+        },
+        {
+          "path": "upload/rewards/alongar/alongar_56x56.png",
+          "width": 56,
+          "height": 56,
+          "bytes": 7179,
+          "sha256": "a30acb22e705122c0fffef217b5b39d1410bc99e2d2a8c06a5f3eb7ab7fe0cd4"
+        },
+        {
+          "path": "upload/rewards/alongar/alongar_28x28.png",
+          "width": 28,
+          "height": 28,
+          "bytes": 2223,
+          "sha256": "b9a0781635b7073921a0237ba69b7ce23b81f976d37671e0bce13a03ea3edfab"
+        }
+      ]
+    },
+    {
+      "id": "destacar_mensagem",
+      "code": "destacar_mensagem",
+      "category": "rewards",
+      "milestone": null,
+      "source": "destacar_mensagem.png",
+      "sizes": [
+        112,
+        56,
+        28
+      ],
+      "extension": "png",
+      "limit": 25000,
+      "sourceSha256": "fdfc60d51e73f1783ad3dc53123db3fa730b8e61a28a8404bde1d7677de66a89",
+      "files": [
+        {
+          "path": "upload/rewards/destacar_mensagem/destacar_mensagem_112x112.png",
+          "width": 112,
+          "height": 112,
+          "bytes": 17494,
+          "sha256": "7dc878e4b5565446ac34c2deb57a7ea6b66838856b2281cc22e5941c6d9404eb"
+        },
+        {
+          "path": "upload/rewards/destacar_mensagem/destacar_mensagem_56x56.png",
+          "width": 56,
+          "height": 56,
+          "bytes": 5986,
+          "sha256": "36e123fc592e46a302a507b1e807bbca6155a9081ab06ad0f54d14a290354c65"
+        },
+        {
+          "path": "upload/rewards/destacar_mensagem/destacar_mensagem_28x28.png",
+          "width": 28,
+          "height": 28,
+          "bytes": 2063,
+          "sha256": "b9a8a201fc076b0103ac357c6fb96258d06fd6d15f2a78c2fab147e43bd0451c"
+        }
+      ]
+    },
+    {
+      "id": "escolher_musica",
+      "code": "escolher_musica",
+      "category": "rewards",
+      "milestone": null,
+      "source": "escolher_musica.png",
+      "sizes": [
+        112,
+        56,
+        28
+      ],
+      "extension": "png",
+      "limit": 25000,
+      "sourceSha256": "7e75f58a8f069d8e1838d5356f60d61694be13d12fd3f51b6bf6b475a369b06c",
+      "files": [
+        {
+          "path": "upload/rewards/escolher_musica/escolher_musica_112x112.png",
+          "width": 112,
+          "height": 112,
+          "bytes": 19617,
+          "sha256": "ce10359575e2531562b7a4f8263fe24b5a5e153cfb6b7a10389355f31c01c913"
+        },
+        {
+          "path": "upload/rewards/escolher_musica/escolher_musica_56x56.png",
+          "width": 56,
+          "height": 56,
+          "bytes": 6094,
+          "sha256": "73468db276006dad559537b37d0ed2ef620a37c6736c6941e88b2ba3f00eb582"
+        },
+        {
+          "path": "upload/rewards/escolher_musica/escolher_musica_28x28.png",
+          "width": 28,
+          "height": 28,
+          "bytes": 2034,
+          "sha256": "fc7d99a7d1890879610a0983cbe745565bfa800b344c2dfb6dc59b1f944582d9"
+        }
+      ]
+    },
+    {
+      "id": "resgate_batefood",
+      "code": "resgate_batefood",
+      "category": "rewards",
+      "milestone": null,
+      "source": "resgate_batefood.png",
+      "sizes": [
+        112,
+        56,
+        28
+      ],
+      "extension": "png",
+      "limit": 25000,
+      "sourceSha256": "569b702ad35ca37b4f4d726e79b9886dd26841a2d4096b02a5ee08db6da04856",
+      "files": [
+        {
+          "path": "upload/rewards/resgate_batefood/resgate_batefood_112x112.png",
+          "width": 112,
+          "height": 112,
+          "bytes": 21583,
+          "sha256": "3578047205779623b7037db59d346367650daff42852e577b8bda9b32fb3f53f"
+        },
+        {
+          "path": "upload/rewards/resgate_batefood/resgate_batefood_56x56.png",
+          "width": 56,
+          "height": 56,
+          "bytes": 6532,
+          "sha256": "fce11ae3a2e6dc5127b645706ccc9801918eb233425cc2793d36e9112f68cbb0"
+        },
+        {
+          "path": "upload/rewards/resgate_batefood/resgate_batefood_28x28.png",
+          "width": 28,
+          "height": 28,
+          "bytes": 2061,
+          "sha256": "45e6cf2e1fc2fd3c3fd1f50aaca67b29788d4d009bfc45626cc732ac472a8137"
+        }
+      ]
+    },
+    {
+      "id": "resgate_energiza",
+      "code": "resgate_energiza",
+      "category": "rewards",
+      "milestone": null,
+      "source": "resgate_energiza.png",
+      "sizes": [
+        112,
+        56,
+        28
+      ],
+      "extension": "png",
+      "limit": 25000,
+      "sourceSha256": "f56173641d0dc9046964cefcda934b775488475350c6f26c6ae67da2a30da38d",
+      "files": [
+        {
+          "path": "upload/rewards/resgate_energiza/resgate_energiza_112x112.png",
+          "width": 112,
+          "height": 112,
+          "bytes": 18741,
+          "sha256": "281ad76dc028966a7942c5aa7a3a6b490aabd858e0d7aa1da1695182d8e06d8a"
+        },
+        {
+          "path": "upload/rewards/resgate_energiza/resgate_energiza_56x56.png",
+          "width": 56,
+          "height": 56,
+          "bytes": 6011,
+          "sha256": "97a39e07886cdec1fe6bd688324d0e6387e8bc921ac00378c38f66372bf637cb"
+        },
+        {
+          "path": "upload/rewards/resgate_energiza/resgate_energiza_28x28.png",
+          "width": 28,
+          "height": 28,
+          "bytes": 1898,
+          "sha256": "53ed22d8e801edb27fed160922bdd9a11043bea4cc96d8e2f269b47b0f9d1779"
+        }
+      ]
+    },
+    {
+      "id": "flair_tier2",
+      "code": "flair_tier2",
+      "category": "badge_flairs",
+      "milestone": 2,
+      "source": "flair_tier2.png",
+      "sizes": [
+        72,
+        36,
+        18
+      ],
+      "extension": "png",
+      "limit": 25000,
+      "sourceSha256": "c4b6ae21066c3f1e80191f2eab953eb125ec8c4cf2d987b66b63e2d00d54bd45",
+      "files": [
+        {
+          "path": "upload/badge_flairs/flair_tier2/flair_tier2_72x72.png",
+          "width": 72,
+          "height": 72,
+          "bytes": 3820,
+          "sha256": "8511a6350b68273efde782f79ebc6c4a9a9c5e822308543fca278c87da1981f5"
+        },
+        {
+          "path": "upload/badge_flairs/flair_tier2/flair_tier2_36x36.png",
+          "width": 36,
+          "height": 36,
+          "bytes": 1427,
+          "sha256": "c16099a1f70670eddc1f8207510dda72dd6f303751cd6e390b161352a254b872"
+        },
+        {
+          "path": "upload/badge_flairs/flair_tier2/flair_tier2_18x18.png",
+          "width": 18,
+          "height": 18,
+          "bytes": 609,
+          "sha256": "b6ff9705f85fd7cc6094d9ab968c06a6ece3ea9fff39dc909bed143c7a9d90f9"
+        }
+      ]
+    },
+    {
+      "id": "flair_tier3",
+      "code": "flair_tier3",
+      "category": "badge_flairs",
+      "milestone": 3,
+      "source": "flair_tier3.png",
+      "sizes": [
+        72,
+        36,
+        18
+      ],
+      "extension": "png",
+      "limit": 25000,
+      "sourceSha256": "e482053c5e5ccdb3965dd5ff6a5a5dfe3c10ea80b66abfddbd43b7f7d767a9b6",
+      "files": [
+        {
+          "path": "upload/badge_flairs/flair_tier3/flair_tier3_72x72.png",
+          "width": 72,
+          "height": 72,
+          "bytes": 4789,
+          "sha256": "5b52f1311a72f12dd1e59d349def9f22ae812bb161d38443b0842278a1d46707"
+        },
+        {
+          "path": "upload/badge_flairs/flair_tier3/flair_tier3_36x36.png",
+          "width": 36,
+          "height": 36,
+          "bytes": 1732,
+          "sha256": "dab3d8c21931d0e444e4a41386a20914f19e0314f2b16a57a9287acf4bdffd16"
+        },
+        {
+          "path": "upload/badge_flairs/flair_tier3/flair_tier3_18x18.png",
+          "width": 18,
+          "height": 18,
+          "bytes": 678,
+          "sha256": "89a7ce84b4919283a4031193dd48d0da6acfe62e7c6c79dc7570cf0523a98dbd"
+        }
+      ]
+    }
+  ]
+}
