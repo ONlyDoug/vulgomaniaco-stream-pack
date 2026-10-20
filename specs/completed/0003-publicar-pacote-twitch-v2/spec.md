@@ -5,13 +5,13 @@
 | Formato | Specsfy/2.0 |
 | ID | SPEC-0003 |
 | Slug | 0003-publicar-pacote-twitch-v2 |
-| Status | Implementing |
+| Status | Complete |
 | Effort | 3 |
 | Effort updated at | 2026-10-20 |
 | Effort rationale | Integração de assets aprovados, galeria, verificação binária e publicação. |
 | Definition Gate | Passed |
 | Plan Gate | Passed |
-| Delivery Gate | In Progress |
+| Delivery Gate | Passed |
 | Interface para pessoas | Sim |
 | Atualizada em | 2026-10-20 |
 
@@ -99,10 +99,26 @@ Fundo escuro/claro/IVEXI, pausado/reproduzindo/redução de movimento. Sem loadi
 Vitest já adotado. AffiliatePack.test.tsx deriva três casos dos três AC com marcadores individuais. RED registrado em /tmp/ivexi-v2-red.log antes de alterar produção. Teste adicional cobre movimento reduzido. Verificador binário independente confere SHA-256 e assinatura de arquivos locais/publicados.
 
 ### 12. Plano de testes e rastreabilidade
+
+| Requisito | Aceite | Nível | Comando | Evidência |
+| --- | --- | --- | --- | --- |
+| US-001, FR-001, NFR-001 | AC-001 | Integração / browser | npm test -- --maxWorkers=1 | Passed: 38 peças novas e seis Sub Badges; catálogo confirmado também em produção. |
+| US-001, FR-001, NFR-001 | AC-002 | Contrato binário / integração | node scripts/verify-twitch-v2.mjs https://vulgomaniaco-stream-pack.vercel.app | Passed: 158 hashes e assinaturas, incluindo os 114 downloads. |
+| US-001, FR-001, NFR-001 | AC-003 | Integração / browser | npm test -- --maxWorkers=1 | Passed: fundos, pausa e flairs; Playwright em produção confirmou teclado, movimento reduzido, 12 combinações e mobile 375/320px. |
+
+
 US-001, FR-001 e NFR-001 → AC-001/002/003 → três casos marcados em tests/features/twitch/AffiliatePack.test.tsx. Regressão completa existente, TypeScript/build, Playwright desktop/mobile/teclado/movimento e download HTTP.
 
 ### 13. Validações
-- Implantação inicial `1a1aa00`: ERROR porque `.vercelignore` preexistente excluía `brand/*.pdf`; log da Vercel confirmou ENOENT para brand/brand-guide.pdf no prebuild. Versão anterior permaneceu ativa. Correção: exceção explícita `!brand/brand-guide.pdf`, sem abrir demais PDFs/templates; fontes v2 excluídas do build remoto. Repetir publicação e verificação completa antes de concluir T004.
+#### Gate do Ato III — Entrega
+- Resultado: Passed em 2026-10-20 após correção do filtro da Vercel.
+- Commit funcional em produção: `824ff0f8a89f2a426a9e269da8f4b603a1e4dcf4` (inclui implementação `1a1aa00070a82320eeecfecbd1d3ea47339d2a9a`). Vercel: `vulgomaniaco-stream-pack-it4ag524h-dougs-projects-9c166f33.vercel.app`, target production, state READY, githubCommitSha idêntico ao commit enviado; alias https://vulgomaniaco-stream-pack.vercel.app.
+- `node scripts/verify-twitch-v2.mjs https://vulgomaniaco-stream-pack.vercel.app`: passou para os 158 arquivos. PNG, GIF, ZIP e PDF com conteúdo binário e hash idênticos aos originais; sem fallback HTML nesses links.
+- Playwright em produção: 38 novos cards, seis Sub Badges, 114 links e dimensões nativas, 12 combinações de flair/badge, teclado, mudança ao vivo de movimento reduzido, 375/320px sem overflow e zero pageerrors. Sete rotas de overlay/cenas/alertas com transparência; metas /goals/subs, /goals/followers, /goals/tips, /panels e /control renderizam normalmente. Procedimento: script /tmp/ivexi-portal-v2-qa.cjs; relatório /tmp/ivexi-v2-browser-result.json e screenshots /tmp/ivexi-v2-*.png, inspecionadas pelo agente.
+- Cópia limpa do índice em /tmp/ivexi-v2-checkout: build passou sem arquivos locais alheios à entrega. Nenhuma regressão de produção constatada; rollback não necessário.
+- Este registro final é uma atualização documental após o aceite funcional; conferir o Ready do commit documental após o push.
+
+- Implantação inicial `1a1aa00`: ERROR porque `.vercelignore` preexistente excluía `brand/*.pdf`; log da Vercel confirmou ENOENT para brand/brand-guide.pdf no prebuild. Versão anterior permaneceu ativa. Correção: exceção explícita `!brand/brand-guide.pdf`, sem abrir demais PDFs/templates; fontes v2 excluídas do build remoto. A republicação e a verificação completa passaram antes de concluir T004.
 
 - GREEN final: `npm test -- --reporter=dot --maxWorkers=1` — 40/40 em oito arquivos; `npm run build` — TypeScript e Vite aprovados, 69 módulos. Sem lint configurado no projeto.
 - Navegador Chromium/Playwright: catálogo 38, seis Sub Badges, 114 links e 114 imagens em dimensão nativa; 12 combinações de flairs, acionamento por Enter/Espaço, transição de movimento reduzido acompanhada ao vivo, mobile 375/320px sem overflow, sete rotas OBS com transparência e sem erros de página. Recursos externos de fontes/widgets isolados para verificar o portal. As rotas de metas não usam PreviewWrapper; preservadas e cobertas pela regressão existente.
@@ -166,13 +182,13 @@ US-001, FR-001 e NFR-001 → AC-001/002/003 → três casos marcados em tests/fe
   - [x] **EVIDENCE**: Registrar resultados na seção 13.
   - [x] **IMPROVE**: Componentes extraídos e verificador detecta hashes divergentes ou fallback HTML.
 
-- [ ] T004 [OPS] [US-001] Verificar build, navegador e arquivos; publicar origin/main e confirmar Ready — Refs: US-001, FR-001, NFR-001, AC-001, AC-002, AC-003 — Depends: T002, T003
-  - [ ] **PREP**: Confirmar escopo e dependências.
-  - [ ] **EXECUTE**: Produzir entrega descrita.
-  - [ ] **VERIFY**: Executar verificações pertinentes.
-  - [ ] **VISUAL**: Conferir desktop/mobile, bordas, espaçamentos e tipografia; não aplicável em tarefa só de testes/documentação.
-  - [ ] **EVIDENCE**: Registrar resultados na seção 13.
-  - [ ] **IMPROVE**: Rever duplicação e falhas de download.
+- [x] T004 [OPS] [US-001] Verificar build, navegador e arquivos; publicar origin/main e confirmar Ready — Refs: US-001, FR-001, NFR-001, AC-001, AC-002, AC-003 — Depends: T002, T003
+  - [x] **PREP**: Commit remoto conferido e 40 testes/build aprovados.
+  - [x] **EXECUTE**: Commits publicados em origin/main e implantação Vercel Ready confirmada.
+  - [x] **VERIFY**: 158 arquivos íntegros em produção, navegador e rotas existentes aprovados.
+  - [x] **VISUAL**: Screenshots de produção 1440px, 375px e 320px conferidas; bordas, espaçamentos, margens, padding, tipografia e flairs sem regressões.
+  - [x] **EVIDENCE**: Registrar resultados na seção 13.
+  - [x] **IMPROVE**: Exceção de manual corrigida em .vercelignore; fontes excluídas do build remoto.
 
 
 ### 15. Ordem de execução
@@ -188,7 +204,7 @@ Assets já produzidos; Vercel ligada a origin/main conforme plano. Riscos: fallb
 - DEC-003: nenhuma alteração de banco ou regra global. Revisão de AGENTS/CLAUDE não introduz convenção nova nesta tarefa.
 
 ### 18. Definition of Done
-- [ ] Testes, tipos e build passam.
-- [ ] 114 arquivos e documentos íntegros; revisão visual e teclado concluídos.
-- [ ] Docs e mapa atualizados.
-- [ ] Commit publicado em origin/main, Vercel Ready e produção verificada.
+- [x] Testes, tipos e build passam.
+- [x] 114 arquivos e documentos íntegros; revisão visual e teclado concluídos.
+- [x] Docs e mapa atualizados.
+- [x] Commit publicado em origin/main, Vercel Ready e produção verificada.
