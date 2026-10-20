@@ -19,6 +19,10 @@ brand/templates/
 brand/archive/
 brand/pdf/
 brand/*.pdf
+# Manual necessário à sincronização do pacote Twitch v2
+!brand/brand-guide.pdf
+# Fontes de produção não são necessárias ao build web
+brand/twitch/v2/sources/
 
 # Arquivos de sistema e logs
 .DS_Store

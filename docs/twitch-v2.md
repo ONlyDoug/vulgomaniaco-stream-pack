@@ -23,7 +23,7 @@ node scripts/verify-twitch-v2.mjs https://vulgomaniaco-stream-pack.vercel.app
 
 `predev` e `prebuild` executam `scripts/sync-twitch-v2.mjs`. A sincronização verifica os hashes de todos os uploads antes de copiá-los e inclui os 15 stills do primeiro frame, manifesto, ZIP novo, pranchas e manual. O ZIP das Sub Badges é copiado separadamente. Os arquivos gerados em `public/assets/twitch/v2/` e o ZIP separado não são versionados; são reconstruídos a partir dos arquivos finais versionados em `brand/`.
 
-Fontes, prompts e sprites de produção não são copiados para a pasta pública. A pausa altera somente as imagens exibidas; links continuam entregando os GIFs originais. Movimento reduzido é consultado na abertura e acompanhado durante o uso. A preferência bloqueia a reprodução enquanto estiver ativa.
+`.vercelignore` preserva explicitamente `brand/brand-guide.pdf`, necessário ao build, e exclui `brand/twitch/v2/sources/`. Fontes, prompts e sprites de produção não são copiados para a pasta pública. A pausa altera somente as imagens exibidas; links continuam entregando os GIFs originais. Movimento reduzido é consultado na abertura e acompanhado durante o uso. A preferência bloqueia a reprodução enquanto estiver ativa.
 
 O verificador confere SHA-256 e assinaturas PNG/GIF/ZIP/PDF de 158 arquivos: 114 uploads, 15 stills, cinco documentos e 24 arquivos das Sub Badges, incluindo masters. Ele detecta HTML servido pelo fallback de rotas do portal. O download das Sub Badges contém 18 PNGs de upload (três por badge); seus masters continuam nos cartões individuais.
 

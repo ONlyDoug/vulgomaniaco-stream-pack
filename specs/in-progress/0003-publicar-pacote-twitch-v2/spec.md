@@ -102,6 +102,8 @@ Vitest já adotado. AffiliatePack.test.tsx deriva três casos dos três AC com m
 US-001, FR-001 e NFR-001 → AC-001/002/003 → três casos marcados em tests/features/twitch/AffiliatePack.test.tsx. Regressão completa existente, TypeScript/build, Playwright desktop/mobile/teclado/movimento e download HTTP.
 
 ### 13. Validações
+- Implantação inicial `1a1aa00`: ERROR porque `.vercelignore` preexistente excluía `brand/*.pdf`; log da Vercel confirmou ENOENT para brand/brand-guide.pdf no prebuild. Versão anterior permaneceu ativa. Correção: exceção explícita `!brand/brand-guide.pdf`, sem abrir demais PDFs/templates; fontes v2 excluídas do build remoto. Repetir publicação e verificação completa antes de concluir T004.
+
 - GREEN final: `npm test -- --reporter=dot --maxWorkers=1` — 40/40 em oito arquivos; `npm run build` — TypeScript e Vite aprovados, 69 módulos. Sem lint configurado no projeto.
 - Navegador Chromium/Playwright: catálogo 38, seis Sub Badges, 114 links e 114 imagens em dimensão nativa; 12 combinações de flairs, acionamento por Enter/Espaço, transição de movimento reduzido acompanhada ao vivo, mobile 375/320px sem overflow, sete rotas OBS com transparência e sem erros de página. Recursos externos de fontes/widgets isolados para verificar o portal. As rotas de metas não usam PreviewWrapper; preservadas e cobertas pela regressão existente.
 - VISUAL: screenshots desktop 1440×1000 e mobile 375/320×850 em `/tmp/ivexi-v2-*`; inspeção direta de cabeçalho, chat, seguidores e animados: bordas, espaçamentos, margens, padding, Inter/Rajdhani, quebras e alinhamentos coerentes com tokens IVEXI. Emotes legíveis em 28px, badges/flairs em 18px; os menores preservam silhueta. Nenhum ajuste de arte necessário. Não é uma auditoria integral de conformidade WCAG.
