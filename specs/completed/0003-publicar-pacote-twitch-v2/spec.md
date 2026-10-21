@@ -208,3 +208,11 @@ Assets já produzidos; Vercel ligada a origin/main conforme plano. Riscos: fallb
 - [x] 114 arquivos e documentos íntegros; revisão visual e teclado concluídos.
 - [x] Docs e mapa atualizados.
 - [x] Commit publicado em origin/main, Vercel Ready e produção verificada.
+
+## Publicação incremental — emotes com e sem texto (2026-10-21)
+
+Pedido confirmado: publicar os 20 originais e todas as versões com texto já produzidas, incluindo alternativas curtas. Reaproveitar a comparação estática em `/emotes/index.html`, ligada pelo hub e `/badges`. ZIPs separados com 60 arquivos originais e 74 com texto; sete combinações indisponíveis continuam sinalizadas. Sem substituir o pacote v2 ou as Sub Badges.
+
+Fonte: brand/twitch/estudos/texto-v1/publication-manifest.json. Preparação: brand/scripts/prepare_twitch_publication.py; sincronização antes de dev/build via scripts/sync-twitch-comparison.mjs; verificação de hashes local/HTTP via scripts/verify-twitch-comparison.mjs. A publicação foi preparada em cópia isolada para preservar mudanças locais do sorteio e do manual.
+
+Validação pré-publicação: 40 testes passaram em oito arquivos; TypeScript e Vite aprovados. ZIPs conferidos (60/74 uploads), 175 arquivos da comparação íntegros no build.

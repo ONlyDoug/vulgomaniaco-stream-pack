@@ -47,6 +47,7 @@ export const BadgesGallery = () => {
         </button>
         {reduced && <p className="text-xs text-ivexi-muted">Movimento reduzido ativo: mostrando o primeiro frame. Downloads GIF preservados.</p>}
       </header>
+      <a href="/emotes/index.html" className="block p-5 rounded-xl bg-ivexi-surface border border-ivexi-purple text-ivexi-neon underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-ivexi-neon">Novidade: comparar e baixar emotes com e sem texto →</a>
       <section aria-label="Downloads do pacote" className="p-5 rounded-xl bg-ivexi-surface border border-ivexi-purple space-y-4">
         <h2 className="font-rajdhani text-2xl font-bold text-ivexi-neon">Emotes e ícones v2</h2>
         <p className="text-sm text-ivexi-muted">ZIP com os 114 arquivos para upload. Sub Badges em download separado. Códigos de emote são sugestões; confira o prefixo no painel do canal.</p>

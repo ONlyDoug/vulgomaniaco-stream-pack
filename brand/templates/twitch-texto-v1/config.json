@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "status": "estudo-nao-aprovado",
+  "description": "Texto incorporado aos arquivos; nenhum candidato substitui o pacote v2.",
+  "font": "brand/fonts/rajdhani-bold.ttf",
+  "palette": {"ink": "#140A1F", "paper": "#FAFAFA", "accent": "#D6D65C", "purple": "#732EB8"},
+  "artScale": 0.93,
+  "minCapHeight": {"28": 6, "56": 8, "112": 12},
+  "minTextWidthScale": 0.8,
+  "emotes": [
+    {"id":"gg","text":"GG","placement":"bottom","note":"Texto na base, preservando rosto e taça do troféu."},
+    {"id":"lurk","text":"LURK","placement":"bottom","note":"Texto junto às asas, preservando os olhos e o capuz."},
+    {"id":"rip","text":"RIP","placement":"stone","note":"Inscrição na base da lápide, preservando a pena central."},
+    {"id":"love","text":"LOVE","placement":"top","note":"Texto no alto para preservar o coração abraçado."},
+    {"id":"kkk","text":"KKK","placement":"bottom","note":"Texto na base sem cobrir olhos ou bico."},
+    {"id":"botaprafora","text":"BOTA PRA FORA","short":"BOTA!","placement":"bottom","note":"Manter a espada reconhecível; BOTA! é somente uma sugestão."},
+    {"id":"energiza","text":"ENERGIZA","short":"OC!","placement":"bottom","note":"Manter rosto e raio; OC! é hipótese de abreviação, depende da escolha do usuário."},
+    {"id":"monta","text":"MONTA","placement":"bottom","note":"Manter os rostos do corvo e da montaria visíveis."},
+    {"id":"batefood","text":"BATE FOOD","short":"FOOD!","placement":"top","note":"Texto acima da ação para preservar comida e bico."},
+    {"id":"hype","text":"HYPE","placement":"bottom","note":"Texto na base, deixando expressão e asas à vista."},
+    {"id":"rage","text":"RAGE","placement":"bottom","note":"Preservar olhos e expressão de raiva."},
+    {"id":"rei","text":"REI","placement":"bottom","note":"Preservar a coroa no topo."},
+    {"id":"cristal","text":"CRISTAL","short":"GEMA","placement":"bottom","note":"Texto junto à base; GEMA é alternativa verbal ainda não aprovada."},
+    {"id":"tesouro","text":"TESOURO","short":"LOOT","placement":"bottom","note":"Manter o baú e seu conteúdo reconhecíveis; LOOT é hipótese."},
+    {"id":"lenda","text":"LENDA","placement":"bottom","note":"Preservar a silhueta da relíquia."},
+    {"id":"hype_anim","text":"HYPE","placement":"bottom","note":"Texto fixo; preservar movimento das asas."},
+    {"id":"energiza_anim","text":"ENERGIZA","short":"OC!","placement":"bottom","note":"Texto fixo; preservar oscilação e raio."},
+    {"id":"monta_anim","text":"MONTA","placement":"bottom","note":"Texto fixo; preservar trote e os dois rostos."},
+    {"id":"batefood_anim","text":"BATE FOOD","short":"FOOD!","placement":"top","note":"Texto fixo no alto para não esconder a mordida e a comida."},
+    {"id":"rage_anim","text":"RAGE","placement":"bottom","note":"Texto fixo; preservar a expressão e o movimento lateral."}
+  ]
+}

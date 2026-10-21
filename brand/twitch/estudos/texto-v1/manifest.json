@@ -1,0 +1,2375 @@
+{
+  "schemaVersion": 1,
+  "status": "estudo-nao-aprovado",
+  "font": "brand/fonts/rajdhani-bold.ttf",
+  "configSha256": "d3de0d22d19ee9b8deefe6d98ca7cee02cf072cb4aef8bc8a7ce8adef47ffcd3",
+  "fontSha256": "6203ac824511df1d0500807cdb7a026bc60e9f9a636609e0b693e35f85173c7f",
+  "approvedPackHashes": {
+    "brand/twitch/v2/pack-twitch-vulgomaniaco-v2.zip": "65f7ec1ad4831e926cdcdcfebc5803b3e6beb0e5c35f97c9601bc7eb180339bd",
+    "brand/twitch/v2/manifest.json": "1d0646c154c5cdb667e680348d8031e90d01758b8746e0494d047fc02fc20995",
+    "brand/twitch/v2/README.md": "3d8a3dc78cefc469e05017f93c4569d37f6f019848c5895b5ac3c1741dcd27dc",
+    "brand/twitch/v2/validation.json": "ac00bb04ec529d04b980a8385f1585973be8fcaf8bf9be45bd9ba74e81cb87f5",
+    "brand/twitch/v2/previews/animation-frames.png": "cbcb9637063f54199a1dd7b36a6e5d3dc421a158c351086130120fa2e71cdef2",
+    "brand/twitch/v2/previews/manual-final-page-14.png": "112283b6f97bbd906057c2df636108369690cf5b5d8efe401c9260e7c5192fd5",
+    "brand/twitch/v2/previews/browser-qa.json": "c07db7aa54899fee780f8a453f38ebce5ec85a24922ad867cf7310758c8654ec",
+    "brand/twitch/v2/previews/browser-light.png": "3785c82810d80804319b180a09204f2db8cc37339ee8055f9942f61a416fe0bc",
+    "brand/twitch/v2/previews/contact-sheet.png": "047dd3ee8b05682b872ee0bc8f208912aa3bc52244c21df58d3af900a98624e6",
+    "brand/twitch/v2/previews/pdf-qa.json": "0c0a110be75e0adee922303f649225fa7baf57e49076bfd966b82f7a9724c3d3",
+    "brand/twitch/v2/previews/browser-dark.png": "8aad290ffccb80bfc707cf344c935e3c1346217c44a75fde40bf967ff5199ed4",
+    "brand/twitch/v2/previews/flairs.png": "2f6caa5c167064f9ff4f451e719080d4a2e02c46ce89a23be3dcd3654a797ad2",
+    "brand/twitch/v2/previews/manual-final-page-1.png": "6d452fa7a9ac86291067519c0afb1dd1a8e29452084694c58e87b700ec24a3b3",
+    "brand/twitch/v2/previews/index.html": "20f701d2768b403d91cc884865823168fbedbbcc89c721bebe6e6e9d9f7e1de5",
+    "brand/twitch/v2/previews/manual-final-page-13.png": "73aeea8125754cd04e43564ff06b6c1815ab180808fe739009d044895dca7795",
+    "brand/twitch/v2/sources/bits_50000.png": "c0add3ca46b327f2d90d7a2ccf503c6b2d6927fdfcdf719477c72af608c15298",
+    "brand/twitch/v2/sources/love.png": "16029abfe08e958e86b049043a6d1252a27db0318c1e5553a0a4f8294dfe1523",
+    "brand/twitch/v2/sources/flair_tier3.png": "e482053c5e5ccdb3965dd5ff6a5a5dfe3c10ea80b66abfddbd43b7f7d767a9b6",
+    "brand/twitch/v2/sources/bits_100000.png": "aac3475469168bc8ba0938c79de1bad3ebf631f85559cd0f2d05c6cb50abbe8e",
+    "brand/twitch/v2/sources/energiza.png": "40700df7d589dc315ab1c85cbeaa16da1c07a1fdec109a51118a280122bca47f",
+    "brand/twitch/v2/sources/hype_sheet.png": "e020087d7905551dc6d34062e8f16a509d0b2771e6a1f368e61fa01ba38e963a",
+    "brand/twitch/v2/sources/tesouro.png": "2fdecd7f576d7f5f0b900911c0d73f8a83858fe96f506e698ab03180def87421",
+    "brand/twitch/v2/sources/bits_10000.png": "08a9b698aae3b414f934a6c67845366ecb7743a08b382959773ce6fc37614022",
+    "brand/twitch/v2/sources/cleanup.json": "1688c2d80ac511621b4ff4e0fee792ae56630ba773f3489b15c0b8e63ef00f85",
+    "brand/twitch/v2/sources/animations.json": "262edb3b351c4ed52fb461a3c925fce61c8ea4b2a29be41bd83f79c265d9a833",
+    "brand/twitch/v2/sources/rage.png": "0d3a4e9c76666ed7e49109229941db666da9cc994c771cbd638e133742a299a3",
+    "brand/twitch/v2/sources/bits_25000.png": "f680d175f63f4a40cd2e246ec1873244f23f561012098f79569bc164df6178f6",
+    "brand/twitch/v2/sources/botaprafora.png": "8b4e1c34f2e7c02746b8c546159cb67dfb6c3ae349c3f73b33e5e1be01ae2d60",
+    "brand/twitch/v2/sources/kkk.png": "cc79fb939a508197113bf4e48706747df35d26f1700090bcc291688cd8d8d70f",
+    "brand/twitch/v2/sources/hidratar.png": "56615bc421933b35d40a0407fad3d9ba8826f11d4957b41c28662fca9f48733c",
+    "brand/twitch/v2/sources/moeda_ivexi.png": "8f0fadf3218b6502a1a16a43ad7186579688bde269ecf6f67e0068be4fd15b19",
+    "brand/twitch/v2/sources/batefood.png": "16c032e77b278afa5e7952815e59264c233614a6ae495860e72bcc673b1e2dee",
+    "brand/twitch/v2/sources/rei.png": "5304be6fc2b21f448226f9fca9a8717e00c0cb04eb4e9b1c9add533067289748",
+    "brand/twitch/v2/sources/cristal.png": "0a68198b76ef237017721cf4380b13098577ff1969ffb94c5c87f255b25f9bd6",
+    "brand/twitch/v2/sources/rage_sheet.png": "55e258d63086d953168295352ba9c8150e511bec86e775ffd5b79fe391b24d62",
+    "brand/twitch/v2/sources/flair_tier2.png": "c4b6ae21066c3f1e80191f2eab953eb125ec8c4cf2d987b66b63e2d00d54bd45",
+    "brand/twitch/v2/sources/batefood_sheet.png": "4e177548d91811786fee074c11a67336ab338ad005de26d6b696aa4b5714b1c5",
+    "brand/twitch/v2/sources/lenda.png": "3ec3b8c606d0ff6f614e043ca23653c1d78bf2f38ffaaef268ec8b991b3a226b",
+    "brand/twitch/v2/sources/destacar_mensagem.png": "fdfc60d51e73f1783ad3dc53123db3fa730b8e61a28a8404bde1d7677de66a89",
+    "brand/twitch/v2/sources/gg.png": "b716b1c497e8b76f070e78590b58114813e8b46d1a556145a18913f5f598fa85",
+    "brand/twitch/v2/sources/escolher_musica.png": "7e75f58a8f069d8e1838d5356f60d61694be13d12fd3f51b6bf6b475a369b06c",
+    "brand/twitch/v2/sources/prompts.json": "97193e80077f8cc65b3f106786537f5a6014eb4fe851cf680039ed034a8595c4",
+    "brand/twitch/v2/sources/resgate_batefood.png": "569b702ad35ca37b4f4d726e79b9886dd26841a2d4096b02a5ee08db6da04856",
+    "brand/twitch/v2/sources/hype_sheet_clean.png": "c176a69030cfe49a0564dd49d171ca01cf1dd4927231a829f4bb720188d06221",
+    "brand/twitch/v2/sources/bits_1000.png": "58c47c67f46ca9bfd08f95e4c36e202d1fd33bd977680a9305f283b92c276ec5",
+    "brand/twitch/v2/sources/alongar.png": "e50b194a78d236e0ea3182f3f84d0347059dccb4d2d3e5ae5d695e675aef7385",
+    "brand/twitch/v2/sources/monta.png": "b3dfca09566f5f3c6117687b41984a2c755626f7fee8d4b49b9798bcc2e31118",
+    "brand/twitch/v2/sources/preserved-sub-badges.json": "1cc4776775b10943da3bed0dff438989a1d3eff1fbf0c5a24adf84587109d438",
+    "brand/twitch/v2/sources/bits_75000.png": "7c57546d10404981ae524a05fb2df089477617398a8df266548a17771d66a925",
+    "brand/twitch/v2/sources/rip.png": "2398e495246def75c857fb65a30393d25aa2980d3d78f5c6832dae56c71e19f3",
+    "brand/twitch/v2/sources/energiza_sheet.png": "c53e5618ed8e5cc5617a2751136ec97f66286123b0dc6e94c78fa5ab43bc3875",
+    "brand/twitch/v2/sources/bits_100.png": "7719d11929bff289e89a8d423c929adf557806201187a00eda43cbe77aa0ac2b",
+    "brand/twitch/v2/sources/rage_sheet_clean.png": "020b10264b0709fd6e903dceaf0b14f7cc38bc605c80ecad00b6e8ee3f5b5cef",
+    "brand/twitch/v2/sources/energiza_sheet_clean.png": "134af2ac39f6ec4baaa5e0f2e3683794b33687f5cddfefccb3406aed7f456db3",
+    "brand/twitch/v2/sources/monta_sheet.png": "889a82f220e0aeacdfdb3ff135d60059d1fa342c5eb44768eba1d7cb0f6e3d10",
+    "brand/twitch/v2/sources/lurk.png": "b2abc56ab67f7d3362596fad67cb1780a37bb48de5ee850468e63d4c76d36f02",
+    "brand/twitch/v2/sources/bits_5000.png": "032a954372356948e8e0f010741324a88052b8c5b45c8444ac773fa7581caf4e",
+    "brand/twitch/v2/sources/bits_1.png": "dc55df05f0086d92e0e218f1869223b1a152407943ca8e5b2696ce0fbe4cd636",
+    "brand/twitch/v2/sources/hype.png": "848b59a657d3031234a36a11206ef7d0ad6189784042ba5444673d7d833419a0",
+    "brand/twitch/v2/sources/resgate_energiza.png": "f56173641d0dc9046964cefcda934b775488475350c6f26c6ae67da2a30da38d",
+    "brand/twitch/v2/upload/bit_badges/bits_100000/bits_100000_18x18.png": "7b2dec3895a633f0f7c2f61a3c52f0e1d0e69528e7bc64717002ad5aa1b0025d",
+    "brand/twitch/v2/upload/bit_badges/bits_100000/bits_100000_36x36.png": "e20a6c7af4b867d647f923eda3e6d7c94ee2e31c13121528e4a3d2a641193ffd",
+    "brand/twitch/v2/upload/bit_badges/bits_100000/bits_100000_72x72.png": "c6dfec3a654f4445dc3b887d9266cbc0c41c0293f00b71e26885366af1764105",
+    "brand/twitch/v2/upload/bit_badges/bits_75000/bits_75000_36x36.png": "dabf14a383c62839af4e094f576b8591c44ad9749b401add5c5d49bcdaa7f0e5",
+    "brand/twitch/v2/upload/bit_badges/bits_75000/bits_75000_72x72.png": "d9ab01699c4ee29a9efd9eb21bc609c9cd3dedc8d5058ac5afe6bd2cf0ad1ed8",
+    "brand/twitch/v2/upload/bit_badges/bits_75000/bits_75000_18x18.png": "1a7b99f254141617fb9631de6b8221e80db138528dbeec8c03238605655ea8db",
+    "brand/twitch/v2/upload/bit_badges/bits_100/bits_100_36x36.png": "9ee61a694ef186e2734764bbc3ca313f6a3671d549215ef0cfc96288f0512437",
+    "brand/twitch/v2/upload/bit_badges/bits_100/bits_100_18x18.png": "955fa5adb71ad51ca7012d0e76e2891b4c44d6dc148edc133d2e787ee4879322",
+    "brand/twitch/v2/upload/bit_badges/bits_100/bits_100_72x72.png": "97611ab725928cfbaf48a5405cb815e77c7ee6dda4243a8591f1732ab6285aa7",
+    "brand/twitch/v2/upload/bit_badges/bits_1000/bits_1000_72x72.png": "d98de18d6d5f768318985da4163a44b35a1eeba1c5c81ef96cef0f091ed690e5",
+    "brand/twitch/v2/upload/bit_badges/bits_1000/bits_1000_18x18.png": "c84d42e2577ba1d07d40c5f82523e2823c9e372fe583e8dc3fa144b81d59c23b",
+    "brand/twitch/v2/upload/bit_badges/bits_1000/bits_1000_36x36.png": "ad82e6dc9c35c4bafba01597e7f4b99265c96e56b4ed858a239a4a84c68676f8",
+    "brand/twitch/v2/upload/bit_badges/bits_10000/bits_10000_72x72.png": "feb5e6f3ac8476296cfeb07ff9fa6cb47ba9894567bad89684a4901294c4d7fd",
+    "brand/twitch/v2/upload/bit_badges/bits_10000/bits_10000_36x36.png": "3a598ade4468a292640741f974a3a691f5b49509cb287c8be634cdcd6dcba1e5",
+    "brand/twitch/v2/upload/bit_badges/bits_10000/bits_10000_18x18.png": "b8dcc5ce965be9d56f4e6ce5c1d115c77e1445b66cd330a47dedcccf9f809144",
+    "brand/twitch/v2/upload/bit_badges/bits_5000/bits_5000_36x36.png": "1b919db862efa765f143a929dce6cc4f6390bc2d4317923dfacdc86ebeaa2af2",
+    "brand/twitch/v2/upload/bit_badges/bits_5000/bits_5000_18x18.png": "b8bbbc2b2eb173c6adbed3589b1a7eba529b33bb34a1f2fbcd2ae3de4b79dc57",
+    "brand/twitch/v2/upload/bit_badges/bits_5000/bits_5000_72x72.png": "8550f2923c52ba4756ffdd2d47a5d208f86a1534b63afa8fd1864090baf31489",
+    "brand/twitch/v2/upload/bit_badges/bits_25000/bits_25000_18x18.png": "e4cdc474944190704742be23fe428fa6c07ea3bdb612841ed1affba7c753ee25",
+    "brand/twitch/v2/upload/bit_badges/bits_25000/bits_25000_72x72.png": "d6d5a1a3ae27b49967a0df1a110252c7bcfb9c8cbc6fd9cf4e0a2c63c9d5f5c0",
+    "brand/twitch/v2/upload/bit_badges/bits_25000/bits_25000_36x36.png": "96694e024cdef6f5b18cd8c9df695667692561c2a79207ff63b8fb4583f52882",
+    "brand/twitch/v2/upload/bit_badges/bits_50000/bits_50000_18x18.png": "6c56ceb7c90ba58c373a05d071b351db668d70fa26f16242d00d1165c5a9f6da",
+    "brand/twitch/v2/upload/bit_badges/bits_50000/bits_50000_72x72.png": "dd6fee3fedd408fc637a58451d7ec9a9aaa2cbf9a7fb8e4fcc02578e4c57aa6a",
+    "brand/twitch/v2/upload/bit_badges/bits_50000/bits_50000_36x36.png": "d7fec57c19ba4569ed3e673d77a4a7b02afb01f6dce374f0aca144248ebd354f",
+    "brand/twitch/v2/upload/bit_badges/bits_1/bits_1_72x72.png": "3cfee93162aecb3b708fe574f0968015266cfabb3599057e42912d70c2d22f63",
+    "brand/twitch/v2/upload/bit_badges/bits_1/bits_1_36x36.png": "a265ef8c398099fcc89a4405ecc9cd10dad9d1f02bfa224617c98f4d84c6ced0",
+    "brand/twitch/v2/upload/bit_badges/bits_1/bits_1_18x18.png": "2f7ba41aaa8ab01335775e3af5a0db97abaa19e72238ee8171b9b350acfa417e",
+    "brand/twitch/v2/upload/channel_points/moeda_ivexi/moeda_ivexi_28x28.png": "58d3c2c7888c8c3738b30e265201a13f651e1ff9bb9efb17af0dad3235889833",
+    "brand/twitch/v2/upload/channel_points/moeda_ivexi/moeda_ivexi_56x56.png": "91795d8fd8a0f2354226e6dc8502ec6eedf94c5b10fc145050ff0fb260e4827a",
+    "brand/twitch/v2/upload/channel_points/moeda_ivexi/moeda_ivexi_112x112.png": "d0700f9dd5b01a6a142e72bb3c92ac243fb3ea782d6931c5aec342a2b97a6acd",
+    "brand/twitch/v2/upload/follower/vulgoRIP/vulgoRIP_56x56.png": "93a10f23e698043989239d87e524dc5d11dbbaed2fbc8354e26c65e6306b10bb",
+    "brand/twitch/v2/upload/follower/vulgoRIP/vulgoRIP_28x28.png": "536073be7f31826d9f041ee18ea24cd076510244dcb87af1abaab311005fa90b",
+    "brand/twitch/v2/upload/follower/vulgoRIP/vulgoRIP_112x112.png": "475c66e1add375adab7e43606b472eae8108089327c3fc0d1acc9e324e980256",
+    "brand/twitch/v2/upload/follower/vulgoGG/vulgoGG_28x28.png": "6d61bfb89d32e2263c95caa9504fa326f437d62cc8e1951c466eba3427d1e9ce",
+    "brand/twitch/v2/upload/follower/vulgoGG/vulgoGG_112x112.png": "2d6a947b1b16c8b2651468138c355ef21d816967c2dd90fa40e361064096e5f3",
+    "brand/twitch/v2/upload/follower/vulgoGG/vulgoGG_56x56.png": "a07c28a1993140c6f43a8b01c90c9948b8bc95ac599a1069664879f157e2a456",
+    "brand/twitch/v2/upload/follower/vulgoLURK/vulgoLURK_112x112.png": "8d0294dafd5a49ee6f68699c28a784f93698abb9c50e18b49ad557f0d1fe9e23",
+    "brand/twitch/v2/upload/follower/vulgoLURK/vulgoLURK_28x28.png": "4fe6609c29df6c8f7b742699ecdaeafbea829db04fa525ea78f01bd4a41dc150",
+    "brand/twitch/v2/upload/follower/vulgoLURK/vulgoLURK_56x56.png": "2b4df0fd761fb2377cc0b1098f2871428eb794b75df38c7b3ba836791fd6dfb1",
+    "brand/twitch/v2/upload/follower/vulgoLOVE/vulgoLOVE_56x56.png": "16ed4ee3eb5eb09c603e749d2497b6cad8defaa559112601030fe4d6805d6557",
+    "brand/twitch/v2/upload/follower/vulgoLOVE/vulgoLOVE_28x28.png": "32ee5fa6fbfb189bb28e7c69b748d31abe18f9aa81cb28859ae301e39786fd35",
+    "brand/twitch/v2/upload/follower/vulgoLOVE/vulgoLOVE_112x112.png": "315858b8c6d64f3afcb8c244a257966905fff4ce827b120474441b38f4f7a8b4",
+    "brand/twitch/v2/upload/follower/vulgoKKK/vulgoKKK_112x112.png": "667968edadb9bbb53cafc326aa34064379deb6aa5488b4f9789e373dfbc1d591",
+    "brand/twitch/v2/upload/follower/vulgoKKK/vulgoKKK_28x28.png": "ff76e645694f9740eaf4c8a5726c3957364264b3748502cba8e9480e2d74a0cf",
+    "brand/twitch/v2/upload/follower/vulgoKKK/vulgoKKK_56x56.png": "912bc226602ef83e06826b7b3ce34075e647aa40a8b14b49815cba261b52f7a0",
+    "brand/twitch/v2/upload/tier1_animated/vulgoHYPEANIM/vulgoHYPEANIM_28x28.gif": "fdd1cfdea8e678a8287944814cd6f93d378dbda4203ca839cfb8d8719d892e25",
+    "brand/twitch/v2/upload/tier1_animated/vulgoHYPEANIM/vulgoHYPEANIM_56x56.gif": "9b99af590de99854f3f4bb4b74f638500c09c28b7f33ba38445d1f8c750a361a",
+    "brand/twitch/v2/upload/tier1_animated/vulgoHYPEANIM/vulgoHYPEANIM_112x112.gif": "ec7941d23006bbba66f498df21c7c44c007fd806fcc76e67d1f1516dfb11bc47",
+    "brand/twitch/v2/upload/tier1_animated/vulgoBATEFOODANIM/vulgoBATEFOODANIM_112x112.gif": "75bcfbe037fd923fdf856c7da9f157b26ddd076bbfbf27522227ef5b1af2a5ef",
+    "brand/twitch/v2/upload/tier1_animated/vulgoBATEFOODANIM/vulgoBATEFOODANIM_56x56.gif": "e958094a6a4092dedae32c99a1b2b5c59fe012a8779d41799f5c12d6dee27f36",
+    "brand/twitch/v2/upload/tier1_animated/vulgoBATEFOODANIM/vulgoBATEFOODANIM_28x28.gif": "2508f127ed8e73922102ccbd660833bb42af322bc9a72f7618c25c0668b7145f",
+    "brand/twitch/v2/upload/tier1_animated/vulgoMONTAANIM/vulgoMONTAANIM_112x112.gif": "c9f0a5253325f97b8b7c0824cfe1833779fb0cda77e2404f67143672439a2093",
+    "brand/twitch/v2/upload/tier1_animated/vulgoMONTAANIM/vulgoMONTAANIM_56x56.gif": "c9b1909539d68e28667941a6f6d8013ca260f8bba3cae21f2cdf4af9b734fdbd",
+    "brand/twitch/v2/upload/tier1_animated/vulgoMONTAANIM/vulgoMONTAANIM_28x28.gif": "b33d93e6acd3e5ae8ec99f01eba101c9680eb25840130fd0220665fe1f531f21",
+    "brand/twitch/v2/upload/tier1_animated/vulgoENERGIZAANIM/vulgoENERGIZAANIM_28x28.gif": "d22a2408cf98949e0cd2558c940f9bfeaa0db8b41e9373c31f15a779a1e0b493",
+    "brand/twitch/v2/upload/tier1_animated/vulgoENERGIZAANIM/vulgoENERGIZAANIM_112x112.gif": "edc4240edf396c5b557807801734cfd60f928baeb375039363c822d0e85db8b2",
+    "brand/twitch/v2/upload/tier1_animated/vulgoENERGIZAANIM/vulgoENERGIZAANIM_56x56.gif": "643a9586226db742fd202bde0b5969794e78f482cfc8e14567b2019c72c4e13e",
+    "brand/twitch/v2/upload/tier1_animated/vulgoRAGEANIM/vulgoRAGEANIM_56x56.gif": "e7bb41be37269a6a4de4ea0e128ed7348304697a2207c784d845db63250d1779",
+    "brand/twitch/v2/upload/tier1_animated/vulgoRAGEANIM/vulgoRAGEANIM_112x112.gif": "deeb3aa6110de58418dc17810a5cff37eb7cec65f0a0e75ecc2157195443a4fe",
+    "brand/twitch/v2/upload/tier1_animated/vulgoRAGEANIM/vulgoRAGEANIM_28x28.gif": "c1e21f962d173fcf62e128b0435e26ab6832639cc55ac62bd003cbc47965b607",
+    "brand/twitch/v2/upload/badge_flairs/flair_tier3/flair_tier3_72x72.png": "5b52f1311a72f12dd1e59d349def9f22ae812bb161d38443b0842278a1d46707",
+    "brand/twitch/v2/upload/badge_flairs/flair_tier3/flair_tier3_36x36.png": "dab3d8c21931d0e444e4a41386a20914f19e0314f2b16a57a9287acf4bdffd16",
+    "brand/twitch/v2/upload/badge_flairs/flair_tier3/flair_tier3_18x18.png": "89a7ce84b4919283a4031193dd48d0da6acfe62e7c6c79dc7570cf0523a98dbd",
+    "brand/twitch/v2/upload/badge_flairs/flair_tier2/flair_tier2_72x72.png": "8511a6350b68273efde782f79ebc6c4a9a9c5e822308543fca278c87da1981f5",
+    "brand/twitch/v2/upload/badge_flairs/flair_tier2/flair_tier2_36x36.png": "c16099a1f70670eddc1f8207510dda72dd6f303751cd6e390b161352a254b872",
+    "brand/twitch/v2/upload/badge_flairs/flair_tier2/flair_tier2_18x18.png": "b6ff9705f85fd7cc6094d9ab968c06a6ece3ea9fff39dc909bed143c7a9d90f9",
+    "brand/twitch/v2/upload/rewards/escolher_musica/escolher_musica_112x112.png": "ce10359575e2531562b7a4f8263fe24b5a5e153cfb6b7a10389355f31c01c913",
+    "brand/twitch/v2/upload/rewards/escolher_musica/escolher_musica_28x28.png": "fc7d99a7d1890879610a0983cbe745565bfa800b344c2dfb6dc59b1f944582d9",
+    "brand/twitch/v2/upload/rewards/escolher_musica/escolher_musica_56x56.png": "73468db276006dad559537b37d0ed2ef620a37c6736c6941e88b2ba3f00eb582",
+    "brand/twitch/v2/upload/rewards/hidratar/hidratar_28x28.png": "8e310ff0850dcb9869cbd18476264b553dc111b4bc7842010974733e65cd1438",
+    "brand/twitch/v2/upload/rewards/hidratar/hidratar_56x56.png": "dbc42e9beefd7feda34ed843cb77077f7563563d3f143cd95bfb922368ceba2f",
+    "brand/twitch/v2/upload/rewards/hidratar/hidratar_112x112.png": "3b34ce0e90f10ba2cbcda4d52d9c1c913ea5145d7c12cb3f880bf2e4a1bdebaa",
+    "brand/twitch/v2/upload/rewards/alongar/alongar_28x28.png": "b9a0781635b7073921a0237ba69b7ce23b81f976d37671e0bce13a03ea3edfab",
+    "brand/twitch/v2/upload/rewards/alongar/alongar_56x56.png": "a30acb22e705122c0fffef217b5b39d1410bc99e2d2a8c06a5f3eb7ab7fe0cd4",
+    "brand/twitch/v2/upload/rewards/alongar/alongar_112x112.png": "e593a40516c6eaedc3bda2c7bd172817a187c203471091befca05517674ad14a",
+    "brand/twitch/v2/upload/rewards/resgate_batefood/resgate_batefood_56x56.png": "fce11ae3a2e6dc5127b645706ccc9801918eb233425cc2793d36e9112f68cbb0",
+    "brand/twitch/v2/upload/rewards/resgate_batefood/resgate_batefood_112x112.png": "3578047205779623b7037db59d346367650daff42852e577b8bda9b32fb3f53f",
+    "brand/twitch/v2/upload/rewards/resgate_batefood/resgate_batefood_28x28.png": "45e6cf2e1fc2fd3c3fd1f50aaca67b29788d4d009bfc45626cc732ac472a8137",
+    "brand/twitch/v2/upload/rewards/destacar_mensagem/destacar_mensagem_28x28.png": "b9a8a201fc076b0103ac357c6fb96258d06fd6d15f2a78c2fab147e43bd0451c",
+    "brand/twitch/v2/upload/rewards/destacar_mensagem/destacar_mensagem_56x56.png": "36e123fc592e46a302a507b1e807bbca6155a9081ab06ad0f54d14a290354c65",
+    "brand/twitch/v2/upload/rewards/destacar_mensagem/destacar_mensagem_112x112.png": "7dc878e4b5565446ac34c2deb57a7ea6b66838856b2281cc22e5941c6d9404eb",
+    "brand/twitch/v2/upload/rewards/resgate_energiza/resgate_energiza_56x56.png": "97a39e07886cdec1fe6bd688324d0e6387e8bc921ac00378c38f66372bf637cb",
+    "brand/twitch/v2/upload/rewards/resgate_energiza/resgate_energiza_28x28.png": "53ed22d8e801edb27fed160922bdd9a11043bea4cc96d8e2f269b47b0f9d1779",
+    "brand/twitch/v2/upload/rewards/resgate_energiza/resgate_energiza_112x112.png": "281ad76dc028966a7942c5aa7a3a6b490aabd858e0d7aa1da1695182d8e06d8a",
+    "brand/twitch/v2/upload/tier1_static/vulgoBATEFOOD/vulgoBATEFOOD_28x28.png": "97467f73ca471f70fef023164323c2338246f92cbde505c2f976d303d75c8d14",
+    "brand/twitch/v2/upload/tier1_static/vulgoBATEFOOD/vulgoBATEFOOD_112x112.png": "80032cef311145437143d167b2a0a7a08451af5978033e0455a88a54a5b5d09d",
+    "brand/twitch/v2/upload/tier1_static/vulgoBATEFOOD/vulgoBATEFOOD_56x56.png": "8d71d5fdc2e79a25abb2327b7bd2bb5ed23b599f1c884a9bb53a26fda7ddaaeb",
+    "brand/twitch/v2/upload/tier1_static/vulgoMONTA/vulgoMONTA_56x56.png": "8ee481eee16c625c826c368bd5ecbec47c2a4b45e37bda8f522b666022799699",
+    "brand/twitch/v2/upload/tier1_static/vulgoMONTA/vulgoMONTA_28x28.png": "7d4b8c4fe0fa1859504032970070ff721ee1ec02c299359280a018dc6c1362be",
+    "brand/twitch/v2/upload/tier1_static/vulgoMONTA/vulgoMONTA_112x112.png": "da8c54446ceef19189d7cc9880c112495ce478d88efe4aa204b142bb0db8d439",
+    "brand/twitch/v2/upload/tier1_static/vulgoENERGIZA/vulgoENERGIZA_112x112.png": "3e5b5e3f040a77b6b09fa4f84b6f9dd62f786e4485c75c8827a98dc4b2c4b98a",
+    "brand/twitch/v2/upload/tier1_static/vulgoENERGIZA/vulgoENERGIZA_28x28.png": "ad998b6af36424bad0971a794d8cfc947c67e7ce41635b0ef380b1f819d9c5c4",
+    "brand/twitch/v2/upload/tier1_static/vulgoENERGIZA/vulgoENERGIZA_56x56.png": "d834d963a6765da711e5cd2f773a24acb56921867562bb2284fc5e7b2bac8a63",
+    "brand/twitch/v2/upload/tier1_static/vulgoBOTAPRAFORA/vulgoBOTAPRAFORA_112x112.png": "96fb25b9073a05a7418c5ecb1b966580e95d7dcb0eea671d1a1b31dc132cf3eb",
+    "brand/twitch/v2/upload/tier1_static/vulgoBOTAPRAFORA/vulgoBOTAPRAFORA_28x28.png": "3072a3f0a2e247c5d28f0ed7470c294d2783824f4158da9458689a6f6f1389fe",
+    "brand/twitch/v2/upload/tier1_static/vulgoBOTAPRAFORA/vulgoBOTAPRAFORA_56x56.png": "4ac4d21d91a62f9e2e73ff0ded0d61eac1c69b78a6add333c9b4750568cbd27a",
+    "brand/twitch/v2/upload/tier1_static/vulgoHYPE/vulgoHYPE_112x112.png": "84ceafbef200d908dfe3c0e842e6d8be8bae412f5097e26f4d921d478d81e201",
+    "brand/twitch/v2/upload/tier1_static/vulgoHYPE/vulgoHYPE_28x28.png": "99eeb6b39acf216f9b0d9149c52e3bdf9c77ede7fb5bf8b2a34859710da650b4",
+    "brand/twitch/v2/upload/tier1_static/vulgoHYPE/vulgoHYPE_56x56.png": "49da1f7db53cc2f15c160807ba4db885fc7d52ab001fa92f550b51b97d106217",
+    "brand/twitch/v2/upload/bits_emotes/vulgoCRISTAL/vulgoCRISTAL_112x112.png": "6ae8df70b68def99c09a98872ab9deb089089aa765db9188c1a706c02c385672",
+    "brand/twitch/v2/upload/bits_emotes/vulgoCRISTAL/vulgoCRISTAL_28x28.png": "4032607a7656b89fbfd87c15372c3da28d4c08c2aced82f997511a617cb94c38",
+    "brand/twitch/v2/upload/bits_emotes/vulgoCRISTAL/vulgoCRISTAL_56x56.png": "4025cd39f5396df04142713b7ea8611f5fd5d35f81064a31ff8adb7df42da459",
+    "brand/twitch/v2/upload/bits_emotes/vulgoTESOURO/vulgoTESOURO_112x112.png": "0a369e8c02aec6df015f6792670310c135d76c39ff156639846c1981b3d55fa3",
+    "brand/twitch/v2/upload/bits_emotes/vulgoTESOURO/vulgoTESOURO_28x28.png": "39f87b11c79279b945033db75c85b6e0e2ae257ee11cb3bb25ac9646881db988",
+    "brand/twitch/v2/upload/bits_emotes/vulgoTESOURO/vulgoTESOURO_56x56.png": "ce18f65850067c118d8a8b3c9818f297557fc93a6a7e7d957905e27a81a7ef2f",
+    "brand/twitch/v2/upload/bits_emotes/vulgoLENDA/vulgoLENDA_112x112.png": "3f8e4b1eb84b692e8ab718af9679ee0dd032e88fa90aea4ad7fc305b2b8d8644",
+    "brand/twitch/v2/upload/bits_emotes/vulgoLENDA/vulgoLENDA_28x28.png": "be4aa9eaaee646ae10c49266711479ea99c456970ee3e3f15561ec0e5a0f4209",
+    "brand/twitch/v2/upload/bits_emotes/vulgoLENDA/vulgoLENDA_56x56.png": "5b51ad525c5ab6f5b6d58e04d0e79f613c37eac7533456b8743aec044e9553a8",
+    "brand/twitch/v2/upload/tier2_static/vulgoRAGE/vulgoRAGE_112x112.png": "d8ea9df19f6b17e03e32bff2007e54a5797234ab84da91a3d94807c170e036ae",
+    "brand/twitch/v2/upload/tier2_static/vulgoRAGE/vulgoRAGE_56x56.png": "436ca5e97849943786c2f22913206f619949507643f345541978b46c92a4137f",
+    "brand/twitch/v2/upload/tier2_static/vulgoRAGE/vulgoRAGE_28x28.png": "5f71e2b8a059d8e3bba3cb128ac45470a6137bbe14f9397518d62abb4c5980a3",
+    "brand/twitch/v2/upload/tier3_static/vulgoREI/vulgoREI_112x112.png": "92cbdfbc1a945512056821fdaf975d2bf81b476b95925e34eda8f2be6f5c4b94",
+    "brand/twitch/v2/upload/tier3_static/vulgoREI/vulgoREI_28x28.png": "02d4831036b2962e54e3b66d4e09eea7eaf59561386184cbec141d961c6e28f8",
+    "brand/twitch/v2/upload/tier3_static/vulgoREI/vulgoREI_56x56.png": "70f64c31fb55b701d67ed71b8624d62da093fa6fc87828aecd56caa8d1998993",
+    "brand/twitch/v2/previews/development/manual-page-11.png": "5b9d86ae384513831cc72350470e036929de7ff5ebab33442b9a0a37a4c5d6a9",
+    "brand/twitch/v2/previews/development/manual-page-14.png": "930733f13b5dc41bce6a7e86a3f8d7959393a61b31150d51d1ca8b69e590d477",
+    "brand/twitch/v2/previews/development/animation-review.png": "c1d263d022f5f549ca0100c44be472768a582198fba6122b7c122bd87c2dc08b",
+    "brand/twitch/v2/previews/development/manual-page-13.png": "5c89a538b8a432d60407fd167e1d621828606b59538b1311ea994a35593bf899",
+    "brand/twitch/v2/previews/development/manual-page-1.png": "6d452fa7a9ac86291067519c0afb1dd1a8e29452084694c58e87b700ec24a3b3",
+    "brand/twitch/v2/previews/development/manual-page-12.png": "773fc1227d8f06def62eb9a2f27a5797cef8c187602fa5071521d4f23ceb82b5",
+    "brand/twitch/v2/previews/stills/energiza_anim_56x56.png": "13b8e894a6c0c95c6ec9d4324ffb11840d15295c5b516b39bb3f40ee76a8f263",
+    "brand/twitch/v2/previews/stills/batefood_anim_28x28.png": "81c274ec120a7031c50556a265da8f02040d67ecbf3e80a665d90d3d18560a9b",
+    "brand/twitch/v2/previews/stills/energiza_anim_112x112.png": "42ba4aaa331e580551f927855bba8a342471386ab2bf8d42d5a2d44c2102287f",
+    "brand/twitch/v2/previews/stills/rage_anim_56x56.png": "03173732839d75efdf79f0375e5af589e580b4f42f5c9d313b453e8248141c41",
+    "brand/twitch/v2/previews/stills/hype_anim_112x112.png": "ea7e682ebeb6deecfbc018f269c4be3b65689d2ae301c4b3f06ddb4940aea37b",
+    "brand/twitch/v2/previews/stills/monta_anim_28x28.png": "dd29f2477f492e99ea8a00fa988f9b6ae12b79dcacf1aa4ae189cfa4c1548353",
+    "brand/twitch/v2/previews/stills/monta_anim_112x112.png": "730db570e88fdfe58d49c87cba2163cabe134909f115009c02c3385be0c8abc0",
+    "brand/twitch/v2/previews/stills/rage_anim_112x112.png": "d450eba641de4b798d3503596ed48677176329bb1fc94e4abbb747d7e0615d9d",
+    "brand/twitch/v2/previews/stills/hype_anim_28x28.png": "f19ed25d41894b08e970c8bb6b38420d605d3903819f282a7cccf8ad6f513d8c",
+    "brand/twitch/v2/previews/stills/hype_anim_56x56.png": "0d8119f824f377911c3832ddae08bf60f526696c826c357af5a6f3dcf03508e1",
+    "brand/twitch/v2/previews/stills/monta_anim_56x56.png": "34503164799b410047d49d7ebb4cff7ca6e7b68ac63d9fec6d9a5cfe0188486b",
+    "brand/twitch/v2/previews/stills/batefood_anim_112x112.png": "3b216a3166f4c3bd6b3afc23886c6acf065fa90ea0a08399322ccd35a5ddacdd",
+    "brand/twitch/v2/previews/stills/rage_anim_28x28.png": "be91c9dc818279c68abb1d76c832235d2e390adef3eef11d2cb9a9658456dd76",
+    "brand/twitch/v2/previews/stills/batefood_anim_56x56.png": "45816498ef52416d2a345fde52cdcd738f743e58adeedf26877f3b2048ce4c0a",
+    "brand/twitch/v2/previews/stills/energiza_anim_28x28.png": "c1a840e44affb4e1f7088506b0b10f648959b67bc861dbfcd9575028020d868b"
+  },
+  "emotes": [
+    {
+      "id": "gg",
+      "code": "vulgoGG",
+      "extension": "png",
+      "placement": "bottom",
+      "note": "Texto na base, preservando rosto e taça do troféu.",
+      "originals": [
+        {
+          "size": 112,
+          "path": "originals/gg/vulgoGG_112x112.png",
+          "still": "originals/gg/vulgoGG_112x112.png",
+          "sha256": "2d6a947b1b16c8b2651468138c355ef21d816967c2dd90fa40e361064096e5f3"
+        },
+        {
+          "size": 56,
+          "path": "originals/gg/vulgoGG_56x56.png",
+          "still": "originals/gg/vulgoGG_56x56.png",
+          "sha256": "a07c28a1993140c6f43a8b01c90c9948b8bc95ac599a1069664879f157e2a456"
+        },
+        {
+          "size": 28,
+          "path": "originals/gg/vulgoGG_28x28.png",
+          "still": "originals/gg/vulgoGG_28x28.png",
+          "sha256": "6d61bfb89d32e2263c95caa9504fa326f437d62cc8e1951c466eba3427d1e9ce"
+        }
+      ],
+      "variants": [
+        {
+          "id": "full",
+          "text": "GG",
+          "status": "sugestao-nao-aprovada",
+          "files": [
+            {
+              "size": 112,
+              "path": "assets/gg/full/gg_112x112.png",
+              "still": "assets/gg/full/gg_112x112.png",
+              "textMask": "assets/gg/full/112x112_text-mask.png",
+              "metrics": {
+                "fontSize": 34,
+                "capHeight": 21,
+                "textWidthScale": 1,
+                "stroke": 4,
+                "minimumCapHeight": 12
+              },
+              "sha256": "2540745a79d4da0747bab94df8c5f196d4381582d5874f6df9fdb5490096d875",
+              "bytes": 23465,
+              "originalFrames": 1,
+              "durationMs": 0,
+              "loop": 0
+            },
+            {
+              "size": 56,
+              "path": "assets/gg/full/gg_56x56.png",
+              "still": "assets/gg/full/gg_56x56.png",
+              "textMask": "assets/gg/full/56x56_text-mask.png",
+              "metrics": {
+                "fontSize": 20,
+                "capHeight": 13,
+                "textWidthScale": 1,
+                "stroke": 2,
+                "minimumCapHeight": 8
+              },
+              "sha256": "f29e94d604ed8144bcdcedb6935cad3e2207da151d106f130e0f4cc0892309e8",
+              "bytes": 6969,
+              "originalFrames": 1,
+              "durationMs": 0,
+              "loop": 0
+            },
+            {
+              "size": 28,
+              "path": "assets/gg/full/gg_28x28.png",
+              "still": "assets/gg/full/gg_28x28.png",
+              "textMask": "assets/gg/full/28x28_text-mask.png",
+              "metrics": {
+                "fontSize": 12,
+                "capHeight": 8,
+                "textWidthScale": 1,
+                "stroke": 1,
+                "minimumCapHeight": 6
+              },
+              "sha256": "54066cc377dc8d3a0fef8150a0564fcc1687671b074fcd4fc5acf2fdbddc8891",
+              "bytes": 2196,
+              "originalFrames": 1,
+              "durationMs": 0,
+              "loop": 0
+            }
+          ],
+          "blocked": []
+        }
+      ]
+    },
+    {
+      "id": "lurk",
+      "code": "vulgoLURK",
+      "extension": "png",
+      "placement": "bottom",
+      "note": "Texto junto às asas, preservando os olhos e o capuz.",
+      "originals": [
+        {
+          "size": 112,
+          "path": "originals/lurk/vulgoLURK_112x112.png",
+          "still": "originals/lurk/vulgoLURK_112x112.png",
+          "sha256": "8d0294dafd5a49ee6f68699c28a784f93698abb9c50e18b49ad557f0d1fe9e23"
+        },
+        {
+          "size": 56,
+          "path": "originals/lurk/vulgoLURK_56x56.png",
+          "still": "originals/lurk/vulgoLURK_56x56.png",
+          "sha256": "2b4df0fd761fb2377cc0b1098f2871428eb794b75df38c7b3ba836791fd6dfb1"
+        },
+        {
+          "size": 28,
+          "path": "originals/lurk/vulgoLURK_28x28.png",
+          "still": "originals/lurk/vulgoLURK_28x28.png",
+          "sha256": "4fe6609c29df6c8f7b742699ecdaeafbea829db04fa525ea78f01bd4a41dc150"
+        }
+      ],
+      "variants": [
+        {
+          "id": "full",
+          "text": "LURK",
+          "status": "sugestao-nao-aprovada",
+          "files": [
+            {
+              "size": 112,
+              "path": "assets/lurk/full/lurk_112x112.png",
+              "still": "assets/lurk/full/lurk_112x112.png",
+              "textMask": "assets/lurk/full/112x112_text-mask.png",
+              "metrics": {
+                "fontSize": 34,
+                "capHeight": 21,
+                "textWidthScale": 1,
+                "stroke": 4,
+                "minimumCapHeight": 12
+              },
+              "sha256": "7e2d1fe90dc822a1a10a4eb33809845ad66b22deeb6f39fc80ccf3603cd5989e",
+              "bytes": 22527,
+              "originalFrames": 1,
+              "durationMs": 0,
+              "loop": 0
+            },
+            {
+              "size": 56,
+              "path": "assets/lurk/full/lurk_56x56.png",
+              "still": "assets/lurk/full/lurk_56x56.png",
+              "textMask": "assets/lurk/full/56x56_text-mask.png",
+              "metrics": {
+                "fontSize": 20,
+                "capHeight": 13,
+                "textWidthScale": 1,
+                "stroke": 2,
+                "minimumCapHeight": 8
+              },
+              "sha256": "b754eedd53654defc4d8e8d4fb2f4c575b826492b9897d14bca94577e3675156",
+              "bytes": 6888,
+              "originalFrames": 1,
+              "durationMs": 0,
+              "loop": 0
+            },
+            {
+              "size": 28,
+              "path": "assets/lurk/full/lurk_28x28.png",
+              "still": "assets/lurk/full/lurk_28x28.png",
+              "textMask": "assets/lurk/full/28x28_text-mask.png",
+              "metrics": {
+                "fontSize": 12,
+                "capHeight": 8,
+                "textWidthScale": 0.923,
+                "stroke": 1,
+                "minimumCapHeight": 6
+              },
+              "sha256": "948113cfd3649373c984e18b6d7a983602b3df74894f18e4daba3169031a9ee0",
+              "bytes": 2273,
+              "originalFrames": 1,
+              "durationMs": 0,
+              "loop": 0
+            }
+          ],
+          "blocked": []
+        }
+      ]
+    },
+    {
+      "id": "rip",
+      "code": "vulgoRIP",
+      "extension": "png",
+      "placement": "stone",
+      "note": "Inscrição na base da lápide, preservando a pena central.",
+      "originals": [
+        {
+          "size": 112,
+          "path": "originals/rip/vulgoRIP_112x112.png",
+          "still": "originals/rip/vulgoRIP_112x112.png",
+          "sha256": "475c66e1add375adab7e43606b472eae8108089327c3fc0d1acc9e324e980256"
+        },
+        {
+          "size": 56,
+          "path": "originals/rip/vulgoRIP_56x56.png",
+          "still": "originals/rip/vulgoRIP_56x56.png",
+          "sha256": "93a10f23e698043989239d87e524dc5d11dbbaed2fbc8354e26c65e6306b10bb"
+        },
+        {
+          "size": 28,
+          "path": "originals/rip/vulgoRIP_28x28.png",
+          "still": "originals/rip/vulgoRIP_28x28.png",
+          "sha256": "536073be7f31826d9f041ee18ea24cd076510244dcb87af1abaab311005fa90b"
+        }
+      ],
+      "variants": [
+        {
+          "id": "full",
+          "text": "RIP",
+          "status": "sugestao-nao-aprovada",
+          "files": [
+            {
+              "size": 112,
+              "path": "assets/rip/full/rip_112x112.png",
+              "still": "assets/rip/full/rip_112x112.png",
+              "textMask": "assets/rip/full/112x112_text-mask.png",
+              "metrics": {
+                "fontSize": 34,
+                "capHeight": 21,
+                "textWidthScale": 1,
+                "stroke": 4,
+                "minimumCapHeight": 12
+              },
+              "sha256": "4d8fed52420a8d104fbf590e0a06073c9d6918e1b7bc4ba9dd3207d5d20447fa",
+              "bytes": 20705,
+              "originalFrames": 1,
+              "durationMs": 0,
+              "loop": 0
+            },
+            {
+              "size": 56,
+              "path": "assets/rip/full/rip_56x56.png",
+              "still": "assets/rip/full/rip_56x56.png",
+              "textMask": "assets/rip/full/56x56_text-mask.png",
+              "metrics": {
+                "fontSize": 20,
+                "capHeight": 13,
+                "textWidthScale": 1,
+                "stroke": 2,
+                "minimumCapHeight": 8
+              },
+              "sha256": "bfae177444540c33780185ccf243787eef2fdf7f180ba170fe074bf96d0ab882",
+              "bytes": 6438,
+              "originalFrames": 1,
+              "durationMs": 0,
+              "loop": 0
+            },
+            {
+              "size": 28,
+              "path": "assets/rip/full/rip_28x28.png",
+              "still": "assets/rip/full/rip_28x28.png",
+              "textMask": "assets/rip/full/28x28_text-mask.png",
+              "metrics": {
+                "fontSize": 12,
+                "capHeight": 8,
+                "textWidthScale": 1,
+                "stroke": 1,
+                "minimumCapHeight": 6
+              },
+              "sha256": "73bc2775c6258479fdaff84be8844783b23c6f4fff65e58d5ce4de861fe82feb",
+              "bytes": 1913,
+              "originalFrames": 1,
+              "durationMs": 0,
+              "loop": 0
+            }
+          ],
+          "blocked": []
+        }
+      ]
+    },
+    {
+      "id": "love",
+      "code": "vulgoLOVE",
+      "extension": "png",
+      "placement": "top",
+      "note": "Texto no alto para preservar o coração abraçado.",
+      "originals": [
+        {
+          "size": 112,
+          "path": "originals/love/vulgoLOVE_112x112.png",
+          "still": "originals/love/vulgoLOVE_112x112.png",
+          "sha256": "315858b8c6d64f3afcb8c244a257966905fff4ce827b120474441b38f4f7a8b4"
+        },
+        {
+          "size": 56,
+          "path": "originals/love/vulgoLOVE_56x56.png",
+          "still": "originals/love/vulgoLOVE_56x56.png",
+          "sha256": "16ed4ee3eb5eb09c603e749d2497b6cad8defaa559112601030fe4d6805d6557"
+        },
+        {
+          "size": 28,
+          "path": "originals/love/vulgoLOVE_28x28.png",
+          "still": "originals/love/vulgoLOVE_28x28.png",
+          "sha256": "32ee5fa6fbfb189bb28e7c69b748d31abe18f9aa81cb28859ae301e39786fd35"
+        }
+      ],
+      "variants": [
+        {
+          "id": "full",
+          "text": "LOVE",
+          "status": "sugestao-nao-aprovada",
+          "files": [
+            {
+              "size": 112,
+              "path": "assets/love/full/love_112x112.png",
+              "still": "assets/love/full/love_112x112.png",
+              "textMask": "assets/love/full/112x112_text-mask.png",
+              "metrics": {
+                "fontSize": 34,
+                "capHeight": 21,
+                "textWidthScale": 1,
+                "stroke": 4,
+                "minimumCapHeight": 12
+              },
+              "sha256": "2897c5709c4b91612d2a4ca3d2064a77c54bfa2d2d53fc77bb347e4bc67da527",
+              "bytes": 21914,
+              "originalFrames": 1,
+              "durationMs": 0,
+              "loop": 0
+            },
+            {
+              "size": 56,
+              "path": "assets/love/full/love_56x56.png",
+              "still": "assets/love/full/love_56x56.png",
+              "textMask": "assets/love/full/56x56_text-mask.png",
+              "metrics": {
+                "fontSize": 20,
+                "capHeight": 13,
+                "textWidthScale": 1,
+                "stroke": 2,
+                "minimumCapHeight": 8
+              },
+              "sha256": "1e88419c74648456e7cbbd857baa6b76a7c0b9ead9bac4f6aa249c7072716158",
+              "bytes": 6813,
+              "originalFrames": 1,
+              "durationMs": 0,
+              "loop": 0
+            },
+            {
+              "size": 28,
+              "path": "assets/love/full/love_28x28.png",
+              "still": "assets/love/full/love_28x28.png",
+              "textMask": "assets/love/full/28x28_text-mask.png",
+              "metrics": {
+                "fontSize": 12,
+                "capHeight": 8,
+                "textWidthScale": 1,
+                "stroke": 1,
+                "minimumCapHeight": 6
+              },
+              "sha256": "03a7b00ca053cde8f6c4073b860f35121ed23f72fac5cd8d1f739b3ba7321ad0",
+              "bytes": 2265,
+              "originalFrames": 1,
+              "durationMs": 0,
+              "loop": 0
+            }
+          ],
+          "blocked": []
+        }
+      ]
+    },
+    {
+      "id": "kkk",
+      "code": "vulgoKKK",
+      "extension": "png",
+      "placement": "bottom",
+      "note": "Texto na base sem cobrir olhos ou bico.",
+      "originals": [
+        {
+          "size": 112,
+          "path": "originals/kkk/vulgoKKK_112x112.png",
+          "still": "originals/kkk/vulgoKKK_112x112.png",
+          "sha256": "667968edadb9bbb53cafc326aa34064379deb6aa5488b4f9789e373dfbc1d591"
+        },
+        {
+          "size": 56,
+          "path": "originals/kkk/vulgoKKK_56x56.png",
+          "still": "originals/kkk/vulgoKKK_56x56.png",
+          "sha256": "912bc226602ef83e06826b7b3ce34075e647aa40a8b14b49815cba261b52f7a0"
+        },
+        {
+          "size": 28,
+          "path": "originals/kkk/vulgoKKK_28x28.png",
+          "still": "originals/kkk/vulgoKKK_28x28.png",
+          "sha256": "ff76e645694f9740eaf4c8a5726c3957364264b3748502cba8e9480e2d74a0cf"
+        }
+      ],
+      "variants": [
+        {
+          "id": "full",
+          "text": "KKK",
+          "status": "sugestao-nao-aprovada",
+          "files": [
+            {
+              "size": 112,
+              "path": "assets/kkk/full/kkk_112x112.png",
+              "still": "assets/kkk/full/kkk_112x112.png",
+              "textMask": "assets/kkk/full/112x112_text-mask.png",
+              "metrics": {
+                "fontSize": 34,
+                "capHeight": 21,
+                "textWidthScale": 1,
+                "stroke": 4,
+                "minimumCapHeight": 12
+              },
+              "sha256": "9c0673d201b669d1758a7a7db4d97db06b9a7d07794f3823ff586f7e17d227db",
+              "bytes": 22364,
+              "originalFrames": 1,
+              "durationMs": 0,
+              "loop": 0
+            },
+            {
+              "size": 56,
+              "path": "assets/kkk/full/kkk_56x56.png",
+              "still": "assets/kkk/full/kkk_56x56.png",
+              "textMask": "assets/kkk/full/56x56_text-mask.png",
+              "metrics": {
+                "fontSize": 20,
+                "capHeight": 13,
+                "textWidthScale": 1,
+                "stroke": 2,
+                "minimumCapHeight": 8
+              },
+              "sha256": "bb3aa9aa82ae9faa59042bf8a7bbb897683a302621f928245385a0f25596d256",
+              "bytes": 6650,
+              "originalFrames": 1,
+              "durationMs": 0,
+              "loop": 0
+            },
+            {
+              "size": 28,
+              "path": "assets/kkk/full/kkk_28x28.png",
+              "still": "assets/kkk/full/kkk_28x28.png",
+              "textMask": "assets/kkk/full/28x28_text-mask.png",
+              "metrics": {
+                "fontSize": 12,
+                "capHeight": 8,
+                "textWidthScale": 1,
+                "stroke": 1,
+                "minimumCapHeight": 6
+              },
+              "sha256": "a3ef2663dcfb893079ea83b8a94961f52de67bb042b80505bd2ff64f8c638932",
+              "bytes": 2029,
+              "originalFrames": 1,
+              "durationMs": 0,
+              "loop": 0
+            }
+          ],
+          "blocked": []
+        }
+      ]
+    },
+    {
+      "id": "botaprafora",
+      "code": "vulgoBOTAPRAFORA",
+      "extension": "png",
+      "placement": "bottom",
+      "note": "Manter a espada reconhecível; BOTA! é somente uma sugestão.",
+      "originals": [
+        {
+          "size": 112,
+          "path": "originals/botaprafora/vulgoBOTAPRAFORA_112x112.png",
+          "still": "originals/botaprafora/vulgoBOTAPRAFORA_112x112.png",
+          "sha256": "96fb25b9073a05a7418c5ecb1b966580e95d7dcb0eea671d1a1b31dc132cf3eb"
+        },
+        {
+          "size": 56,
+          "path": "originals/botaprafora/vulgoBOTAPRAFORA_56x56.png",
+          "still": "originals/botaprafora/vulgoBOTAPRAFORA_56x56.png",
+          "sha256": "4ac4d21d91a62f9e2e73ff0ded0d61eac1c69b78a6add333c9b4750568cbd27a"
+        },
+        {
+          "size": 28,
+          "path": "originals/botaprafora/vulgoBOTAPRAFORA_28x28.png",
+          "still": "originals/botaprafora/vulgoBOTAPRAFORA_28x28.png",
+          "sha256": "3072a3f0a2e247c5d28f0ed7470c294d2783824f4158da9458689a6f6f1389fe"
+        }
+      ],
+      "variants": [
+        {
+          "id": "full",
+          "text": "BOTA PRA FORA",
+          "status": "sugestao-nao-aprovada",
+          "files": [
+            {
+              "size": 112,
+              "path": "assets/botaprafora/full/botaprafora_112x112.png",
+              "still": "assets/botaprafora/full/botaprafora_112x112.png",
+              "textMask": "assets/botaprafora/full/112x112_text-mask.png",
+              "metrics": {
+                "fontSize": 19,
+                "capHeight": 13,
+                "textWidthScale": 0.833,
+                "stroke": 4,
+                "minimumCapHeight": 12
+              },
+              "sha256": "c8e130eb5ba71db5f04796407abf241100bbed4caba80c2ffc08ac9f7a2cada0",
+              "bytes": 25693,
+              "originalFrames": 1,
+              "durationMs": 0,
+              "loop": 0
+            }
+          ],
+          "blocked": [
+            {
+              "size": 56,
+              "reason": "Texto não cabe preservando altura mínima das letras e proporção tipográfica.",
+              "minimumCapHeight": 8
+            },
+            {
+              "size": 28,
+              "reason": "Texto não cabe preservando altura mínima das letras e proporção tipográfica.",
+              "minimumCapHeight": 6
+            }
+          ]
+        },
+        {
+          "id": "short",
+          "text": "BOTA!",
+          "status": "sugestao-nao-aprovada",
+          "files": [
+            {
+              "size": 112,
+              "path": "assets/botaprafora/short/botaprafora_112x112.png",
+              "still": "assets/botaprafora/short/botaprafora_112x112.png",
+              "textMask": "assets/botaprafora/short/112x112_text-mask.png",
+              "metrics": {
+                "fontSize": 34,
+                "capHeight": 21,
+                "textWidthScale": 1,
+                "stroke": 4,
+                "minimumCapHeight": 12
+              },
+              "sha256": "33b99fee6d58354d46dc645d902a5c87ebd4714448736bbdefb2a3569e778603",
+              "bytes": 22197,
+              "originalFrames": 1,
+              "durationMs": 0,
+              "loop": 0
+            },
+            {
+              "size": 56,
+              "path": "assets/botaprafora/short/botaprafora_56x56.png",
+              "still": "assets/botaprafora/short/botaprafora_56x56.png",
+              "textMask": "assets/botaprafora/short/56x56_text-mask.png",
+              "metrics": {
+                "fontSize": 20,
+                "capHeight": 13,
+                "textWidthScale": 1,
+                "stroke": 2,
+                "minimumCapHeight": 8
+              },
+              "sha256": "da56d79ce0592090923a28a5b93faa859378c1a84dd5b7b6d789fb54c8b41921",
+              "bytes": 6878,
+              "originalFrames": 1,
+              "durationMs": 0,
+              "loop": 0
+            },
+            {
+              "size": 28,
+              "path": "assets/botaprafora/short/botaprafora_28x28.png",
+              "still": "assets/botaprafora/short/botaprafora_28x28.png",
+              "textMask": "assets/botaprafora/short/28x28_text-mask.png",
+              "metrics": {
+                "fontSize": 12,
+                "capHeight": 8,
+                "textWidthScale": 0.857,
+                "stroke": 1,
+                "minimumCapHeight": 6
+              },
+              "sha256": "90a7ed9070e8017a23d2a7520c486c0ced7158d13e86e4b86dffe076ff3f3767",
+              "bytes": 2412,
+              "originalFrames": 1,
+              "durationMs": 0,
+              "loop": 0
+            }
+          ],
+          "blocked": []
+        }
+      ]
+    },
+    {
+      "id": "energiza",
+      "code": "vulgoENERGIZA",
+      "extension": "png",
+      "placement": "bottom",
+      "note": "Manter rosto e raio; OC! é hipótese de abreviação, depende da escolha do usuário.",
+      "originals": [
+        {
+          "size": 112,
+          "path": "originals/energiza/vulgoENERGIZA_112x112.png",
+          "still": "originals/energiza/vulgoENERGIZA_112x112.png",
+          "sha256": "3e5b5e3f040a77b6b09fa4f84b6f9dd62f786e4485c75c8827a98dc4b2c4b98a"
+        },
+        {
+          "size": 56,
+          "path": "originals/energiza/vulgoENERGIZA_56x56.png",
+          "still": "originals/energiza/vulgoENERGIZA_56x56.png",
+          "sha256": "d834d963a6765da711e5cd2f773a24acb56921867562bb2284fc5e7b2bac8a63"
+        },
+        {
+          "size": 28,
+          "path": "originals/energiza/vulgoENERGIZA_28x28.png",
+          "still": "originals/energiza/vulgoENERGIZA_28x28.png",
+          "sha256": "ad998b6af36424bad0971a794d8cfc947c67e7ce41635b0ef380b1f819d9c5c4"
+        }
+      ],
+      "variants": [
+        {
+          "id": "full",
+          "text": "ENERGIZA",
+          "status": "sugestao-nao-aprovada",
+          "files": [
+            {
+              "size": 112,
+              "path": "assets/energiza/full/energiza_112x112.png",
+              "still": "assets/energiza/full/energiza_112x112.png",
+              "textMask": "assets/energiza/full/112x112_text-mask.png",
+              "metrics": {
+                "fontSize": 31,
+                "capHeight": 20,
+                "textWidthScale": 0.813,
+                "stroke": 4,
+                "minimumCapHeight": 12
+              },
+              "sha256": "f73a4543e89c37374c5ff53e65966a4436205f1d206983620b7486127b42ab6b",
+              "bytes": 24848,
+              "originalFrames": 1,
+              "durationMs": 0,
+              "loop": 0
+            },
+            {
+              "size": 56,
+              "path": "assets/energiza/full/energiza_56x56.png",
+              "still": "assets/energiza/full/energiza_56x56.png",
+              "textMask": "assets/energiza/full/56x56_text-mask.png",
+              "metrics": {
+                "fontSize": 15,
+                "capHeight": 10,
+                "textWidthScale": 0.833,
+                "stroke": 2,
+                "minimumCapHeight": 8
+              },
+              "sha256": "5e1d2f7b5f8474870dfff22d1557c90cd62d81ad4a28858a85c6ea148327d327",
+              "bytes": 7720,
+              "originalFrames": 1,
+              "durationMs": 0,
+              "loop": 0
+            }
+          ],
+          "blocked": [
+            {
+              "size": 28,
+              "reason": "Texto não cabe preservando altura mínima das letras e proporção tipográfica.",
+              "minimumCapHeight": 6
+            }
+          ]
+        },
+        {
+          "id": "short",
+          "text": "OC!",
+          "status": "sugestao-nao-aprovada",
+          "files": [
+            {
+              "size": 112,
+              "path": "assets/energiza/short/energiza_112x112.png",
+              "still": "assets/energiza/short/energiza_112x112.png",
+              "textMask": "assets/energiza/short/112x112_text-mask.png",
+              "metrics": {
+                "fontSize": 34,
+                "capHeight": 21,
+                "textWidthScale": 1,
+                "stroke": 4,
+                "minimumCapHeight": 12
+              },
+              "sha256": "0928103ae8fde9f4975f9040692f1df5cbde26bbc92ce7b283365a765ba10b76",
+              "bytes": 23212,
+              "originalFrames": 1,
+              "durationMs": 0,
+              "loop": 0
+            },
+            {
+              "size": 56,
+              "path": "assets/energiza/short/energiza_56x56.png",
+              "still": "assets/energiza/short/energiza_56x56.png",
+              "textMask": "assets/energiza/short/56x56_text-mask.png",
+              "metrics": {
+                "fontSize": 20,
+                "capHeight": 13,
+                "textWidthScale": 1,
+                "stroke": 2,
+                "minimumCapHeight": 8
+              },
+              "sha256": "6a968d1fd1dcdb83de48a30489377f13937d29cbcffc13098519c8c7d832082c",
+              "bytes": 6921,
+              "originalFrames": 1,
+              "durationMs": 0,
+              "loop": 0
+            },
+            {
+              "size": 28,
+              "path": "assets/energiza/short/energiza_28x28.png",
+              "still": "assets/energiza/short/energiza_28x28.png",
+              "textMask": "assets/energiza/short/28x28_text-mask.png",
+              "metrics": {
+                "fontSize": 12,
+                "capHeight": 8,
+                "textWidthScale": 1,
+                "stroke": 1,
+                "minimumCapHeight": 6
+              },
+              "sha256": "050b08c800bfd92d8c229ede3a716ff2180b2ff634765482a1e182b58b12fa4d",
+              "bytes": 2185,
+              "originalFrames": 1,
+              "durationMs": 0,
+              "loop": 0
+            }
+          ],
+          "blocked": []
+        }
+      ]
+    },
+    {
+      "id": "monta",
+      "code": "vulgoMONTA",
+      "extension": "png",
+      "placement": "bottom",
+      "note": "Manter os rostos do corvo e da montaria visíveis.",
+      "originals": [
+        {
+          "size": 112,
+          "path": "originals/monta/vulgoMONTA_112x112.png",
+          "still": "originals/monta/vulgoMONTA_112x112.png",
+          "sha256": "da8c54446ceef19189d7cc9880c112495ce478d88efe4aa204b142bb0db8d439"
+        },
+        {
+          "size": 56,
+          "path": "originals/monta/vulgoMONTA_56x56.png",
+          "still": "originals/monta/vulgoMONTA_56x56.png",
+          "sha256": "8ee481eee16c625c826c368bd5ecbec47c2a4b45e37bda8f522b666022799699"
+        },
+        {
+          "size": 28,
+          "path": "originals/monta/vulgoMONTA_28x28.png",
+          "still": "originals/monta/vulgoMONTA_28x28.png",
+          "sha256": "7d4b8c4fe0fa1859504032970070ff721ee1ec02c299359280a018dc6c1362be"
+        }
+      ],
+      "variants": [
+        {
+          "id": "full",
+          "text": "MONTA",
+          "status": "sugestao-nao-aprovada",
+          "files": [
+            {
+              "size": 112,
+              "path": "assets/monta/full/monta_112x112.png",
+              "still": "assets/monta/full/monta_112x112.png",
+              "textMask": "assets/monta/full/112x112_text-mask.png",
+              "metrics": {
+                "fontSize": 34,
+                "capHeight": 21,
+                "textWidthScale": 1,
+                "stroke": 4,
+                "minimumCapHeight": 12
+              },
+              "sha256": "1d1bc6dddbe72454b0c815be04619bdc9edd5083e0a71b477697b47278ebb546",
+              "bytes": 20291,
+              "originalFrames": 1,
+              "durationMs": 0,
+              "loop": 0
+            },
+            {
+              "size": 56,
+              "path": "assets/monta/full/monta_56x56.png",
+              "still": "assets/monta/full/monta_56x56.png",
+              "textMask": "assets/monta/full/56x56_text-mask.png",
+              "metrics": {
+                "fontSize": 20,
+                "capHeight": 13,
+                "textWidthScale": 0.877,
+                "stroke": 2,
+                "minimumCapHeight": 8
+              },
+              "sha256": "109f1f45ee4fcb4c820ba8f78240dea08abd9a081e9be623a18749519f941fa1",
+              "bytes": 6971,
+              "originalFrames": 1,
+              "durationMs": 0,
+              "loop": 0
+            },
+            {
+              "size": 28,
+              "path": "assets/monta/full/monta_28x28.png",
+              "still": "assets/monta/full/monta_28x28.png",
+              "textMask": "assets/monta/full/28x28_text-mask.png",
+              "metrics": {
+                "fontSize": 10,
+                "capHeight": 6,
+                "textWidthScale": 0.828,
+                "stroke": 1,
+                "minimumCapHeight": 6
+              },
+              "sha256": "ef8a8c20ff771468e1310827fe56b4de30422efaf8ce48f278c7ae2a6d0d51b2",
+              "bytes": 2196,
+              "originalFrames": 1,
+              "durationMs": 0,
+              "loop": 0
+            }
+          ],
+          "blocked": []
+        }
+      ]
+    },
+    {
+      "id": "batefood",
+      "code": "vulgoBATEFOOD",
+      "extension": "png",
+      "placement": "top",
+      "note": "Texto acima da ação para preservar comida e bico.",
+      "originals": [
+        {
+          "size": 112,
+          "path": "originals/batefood/vulgoBATEFOOD_112x112.png",
+          "still": "originals/batefood/vulgoBATEFOOD_112x112.png",
+          "sha256": "80032cef311145437143d167b2a0a7a08451af5978033e0455a88a54a5b5d09d"
+        },
+        {
+          "size": 56,
+          "path": "originals/batefood/vulgoBATEFOOD_56x56.png",
+          "still": "originals/batefood/vulgoBATEFOOD_56x56.png",
+          "sha256": "8d71d5fdc2e79a25abb2327b7bd2bb5ed23b599f1c884a9bb53a26fda7ddaaeb"
+        },
+        {
+          "size": 28,
+          "path": "originals/batefood/vulgoBATEFOOD_28x28.png",
+          "still": "originals/batefood/vulgoBATEFOOD_28x28.png",
+          "sha256": "97467f73ca471f70fef023164323c2338246f92cbde505c2f976d303d75c8d14"
+        }
+      ],
+      "variants": [
+        {
+          "id": "full",
+          "text": "BATE FOOD",
+          "status": "sugestao-nao-aprovada",
+          "files": [
+            {
+              "size": 112,
+              "path": "assets/batefood/full/batefood_112x112.png",
+              "still": "assets/batefood/full/batefood_112x112.png",
+              "textMask": "assets/batefood/full/112x112_text-mask.png",
+              "metrics": {
+                "fontSize": 28,
+                "capHeight": 18,
+                "textWidthScale": 0.82,
+                "stroke": 4,
+                "minimumCapHeight": 12
+              },
+              "sha256": "83cb4970dfdb4a07e4200b7b2801dde8c481e38c5790c5e36a29fbc82c5723c5",
+              "bytes": 25525,
+              "originalFrames": 1,
+              "durationMs": 0,
+              "loop": 0
+            },
+            {
+              "size": 56,
+              "path": "assets/batefood/full/batefood_56x56.png",
+              "still": "assets/batefood/full/batefood_56x56.png",
+              "textMask": "assets/batefood/full/56x56_text-mask.png",
+              "metrics": {
+                "fontSize": 14,
+                "capHeight": 9,
+                "textWidthScale": 0.82,
+                "stroke": 2,
+                "minimumCapHeight": 8
+              },
+              "sha256": "2c1dc5da1f354ef809e4cca427898ab689d9dbe968af1ac1148cfaeb7dc75343",
+              "bytes": 7931,
+              "originalFrames": 1,
+              "durationMs": 0,
+              "loop": 0
+            }
+          ],
+          "blocked": [
+            {
+              "size": 28,
+              "reason": "Texto não cabe preservando altura mínima das letras e proporção tipográfica.",
+              "minimumCapHeight": 6
+            }
+          ]
+        },
+        {
+          "id": "short",
+          "text": "FOOD!",
+          "status": "sugestao-nao-aprovada",
+          "files": [
+            {
+              "size": 112,
+              "path": "assets/batefood/short/batefood_112x112.png",
+              "still": "assets/batefood/short/batefood_112x112.png",
+              "textMask": "assets/batefood/short/112x112_text-mask.png",
+              "metrics": {
+                "fontSize": 34,
+                "capHeight": 21,
+                "textWidthScale": 1,
+                "stroke": 4,
+                "minimumCapHeight": 12
+              },
+              "sha256": "e8fcf224aa8f405746d19e7ba8a844cbe303bc8579c9b857bc9587fe33cbfd59",
+              "bytes": 22682,
+              "originalFrames": 1,
+              "durationMs": 0,
+              "loop": 0
+            },
+            {
+              "size": 56,
+              "path": "assets/batefood/short/batefood_56x56.png",
+              "still": "assets/batefood/short/batefood_56x56.png",
+              "textMask": "assets/batefood/short/56x56_text-mask.png",
+              "metrics": {
+                "fontSize": 20,
+                "capHeight": 13,
+                "textWidthScale": 1,
+                "stroke": 2,
+                "minimumCapHeight": 8
+              },
+              "sha256": "eca4fc2128f056ba1eb06031aec5f583190eb88c3fd102aa6523a710f989f6e5",
+              "bytes": 6747,
+              "originalFrames": 1,
+              "durationMs": 0,
+              "loop": 0
+            },
+            {
+              "size": 28,
+              "path": "assets/batefood/short/batefood_28x28.png",
+              "still": "assets/batefood/short/batefood_28x28.png",
+              "textMask": "assets/batefood/short/28x28_text-mask.png",
+              "metrics": {
+                "fontSize": 12,
+                "capHeight": 8,
+                "textWidthScale": 0.857,
+                "stroke": 1,
+                "minimumCapHeight": 6
+              },
+              "sha256": "2052b77dae8c0180a895992d7783ec291c54f07b4f5e42baa7d85f5fb68500cd",
+              "bytes": 2353,
+              "originalFrames": 1,
+              "durationMs": 0,
+              "loop": 0
+            }
+          ],
+          "blocked": []
+        }
+      ]
+    },
+    {
+      "id": "hype",
+      "code": "vulgoHYPE",
+      "extension": "png",
+      "placement": "bottom",
+      "note": "Texto na base, deixando expressão e asas à vista.",
+      "originals": [
+        {
+          "size": 112,
+          "path": "originals/hype/vulgoHYPE_112x112.png",
+          "still": "originals/hype/vulgoHYPE_112x112.png",
+          "sha256": "84ceafbef200d908dfe3c0e842e6d8be8bae412f5097e26f4d921d478d81e201"
+        },
+        {
+          "size": 56,
+          "path": "originals/hype/vulgoHYPE_56x56.png",
+          "still": "originals/hype/vulgoHYPE_56x56.png",
+          "sha256": "49da1f7db53cc2f15c160807ba4db885fc7d52ab001fa92f550b51b97d106217"
+        },
+        {
+          "size": 28,
+          "path": "originals/hype/vulgoHYPE_28x28.png",
+          "still": "originals/hype/vulgoHYPE_28x28.png",
+          "sha256": "99eeb6b39acf216f9b0d9149c52e3bdf9c77ede7fb5bf8b2a34859710da650b4"
+        }
+      ],
+      "variants": [
+        {
+          "id": "full",
+          "text": "HYPE",
+          "status": "sugestao-nao-aprovada",
+          "files": [
+            {
+              "size": 112,
+              "path": "assets/hype/full/hype_112x112.png",
+              "still": "assets/hype/full/hype_112x112.png",
+              "textMask": "assets/hype/full/112x112_text-mask.png",
+              "metrics": {
+                "fontSize": 34,
+                "capHeight": 21,
+                "textWidthScale": 1,
+                "stroke": 4,
+                "minimumCapHeight": 12
+              },
+              "sha256": "53a354eefccb8075305501f0deb264d3c10a8ef12dbcbfbd789b28adfec23176",
+              "bytes": 21766,
+              "originalFrames": 1,
+              "durationMs": 0,
+              "loop": 0
+            },
+            {
+              "size": 56,
+              "path": "assets/hype/full/hype_56x56.png",
+              "still": "assets/hype/full/hype_56x56.png",
+              "textMask": "assets/hype/full/56x56_text-mask.png",
+              "metrics": {
+                "fontSize": 20,
+                "capHeight": 13,
+                "textWidthScale": 1,
+                "stroke": 2,
+                "minimumCapHeight": 8
+              },
+              "sha256": "595844696906139185de96ebb44384793ddf0dd27ef8e7d07c19fc635fd4f6d4",
+              "bytes": 6608,
+              "originalFrames": 1,
+              "durationMs": 0,
+              "loop": 0
+            },
+            {
+              "size": 28,
+              "path": "assets/hype/full/hype_28x28.png",
+              "still": "assets/hype/full/hype_28x28.png",
+              "textMask": "assets/hype/full/28x28_text-mask.png",
+              "metrics": {
+                "fontSize": 12,
+                "capHeight": 8,
+                "textWidthScale": 0.96,
+                "stroke": 1,
+                "minimumCapHeight": 6
+              },
+              "sha256": "4b653cff78eb14b9e0977749beaa84f79fb4f36c661c761155594f7b612344ad",
+              "bytes": 2366,
+              "originalFrames": 1,
+              "durationMs": 0,
+              "loop": 0
+            }
+          ],
+          "blocked": []
+        }
+      ]
+    },
+    {
+      "id": "rage",
+      "code": "vulgoRAGE",
+      "extension": "png",
+      "placement": "bottom",
+      "note": "Preservar olhos e expressão de raiva.",
+      "originals": [
+        {
+          "size": 112,
+          "path": "originals/rage/vulgoRAGE_112x112.png",
+          "still": "originals/rage/vulgoRAGE_112x112.png",
+          "sha256": "d8ea9df19f6b17e03e32bff2007e54a5797234ab84da91a3d94807c170e036ae"
+        },
+        {
+          "size": 56,
+          "path": "originals/rage/vulgoRAGE_56x56.png",
+          "still": "originals/rage/vulgoRAGE_56x56.png",
+          "sha256": "436ca5e97849943786c2f22913206f619949507643f345541978b46c92a4137f"
+        },
+        {
+          "size": 28,
+          "path": "originals/rage/vulgoRAGE_28x28.png",
+          "still": "originals/rage/vulgoRAGE_28x28.png",
+          "sha256": "5f71e2b8a059d8e3bba3cb128ac45470a6137bbe14f9397518d62abb4c5980a3"
+        }
+      ],
+      "variants": [
+        {
+          "id": "full",
+          "text": "RAGE",
+          "status": "sugestao-nao-aprovada",
+          "files": [
+            {
+              "size": 112,
+              "path": "assets/rage/full/rage_112x112.png",
+              "still": "assets/rage/full/rage_112x112.png",
+              "textMask": "assets/rage/full/112x112_text-mask.png",
+              "metrics": {
+                "fontSize": 34,
+                "capHeight": 21,
+                "textWidthScale": 1,
+                "stroke": 4,
+                "minimumCapHeight": 12
+              },
+              "sha256": "947dc1637cf336bc2ea48430caea56fb6057885f3f05e06f7888ddcbd8e59fe2",
+              "bytes": 22797,
+              "originalFrames": 1,
+              "durationMs": 0,
+              "loop": 0
+            },
+            {
+              "size": 56,
+              "path": "assets/rage/full/rage_56x56.png",
+              "still": "assets/rage/full/rage_56x56.png",
+              "textMask": "assets/rage/full/56x56_text-mask.png",
+              "metrics": {
+                "fontSize": 20,
+                "capHeight": 13,
+                "textWidthScale": 1,
+                "stroke": 2,
+                "minimumCapHeight": 8
+              },
+              "sha256": "debdfa3c911d2790d1eed4ca0eb2da86dec3d2edf64ca980eb25fddded28df3a",
+              "bytes": 6974,
+              "originalFrames": 1,
+              "durationMs": 0,
+              "loop": 0
+            },
+            {
+              "size": 28,
+              "path": "assets/rage/full/rage_28x28.png",
+              "still": "assets/rage/full/rage_28x28.png",
+              "textMask": "assets/rage/full/28x28_text-mask.png",
+              "metrics": {
+                "fontSize": 12,
+                "capHeight": 8,
+                "textWidthScale": 0.923,
+                "stroke": 1,
+                "minimumCapHeight": 6
+              },
+              "sha256": "512f5485adcb9c94e6a23f1c41331b967de7957f38973334979a3a5de81c8b30",
+              "bytes": 2342,
+              "originalFrames": 1,
+              "durationMs": 0,
+              "loop": 0
+            }
+          ],
+          "blocked": []
+        }
+      ]
+    },
+    {
+      "id": "rei",
+      "code": "vulgoREI",
+      "extension": "png",
+      "placement": "bottom",
+      "note": "Preservar a coroa no topo.",
+      "originals": [
+        {
+          "size": 112,
+          "path": "originals/rei/vulgoREI_112x112.png",
+          "still": "originals/rei/vulgoREI_112x112.png",
+          "sha256": "92cbdfbc1a945512056821fdaf975d2bf81b476b95925e34eda8f2be6f5c4b94"
+        },
+        {
+          "size": 56,
+          "path": "originals/rei/vulgoREI_56x56.png",
+          "still": "originals/rei/vulgoREI_56x56.png",
+          "sha256": "70f64c31fb55b701d67ed71b8624d62da093fa6fc87828aecd56caa8d1998993"
+        },
+        {
+          "size": 28,
+          "path": "originals/rei/vulgoREI_28x28.png",
+          "still": "originals/rei/vulgoREI_28x28.png",
+          "sha256": "02d4831036b2962e54e3b66d4e09eea7eaf59561386184cbec141d961c6e28f8"
+        }
+      ],
+      "variants": [
+        {
+          "id": "full",
+          "text": "REI",
+          "status": "sugestao-nao-aprovada",
+          "files": [
+            {
+              "size": 112,
+              "path": "assets/rei/full/rei_112x112.png",
+              "still": "assets/rei/full/rei_112x112.png",
+              "textMask": "assets/rei/full/112x112_text-mask.png",
+              "metrics": {
+                "fontSize": 34,
+                "capHeight": 21,
+                "textWidthScale": 1,
+                "stroke": 4,
+                "minimumCapHeight": 12
+              },
+              "sha256": "7cd05cc7cba37e531aa0103f694e5c1f4fb9ea21fc908ea3f598fbbb2c77bab6",
+              "bytes": 21057,
+              "originalFrames": 1,
+              "durationMs": 0,
+              "loop": 0
+            },
+            {
+              "size": 56,
+              "path": "assets/rei/full/rei_56x56.png",
+              "still": "assets/rei/full/rei_56x56.png",
+              "textMask": "assets/rei/full/56x56_text-mask.png",
+              "metrics": {
+                "fontSize": 20,
+                "capHeight": 13,
+                "textWidthScale": 1,
+                "stroke": 2,
+                "minimumCapHeight": 8
+              },
+              "sha256": "a9d150475252981ae808853c2d8598281b9d74d898808e540a1aa8b4246bb837",
+              "bytes": 6469,
+              "originalFrames": 1,
+              "durationMs": 0,
+              "loop": 0
+            },
+            {
+              "size": 28,
+              "path": "assets/rei/full/rei_28x28.png",
+              "still": "assets/rei/full/rei_28x28.png",
+              "textMask": "assets/rei/full/28x28_text-mask.png",
+              "metrics": {
+                "fontSize": 12,
+                "capHeight": 8,
+                "textWidthScale": 1,
+                "stroke": 1,
+                "minimumCapHeight": 6
+              },
+              "sha256": "f060e4c6f79b202ea7f71af7129b59f9cf5727d5dd28cb7c223dc431920df86d",
+              "bytes": 2113,
+              "originalFrames": 1,
+              "durationMs": 0,
+              "loop": 0
+            }
+          ],
+          "blocked": []
+        }
+      ]
+    },
+    {
+      "id": "cristal",
+      "code": "vulgoCRISTAL",
+      "extension": "png",
+      "placement": "bottom",
+      "note": "Texto junto à base; GEMA é alternativa verbal ainda não aprovada.",
+      "originals": [
+        {
+          "size": 112,
+          "path": "originals/cristal/vulgoCRISTAL_112x112.png",
+          "still": "originals/cristal/vulgoCRISTAL_112x112.png",
+          "sha256": "6ae8df70b68def99c09a98872ab9deb089089aa765db9188c1a706c02c385672"
+        },
+        {
+          "size": 56,
+          "path": "originals/cristal/vulgoCRISTAL_56x56.png",
+          "still": "originals/cristal/vulgoCRISTAL_56x56.png",
+          "sha256": "4025cd39f5396df04142713b7ea8611f5fd5d35f81064a31ff8adb7df42da459"
+        },
+        {
+          "size": 28,
+          "path": "originals/cristal/vulgoCRISTAL_28x28.png",
+          "still": "originals/cristal/vulgoCRISTAL_28x28.png",
+          "sha256": "4032607a7656b89fbfd87c15372c3da28d4c08c2aced82f997511a617cb94c38"
+        }
+      ],
+      "variants": [
+        {
+          "id": "full",
+          "text": "CRISTAL",
+          "status": "sugestao-nao-aprovada",
+          "files": [
+            {
+              "size": 112,
+              "path": "assets/cristal/full/cristal_112x112.png",
+              "still": "assets/cristal/full/cristal_112x112.png",
+              "textMask": "assets/cristal/full/112x112_text-mask.png",
+              "metrics": {
+                "fontSize": 34,
+                "capHeight": 21,
+                "textWidthScale": 0.877,
+                "stroke": 4,
+                "minimumCapHeight": 12
+              },
+              "sha256": "1d0de9254be67d37589927a5a8c988302b20b90d2fc34a7fc0f2e612168a40c4",
+              "bytes": 24523,
+              "originalFrames": 1,
+              "durationMs": 0,
+              "loop": 0
+            },
+            {
+              "size": 56,
+              "path": "assets/cristal/full/cristal_56x56.png",
+              "still": "assets/cristal/full/cristal_56x56.png",
+              "textMask": "assets/cristal/full/56x56_text-mask.png",
+              "metrics": {
+                "fontSize": 18,
+                "capHeight": 11,
+                "textWidthScale": 0.833,
+                "stroke": 2,
+                "minimumCapHeight": 8
+              },
+              "sha256": "9b594656dacc993db892d233de1f3cb1f05e1ef16dbd22465bf7941d3ab90721",
+              "bytes": 7467,
+              "originalFrames": 1,
+              "durationMs": 0,
+              "loop": 0
+            },
+            {
+              "size": 28,
+              "path": "assets/cristal/full/cristal_28x28.png",
+              "still": "assets/cristal/full/cristal_28x28.png",
+              "textMask": "assets/cristal/full/28x28_text-mask.png",
+              "metrics": {
+                "fontSize": 9,
+                "capHeight": 6,
+                "textWidthScale": 0.8,
+                "stroke": 1,
+                "minimumCapHeight": 6
+              },
+              "sha256": "435ccf7de35ef669ae9fe28bf88283c6d53aa793ff83c4f99afa7eb92ddb7509",
+              "bytes": 2312,
+              "originalFrames": 1,
+              "durationMs": 0,
+              "loop": 0
+            }
+          ],
+          "blocked": []
+        },
+        {
+          "id": "short",
+          "text": "GEMA",
+          "status": "sugestao-nao-aprovada",
+          "files": [
+            {
+              "size": 112,
+              "path": "assets/cristal/short/cristal_112x112.png",
+              "still": "assets/cristal/short/cristal_112x112.png",
+              "textMask": "assets/cristal/short/112x112_text-mask.png",
+              "metrics": {
+                "fontSize": 34,
+                "capHeight": 21,
+                "textWidthScale": 1,
+                "stroke": 4,
+                "minimumCapHeight": 12
+              },
+              "sha256": "23592433809c75736811d8e7cc952ceeeb44bccc9e8abc6390400fc2c3c54b34",
+              "bytes": 22574,
+              "originalFrames": 1,
+              "durationMs": 0,
+              "loop": 0
+            },
+            {
+              "size": 56,
+              "path": "assets/cristal/short/cristal_56x56.png",
+              "still": "assets/cristal/short/cristal_56x56.png",
+              "textMask": "assets/cristal/short/56x56_text-mask.png",
+              "metrics": {
+                "fontSize": 20,
+                "capHeight": 13,
+                "textWidthScale": 1,
+                "stroke": 2,
+                "minimumCapHeight": 8
+              },
+              "sha256": "3d45193b2165affa5d294b463fd2b93ed8103dfddc5edd744807c1e2c2f2b754",
+              "bytes": 6782,
+              "originalFrames": 1,
+              "durationMs": 0,
+              "loop": 0
+            },
+            {
+              "size": 28,
+              "path": "assets/cristal/short/cristal_28x28.png",
+              "still": "assets/cristal/short/cristal_28x28.png",
+              "textMask": "assets/cristal/short/28x28_text-mask.png",
+              "metrics": {
+                "fontSize": 12,
+                "capHeight": 8,
+                "textWidthScale": 0.857,
+                "stroke": 1,
+                "minimumCapHeight": 6
+              },
+              "sha256": "a58a50f4b3889e62a0139f1899750bdd4b2e1b972bef8f8623f45efbd3cbb335",
+              "bytes": 2326,
+              "originalFrames": 1,
+              "durationMs": 0,
+              "loop": 0
+            }
+          ],
+          "blocked": []
+        }
+      ]
+    },
+    {
+      "id": "tesouro",
+      "code": "vulgoTESOURO",
+      "extension": "png",
+      "placement": "bottom",
+      "note": "Manter o baú e seu conteúdo reconhecíveis; LOOT é hipótese.",
+      "originals": [
+        {
+          "size": 112,
+          "path": "originals/tesouro/vulgoTESOURO_112x112.png",
+          "still": "originals/tesouro/vulgoTESOURO_112x112.png",
+          "sha256": "0a369e8c02aec6df015f6792670310c135d76c39ff156639846c1981b3d55fa3"
+        },
+        {
+          "size": 56,
+          "path": "originals/tesouro/vulgoTESOURO_56x56.png",
+          "still": "originals/tesouro/vulgoTESOURO_56x56.png",
+          "sha256": "ce18f65850067c118d8a8b3c9818f297557fc93a6a7e7d957905e27a81a7ef2f"
+        },
+        {
+          "size": 28,
+          "path": "originals/tesouro/vulgoTESOURO_28x28.png",
+          "still": "originals/tesouro/vulgoTESOURO_28x28.png",
+          "sha256": "39f87b11c79279b945033db75c85b6e0e2ae257ee11cb3bb25ac9646881db988"
+        }
+      ],
+      "variants": [
+        {
+          "id": "full",
+          "text": "TESOURO",
+          "status": "sugestao-nao-aprovada",
+          "files": [
+            {
+              "size": 112,
+              "path": "assets/tesouro/full/tesouro_112x112.png",
+              "still": "assets/tesouro/full/tesouro_112x112.png",
+              "textMask": "assets/tesouro/full/112x112_text-mask.png",
+              "metrics": {
+                "fontSize": 34,
+                "capHeight": 21,
+                "textWidthScale": 0.8,
+                "stroke": 4,
+                "minimumCapHeight": 12
+              },
+              "sha256": "dc29a572e23126bbe43fa48cad6a9c53000fd9f45cd6f0f9a6716922bd819c56",
+              "bytes": 23941,
+              "originalFrames": 1,
+              "durationMs": 0,
+              "loop": 0
+            },
+            {
+              "size": 56,
+              "path": "assets/tesouro/full/tesouro_56x56.png",
+              "still": "assets/tesouro/full/tesouro_56x56.png",
+              "textMask": "assets/tesouro/full/56x56_text-mask.png",
+              "metrics": {
+                "fontSize": 17,
+                "capHeight": 11,
+                "textWidthScale": 0.806,
+                "stroke": 2,
+                "minimumCapHeight": 8
+              },
+              "sha256": "ab295d45693bda7933ae3c9ea85eea33f5911e279828e2295d790aa2e19d33cd",
+              "bytes": 7358,
+              "originalFrames": 1,
+              "durationMs": 0,
+              "loop": 0
+            }
+          ],
+          "blocked": [
+            {
+              "size": 28,
+              "reason": "Texto não cabe preservando altura mínima das letras e proporção tipográfica.",
+              "minimumCapHeight": 6
+            }
+          ]
+        },
+        {
+          "id": "short",
+          "text": "LOOT",
+          "status": "sugestao-nao-aprovada",
+          "files": [
+            {
+              "size": 112,
+              "path": "assets/tesouro/short/tesouro_112x112.png",
+              "still": "assets/tesouro/short/tesouro_112x112.png",
+              "textMask": "assets/tesouro/short/112x112_text-mask.png",
+              "metrics": {
+                "fontSize": 34,
+                "capHeight": 21,
+                "textWidthScale": 1,
+                "stroke": 4,
+                "minimumCapHeight": 12
+              },
+              "sha256": "14f50d1c392605e91ca7a0c0e9e918ef2262b43f416e33615394b08307490672",
+              "bytes": 22444,
+              "originalFrames": 1,
+              "durationMs": 0,
+              "loop": 0
+            },
+            {
+              "size": 56,
+              "path": "assets/tesouro/short/tesouro_56x56.png",
+              "still": "assets/tesouro/short/tesouro_56x56.png",
+              "textMask": "assets/tesouro/short/56x56_text-mask.png",
+              "metrics": {
+                "fontSize": 20,
+                "capHeight": 13,
+                "textWidthScale": 1,
+                "stroke": 2,
+                "minimumCapHeight": 8
+              },
+              "sha256": "03cbbc56b89c161475915b1544aa737c2229d19329f6cf23f7f3650f4f700733",
+              "bytes": 6581,
+              "originalFrames": 1,
+              "durationMs": 0,
+              "loop": 0
+            },
+            {
+              "size": 28,
+              "path": "assets/tesouro/short/tesouro_28x28.png",
+              "still": "assets/tesouro/short/tesouro_28x28.png",
+              "textMask": "assets/tesouro/short/28x28_text-mask.png",
+              "metrics": {
+                "fontSize": 12,
+                "capHeight": 8,
+                "textWidthScale": 0.96,
+                "stroke": 1,
+                "minimumCapHeight": 6
+              },
+              "sha256": "47f7a4e835bdc8854c3a0632f03c07208c8a8bef3646e6dceb4ca8d4513a9a44",
+              "bytes": 2217,
+              "originalFrames": 1,
+              "durationMs": 0,
+              "loop": 0
+            }
+          ],
+          "blocked": []
+        }
+      ]
+    },
+    {
+      "id": "lenda",
+      "code": "vulgoLENDA",
+      "extension": "png",
+      "placement": "bottom",
+      "note": "Preservar a silhueta da relíquia.",
+      "originals": [
+        {
+          "size": 112,
+          "path": "originals/lenda/vulgoLENDA_112x112.png",
+          "still": "originals/lenda/vulgoLENDA_112x112.png",
+          "sha256": "3f8e4b1eb84b692e8ab718af9679ee0dd032e88fa90aea4ad7fc305b2b8d8644"
+        },
+        {
+          "size": 56,
+          "path": "originals/lenda/vulgoLENDA_56x56.png",
+          "still": "originals/lenda/vulgoLENDA_56x56.png",
+          "sha256": "5b51ad525c5ab6f5b6d58e04d0e79f613c37eac7533456b8743aec044e9553a8"
+        },
+        {
+          "size": 28,
+          "path": "originals/lenda/vulgoLENDA_28x28.png",
+          "still": "originals/lenda/vulgoLENDA_28x28.png",
+          "sha256": "be4aa9eaaee646ae10c49266711479ea99c456970ee3e3f15561ec0e5a0f4209"
+        }
+      ],
+      "variants": [
+        {
+          "id": "full",
+          "text": "LENDA",
+          "status": "sugestao-nao-aprovada",
+          "files": [
+            {
+              "size": 112,
+              "path": "assets/lenda/full/lenda_112x112.png",
+              "still": "assets/lenda/full/lenda_112x112.png",
+              "textMask": "assets/lenda/full/112x112_text-mask.png",
+              "metrics": {
+                "fontSize": 34,
+                "capHeight": 21,
+                "textWidthScale": 1,
+                "stroke": 4,
+                "minimumCapHeight": 12
+              },
+              "sha256": "e06a2a540afceb563d8aac054f1f3a1c505b680df6fa6bc46fcd9c9eacc01619",
+              "bytes": 20809,
+              "originalFrames": 1,
+              "durationMs": 0,
+              "loop": 0
+            },
+            {
+              "size": 56,
+              "path": "assets/lenda/full/lenda_56x56.png",
+              "still": "assets/lenda/full/lenda_56x56.png",
+              "textMask": "assets/lenda/full/56x56_text-mask.png",
+              "metrics": {
+                "fontSize": 20,
+                "capHeight": 13,
+                "textWidthScale": 0.962,
+                "stroke": 2,
+                "minimumCapHeight": 8
+              },
+              "sha256": "27f300b3e329bed2c1da9b794d5855c781181de8162784d712fb07bbb16ced52",
+              "bytes": 6971,
+              "originalFrames": 1,
+              "durationMs": 0,
+              "loop": 0
+            },
+            {
+              "size": 28,
+              "path": "assets/lenda/full/lenda_28x28.png",
+              "still": "assets/lenda/full/lenda_28x28.png",
+              "textMask": "assets/lenda/full/28x28_text-mask.png",
+              "metrics": {
+                "fontSize": 11,
+                "capHeight": 8,
+                "textWidthScale": 0.828,
+                "stroke": 1,
+                "minimumCapHeight": 6
+              },
+              "sha256": "58ee76351b67d035028fa742a477f243ce6e681f864947b5bd1aa6295259b3c4",
+              "bytes": 2234,
+              "originalFrames": 1,
+              "durationMs": 0,
+              "loop": 0
+            }
+          ],
+          "blocked": []
+        }
+      ]
+    },
+    {
+      "id": "hype_anim",
+      "code": "vulgoHYPEANIM",
+      "extension": "gif",
+      "placement": "bottom",
+      "note": "Texto fixo; preservar movimento das asas.",
+      "originals": [
+        {
+          "size": 112,
+          "path": "originals/hype_anim/vulgoHYPEANIM_112x112.gif",
+          "still": "originals/hype_anim/vulgoHYPEANIM_112x112.png",
+          "sha256": "ec7941d23006bbba66f498df21c7c44c007fd806fcc76e67d1f1516dfb11bc47"
+        },
+        {
+          "size": 56,
+          "path": "originals/hype_anim/vulgoHYPEANIM_56x56.gif",
+          "still": "originals/hype_anim/vulgoHYPEANIM_56x56.png",
+          "sha256": "9b99af590de99854f3f4bb4b74f638500c09c28b7f33ba38445d1f8c750a361a"
+        },
+        {
+          "size": 28,
+          "path": "originals/hype_anim/vulgoHYPEANIM_28x28.gif",
+          "still": "originals/hype_anim/vulgoHYPEANIM_28x28.png",
+          "sha256": "fdd1cfdea8e678a8287944814cd6f93d378dbda4203ca839cfb8d8719d892e25"
+        }
+      ],
+      "variants": [
+        {
+          "id": "full",
+          "text": "HYPE",
+          "status": "sugestao-nao-aprovada",
+          "files": [
+            {
+              "size": 112,
+              "path": "assets/hype_anim/full/hype_anim_112x112.gif",
+              "still": "assets/hype_anim/full/hype_anim_112x112_still.png",
+              "textMask": "assets/hype_anim/full/112x112_text-mask.png",
+              "metrics": {
+                "fontSize": 34,
+                "capHeight": 21,
+                "textWidthScale": 1,
+                "stroke": 4,
+                "minimumCapHeight": 12
+              },
+              "sha256": "095b225d489ddb1449089966d7c4b9d7456e414ca4952ca36a66f84d596f3d6a",
+              "bytes": 154104,
+              "originalFrames": 24,
+              "durationMs": 2000,
+              "loop": 0
+            },
+            {
+              "size": 56,
+              "path": "assets/hype_anim/full/hype_anim_56x56.gif",
+              "still": "assets/hype_anim/full/hype_anim_56x56_still.png",
+              "textMask": "assets/hype_anim/full/56x56_text-mask.png",
+              "metrics": {
+                "fontSize": 20,
+                "capHeight": 13,
+                "textWidthScale": 1,
+                "stroke": 2,
+                "minimumCapHeight": 8
+              },
+              "sha256": "2643abde42b6b6fc88727c5bfd67552a6a83c2f79b6c94623e7f2dabb7e5ab6c",
+              "bytes": 53982,
+              "originalFrames": 24,
+              "durationMs": 2000,
+              "loop": 0
+            },
+            {
+              "size": 28,
+              "path": "assets/hype_anim/full/hype_anim_28x28.gif",
+              "still": "assets/hype_anim/full/hype_anim_28x28_still.png",
+              "textMask": "assets/hype_anim/full/28x28_text-mask.png",
+              "metrics": {
+                "fontSize": 12,
+                "capHeight": 8,
+                "textWidthScale": 0.96,
+                "stroke": 1,
+                "minimumCapHeight": 6
+              },
+              "sha256": "51585d1049aedf8a579a2e3803ce6fbb80002e7df6727ea9ec041330dd3c1024",
+              "bytes": 23262,
+              "originalFrames": 24,
+              "durationMs": 2000,
+              "loop": 0
+            }
+          ],
+          "blocked": []
+        }
+      ]
+    },
+    {
+      "id": "energiza_anim",
+      "code": "vulgoENERGIZAANIM",
+      "extension": "gif",
+      "placement": "bottom",
+      "note": "Texto fixo; preservar oscilação e raio.",
+      "originals": [
+        {
+          "size": 112,
+          "path": "originals/energiza_anim/vulgoENERGIZAANIM_112x112.gif",
+          "still": "originals/energiza_anim/vulgoENERGIZAANIM_112x112.png",
+          "sha256": "edc4240edf396c5b557807801734cfd60f928baeb375039363c822d0e85db8b2"
+        },
+        {
+          "size": 56,
+          "path": "originals/energiza_anim/vulgoENERGIZAANIM_56x56.gif",
+          "still": "originals/energiza_anim/vulgoENERGIZAANIM_56x56.png",
+          "sha256": "643a9586226db742fd202bde0b5969794e78f482cfc8e14567b2019c72c4e13e"
+        },
+        {
+          "size": 28,
+          "path": "originals/energiza_anim/vulgoENERGIZAANIM_28x28.gif",
+          "still": "originals/energiza_anim/vulgoENERGIZAANIM_28x28.png",
+          "sha256": "d22a2408cf98949e0cd2558c940f9bfeaa0db8b41e9373c31f15a779a1e0b493"
+        }
+      ],
+      "variants": [
+        {
+          "id": "full",
+          "text": "ENERGIZA",
+          "status": "sugestao-nao-aprovada",
+          "files": [
+            {
+              "size": 112,
+              "path": "assets/energiza_anim/full/energiza_anim_112x112.gif",
+              "still": "assets/energiza_anim/full/energiza_anim_112x112_still.png",
+              "textMask": "assets/energiza_anim/full/112x112_text-mask.png",
+              "metrics": {
+                "fontSize": 31,
+                "capHeight": 20,
+                "textWidthScale": 0.813,
+                "stroke": 4,
+                "minimumCapHeight": 12
+              },
+              "sha256": "eabef58d9baf7873a15379487e291470cfd0c015784d7e1f4bbe1285a2dee113",
+              "bytes": 164673,
+              "originalFrames": 24,
+              "durationMs": 2000,
+              "loop": 0
+            },
+            {
+              "size": 56,
+              "path": "assets/energiza_anim/full/energiza_anim_56x56.gif",
+              "still": "assets/energiza_anim/full/energiza_anim_56x56_still.png",
+              "textMask": "assets/energiza_anim/full/56x56_text-mask.png",
+              "metrics": {
+                "fontSize": 15,
+                "capHeight": 10,
+                "textWidthScale": 0.833,
+                "stroke": 2,
+                "minimumCapHeight": 8
+              },
+              "sha256": "9dc36c7d9ec4109d6d52e0e6162809a5238d146224f6253ea046b4e90e6337ca",
+              "bytes": 60364,
+              "originalFrames": 24,
+              "durationMs": 2000,
+              "loop": 0
+            }
+          ],
+          "blocked": [
+            {
+              "size": 28,
+              "reason": "Texto não cabe preservando altura mínima das letras e proporção tipográfica.",
+              "minimumCapHeight": 6
+            }
+          ]
+        },
+        {
+          "id": "short",
+          "text": "OC!",
+          "status": "sugestao-nao-aprovada",
+          "files": [
+            {
+              "size": 112,
+              "path": "assets/energiza_anim/short/energiza_anim_112x112.gif",
+              "still": "assets/energiza_anim/short/energiza_anim_112x112_still.png",
+              "textMask": "assets/energiza_anim/short/112x112_text-mask.png",
+              "metrics": {
+                "fontSize": 34,
+                "capHeight": 21,
+                "textWidthScale": 1,
+                "stroke": 4,
+                "minimumCapHeight": 12
+              },
+              "sha256": "a86950b5830b9ca282a34bcdae1a6af82a0911914a0b2ed9fabfe71b8c295062",
+              "bytes": 156799,
+              "originalFrames": 24,
+              "durationMs": 2000,
+              "loop": 0
+            },
+            {
+              "size": 56,
+              "path": "assets/energiza_anim/short/energiza_anim_56x56.gif",
+              "still": "assets/energiza_anim/short/energiza_anim_56x56_still.png",
+              "textMask": "assets/energiza_anim/short/56x56_text-mask.png",
+              "metrics": {
+                "fontSize": 20,
+                "capHeight": 13,
+                "textWidthScale": 1,
+                "stroke": 2,
+                "minimumCapHeight": 8
+              },
+              "sha256": "69933efe232c4a1f12b17a68f3eb86e7b3293e2710c1237a3fb78b20066193c8",
+              "bytes": 53749,
+              "originalFrames": 24,
+              "durationMs": 2000,
+              "loop": 0
+            },
+            {
+              "size": 28,
+              "path": "assets/energiza_anim/short/energiza_anim_28x28.gif",
+              "still": "assets/energiza_anim/short/energiza_anim_28x28_still.png",
+              "textMask": "assets/energiza_anim/short/28x28_text-mask.png",
+              "metrics": {
+                "fontSize": 12,
+                "capHeight": 8,
+                "textWidthScale": 1,
+                "stroke": 1,
+                "minimumCapHeight": 6
+              },
+              "sha256": "64025877968dee661ebe8d1bf058d93ab0b5a978338d1b0e5c2d709b0d23bfac",
+              "bytes": 21971,
+              "originalFrames": 24,
+              "durationMs": 2000,
+              "loop": 0
+            }
+          ],
+          "blocked": []
+        }
+      ]
+    },
+    {
+      "id": "monta_anim",
+      "code": "vulgoMONTAANIM",
+      "extension": "gif",
+      "placement": "bottom",
+      "note": "Texto fixo; preservar trote e os dois rostos.",
+      "originals": [
+        {
+          "size": 112,
+          "path": "originals/monta_anim/vulgoMONTAANIM_112x112.gif",
+          "still": "originals/monta_anim/vulgoMONTAANIM_112x112.png",
+          "sha256": "c9f0a5253325f97b8b7c0824cfe1833779fb0cda77e2404f67143672439a2093"
+        },
+        {
+          "size": 56,
+          "path": "originals/monta_anim/vulgoMONTAANIM_56x56.gif",
+          "still": "originals/monta_anim/vulgoMONTAANIM_56x56.png",
+          "sha256": "c9b1909539d68e28667941a6f6d8013ca260f8bba3cae21f2cdf4af9b734fdbd"
+        },
+        {
+          "size": 28,
+          "path": "originals/monta_anim/vulgoMONTAANIM_28x28.gif",
+          "still": "originals/monta_anim/vulgoMONTAANIM_28x28.png",
+          "sha256": "b33d93e6acd3e5ae8ec99f01eba101c9680eb25840130fd0220665fe1f531f21"
+        }
+      ],
+      "variants": [
+        {
+          "id": "full",
+          "text": "MONTA",
+          "status": "sugestao-nao-aprovada",
+          "files": [
+            {
+              "size": 112,
+              "path": "assets/monta_anim/full/monta_anim_112x112.gif",
+              "still": "assets/monta_anim/full/monta_anim_112x112_still.png",
+              "textMask": "assets/monta_anim/full/112x112_text-mask.png",
+              "metrics": {
+                "fontSize": 34,
+                "capHeight": 21,
+                "textWidthScale": 1,
+                "stroke": 4,
+                "minimumCapHeight": 12
+              },
+              "sha256": "2553792adf448f5ab806135769d654e69b96c8f321fc8f161a6c2a1cbfce6b5c",
+              "bytes": 154914,
+              "originalFrames": 24,
+              "durationMs": 2000,
+              "loop": 0
+            },
+            {
+              "size": 56,
+              "path": "assets/monta_anim/full/monta_anim_56x56.gif",
+              "still": "assets/monta_anim/full/monta_anim_56x56_still.png",
+              "textMask": "assets/monta_anim/full/56x56_text-mask.png",
+              "metrics": {
+                "fontSize": 20,
+                "capHeight": 13,
+                "textWidthScale": 0.877,
+                "stroke": 2,
+                "minimumCapHeight": 8
+              },
+              "sha256": "e69b1b769e95ac39fc3f2183b8e28fc3304815c1a4d76ac3619374530429878c",
+              "bytes": 57678,
+              "originalFrames": 24,
+              "durationMs": 2000,
+              "loop": 0
+            },
+            {
+              "size": 28,
+              "path": "assets/monta_anim/full/monta_anim_28x28.gif",
+              "still": "assets/monta_anim/full/monta_anim_28x28_still.png",
+              "textMask": "assets/monta_anim/full/28x28_text-mask.png",
+              "metrics": {
+                "fontSize": 10,
+                "capHeight": 6,
+                "textWidthScale": 0.828,
+                "stroke": 1,
+                "minimumCapHeight": 6
+              },
+              "sha256": "fe13a446023e96ff177132ef65059ad4370ebf566317172f270c9631d47d3b19",
+              "bytes": 22649,
+              "originalFrames": 24,
+              "durationMs": 2000,
+              "loop": 0
+            }
+          ],
+          "blocked": []
+        }
+      ]
+    },
+    {
+      "id": "batefood_anim",
+      "code": "vulgoBATEFOODANIM",
+      "extension": "gif",
+      "placement": "top",
+      "note": "Texto fixo no alto para não esconder a mordida e a comida.",
+      "originals": [
+        {
+          "size": 112,
+          "path": "originals/batefood_anim/vulgoBATEFOODANIM_112x112.gif",
+          "still": "originals/batefood_anim/vulgoBATEFOODANIM_112x112.png",
+          "sha256": "75bcfbe037fd923fdf856c7da9f157b26ddd076bbfbf27522227ef5b1af2a5ef"
+        },
+        {
+          "size": 56,
+          "path": "originals/batefood_anim/vulgoBATEFOODANIM_56x56.gif",
+          "still": "originals/batefood_anim/vulgoBATEFOODANIM_56x56.png",
+          "sha256": "e958094a6a4092dedae32c99a1b2b5c59fe012a8779d41799f5c12d6dee27f36"
+        },
+        {
+          "size": 28,
+          "path": "originals/batefood_anim/vulgoBATEFOODANIM_28x28.gif",
+          "still": "originals/batefood_anim/vulgoBATEFOODANIM_28x28.png",
+          "sha256": "2508f127ed8e73922102ccbd660833bb42af322bc9a72f7618c25c0668b7145f"
+        }
+      ],
+      "variants": [
+        {
+          "id": "full",
+          "text": "BATE FOOD",
+          "status": "sugestao-nao-aprovada",
+          "files": [
+            {
+              "size": 112,
+              "path": "assets/batefood_anim/full/batefood_anim_112x112.gif",
+              "still": "assets/batefood_anim/full/batefood_anim_112x112_still.png",
+              "textMask": "assets/batefood_anim/full/112x112_text-mask.png",
+              "metrics": {
+                "fontSize": 28,
+                "capHeight": 18,
+                "textWidthScale": 0.82,
+                "stroke": 4,
+                "minimumCapHeight": 12
+              },
+              "sha256": "9f0ee4a5a92216c8d05d7323aaafa30bf2b658e5f3c940dc3bcfd5c0915e1a38",
+              "bytes": 173566,
+              "originalFrames": 24,
+              "durationMs": 2000,
+              "loop": 0
+            },
+            {
+              "size": 56,
+              "path": "assets/batefood_anim/full/batefood_anim_56x56.gif",
+              "still": "assets/batefood_anim/full/batefood_anim_56x56_still.png",
+              "textMask": "assets/batefood_anim/full/56x56_text-mask.png",
+              "metrics": {
+                "fontSize": 14,
+                "capHeight": 9,
+                "textWidthScale": 0.82,
+                "stroke": 2,
+                "minimumCapHeight": 8
+              },
+              "sha256": "5bd46b48026ff5d0c4a7b281cf8e519fdee1e514f13fc760c9810127e7da4460",
+              "bytes": 60929,
+              "originalFrames": 24,
+              "durationMs": 2000,
+              "loop": 0
+            }
+          ],
+          "blocked": [
+            {
+              "size": 28,
+              "reason": "Texto não cabe preservando altura mínima das letras e proporção tipográfica.",
+              "minimumCapHeight": 6
+            }
+          ]
+        },
+        {
+          "id": "short",
+          "text": "FOOD!",
+          "status": "sugestao-nao-aprovada",
+          "files": [
+            {
+              "size": 112,
+              "path": "assets/batefood_anim/short/batefood_anim_112x112.gif",
+              "still": "assets/batefood_anim/short/batefood_anim_112x112_still.png",
+              "textMask": "assets/batefood_anim/short/112x112_text-mask.png",
+              "metrics": {
+                "fontSize": 34,
+                "capHeight": 21,
+                "textWidthScale": 1,
+                "stroke": 4,
+                "minimumCapHeight": 12
+              },
+              "sha256": "60c2b39285990fb0ca7ebc7c9041afe523b9e2ba77a3fb203aef4f05ad23f038",
+              "bytes": 158873,
+              "originalFrames": 24,
+              "durationMs": 2000,
+              "loop": 0
+            },
+            {
+              "size": 56,
+              "path": "assets/batefood_anim/short/batefood_anim_56x56.gif",
+              "still": "assets/batefood_anim/short/batefood_anim_56x56_still.png",
+              "textMask": "assets/batefood_anim/short/56x56_text-mask.png",
+              "metrics": {
+                "fontSize": 20,
+                "capHeight": 13,
+                "textWidthScale": 1,
+                "stroke": 2,
+                "minimumCapHeight": 8
+              },
+              "sha256": "edad81f9a2ae24dd3f1c6619e8fc4de97e4652e6968c23747fbf4710f27a574d",
+              "bytes": 55698,
+              "originalFrames": 24,
+              "durationMs": 2000,
+              "loop": 0
+            },
+            {
+              "size": 28,
+              "path": "assets/batefood_anim/short/batefood_anim_28x28.gif",
+              "still": "assets/batefood_anim/short/batefood_anim_28x28_still.png",
+              "textMask": "assets/batefood_anim/short/28x28_text-mask.png",
+              "metrics": {
+                "fontSize": 12,
+                "capHeight": 8,
+                "textWidthScale": 0.857,
+                "stroke": 1,
+                "minimumCapHeight": 6
+              },
+              "sha256": "c583d33bc06b26d33ff90fc098ef08c9d9f63a2fffe63d9a00b71a9137798b67",
+              "bytes": 23997,
+              "originalFrames": 24,
+              "durationMs": 2000,
+              "loop": 0
+            }
+          ],
+          "blocked": []
+        }
+      ]
+    },
+    {
+      "id": "rage_anim",
+      "code": "vulgoRAGEANIM",
+      "extension": "gif",
+      "placement": "bottom",
+      "note": "Texto fixo; preservar a expressão e o movimento lateral.",
+      "originals": [
+        {
+          "size": 112,
+          "path": "originals/rage_anim/vulgoRAGEANIM_112x112.gif",
+          "still": "originals/rage_anim/vulgoRAGEANIM_112x112.png",
+          "sha256": "deeb3aa6110de58418dc17810a5cff37eb7cec65f0a0e75ecc2157195443a4fe"
+        },
+        {
+          "size": 56,
+          "path": "originals/rage_anim/vulgoRAGEANIM_56x56.gif",
+          "still": "originals/rage_anim/vulgoRAGEANIM_56x56.png",
+          "sha256": "e7bb41be37269a6a4de4ea0e128ed7348304697a2207c784d845db63250d1779"
+        },
+        {
+          "size": 28,
+          "path": "originals/rage_anim/vulgoRAGEANIM_28x28.gif",
+          "still": "originals/rage_anim/vulgoRAGEANIM_28x28.png",
+          "sha256": "c1e21f962d173fcf62e128b0435e26ab6832639cc55ac62bd003cbc47965b607"
+        }
+      ],
+      "variants": [
+        {
+          "id": "full",
+          "text": "RAGE",
+          "status": "sugestao-nao-aprovada",
+          "files": [
+            {
+              "size": 112,
+              "path": "assets/rage_anim/full/rage_anim_112x112.gif",
+              "still": "assets/rage_anim/full/rage_anim_112x112_still.png",
+              "textMask": "assets/rage_anim/full/112x112_text-mask.png",
+              "metrics": {
+                "fontSize": 34,
+                "capHeight": 21,
+                "textWidthScale": 1,
+                "stroke": 4,
+                "minimumCapHeight": 12
+              },
+              "sha256": "444d5bddbce771ffdb7a72cae2687d861d22dfe733a225cecc3be553bca17a57",
+              "bytes": 156859,
+              "originalFrames": 24,
+              "durationMs": 2000,
+              "loop": 0
+            },
+            {
+              "size": 56,
+              "path": "assets/rage_anim/full/rage_anim_56x56.gif",
+              "still": "assets/rage_anim/full/rage_anim_56x56_still.png",
+              "textMask": "assets/rage_anim/full/56x56_text-mask.png",
+              "metrics": {
+                "fontSize": 20,
+                "capHeight": 13,
+                "textWidthScale": 1,
+                "stroke": 2,
+                "minimumCapHeight": 8
+              },
+              "sha256": "4d7e6b8ff47457ba9542d4e8c3d51d128657f131fd2bfe77602157c14761ad5f",
+              "bytes": 53905,
+              "originalFrames": 24,
+              "durationMs": 2000,
+              "loop": 0
+            },
+            {
+              "size": 28,
+              "path": "assets/rage_anim/full/rage_anim_28x28.gif",
+              "still": "assets/rage_anim/full/rage_anim_28x28_still.png",
+              "textMask": "assets/rage_anim/full/28x28_text-mask.png",
+              "metrics": {
+                "fontSize": 12,
+                "capHeight": 8,
+                "textWidthScale": 0.923,
+                "stroke": 1,
+                "minimumCapHeight": 6
+              },
+              "sha256": "8ae06c76f46dc150993441640e54d86a63d817a10d80ae058edb6b7b6d42fb2c",
+              "bytes": 23306,
+              "originalFrames": 24,
+              "durationMs": 2000,
+              "loop": 0
+            }
+          ],
+          "blocked": []
+        }
+      ]
+    }
+  ]
+}

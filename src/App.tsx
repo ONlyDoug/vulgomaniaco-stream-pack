@@ -518,6 +518,12 @@ export const App: React.FC = () => {
             </div>
           </div>
 
+          <a href="/emotes/index.html" className="p-5 rounded-xl bg-ivexi-surface border border-ivexi-purple hover:border-ivexi-neon md:col-span-2 focus-visible:outline focus-visible:outline-2 focus-visible:outline-ivexi-neon">
+            <h2 className="font-rajdhani text-xl font-bold text-ivexi-neon">Emotes com e sem texto</h2>
+            <p className="text-sm text-ivexi-muted mt-2">Compare os 20 emotes, incluindo os animados, e baixe os dois pacotes ZIP. Texto completo e alternativas curtas nos tamanhos disponíveis.</p>
+            <span className="block mt-3 text-sm text-ivexi-neon">Ver versões e baixar →</span>
+          </a>
+
           {/* Card: Pack de Afiliado Twitch */}
           <a
             href="/badges"

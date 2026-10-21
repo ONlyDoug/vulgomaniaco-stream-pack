@@ -1,0 +1,67 @@
+{
+  "status": "pass",
+  "emotes": 20,
+  "candidateFiles": 74,
+  "blockedProposals": [
+    {
+      "id": "botaprafora",
+      "variant": "full",
+      "text": "BOTA PRA FORA",
+      "size": 56,
+      "reason": "Texto não cabe preservando altura mínima das letras e proporção tipográfica.",
+      "minimumCapHeight": 8
+    },
+    {
+      "id": "botaprafora",
+      "variant": "full",
+      "text": "BOTA PRA FORA",
+      "size": 28,
+      "reason": "Texto não cabe preservando altura mínima das letras e proporção tipográfica.",
+      "minimumCapHeight": 6
+    },
+    {
+      "id": "energiza",
+      "variant": "full",
+      "text": "ENERGIZA",
+      "size": 28,
+      "reason": "Texto não cabe preservando altura mínima das letras e proporção tipográfica.",
+      "minimumCapHeight": 6
+    },
+    {
+      "id": "batefood",
+      "variant": "full",
+      "text": "BATE FOOD",
+      "size": 28,
+      "reason": "Texto não cabe preservando altura mínima das letras e proporção tipográfica.",
+      "minimumCapHeight": 6
+    },
+    {
+      "id": "tesouro",
+      "variant": "full",
+      "text": "TESOURO",
+      "size": 28,
+      "reason": "Texto não cabe preservando altura mínima das letras e proporção tipográfica.",
+      "minimumCapHeight": 6
+    },
+    {
+      "id": "energiza_anim",
+      "variant": "full",
+      "text": "ENERGIZA",
+      "size": 28,
+      "reason": "Texto não cabe preservando altura mínima das letras e proporção tipográfica.",
+      "minimumCapHeight": 6
+    },
+    {
+      "id": "batefood_anim",
+      "variant": "full",
+      "text": "BATE FOOD",
+      "size": 28,
+      "reason": "Texto não cabe preservando altura mínima das letras e proporção tipográfica.",
+      "minimumCapHeight": 6
+    }
+  ],
+  "protectedFiles": 195,
+  "failures": [],
+  "visualApproval": "pending",
+  "publication": "unchanged"
+}

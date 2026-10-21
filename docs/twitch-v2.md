@@ -30,3 +30,7 @@ O verificador confere SHA-256 e assinaturas PNG/GIF/ZIP/PDF de 158 arquivos: 114
 ## Entrega
 
 SPEC-0003 registra requisitos, testes, tarefas e evidências. Publicação pelo push para `origin/main`, com build automático Vercel. Conferir estado Ready e SHA do commit, executar a verificação HTTP e percorrer as rotas OBS com `?obs=1`. Em regressão confirmada, reverter o commit de publicação e acompanhar nova implantação. A expansão de 20 para 50 emotes fica fora desta entrega.
+
+## Emotes com e sem texto — 2026-10-21
+
+`/emotes/index.html` publica a comparação aprovada, com links no hub e `/badges`. Os ZIPs separados contêm 60 arquivos originais e 74 com texto. Sete combinações de texto/tamanho são indisponíveis e sinalizadas; nenhuma imagem substituta é inventada. O manifesto de publicação controla os hashes; sync-twitch-v2 importa a sincronização estática antes de dev/build, sem Python na Vercel. A preparação local usa `python3 brand/scripts/prepare_twitch_publication.py`.

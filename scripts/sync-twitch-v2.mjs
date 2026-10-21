@@ -36,3 +36,5 @@ for (const path of ['manifest.json', 'pack-twitch-vulgomaniaco-v2.zip', 'preview
 await copy(resolve(root, 'brand/brand-guide.pdf'), resolve(target, 'manual.pdf'));
 await copy(resolve(root, 'brand/twitch/distintivos-twitch-todos-tamanhos.zip'), resolve(root, 'public/assets/twitch/sub-badges-vulgomaniaco.zip'));
 console.log('Twitch v2 sincronizado: 38 ativos, 114 uploads, 15 stills e documentos.');
+
+await import('./sync-twitch-comparison.mjs');

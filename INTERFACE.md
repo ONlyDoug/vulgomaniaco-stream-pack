@@ -109,3 +109,7 @@ Rota pública `/badges`, link nativo no cartão do hub `/`, breadcrumb e âncora
 | SubBadgesSection | src/features/badges/SubBadgesSection.tsx | Extraído da galeria anterior; themeClass; preserva títulos, descrições, master e três downloads de cada badge | BadgesGallery; seis badges existentes, com 72/36/18px reais |
 
 Controles por teclado nativos, botões de fundo com aria-pressed, pausa desabilitada durante movimento reduzido. Catálogo sem chamadas de API: dados importados de brand/twitch/v2/manifest.json via twitchV2Data.ts. Grade 1/2/3 colunas, links com quebra de linha. Uploads e documentos são sincronizados antes de dev/build; sources não são servidas pelo build.
+
+## Emotes com e sem texto
+
+Página estática `/emotes/index.html`, acessível por links nativos no hub e `/badges`. Reaproveita a comparação aprovada, com fundos, pausa, movimento reduzido, tamanhos reais, escolha individual e dois ZIPs. Sincronização em scripts/sync-twitch-comparison.mjs; originais e pacote v2 preservados.

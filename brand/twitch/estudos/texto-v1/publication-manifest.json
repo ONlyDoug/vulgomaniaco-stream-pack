@@ -1,0 +1,1060 @@
+{
+  "version": 1,
+  "approval": "Conversa de 2026-10-21: original + todas as versões com texto",
+  "emotes": 20,
+  "originalUploads": 60,
+  "textUploads": 74,
+  "blockedSizes": 7,
+  "files": [
+    {
+      "source": "originals/gg/vulgoGG_112x112.png",
+      "path": "originals/gg/vulgoGG_112x112.png",
+      "sha256": "2d6a947b1b16c8b2651468138c355ef21d816967c2dd90fa40e361064096e5f3",
+      "bytes": 26931
+    },
+    {
+      "source": "originals/gg/vulgoGG_56x56.png",
+      "path": "originals/gg/vulgoGG_56x56.png",
+      "sha256": "a07c28a1993140c6f43a8b01c90c9948b8bc95ac599a1069664879f157e2a456",
+      "bytes": 7782
+    },
+    {
+      "source": "originals/gg/vulgoGG_28x28.png",
+      "path": "originals/gg/vulgoGG_28x28.png",
+      "sha256": "6d61bfb89d32e2263c95caa9504fa326f437d62cc8e1951c466eba3427d1e9ce",
+      "bytes": 2402
+    },
+    {
+      "source": "assets/gg/full/gg_112x112.png",
+      "path": "assets/gg/full/gg_112x112.png",
+      "sha256": "2540745a79d4da0747bab94df8c5f196d4381582d5874f6df9fdb5490096d875",
+      "bytes": 23465
+    },
+    {
+      "source": "assets/gg/full/gg_56x56.png",
+      "path": "assets/gg/full/gg_56x56.png",
+      "sha256": "f29e94d604ed8144bcdcedb6935cad3e2207da151d106f130e0f4cc0892309e8",
+      "bytes": 6969
+    },
+    {
+      "source": "assets/gg/full/gg_28x28.png",
+      "path": "assets/gg/full/gg_28x28.png",
+      "sha256": "54066cc377dc8d3a0fef8150a0564fcc1687671b074fcd4fc5acf2fdbddc8891",
+      "bytes": 2196
+    },
+    {
+      "source": "originals/lurk/vulgoLURK_112x112.png",
+      "path": "originals/lurk/vulgoLURK_112x112.png",
+      "sha256": "8d0294dafd5a49ee6f68699c28a784f93698abb9c50e18b49ad557f0d1fe9e23",
+      "bytes": 26734
+    },
+    {
+      "source": "originals/lurk/vulgoLURK_56x56.png",
+      "path": "originals/lurk/vulgoLURK_56x56.png",
+      "sha256": "2b4df0fd761fb2377cc0b1098f2871428eb794b75df38c7b3ba836791fd6dfb1",
+      "bytes": 7970
+    },
+    {
+      "source": "originals/lurk/vulgoLURK_28x28.png",
+      "path": "originals/lurk/vulgoLURK_28x28.png",
+      "sha256": "4fe6609c29df6c8f7b742699ecdaeafbea829db04fa525ea78f01bd4a41dc150",
+      "bytes": 2286
+    },
+    {
+      "source": "assets/lurk/full/lurk_112x112.png",
+      "path": "assets/lurk/full/lurk_112x112.png",
+      "sha256": "7e2d1fe90dc822a1a10a4eb33809845ad66b22deeb6f39fc80ccf3603cd5989e",
+      "bytes": 22527
+    },
+    {
+      "source": "assets/lurk/full/lurk_56x56.png",
+      "path": "assets/lurk/full/lurk_56x56.png",
+      "sha256": "b754eedd53654defc4d8e8d4fb2f4c575b826492b9897d14bca94577e3675156",
+      "bytes": 6888
+    },
+    {
+      "source": "assets/lurk/full/lurk_28x28.png",
+      "path": "assets/lurk/full/lurk_28x28.png",
+      "sha256": "948113cfd3649373c984e18b6d7a983602b3df74894f18e4daba3169031a9ee0",
+      "bytes": 2273
+    },
+    {
+      "source": "originals/rip/vulgoRIP_112x112.png",
+      "path": "originals/rip/vulgoRIP_112x112.png",
+      "sha256": "475c66e1add375adab7e43606b472eae8108089327c3fc0d1acc9e324e980256",
+      "bytes": 22665
+    },
+    {
+      "source": "originals/rip/vulgoRIP_56x56.png",
+      "path": "originals/rip/vulgoRIP_56x56.png",
+      "sha256": "93a10f23e698043989239d87e524dc5d11dbbaed2fbc8354e26c65e6306b10bb",
+      "bytes": 6976
+    },
+    {
+      "source": "originals/rip/vulgoRIP_28x28.png",
+      "path": "originals/rip/vulgoRIP_28x28.png",
+      "sha256": "536073be7f31826d9f041ee18ea24cd076510244dcb87af1abaab311005fa90b",
+      "bytes": 2030
+    },
+    {
+      "source": "assets/rip/full/rip_112x112.png",
+      "path": "assets/rip/full/rip_112x112.png",
+      "sha256": "4d8fed52420a8d104fbf590e0a06073c9d6918e1b7bc4ba9dd3207d5d20447fa",
+      "bytes": 20705
+    },
+    {
+      "source": "assets/rip/full/rip_56x56.png",
+      "path": "assets/rip/full/rip_56x56.png",
+      "sha256": "bfae177444540c33780185ccf243787eef2fdf7f180ba170fe074bf96d0ab882",
+      "bytes": 6438
+    },
+    {
+      "source": "assets/rip/full/rip_28x28.png",
+      "path": "assets/rip/full/rip_28x28.png",
+      "sha256": "73bc2775c6258479fdaff84be8844783b23c6f4fff65e58d5ce4de861fe82feb",
+      "bytes": 1913
+    },
+    {
+      "source": "originals/love/vulgoLOVE_112x112.png",
+      "path": "originals/love/vulgoLOVE_112x112.png",
+      "sha256": "315858b8c6d64f3afcb8c244a257966905fff4ce827b120474441b38f4f7a8b4",
+      "bytes": 25785
+    },
+    {
+      "source": "originals/love/vulgoLOVE_56x56.png",
+      "path": "originals/love/vulgoLOVE_56x56.png",
+      "sha256": "16ed4ee3eb5eb09c603e749d2497b6cad8defaa559112601030fe4d6805d6557",
+      "bytes": 7449
+    },
+    {
+      "source": "originals/love/vulgoLOVE_28x28.png",
+      "path": "originals/love/vulgoLOVE_28x28.png",
+      "sha256": "32ee5fa6fbfb189bb28e7c69b748d31abe18f9aa81cb28859ae301e39786fd35",
+      "bytes": 2326
+    },
+    {
+      "source": "assets/love/full/love_112x112.png",
+      "path": "assets/love/full/love_112x112.png",
+      "sha256": "2897c5709c4b91612d2a4ca3d2064a77c54bfa2d2d53fc77bb347e4bc67da527",
+      "bytes": 21914
+    },
+    {
+      "source": "assets/love/full/love_56x56.png",
+      "path": "assets/love/full/love_56x56.png",
+      "sha256": "1e88419c74648456e7cbbd857baa6b76a7c0b9ead9bac4f6aa249c7072716158",
+      "bytes": 6813
+    },
+    {
+      "source": "assets/love/full/love_28x28.png",
+      "path": "assets/love/full/love_28x28.png",
+      "sha256": "03a7b00ca053cde8f6c4073b860f35121ed23f72fac5cd8d1f739b3ba7321ad0",
+      "bytes": 2265
+    },
+    {
+      "source": "originals/kkk/vulgoKKK_112x112.png",
+      "path": "originals/kkk/vulgoKKK_112x112.png",
+      "sha256": "667968edadb9bbb53cafc326aa34064379deb6aa5488b4f9789e373dfbc1d591",
+      "bytes": 26683
+    },
+    {
+      "source": "originals/kkk/vulgoKKK_56x56.png",
+      "path": "originals/kkk/vulgoKKK_56x56.png",
+      "sha256": "912bc226602ef83e06826b7b3ce34075e647aa40a8b14b49815cba261b52f7a0",
+      "bytes": 7806
+    },
+    {
+      "source": "originals/kkk/vulgoKKK_28x28.png",
+      "path": "originals/kkk/vulgoKKK_28x28.png",
+      "sha256": "ff76e645694f9740eaf4c8a5726c3957364264b3748502cba8e9480e2d74a0cf",
+      "bytes": 2223
+    },
+    {
+      "source": "assets/kkk/full/kkk_112x112.png",
+      "path": "assets/kkk/full/kkk_112x112.png",
+      "sha256": "9c0673d201b669d1758a7a7db4d97db06b9a7d07794f3823ff586f7e17d227db",
+      "bytes": 22364
+    },
+    {
+      "source": "assets/kkk/full/kkk_56x56.png",
+      "path": "assets/kkk/full/kkk_56x56.png",
+      "sha256": "bb3aa9aa82ae9faa59042bf8a7bbb897683a302621f928245385a0f25596d256",
+      "bytes": 6650
+    },
+    {
+      "source": "assets/kkk/full/kkk_28x28.png",
+      "path": "assets/kkk/full/kkk_28x28.png",
+      "sha256": "a3ef2663dcfb893079ea83b8a94961f52de67bb042b80505bd2ff64f8c638932",
+      "bytes": 2029
+    },
+    {
+      "source": "originals/botaprafora/vulgoBOTAPRAFORA_112x112.png",
+      "path": "originals/botaprafora/vulgoBOTAPRAFORA_112x112.png",
+      "sha256": "96fb25b9073a05a7418c5ecb1b966580e95d7dcb0eea671d1a1b31dc132cf3eb",
+      "bytes": 26014
+    },
+    {
+      "source": "originals/botaprafora/vulgoBOTAPRAFORA_56x56.png",
+      "path": "originals/botaprafora/vulgoBOTAPRAFORA_56x56.png",
+      "sha256": "4ac4d21d91a62f9e2e73ff0ded0d61eac1c69b78a6add333c9b4750568cbd27a",
+      "bytes": 7584
+    },
+    {
+      "source": "originals/botaprafora/vulgoBOTAPRAFORA_28x28.png",
+      "path": "originals/botaprafora/vulgoBOTAPRAFORA_28x28.png",
+      "sha256": "3072a3f0a2e247c5d28f0ed7470c294d2783824f4158da9458689a6f6f1389fe",
+      "bytes": 2359
+    },
+    {
+      "source": "assets/botaprafora/full/botaprafora_112x112.png",
+      "path": "assets/botaprafora/full/botaprafora_112x112.png",
+      "sha256": "c8e130eb5ba71db5f04796407abf241100bbed4caba80c2ffc08ac9f7a2cada0",
+      "bytes": 25693
+    },
+    {
+      "source": "assets/botaprafora/short/botaprafora_112x112.png",
+      "path": "assets/botaprafora/short/botaprafora_112x112.png",
+      "sha256": "33b99fee6d58354d46dc645d902a5c87ebd4714448736bbdefb2a3569e778603",
+      "bytes": 22197
+    },
+    {
+      "source": "assets/botaprafora/short/botaprafora_56x56.png",
+      "path": "assets/botaprafora/short/botaprafora_56x56.png",
+      "sha256": "da56d79ce0592090923a28a5b93faa859378c1a84dd5b7b6d789fb54c8b41921",
+      "bytes": 6878
+    },
+    {
+      "source": "assets/botaprafora/short/botaprafora_28x28.png",
+      "path": "assets/botaprafora/short/botaprafora_28x28.png",
+      "sha256": "90a7ed9070e8017a23d2a7520c486c0ced7158d13e86e4b86dffe076ff3f3767",
+      "bytes": 2412
+    },
+    {
+      "source": "originals/energiza/vulgoENERGIZA_112x112.png",
+      "path": "originals/energiza/vulgoENERGIZA_112x112.png",
+      "sha256": "3e5b5e3f040a77b6b09fa4f84b6f9dd62f786e4485c75c8827a98dc4b2c4b98a",
+      "bytes": 26834
+    },
+    {
+      "source": "originals/energiza/vulgoENERGIZA_56x56.png",
+      "path": "originals/energiza/vulgoENERGIZA_56x56.png",
+      "sha256": "d834d963a6765da711e5cd2f773a24acb56921867562bb2284fc5e7b2bac8a63",
+      "bytes": 7882
+    },
+    {
+      "source": "originals/energiza/vulgoENERGIZA_28x28.png",
+      "path": "originals/energiza/vulgoENERGIZA_28x28.png",
+      "sha256": "ad998b6af36424bad0971a794d8cfc947c67e7ce41635b0ef380b1f819d9c5c4",
+      "bytes": 2290
+    },
+    {
+      "source": "assets/energiza/full/energiza_112x112.png",
+      "path": "assets/energiza/full/energiza_112x112.png",
+      "sha256": "f73a4543e89c37374c5ff53e65966a4436205f1d206983620b7486127b42ab6b",
+      "bytes": 24848
+    },
+    {
+      "source": "assets/energiza/full/energiza_56x56.png",
+      "path": "assets/energiza/full/energiza_56x56.png",
+      "sha256": "5e1d2f7b5f8474870dfff22d1557c90cd62d81ad4a28858a85c6ea148327d327",
+      "bytes": 7720
+    },
+    {
+      "source": "assets/energiza/short/energiza_112x112.png",
+      "path": "assets/energiza/short/energiza_112x112.png",
+      "sha256": "0928103ae8fde9f4975f9040692f1df5cbde26bbc92ce7b283365a765ba10b76",
+      "bytes": 23212
+    },
+    {
+      "source": "assets/energiza/short/energiza_56x56.png",
+      "path": "assets/energiza/short/energiza_56x56.png",
+      "sha256": "6a968d1fd1dcdb83de48a30489377f13937d29cbcffc13098519c8c7d832082c",
+      "bytes": 6921
+    },
+    {
+      "source": "assets/energiza/short/energiza_28x28.png",
+      "path": "assets/energiza/short/energiza_28x28.png",
+      "sha256": "050b08c800bfd92d8c229ede3a716ff2180b2ff634765482a1e182b58b12fa4d",
+      "bytes": 2185
+    },
+    {
+      "source": "originals/monta/vulgoMONTA_112x112.png",
+      "path": "originals/monta/vulgoMONTA_112x112.png",
+      "sha256": "da8c54446ceef19189d7cc9880c112495ce478d88efe4aa204b142bb0db8d439",
+      "bytes": 25322
+    },
+    {
+      "source": "originals/monta/vulgoMONTA_56x56.png",
+      "path": "originals/monta/vulgoMONTA_56x56.png",
+      "sha256": "8ee481eee16c625c826c368bd5ecbec47c2a4b45e37bda8f522b666022799699",
+      "bytes": 7193
+    },
+    {
+      "source": "originals/monta/vulgoMONTA_28x28.png",
+      "path": "originals/monta/vulgoMONTA_28x28.png",
+      "sha256": "7d4b8c4fe0fa1859504032970070ff721ee1ec02c299359280a018dc6c1362be",
+      "bytes": 2144
+    },
+    {
+      "source": "assets/monta/full/monta_112x112.png",
+      "path": "assets/monta/full/monta_112x112.png",
+      "sha256": "1d1bc6dddbe72454b0c815be04619bdc9edd5083e0a71b477697b47278ebb546",
+      "bytes": 20291
+    },
+    {
+      "source": "assets/monta/full/monta_56x56.png",
+      "path": "assets/monta/full/monta_56x56.png",
+      "sha256": "109f1f45ee4fcb4c820ba8f78240dea08abd9a081e9be623a18749519f941fa1",
+      "bytes": 6971
+    },
+    {
+      "source": "assets/monta/full/monta_28x28.png",
+      "path": "assets/monta/full/monta_28x28.png",
+      "sha256": "ef8a8c20ff771468e1310827fe56b4de30422efaf8ce48f278c7ae2a6d0d51b2",
+      "bytes": 2196
+    },
+    {
+      "source": "originals/batefood/vulgoBATEFOOD_112x112.png",
+      "path": "originals/batefood/vulgoBATEFOOD_112x112.png",
+      "sha256": "80032cef311145437143d167b2a0a7a08451af5978033e0455a88a54a5b5d09d",
+      "bytes": 27025
+    },
+    {
+      "source": "originals/batefood/vulgoBATEFOOD_56x56.png",
+      "path": "originals/batefood/vulgoBATEFOOD_56x56.png",
+      "sha256": "8d71d5fdc2e79a25abb2327b7bd2bb5ed23b599f1c884a9bb53a26fda7ddaaeb",
+      "bytes": 7746
+    },
+    {
+      "source": "originals/batefood/vulgoBATEFOOD_28x28.png",
+      "path": "originals/batefood/vulgoBATEFOOD_28x28.png",
+      "sha256": "97467f73ca471f70fef023164323c2338246f92cbde505c2f976d303d75c8d14",
+      "bytes": 2291
+    },
+    {
+      "source": "assets/batefood/full/batefood_112x112.png",
+      "path": "assets/batefood/full/batefood_112x112.png",
+      "sha256": "83cb4970dfdb4a07e4200b7b2801dde8c481e38c5790c5e36a29fbc82c5723c5",
+      "bytes": 25525
+    },
+    {
+      "source": "assets/batefood/full/batefood_56x56.png",
+      "path": "assets/batefood/full/batefood_56x56.png",
+      "sha256": "2c1dc5da1f354ef809e4cca427898ab689d9dbe968af1ac1148cfaeb7dc75343",
+      "bytes": 7931
+    },
+    {
+      "source": "assets/batefood/short/batefood_112x112.png",
+      "path": "assets/batefood/short/batefood_112x112.png",
+      "sha256": "e8fcf224aa8f405746d19e7ba8a844cbe303bc8579c9b857bc9587fe33cbfd59",
+      "bytes": 22682
+    },
+    {
+      "source": "assets/batefood/short/batefood_56x56.png",
+      "path": "assets/batefood/short/batefood_56x56.png",
+      "sha256": "eca4fc2128f056ba1eb06031aec5f583190eb88c3fd102aa6523a710f989f6e5",
+      "bytes": 6747
+    },
+    {
+      "source": "assets/batefood/short/batefood_28x28.png",
+      "path": "assets/batefood/short/batefood_28x28.png",
+      "sha256": "2052b77dae8c0180a895992d7783ec291c54f07b4f5e42baa7d85f5fb68500cd",
+      "bytes": 2353
+    },
+    {
+      "source": "originals/hype/vulgoHYPE_112x112.png",
+      "path": "originals/hype/vulgoHYPE_112x112.png",
+      "sha256": "84ceafbef200d908dfe3c0e842e6d8be8bae412f5097e26f4d921d478d81e201",
+      "bytes": 25979
+    },
+    {
+      "source": "originals/hype/vulgoHYPE_56x56.png",
+      "path": "originals/hype/vulgoHYPE_56x56.png",
+      "sha256": "49da1f7db53cc2f15c160807ba4db885fc7d52ab001fa92f550b51b97d106217",
+      "bytes": 7642
+    },
+    {
+      "source": "originals/hype/vulgoHYPE_28x28.png",
+      "path": "originals/hype/vulgoHYPE_28x28.png",
+      "sha256": "99eeb6b39acf216f9b0d9149c52e3bdf9c77ede7fb5bf8b2a34859710da650b4",
+      "bytes": 2261
+    },
+    {
+      "source": "assets/hype/full/hype_112x112.png",
+      "path": "assets/hype/full/hype_112x112.png",
+      "sha256": "53a354eefccb8075305501f0deb264d3c10a8ef12dbcbfbd789b28adfec23176",
+      "bytes": 21766
+    },
+    {
+      "source": "assets/hype/full/hype_56x56.png",
+      "path": "assets/hype/full/hype_56x56.png",
+      "sha256": "595844696906139185de96ebb44384793ddf0dd27ef8e7d07c19fc635fd4f6d4",
+      "bytes": 6608
+    },
+    {
+      "source": "assets/hype/full/hype_28x28.png",
+      "path": "assets/hype/full/hype_28x28.png",
+      "sha256": "4b653cff78eb14b9e0977749beaa84f79fb4f36c661c761155594f7b612344ad",
+      "bytes": 2366
+    },
+    {
+      "source": "originals/rage/vulgoRAGE_112x112.png",
+      "path": "originals/rage/vulgoRAGE_112x112.png",
+      "sha256": "d8ea9df19f6b17e03e32bff2007e54a5797234ab84da91a3d94807c170e036ae",
+      "bytes": 26967
+    },
+    {
+      "source": "originals/rage/vulgoRAGE_56x56.png",
+      "path": "originals/rage/vulgoRAGE_56x56.png",
+      "sha256": "436ca5e97849943786c2f22913206f619949507643f345541978b46c92a4137f",
+      "bytes": 7860
+    },
+    {
+      "source": "originals/rage/vulgoRAGE_28x28.png",
+      "path": "originals/rage/vulgoRAGE_28x28.png",
+      "sha256": "5f71e2b8a059d8e3bba3cb128ac45470a6137bbe14f9397518d62abb4c5980a3",
+      "bytes": 2301
+    },
+    {
+      "source": "assets/rage/full/rage_112x112.png",
+      "path": "assets/rage/full/rage_112x112.png",
+      "sha256": "947dc1637cf336bc2ea48430caea56fb6057885f3f05e06f7888ddcbd8e59fe2",
+      "bytes": 22797
+    },
+    {
+      "source": "assets/rage/full/rage_56x56.png",
+      "path": "assets/rage/full/rage_56x56.png",
+      "sha256": "debdfa3c911d2790d1eed4ca0eb2da86dec3d2edf64ca980eb25fddded28df3a",
+      "bytes": 6974
+    },
+    {
+      "source": "assets/rage/full/rage_28x28.png",
+      "path": "assets/rage/full/rage_28x28.png",
+      "sha256": "512f5485adcb9c94e6a23f1c41331b967de7957f38973334979a3a5de81c8b30",
+      "bytes": 2342
+    },
+    {
+      "source": "originals/rei/vulgoREI_112x112.png",
+      "path": "originals/rei/vulgoREI_112x112.png",
+      "sha256": "92cbdfbc1a945512056821fdaf975d2bf81b476b95925e34eda8f2be6f5c4b94",
+      "bytes": 24878
+    },
+    {
+      "source": "originals/rei/vulgoREI_56x56.png",
+      "path": "originals/rei/vulgoREI_56x56.png",
+      "sha256": "70f64c31fb55b701d67ed71b8624d62da093fa6fc87828aecd56caa8d1998993",
+      "bytes": 7230
+    },
+    {
+      "source": "originals/rei/vulgoREI_28x28.png",
+      "path": "originals/rei/vulgoREI_28x28.png",
+      "sha256": "02d4831036b2962e54e3b66d4e09eea7eaf59561386184cbec141d961c6e28f8",
+      "bytes": 2251
+    },
+    {
+      "source": "assets/rei/full/rei_112x112.png",
+      "path": "assets/rei/full/rei_112x112.png",
+      "sha256": "7cd05cc7cba37e531aa0103f694e5c1f4fb9ea21fc908ea3f598fbbb2c77bab6",
+      "bytes": 21057
+    },
+    {
+      "source": "assets/rei/full/rei_56x56.png",
+      "path": "assets/rei/full/rei_56x56.png",
+      "sha256": "a9d150475252981ae808853c2d8598281b9d74d898808e540a1aa8b4246bb837",
+      "bytes": 6469
+    },
+    {
+      "source": "assets/rei/full/rei_28x28.png",
+      "path": "assets/rei/full/rei_28x28.png",
+      "sha256": "f060e4c6f79b202ea7f71af7129b59f9cf5727d5dd28cb7c223dc431920df86d",
+      "bytes": 2113
+    },
+    {
+      "source": "originals/cristal/vulgoCRISTAL_112x112.png",
+      "path": "originals/cristal/vulgoCRISTAL_112x112.png",
+      "sha256": "6ae8df70b68def99c09a98872ab9deb089089aa765db9188c1a706c02c385672",
+      "bytes": 26872
+    },
+    {
+      "source": "originals/cristal/vulgoCRISTAL_56x56.png",
+      "path": "originals/cristal/vulgoCRISTAL_56x56.png",
+      "sha256": "4025cd39f5396df04142713b7ea8611f5fd5d35f81064a31ff8adb7df42da459",
+      "bytes": 7556
+    },
+    {
+      "source": "originals/cristal/vulgoCRISTAL_28x28.png",
+      "path": "originals/cristal/vulgoCRISTAL_28x28.png",
+      "sha256": "4032607a7656b89fbfd87c15372c3da28d4c08c2aced82f997511a617cb94c38",
+      "bytes": 2275
+    },
+    {
+      "source": "assets/cristal/full/cristal_112x112.png",
+      "path": "assets/cristal/full/cristal_112x112.png",
+      "sha256": "1d0de9254be67d37589927a5a8c988302b20b90d2fc34a7fc0f2e612168a40c4",
+      "bytes": 24523
+    },
+    {
+      "source": "assets/cristal/full/cristal_56x56.png",
+      "path": "assets/cristal/full/cristal_56x56.png",
+      "sha256": "9b594656dacc993db892d233de1f3cb1f05e1ef16dbd22465bf7941d3ab90721",
+      "bytes": 7467
+    },
+    {
+      "source": "assets/cristal/full/cristal_28x28.png",
+      "path": "assets/cristal/full/cristal_28x28.png",
+      "sha256": "435ccf7de35ef669ae9fe28bf88283c6d53aa793ff83c4f99afa7eb92ddb7509",
+      "bytes": 2312
+    },
+    {
+      "source": "assets/cristal/short/cristal_112x112.png",
+      "path": "assets/cristal/short/cristal_112x112.png",
+      "sha256": "23592433809c75736811d8e7cc952ceeeb44bccc9e8abc6390400fc2c3c54b34",
+      "bytes": 22574
+    },
+    {
+      "source": "assets/cristal/short/cristal_56x56.png",
+      "path": "assets/cristal/short/cristal_56x56.png",
+      "sha256": "3d45193b2165affa5d294b463fd2b93ed8103dfddc5edd744807c1e2c2f2b754",
+      "bytes": 6782
+    },
+    {
+      "source": "assets/cristal/short/cristal_28x28.png",
+      "path": "assets/cristal/short/cristal_28x28.png",
+      "sha256": "a58a50f4b3889e62a0139f1899750bdd4b2e1b972bef8f8623f45efbd3cbb335",
+      "bytes": 2326
+    },
+    {
+      "source": "originals/tesouro/vulgoTESOURO_112x112.png",
+      "path": "originals/tesouro/vulgoTESOURO_112x112.png",
+      "sha256": "0a369e8c02aec6df015f6792670310c135d76c39ff156639846c1981b3d55fa3",
+      "bytes": 27333
+    },
+    {
+      "source": "originals/tesouro/vulgoTESOURO_56x56.png",
+      "path": "originals/tesouro/vulgoTESOURO_56x56.png",
+      "sha256": "ce18f65850067c118d8a8b3c9818f297557fc93a6a7e7d957905e27a81a7ef2f",
+      "bytes": 7846
+    },
+    {
+      "source": "originals/tesouro/vulgoTESOURO_28x28.png",
+      "path": "originals/tesouro/vulgoTESOURO_28x28.png",
+      "sha256": "39f87b11c79279b945033db75c85b6e0e2ae257ee11cb3bb25ac9646881db988",
+      "bytes": 2285
+    },
+    {
+      "source": "assets/tesouro/full/tesouro_112x112.png",
+      "path": "assets/tesouro/full/tesouro_112x112.png",
+      "sha256": "dc29a572e23126bbe43fa48cad6a9c53000fd9f45cd6f0f9a6716922bd819c56",
+      "bytes": 23941
+    },
+    {
+      "source": "assets/tesouro/full/tesouro_56x56.png",
+      "path": "assets/tesouro/full/tesouro_56x56.png",
+      "sha256": "ab295d45693bda7933ae3c9ea85eea33f5911e279828e2295d790aa2e19d33cd",
+      "bytes": 7358
+    },
+    {
+      "source": "assets/tesouro/short/tesouro_112x112.png",
+      "path": "assets/tesouro/short/tesouro_112x112.png",
+      "sha256": "14f50d1c392605e91ca7a0c0e9e918ef2262b43f416e33615394b08307490672",
+      "bytes": 22444
+    },
+    {
+      "source": "assets/tesouro/short/tesouro_56x56.png",
+      "path": "assets/tesouro/short/tesouro_56x56.png",
+      "sha256": "03cbbc56b89c161475915b1544aa737c2229d19329f6cf23f7f3650f4f700733",
+      "bytes": 6581
+    },
+    {
+      "source": "assets/tesouro/short/tesouro_28x28.png",
+      "path": "assets/tesouro/short/tesouro_28x28.png",
+      "sha256": "47f7a4e835bdc8854c3a0632f03c07208c8a8bef3646e6dceb4ca8d4513a9a44",
+      "bytes": 2217
+    },
+    {
+      "source": "originals/lenda/vulgoLENDA_112x112.png",
+      "path": "originals/lenda/vulgoLENDA_112x112.png",
+      "sha256": "3f8e4b1eb84b692e8ab718af9679ee0dd032e88fa90aea4ad7fc305b2b8d8644",
+      "bytes": 24415
+    },
+    {
+      "source": "originals/lenda/vulgoLENDA_56x56.png",
+      "path": "originals/lenda/vulgoLENDA_56x56.png",
+      "sha256": "5b51ad525c5ab6f5b6d58e04d0e79f613c37eac7533456b8743aec044e9553a8",
+      "bytes": 6881
+    },
+    {
+      "source": "originals/lenda/vulgoLENDA_28x28.png",
+      "path": "originals/lenda/vulgoLENDA_28x28.png",
+      "sha256": "be4aa9eaaee646ae10c49266711479ea99c456970ee3e3f15561ec0e5a0f4209",
+      "bytes": 2101
+    },
+    {
+      "source": "assets/lenda/full/lenda_112x112.png",
+      "path": "assets/lenda/full/lenda_112x112.png",
+      "sha256": "e06a2a540afceb563d8aac054f1f3a1c505b680df6fa6bc46fcd9c9eacc01619",
+      "bytes": 20809
+    },
+    {
+      "source": "assets/lenda/full/lenda_56x56.png",
+      "path": "assets/lenda/full/lenda_56x56.png",
+      "sha256": "27f300b3e329bed2c1da9b794d5855c781181de8162784d712fb07bbb16ced52",
+      "bytes": 6971
+    },
+    {
+      "source": "assets/lenda/full/lenda_28x28.png",
+      "path": "assets/lenda/full/lenda_28x28.png",
+      "sha256": "58ee76351b67d035028fa742a477f243ce6e681f864947b5bd1aa6295259b3c4",
+      "bytes": 2234
+    },
+    {
+      "source": "originals/hype_anim/vulgoHYPEANIM_112x112.gif",
+      "path": "originals/hype_anim/vulgoHYPEANIM_112x112.gif",
+      "sha256": "ec7941d23006bbba66f498df21c7c44c007fd806fcc76e67d1f1516dfb11bc47",
+      "bytes": 183529
+    },
+    {
+      "source": "originals/hype_anim/vulgoHYPEANIM_112x112.png",
+      "path": "originals/hype_anim/vulgoHYPEANIM_112x112.png",
+      "sha256": "ea7e682ebeb6deecfbc018f269c4be3b65689d2ae301c4b3f06ddb4940aea37b",
+      "bytes": 19350
+    },
+    {
+      "source": "originals/hype_anim/vulgoHYPEANIM_56x56.gif",
+      "path": "originals/hype_anim/vulgoHYPEANIM_56x56.gif",
+      "sha256": "9b99af590de99854f3f4bb4b74f638500c09c28b7f33ba38445d1f8c750a361a",
+      "bytes": 69812
+    },
+    {
+      "source": "originals/hype_anim/vulgoHYPEANIM_56x56.png",
+      "path": "originals/hype_anim/vulgoHYPEANIM_56x56.png",
+      "sha256": "0d8119f824f377911c3832ddae08bf60f526696c826c357af5a6f3dcf03508e1",
+      "bytes": 6220
+    },
+    {
+      "source": "originals/hype_anim/vulgoHYPEANIM_28x28.gif",
+      "path": "originals/hype_anim/vulgoHYPEANIM_28x28.gif",
+      "sha256": "fdd1cfdea8e678a8287944814cd6f93d378dbda4203ca839cfb8d8719d892e25",
+      "bytes": 33050
+    },
+    {
+      "source": "originals/hype_anim/vulgoHYPEANIM_28x28.png",
+      "path": "originals/hype_anim/vulgoHYPEANIM_28x28.png",
+      "sha256": "f19ed25d41894b08e970c8bb6b38420d605d3903819f282a7cccf8ad6f513d8c",
+      "bytes": 1853
+    },
+    {
+      "source": "assets/hype_anim/full/hype_anim_112x112.gif",
+      "path": "assets/hype_anim/full/hype_anim_112x112.gif",
+      "sha256": "095b225d489ddb1449089966d7c4b9d7456e414ca4952ca36a66f84d596f3d6a",
+      "bytes": 154104
+    },
+    {
+      "source": "assets/hype_anim/full/hype_anim_112x112_still.png",
+      "path": "assets/hype_anim/full/hype_anim_112x112_still.png",
+      "sha256": "6f3e5ace570105e86e0697d8ded1ab17d8c53b33e12f4fc9c10e0e25d8ca0ba0",
+      "bytes": 16242
+    },
+    {
+      "source": "assets/hype_anim/full/hype_anim_56x56.gif",
+      "path": "assets/hype_anim/full/hype_anim_56x56.gif",
+      "sha256": "2643abde42b6b6fc88727c5bfd67552a6a83c2f79b6c94623e7f2dabb7e5ab6c",
+      "bytes": 53982
+    },
+    {
+      "source": "assets/hype_anim/full/hype_anim_56x56_still.png",
+      "path": "assets/hype_anim/full/hype_anim_56x56_still.png",
+      "sha256": "08a137ac2d4e7bbefaf6c4477d779df5b5d7c2a30e05c953f6146bc58abb34cf",
+      "bytes": 4907
+    },
+    {
+      "source": "assets/hype_anim/full/hype_anim_28x28.gif",
+      "path": "assets/hype_anim/full/hype_anim_28x28.gif",
+      "sha256": "51585d1049aedf8a579a2e3803ce6fbb80002e7df6727ea9ec041330dd3c1024",
+      "bytes": 23262
+    },
+    {
+      "source": "assets/hype_anim/full/hype_anim_28x28_still.png",
+      "path": "assets/hype_anim/full/hype_anim_28x28_still.png",
+      "sha256": "f650718a9b46ec519d91682e27ad802a3f86d252e983f3a82bc61f9cd244d1a6",
+      "bytes": 1690
+    },
+    {
+      "source": "originals/energiza_anim/vulgoENERGIZAANIM_112x112.gif",
+      "path": "originals/energiza_anim/vulgoENERGIZAANIM_112x112.gif",
+      "sha256": "edc4240edf396c5b557807801734cfd60f928baeb375039363c822d0e85db8b2",
+      "bytes": 184133
+    },
+    {
+      "source": "originals/energiza_anim/vulgoENERGIZAANIM_112x112.png",
+      "path": "originals/energiza_anim/vulgoENERGIZAANIM_112x112.png",
+      "sha256": "42ba4aaa331e580551f927855bba8a342471386ab2bf8d42d5a2d44c2102287f",
+      "bytes": 18404
+    },
+    {
+      "source": "originals/energiza_anim/vulgoENERGIZAANIM_56x56.gif",
+      "path": "originals/energiza_anim/vulgoENERGIZAANIM_56x56.gif",
+      "sha256": "643a9586226db742fd202bde0b5969794e78f482cfc8e14567b2019c72c4e13e",
+      "bytes": 70975
+    },
+    {
+      "source": "originals/energiza_anim/vulgoENERGIZAANIM_56x56.png",
+      "path": "originals/energiza_anim/vulgoENERGIZAANIM_56x56.png",
+      "sha256": "13b8e894a6c0c95c6ec9d4324ffb11840d15295c5b516b39bb3f40ee76a8f263",
+      "bytes": 5962
+    },
+    {
+      "source": "originals/energiza_anim/vulgoENERGIZAANIM_28x28.gif",
+      "path": "originals/energiza_anim/vulgoENERGIZAANIM_28x28.gif",
+      "sha256": "d22a2408cf98949e0cd2558c940f9bfeaa0db8b41e9373c31f15a779a1e0b493",
+      "bytes": 33356
+    },
+    {
+      "source": "originals/energiza_anim/vulgoENERGIZAANIM_28x28.png",
+      "path": "originals/energiza_anim/vulgoENERGIZAANIM_28x28.png",
+      "sha256": "c1a840e44affb4e1f7088506b0b10f648959b67bc861dbfcd9575028020d868b",
+      "bytes": 1860
+    },
+    {
+      "source": "assets/energiza_anim/full/energiza_anim_112x112.gif",
+      "path": "assets/energiza_anim/full/energiza_anim_112x112.gif",
+      "sha256": "eabef58d9baf7873a15379487e291470cfd0c015784d7e1f4bbe1285a2dee113",
+      "bytes": 164673
+    },
+    {
+      "source": "assets/energiza_anim/full/energiza_anim_112x112_still.png",
+      "path": "assets/energiza_anim/full/energiza_anim_112x112_still.png",
+      "sha256": "db42c6afd5f73aa9667972a10fcf8b93f2a351ff0b8b5b64f44006f429239e66",
+      "bytes": 17425
+    },
+    {
+      "source": "assets/energiza_anim/full/energiza_anim_56x56.gif",
+      "path": "assets/energiza_anim/full/energiza_anim_56x56.gif",
+      "sha256": "9dc36c7d9ec4109d6d52e0e6162809a5238d146224f6253ea046b4e90e6337ca",
+      "bytes": 60364
+    },
+    {
+      "source": "assets/energiza_anim/full/energiza_anim_56x56_still.png",
+      "path": "assets/energiza_anim/full/energiza_anim_56x56_still.png",
+      "sha256": "6a443bbce3284a4fada63b26da2a3e6783125d5b1be35ff67552c446cfa13ceb",
+      "bytes": 5802
+    },
+    {
+      "source": "assets/energiza_anim/short/energiza_anim_112x112.gif",
+      "path": "assets/energiza_anim/short/energiza_anim_112x112.gif",
+      "sha256": "a86950b5830b9ca282a34bcdae1a6af82a0911914a0b2ed9fabfe71b8c295062",
+      "bytes": 156799
+    },
+    {
+      "source": "assets/energiza_anim/short/energiza_anim_112x112_still.png",
+      "path": "assets/energiza_anim/short/energiza_anim_112x112_still.png",
+      "sha256": "a94f2c3aa4439731c03b981d8f07460b46a64880e3e7266e05b183ac477b8a11",
+      "bytes": 16498
+    },
+    {
+      "source": "assets/energiza_anim/short/energiza_anim_56x56.gif",
+      "path": "assets/energiza_anim/short/energiza_anim_56x56.gif",
+      "sha256": "69933efe232c4a1f12b17a68f3eb86e7b3293e2710c1237a3fb78b20066193c8",
+      "bytes": 53749
+    },
+    {
+      "source": "assets/energiza_anim/short/energiza_anim_56x56_still.png",
+      "path": "assets/energiza_anim/short/energiza_anim_56x56_still.png",
+      "sha256": "450040e7c1f6e9e61759ae1e0a8bae71a978cc4c0330ed4af18164c668873322",
+      "bytes": 5130
+    },
+    {
+      "source": "assets/energiza_anim/short/energiza_anim_28x28.gif",
+      "path": "assets/energiza_anim/short/energiza_anim_28x28.gif",
+      "sha256": "64025877968dee661ebe8d1bf058d93ab0b5a978338d1b0e5c2d709b0d23bfac",
+      "bytes": 21971
+    },
+    {
+      "source": "assets/energiza_anim/short/energiza_anim_28x28_still.png",
+      "path": "assets/energiza_anim/short/energiza_anim_28x28_still.png",
+      "sha256": "1e9db2552463aafb5362dd2af7804a15325354378606702ec037c98678fa4055",
+      "bytes": 1602
+    },
+    {
+      "source": "originals/monta_anim/vulgoMONTAANIM_112x112.gif",
+      "path": "originals/monta_anim/vulgoMONTAANIM_112x112.gif",
+      "sha256": "c9f0a5253325f97b8b7c0824cfe1833779fb0cda77e2404f67143672439a2093",
+      "bytes": 183779
+    },
+    {
+      "source": "originals/monta_anim/vulgoMONTAANIM_112x112.png",
+      "path": "originals/monta_anim/vulgoMONTAANIM_112x112.png",
+      "sha256": "730db570e88fdfe58d49c87cba2163cabe134909f115009c02c3385be0c8abc0",
+      "bytes": 19594
+    },
+    {
+      "source": "originals/monta_anim/vulgoMONTAANIM_56x56.gif",
+      "path": "originals/monta_anim/vulgoMONTAANIM_56x56.gif",
+      "sha256": "c9b1909539d68e28667941a6f6d8013ca260f8bba3cae21f2cdf4af9b734fdbd",
+      "bytes": 66922
+    },
+    {
+      "source": "originals/monta_anim/vulgoMONTAANIM_56x56.png",
+      "path": "originals/monta_anim/vulgoMONTAANIM_56x56.png",
+      "sha256": "34503164799b410047d49d7ebb4cff7ca6e7b68ac63d9fec6d9a5cfe0188486b",
+      "bytes": 5874
+    },
+    {
+      "source": "originals/monta_anim/vulgoMONTAANIM_28x28.gif",
+      "path": "originals/monta_anim/vulgoMONTAANIM_28x28.gif",
+      "sha256": "b33d93e6acd3e5ae8ec99f01eba101c9680eb25840130fd0220665fe1f531f21",
+      "bytes": 31963
+    },
+    {
+      "source": "originals/monta_anim/vulgoMONTAANIM_28x28.png",
+      "path": "originals/monta_anim/vulgoMONTAANIM_28x28.png",
+      "sha256": "dd29f2477f492e99ea8a00fa988f9b6ae12b79dcacf1aa4ae189cfa4c1548353",
+      "bytes": 1738
+    },
+    {
+      "source": "assets/monta_anim/full/monta_anim_112x112.gif",
+      "path": "assets/monta_anim/full/monta_anim_112x112.gif",
+      "sha256": "2553792adf448f5ab806135769d654e69b96c8f321fc8f161a6c2a1cbfce6b5c",
+      "bytes": 154914
+    },
+    {
+      "source": "assets/monta_anim/full/monta_anim_112x112_still.png",
+      "path": "assets/monta_anim/full/monta_anim_112x112_still.png",
+      "sha256": "58ce0698758d9258f34aafdd510ab05e56704af3c7ccf991ff07174442f3e2b6",
+      "bytes": 16376
+    },
+    {
+      "source": "assets/monta_anim/full/monta_anim_56x56.gif",
+      "path": "assets/monta_anim/full/monta_anim_56x56.gif",
+      "sha256": "e69b1b769e95ac39fc3f2183b8e28fc3304815c1a4d76ac3619374530429878c",
+      "bytes": 57678
+    },
+    {
+      "source": "assets/monta_anim/full/monta_anim_56x56_still.png",
+      "path": "assets/monta_anim/full/monta_anim_56x56_still.png",
+      "sha256": "c1ada4f021f4b04f5da73bd42f7c560cba26b1b0ad33fa4e40bd1923f939edcd",
+      "bytes": 5391
+    },
+    {
+      "source": "assets/monta_anim/full/monta_anim_28x28.gif",
+      "path": "assets/monta_anim/full/monta_anim_28x28.gif",
+      "sha256": "fe13a446023e96ff177132ef65059ad4370ebf566317172f270c9631d47d3b19",
+      "bytes": 22649
+    },
+    {
+      "source": "assets/monta_anim/full/monta_anim_28x28_still.png",
+      "path": "assets/monta_anim/full/monta_anim_28x28_still.png",
+      "sha256": "64eb42b9ff338537d352b00af7955764f01b33254530f345df0791fe91f30fbd",
+      "bytes": 1657
+    },
+    {
+      "source": "originals/batefood_anim/vulgoBATEFOODANIM_112x112.gif",
+      "path": "originals/batefood_anim/vulgoBATEFOODANIM_112x112.gif",
+      "sha256": "75bcfbe037fd923fdf856c7da9f157b26ddd076bbfbf27522227ef5b1af2a5ef",
+      "bytes": 177777
+    },
+    {
+      "source": "originals/batefood_anim/vulgoBATEFOODANIM_112x112.png",
+      "path": "originals/batefood_anim/vulgoBATEFOODANIM_112x112.png",
+      "sha256": "3b216a3166f4c3bd6b3afc23886c6acf065fa90ea0a08399322ccd35a5ddacdd",
+      "bytes": 17674
+    },
+    {
+      "source": "originals/batefood_anim/vulgoBATEFOODANIM_56x56.gif",
+      "path": "originals/batefood_anim/vulgoBATEFOODANIM_56x56.gif",
+      "sha256": "e958094a6a4092dedae32c99a1b2b5c59fe012a8779d41799f5c12d6dee27f36",
+      "bytes": 69261
+    },
+    {
+      "source": "originals/batefood_anim/vulgoBATEFOODANIM_56x56.png",
+      "path": "originals/batefood_anim/vulgoBATEFOODANIM_56x56.png",
+      "sha256": "45816498ef52416d2a345fde52cdcd738f743e58adeedf26877f3b2048ce4c0a",
+      "bytes": 5850
+    },
+    {
+      "source": "originals/batefood_anim/vulgoBATEFOODANIM_28x28.gif",
+      "path": "originals/batefood_anim/vulgoBATEFOODANIM_28x28.gif",
+      "sha256": "2508f127ed8e73922102ccbd660833bb42af322bc9a72f7618c25c0668b7145f",
+      "bytes": 33416
+    },
+    {
+      "source": "originals/batefood_anim/vulgoBATEFOODANIM_28x28.png",
+      "path": "originals/batefood_anim/vulgoBATEFOODANIM_28x28.png",
+      "sha256": "81c274ec120a7031c50556a265da8f02040d67ecbf3e80a665d90d3d18560a9b",
+      "bytes": 1777
+    },
+    {
+      "source": "assets/batefood_anim/full/batefood_anim_112x112.gif",
+      "path": "assets/batefood_anim/full/batefood_anim_112x112.gif",
+      "sha256": "9f0ee4a5a92216c8d05d7323aaafa30bf2b658e5f3c940dc3bcfd5c0915e1a38",
+      "bytes": 173566
+    },
+    {
+      "source": "assets/batefood_anim/full/batefood_anim_112x112_still.png",
+      "path": "assets/batefood_anim/full/batefood_anim_112x112_still.png",
+      "sha256": "462416897c7326c6d5777154ff463330026a7dbc9e271a69d78ec56004cb685a",
+      "bytes": 17001
+    },
+    {
+      "source": "assets/batefood_anim/full/batefood_anim_56x56.gif",
+      "path": "assets/batefood_anim/full/batefood_anim_56x56.gif",
+      "sha256": "5bd46b48026ff5d0c4a7b281cf8e519fdee1e514f13fc760c9810127e7da4460",
+      "bytes": 60929
+    },
+    {
+      "source": "assets/batefood_anim/full/batefood_anim_56x56_still.png",
+      "path": "assets/batefood_anim/full/batefood_anim_56x56_still.png",
+      "sha256": "155628064a16ac6425a0b6437eeb957889872290b80db82691417f9c388d0f8e",
+      "bytes": 5788
+    },
+    {
+      "source": "assets/batefood_anim/short/batefood_anim_112x112.gif",
+      "path": "assets/batefood_anim/short/batefood_anim_112x112.gif",
+      "sha256": "60c2b39285990fb0ca7ebc7c9041afe523b9e2ba77a3fb203aef4f05ad23f038",
+      "bytes": 158873
+    },
+    {
+      "source": "assets/batefood_anim/short/batefood_anim_112x112_still.png",
+      "path": "assets/batefood_anim/short/batefood_anim_112x112_still.png",
+      "sha256": "288543acd141c83746de9a706fbea8909b41c5da9e1d6234172d2710a4eedac6",
+      "bytes": 15522
+    },
+    {
+      "source": "assets/batefood_anim/short/batefood_anim_56x56.gif",
+      "path": "assets/batefood_anim/short/batefood_anim_56x56.gif",
+      "sha256": "edad81f9a2ae24dd3f1c6619e8fc4de97e4652e6968c23747fbf4710f27a574d",
+      "bytes": 55698
+    },
+    {
+      "source": "assets/batefood_anim/short/batefood_anim_56x56_still.png",
+      "path": "assets/batefood_anim/short/batefood_anim_56x56_still.png",
+      "sha256": "5015624b270b85fd2fcad351ff519aff9d822d2f1a8d33c184e9f8eb6ddfdd09",
+      "bytes": 4972
+    },
+    {
+      "source": "assets/batefood_anim/short/batefood_anim_28x28.gif",
+      "path": "assets/batefood_anim/short/batefood_anim_28x28.gif",
+      "sha256": "c583d33bc06b26d33ff90fc098ef08c9d9f63a2fffe63d9a00b71a9137798b67",
+      "bytes": 23997
+    },
+    {
+      "source": "assets/batefood_anim/short/batefood_anim_28x28_still.png",
+      "path": "assets/batefood_anim/short/batefood_anim_28x28_still.png",
+      "sha256": "28087951e4ff788673fc32c1e5e1a01a87eb40c27413e2355f3164acc5239efa",
+      "bytes": 1768
+    },
+    {
+      "source": "originals/rage_anim/vulgoRAGEANIM_112x112.gif",
+      "path": "originals/rage_anim/vulgoRAGEANIM_112x112.gif",
+      "sha256": "deeb3aa6110de58418dc17810a5cff37eb7cec65f0a0e75ecc2157195443a4fe",
+      "bytes": 190333
+    },
+    {
+      "source": "originals/rage_anim/vulgoRAGEANIM_112x112.png",
+      "path": "originals/rage_anim/vulgoRAGEANIM_112x112.png",
+      "sha256": "d450eba641de4b798d3503596ed48677176329bb1fc94e4abbb747d7e0615d9d",
+      "bytes": 18757
+    },
+    {
+      "source": "originals/rage_anim/vulgoRAGEANIM_56x56.gif",
+      "path": "originals/rage_anim/vulgoRAGEANIM_56x56.gif",
+      "sha256": "e7bb41be37269a6a4de4ea0e128ed7348304697a2207c784d845db63250d1779",
+      "bytes": 72053
+    },
+    {
+      "source": "originals/rage_anim/vulgoRAGEANIM_56x56.png",
+      "path": "originals/rage_anim/vulgoRAGEANIM_56x56.png",
+      "sha256": "03173732839d75efdf79f0375e5af589e580b4f42f5c9d313b453e8248141c41",
+      "bytes": 6215
+    },
+    {
+      "source": "originals/rage_anim/vulgoRAGEANIM_28x28.gif",
+      "path": "originals/rage_anim/vulgoRAGEANIM_28x28.gif",
+      "sha256": "c1e21f962d173fcf62e128b0435e26ab6832639cc55ac62bd003cbc47965b607",
+      "bytes": 33922
+    },
+    {
+      "source": "originals/rage_anim/vulgoRAGEANIM_28x28.png",
+      "path": "originals/rage_anim/vulgoRAGEANIM_28x28.png",
+      "sha256": "be91c9dc818279c68abb1d76c832235d2e390adef3eef11d2cb9a9658456dd76",
+      "bytes": 1848
+    },
+    {
+      "source": "assets/rage_anim/full/rage_anim_112x112.gif",
+      "path": "assets/rage_anim/full/rage_anim_112x112.gif",
+      "sha256": "444d5bddbce771ffdb7a72cae2687d861d22dfe733a225cecc3be553bca17a57",
+      "bytes": 156859
+    },
+    {
+      "source": "assets/rage_anim/full/rage_anim_112x112_still.png",
+      "path": "assets/rage_anim/full/rage_anim_112x112_still.png",
+      "sha256": "7e220b241b7d71d39dc14d90a4dbcc92782360cfc732c76fcab4c4c289bc3053",
+      "bytes": 16544
+    },
+    {
+      "source": "assets/rage_anim/full/rage_anim_56x56.gif",
+      "path": "assets/rage_anim/full/rage_anim_56x56.gif",
+      "sha256": "4d7e6b8ff47457ba9542d4e8c3d51d128657f131fd2bfe77602157c14761ad5f",
+      "bytes": 53905
+    },
+    {
+      "source": "assets/rage_anim/full/rage_anim_56x56_still.png",
+      "path": "assets/rage_anim/full/rage_anim_56x56_still.png",
+      "sha256": "85acc084f7d7060213ea27a2b363d55432bd82f49ba0578a859b0e531a4feb19",
+      "bytes": 5054
+    },
+    {
+      "source": "assets/rage_anim/full/rage_anim_28x28.gif",
+      "path": "assets/rage_anim/full/rage_anim_28x28.gif",
+      "sha256": "8ae06c76f46dc150993441640e54d86a63d817a10d80ae058edb6b7b6d42fb2c",
+      "bytes": 23306
+    },
+    {
+      "source": "assets/rage_anim/full/rage_anim_28x28_still.png",
+      "path": "assets/rage_anim/full/rage_anim_28x28_still.png",
+      "sha256": "72bcd5a0af164f16f314629ec1d82cdfe28a6bb6fedfc9415b3c44750d19fc97",
+      "bytes": 1761
+    },
+    {
+      "source": "emotes-sem-texto.zip",
+      "path": "emotes-sem-texto.zip",
+      "sha256": "eab3126b0db87ac87a7470ce3f28666397b54f522c4cebbfad90209e89e69cbf",
+      "bytes": 1672759
+    },
+    {
+      "source": "emotes-com-texto.zip",
+      "path": "emotes-com-texto.zip",
+      "sha256": "e1b9e18cbc7f9f7a3ed72882f7e6112a53ccd6f313a24f37a0a6993ad1454e05",
+      "bytes": 1979160
+    },
+    {
+      "source": "publication-index.html",
+      "path": "index.html",
+      "sha256": "7622c5895d83a7d63c93ef4d0bf0cfaeb0aa4ece9d0a4ae12473f8e0f9682fb5",
+      "bytes": 86093
+    },
+    {
+      "source": "PUBLICACAO.md",
+      "path": "README.md",
+      "sha256": "21ed8663ec6682edc8d75719a91978b87fa9b990317653a606f46c5488fc9960",
+      "bytes": 494
+    },
+    {
+      "source": "publication-prancha-escura.png",
+      "path": "prancha-escura.png",
+      "sha256": "25d0c2f6dbbb4b8d8bd2651468be9e96c69d69fe6e36b2dd3f088bd010208f49",
+      "bytes": 1231003
+    },
+    {
+      "source": "publication-prancha-clara.png",
+      "path": "prancha-clara.png",
+      "sha256": "157e979591852dafd47427c1f55707b9023386b2d6c97e3d10d8ff3d7cf3fe8d",
+      "bytes": 1228196
+    },
+    {
+      "source": "comparacao-28px.png",
+      "path": "comparacao-28px.png",
+      "sha256": "ffd05826d1bffe6dbebd00c0be03e01758cba2f9b540b9dd18de99f968049db4",
+      "bytes": 128330
+    }
+  ]
+}

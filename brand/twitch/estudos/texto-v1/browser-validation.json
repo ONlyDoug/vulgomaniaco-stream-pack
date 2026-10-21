@@ -1,0 +1,15 @@
+{
+  "status": "pass",
+  "emotes": 20,
+  "nativeSizeImages": 134,
+  "blockedSlots": 7,
+  "downloadLinksExist": true,
+  "keyboard": true,
+  "choiceExport": true,
+  "reducedMotion": true,
+  "mobileWidths": [
+    375,
+    320
+  ],
+  "errors": []
+}

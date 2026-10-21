@@ -1,5 +1,6 @@
 # Dependências
 node_modules/
+/node_modules
 
 # Builds e outputs
 dist/
@@ -28,3 +29,6 @@ get-pip.py
 # Pacote Twitch v2: gerado por npm run sync:twitch antes de dev/build
 /public/assets/twitch/v2/
 /public/assets/twitch/sub-badges-vulgomaniaco.zip
+
+# Comparação dos emotes: gerada antes de dev/build
+/public/emotes/
